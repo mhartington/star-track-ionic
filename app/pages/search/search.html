@@ -1,0 +1,50 @@
+<ion-navbar white *navbar>
+  <button menuToggle secondary>
+    <ion-icon name="menu"></ion-icon>
+  </button>
+  <ion-title>Search</ion-title>
+</ion-navbar>
+
+
+<ion-content light>
+
+  <form [ngFormModel]="form" #f="ngForm" (ngSubmit)="search()">
+    <ion-list>
+
+      <ion-item>
+        <ion-input type="text" ngControl="term"></ion-input>
+        <ion-label>Search</ion-label>
+      </ion-item>
+    </ion-list>
+
+    <ion-list radio-group ngControl="filter" >
+      <ion-list-header>
+        Language
+      </ion-list-header>
+
+      <ion-item>
+        <ion-label>Track Name</ion-label>
+        <ion-radio value="track" secondary></ion-radio>
+      </ion-item>
+
+      <ion-item>
+        <ion-label>Artist Name</ion-label>
+        <ion-radio value="artist" secondary></ion-radio>
+      </ion-item>
+
+      <ion-item>
+        <ion-label>Album Name</ion-label>
+        <ion-radio value="album" secondary></ion-radio>
+      </ion-item>
+
+      <ion-item>
+        <ion-label>All of the above</ion-label>
+        <ion-radio value="everything" secondary></ion-radio>
+      </ion-item>
+
+    </ion-list>
+    <div padding>
+      <button block secondary type="submit" [disabled]="!f.form.valid">Find Tracks</button>
+    </div>
+  </form>
+</ion-content>
