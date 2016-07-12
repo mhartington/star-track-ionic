@@ -14,7 +14,7 @@ import {
 
 export class SearchPage {
   private form = this.fb.group({
-    'term': ['', Validators.required],
+    'term': ['Beastie Boys', Validators.required],
     'filter': ['everything', Validators.required]
   })
   constructor(
