@@ -12,13 +12,14 @@ export class TrackDetailPage {
   progress = 0;
   @ViewChild('player') audio;
 
-  ifPlaying = false
+  ifPlaying = false;
   constructor(
     private nav: NavController,
     private params: NavParams,
     private events: Events,
     private spotify: SpotifyService
   ) {
+    console.log(this.track.preview_url)
   }
   ionViewWillLeave() {
     this.stopSong();
