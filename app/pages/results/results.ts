@@ -17,17 +17,9 @@ export class ResultsPage {
     private nav: NavController
   ) {
     this.spotify.load(this.query).subscribe(
-      (res) => {
-        this.listing = res.tracks.items;
-        console.log(res.tracks.items);
-      },
-      (err)=>{
-        console.log(err);
-      },
-      () =>{
-        console.log('done');
-      }
-    );
+      res => this.listing = res.tracks.items,
+      err => console.log(err)
+      );
   }
 
   detail(track) {

@@ -10,16 +10,16 @@
 
 <ion-content light>
 
-  <form [ngFormModel]="form" #f="ngForm" (ngSubmit)="search()">
+  <form [formGroup]="form" #f="ngForm" (ngSubmit)="search()">
     <ion-list>
 
       <ion-item>
-        <ion-input type="text" ngControl="term"></ion-input>
+        <ion-input type="text" formControlName="term"></ion-input>
         <ion-label>Search</ion-label>
       </ion-item>
     </ion-list>
 
-    <ion-list radio-group ngControl="filter" >
+    <ion-list radio-group formControlName="filter" >
       <ion-list-header>
         Language
       </ion-list-header>

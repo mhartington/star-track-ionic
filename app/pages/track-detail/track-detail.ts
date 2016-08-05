@@ -50,8 +50,8 @@ export class TrackDetailPage {
     this.audio.nativeElement.currentTime = 0;
   }
 
-  favorite() {
-    this.spotify.favorites.push(this.track)
-    console.log(this.spotify.favorites)
-  }
+  // favorite() {
+  //   this.spotify.favorites.push(this.track)
+  //   console.log(this.spotify.favorites)
+  // }
 }

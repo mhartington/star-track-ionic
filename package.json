@@ -1,15 +1,15 @@
 {
   "dependencies": {
-    "@angular/common": "^2.0.0-rc.3",
-    "@angular/compiler": "^2.0.0-rc.3",
-    "@angular/core": "^2.0.0-rc.3",
-    "@angular/http": "^2.0.0-rc.3",
-    "@angular/platform-browser": "^2.0.0-rc.3",
-    "@angular/platform-browser-dynamic": "^2.0.0-rc.3",
-    "@angular/router": "^2.0.0-rc.2",
+    "@angular/common": "^2.0.0-rc.4",
+    "@angular/compiler": "^2.0.0-rc.4",
+    "@angular/core": "^2.0.0-rc.4",
+    "@angular/forms": "^0.2.0",
+    "@angular/http": "^2.0.0-rc.4",
+    "@angular/platform-browser": "^2.0.0-rc.4",
+    "@angular/platform-browser-dynamic": "^2.0.0-rc.4",
     "es6-shim": "0.35.0",
     "howler": "1.1.29",
-    "ionic-angular": "^2.0.0-beta.10",
+    "ionic-angular": "^2.0.0-beta.10-201607151701",
     "ionic-native": "1.2.4",
     "ionicons": "3.0.0",
     "moment": "2.13.0",
@@ -27,6 +27,7 @@
     "ionic-gulp-html-copy": "1.0.0",
     "ionic-gulp-sass-build": "1.0.0",
     "ionic-gulp-scripts-copy": "2.0.0",
+    "tslint-ionic-rules": "^0.0.3",
     "run-sequence": "1.1.5"
   },
   "cordovaPlugins": [
@@ -38,8 +39,7 @@
     "ionic-plugin-keyboard"
   ],
   "cordovaPlatforms": [
-    "ios",
-    {
+    "ios", {
       "platform": "ios",
       "version": "",
       "locator": "ios"
