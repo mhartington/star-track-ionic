@@ -5,6 +5,14 @@
 // --------------------------------------------------
 // Shared Sass variables go in the app.variables.scss file
 @import 'app.variables';
+$toolbar-md-background:                   map-get($colors, secondary) !default;
+$toolbar-md-text-color:                   #fff !default;
+$toolbar-md-active-color:                 #fff !default;
+$toolbar-md-inactive-color:               #fff !default;
+
+$checkbox-md-icon-checkmark-color:        #fff !default;
+$segment-button-md-text-color-activated:  #fff !default;
+
 
 
 // App Material Design Variables

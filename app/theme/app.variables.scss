@@ -31,9 +31,9 @@ $colors: (primary: #387ef5,
           dark: #222,
           favorite: #69BB7B,
           );
-.bar-button-default{
-  color: color($colors, secondary) !important;
-}
+// .bar-button-default{
+//   color: color($colors, secondary) !important;
+// }
 ion-content[light] {
   background-color: color($colors, light);
 }

@@ -18,7 +18,13 @@ var MyApp = (function () {
         this.platform = platform;
         this.rootPage = menu_1.MenuPage;
         this.platform.ready().then(function () {
-            ionic_native_1.StatusBar.styleDefault();
+            ionic_native_1.Keyboard.disableScroll(true);
+            if (platform.is('ios')) {
+                ionic_native_1.StatusBar.styleDefault();
+            }
+            else if (platform.is('android')) {
+                ionic_native_1.StatusBar.backgroundColorByHexString('#249e48');
+            }
         });
     }
     MyApp = __decorate([
@@ -179,7 +185,7 @@ var SearchPage = (function () {
     };
     SearchPage = __decorate([
         core_1.Component({
-            template: "\n  <ion-header>\n  <ion-navbar white>\n    <button menuToggle secondary>\n      <ion-icon name=\"menu\"></ion-icon>\n    </button>\n    <ion-title>Search</ion-title>\n  </ion-navbar>\n</ion-header>\n\n\n<ion-content light>\n  <form [formGroup]=\"form\" (ngSubmit)=\"search()\">\n    <ion-list>\n\n      <ion-item>\n        <ion-label>Search</ion-label>\n        <ion-input type=\"text\" formControlName=\"term\"></ion-input>\n      </ion-item>\n    </ion-list>\n\n    <ion-list radio-group formControlName=\"filter\">\n      <ion-list-header>\n        Filter\n      </ion-list-header>\n\n      <ion-item>\n        <ion-label>Track Name</ion-label>\n        <ion-radio value=\"track\" secondary></ion-radio>\n      </ion-item>\n\n      <ion-item>\n        <ion-label>Artist Name</ion-label>\n        <ion-radio value=\"artist\" secondary></ion-radio>\n      </ion-item>\n\n      <ion-item>\n        <ion-label>Album Name</ion-label>\n        <ion-radio value=\"album\" secondary></ion-radio>\n      </ion-item>\n\n      <ion-item>\n        <ion-label>All of the above</ion-label>\n        <ion-radio value=\"everything\" secondary></ion-radio>\n      </ion-item>\n\n    </ion-list>\n    <div padding>\n      <button block secondary type=\"submit\" [disabled]=\"!form.valid\">Find Tracks</button>\n    </div>\n  </form>\n</ion-content>\n  "
+            templateUrl: 'build/pages/search/search.html'
         }), 
         __metadata('design:paramtypes', [ionic_angular_1.NavController, forms_1.FormBuilder])
     ], SearchPage);
