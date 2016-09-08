@@ -1,0 +1,42 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>Track Detail</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content>
+
+  <ion-list>
+    <ion-card>
+      <img [src]="track.album.images[0].url" alt="">
+      <ion-card-content>
+        <ion-card-title>
+          <h2>{{track.name}}</h2>
+        </ion-card-title>
+        <h3>by {{track.artists[0].name}}</h3>
+        <em>{{track.album.name}}</em>
+        <ion-row>
+
+          <ion-col width-20 text-center>
+            <button light round (click)="toggleSong()">
+              <ion-icon secondary name="play" *ngIf="!ifPlaying"></ion-icon>
+              <ion-icon secondary name="square" *ngIf="ifPlaying"></ion-icon>
+            </button>
+          </ion-col>
+
+          <ion-col width-80>
+            <audio [src]="track.preview_url" (ended)="playerEnded(player)" (timeupdate)="setProgress()" #player></audio>
+            <progress [value]="progress" max="100" class="progress"></progress>
+          </ion-col>
+        </ion-row>
+      </ion-card-content>
+
+      <ion-item>
+        <p>Track Duration</p>
+        <ion-note item-right>
+          {{track.duration_ms| moment}}
+        </ion-note>
+      </ion-item>
+    </ion-card>
+  </ion-list>
+</ion-content>

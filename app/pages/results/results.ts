@@ -1,8 +1,8 @@
-import {NavParams, NavController} from 'ionic-angular';
-import {Component} from '@angular/core';
-import {SpotifyService} from '../../providers/spotify-service/spotify-service'
-import {TrackDetailPage} from '../track-detail/track-detail'
-import {Moment} from '../../pipes/moment'
+import { NavParams, NavController } from 'ionic-angular';
+import { Component } from '@angular/core';
+import { SpotifyService } from '../../providers/spotify-service/spotify-service';
+import { TrackDetailPage } from '../track-detail/track-detail';
+import { Moment } from '../../pipes/moment';
 @Component({
   templateUrl: 'build/pages/results/results.html',
   providers: [SpotifyService],
@@ -19,12 +19,25 @@ export class ResultsPage {
     this.spotify.load(this.query).subscribe(
       res => this.listing = res.tracks.items,
       err => console.log(err)
-      );
+    );
   }
 
   detail(track) {
     this.nav.push(TrackDetailPage, {
       'track': track
-    })
+    });
   }
+
+  // doInfinite(infiniteScroll) {
+  //   this.spotify.load(this.query).subscribe(
+  //     (res) => {
+  //       for (let newTracks of res.tracks.items) {
+  //         this.listing.push(newTracks);
+  //       }
+  //     },
+  //     err => console.log(err),
+  //     () => infiniteScroll.complete()
+  //     );
+  //
+  // }
 }

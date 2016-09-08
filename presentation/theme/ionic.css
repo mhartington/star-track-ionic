@@ -1,0 +1,685 @@
+@import url(https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic);
+
+@import url(https://fonts.googleapis.com/css?family=Source+Code+Pro);
+
+
+@font-face {
+  font-family: 'League Gothic';
+  src: url("../../lib/font/league_gothic-webfont.eot");
+  src: url("../../lib/font/league_gothic-webfont.eot?#iefix") format("embedded-opentype"), url("../../lib/font/league_gothic-webfont.woff") format("woff"), url("../../lib/font/league_gothic-webfont.ttf") format("truetype"), url("../../lib/font/league_gothic-webfont.svg#LeagueGothicRegular") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+html {
+  background-color: #313744;
+}
+
+section.has-light-background,
+section.has-light-background h1,
+section.has-light-background h2,
+section.has-light-background h3,
+section.has-light-background h4,
+section.has-light-background h5,
+section.has-light-background h6 {
+  color: #222;
+}
+
+
+/*********************************************
+ * GLOBAL STYLES
+ *********************************************/
+
+body {
+  background: #313744;
+  background-color: #313744;
+}
+
+.reveal {
+  font-family: "Avenir Next", san-serif;
+  font-size: 32px;
+  font-weight: 100;
+  color: #fff;
+}
+
+::selection {
+  color: #fff;
+  background: white;
+  text-shadow: none;
+}
+
+.reveal .slides > section,
+.reveal .slides > section > section {
+  line-height: 1.3;
+  font-weight: inherit;
+}
+
+
+/*********************************************
+ * HEADERS
+ *********************************************/
+
+.reveal h1,
+.reveal h2,
+.reveal h3,
+.reveal h4,
+.reveal h5,
+.reveal h6 {
+  margin: 0 0 20px 0;
+  color: #fff;
+  font-family: "Avenir Next", san-serif;
+  font-weight: 200;
+  line-height: 1.2;
+  letter-spacing: 1px;
+  text-transform: none;
+  text-shadow: 1px 1px 15px rgba(0, 0, 0, 0.2);
+  word-wrap: break-word;
+}
+
+.reveal h1 {
+  font-size: 2em;
+}
+
+.reveal h2 {
+  font-size: 1.6em;
+}
+
+.reveal h3 {
+  font-size: 1.3em;
+}
+
+.reveal h4 {
+  font-size: 1em;
+}
+
+.reveal h1 {
+  text-shadow: none;
+}
+
+
+/*********************************************
+ * OTHER
+ *********************************************/
+
+.reveal p {
+  margin: 20px 0;
+  line-height: 1.3;
+}
+
+
+/* Ensure certain elements are never larger than the slide itself */
+
+.reveal img,
+.reveal video,
+.reveal iframe {
+  max-width: 95%;
+  max-height: 95%;
+}
+
+.reveal strong,
+.reveal b {
+  font-weight: bold;
+}
+
+.reveal em {
+  font-style: italic;
+}
+
+.reveal ol,
+.reveal dl,
+.reveal ul {
+  display: inline-block;
+  text-align: left;
+  margin: 0 0 0 1em;
+}
+
+.reveal ol {
+  list-style-type: decimal;
+}
+
+.reveal ul {
+  list-style-type: none;
+  text-align: center
+}
+
+.reveal ul ul {
+  list-style-type: none;
+  text-align: center
+}
+
+.reveal ul ul ul {
+  list-style-type: circle;
+}
+
+.reveal ul ul,
+.reveal ul ol,
+.reveal ol ol,
+.reveal ol ul {
+  display: block;
+  margin-left: 40px;
+}
+
+.reveal dt {
+  font-weight: bold;
+}
+
+.reveal dd {
+  margin-left: 40px;
+}
+
+.reveal q,
+.reveal blockquote {
+  quotes: none;
+}
+
+.reveal blockquote {
+  display: block;
+  position: relative;
+  width: 70%;
+  margin: 20px auto;
+  padding: 5px;
+  font-style: italic;
+  background: rgba(255, 255, 255, 0.05);
+  box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.2);
+}
+
+.reveal blockquote p:first-child,
+.reveal blockquote p:last-child {
+  display: inline-block;
+}
+
+.reveal q {
+  font-style: italic;
+}
+
+.reveal pre {
+  display: block;
+  position: relative;
+  width: 90%;
+  margin: 20px auto;
+  text-align: left;
+  font-size: 0.55em;
+  font-family: monospace;
+  line-height: 1.2em;
+  word-wrap: break-word;
+  box-shadow: 0px 0px 6px rgba(0, 0, 0, 0.3);
+}
+
+.reveal code {
+  font-family: 'Source Code Pro', monospace;
+}
+
+.reveal pre code {
+  display: block;
+  padding: 5px;
+  overflow: auto;
+  max-height: 400px;
+  word-wrap: normal;
+  background: #3F3F3F;
+  color: #DCDCDC;
+}
+
+.reveal table {
+  margin: auto;
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+.reveal table th {
+  font-weight: bold;
+}
+
+.reveal table th,
+.reveal table td {
+  text-align: left;
+  padding: 0.2em 0.5em 0.2em 0.5em;
+  border-bottom: 1px solid;
+}
+
+.reveal table th[align="center"],
+.reveal table td[align="center"] {
+  text-align: center;
+}
+
+.reveal table th[align="right"],
+.reveal table td[align="right"] {
+  text-align: right;
+}
+
+.reveal table tr:last-child td {
+  border-bottom: none;
+}
+
+.reveal sup {
+  vertical-align: super;
+}
+
+.reveal sub {
+  vertical-align: sub;
+}
+
+.reveal small {
+  display: inline-block;
+  font-size: 0.6em;
+  line-height: 1.2em;
+  vertical-align: top;
+}
+
+.reveal small * {
+  vertical-align: top;
+}
+
+
+/*********************************************
+ * LINKS
+ *********************************************/
+
+.reveal a {
+  color: white;
+  text-decoration: none;
+  -webkit-transition: color 0.15s ease;
+  -moz-transition: color 0.15s ease;
+  transition: color 0.15s ease;
+}
+
+.reveal a:hover {
+  color: white;
+  text-shadow: none;
+  border: none;
+}
+
+.reveal .roll span:after {
+  color: #fff;
+  background: #d9d9d9;
+}
+
+
+/*********************************************
+ * IMAGES
+ *********************************************/
+
+.reveal section img {
+  margin: 15px 0px;
+  background: rgba(255, 255, 255, 0.12);
+  border: 4px solid #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
+}
+
+.reveal a img {
+  -webkit-transition: all 0.15s linear;
+  -moz-transition: all 0.15s linear;
+  transition: all 0.15s linear;
+}
+
+.reveal a:hover img {
+  background: rgba(255, 255, 255, 0.2);
+  border-color: white;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.55);
+}
+
+
+/*********************************************
+ * NAVIGATION CONTROLS
+ *********************************************/
+
+.reveal .controls div.navigate-left,
+.reveal .controls div.navigate-left.enabled {
+  border-right-color: white;
+}
+
+.reveal .controls div.navigate-right,
+.reveal .controls div.navigate-right.enabled {
+  border-left-color: white;
+}
+
+.reveal .controls div.navigate-up,
+.reveal .controls div.navigate-up.enabled {
+  border-bottom-color: white;
+}
+
+.reveal .controls div.navigate-down,
+.reveal .controls div.navigate-down.enabled {
+  border-top-color: white;
+}
+
+.reveal .controls div.navigate-left.enabled:hover {
+  border-right-color: white;
+}
+
+.reveal .controls div.navigate-right.enabled:hover {
+  border-left-color: white;
+}
+
+.reveal .controls div.navigate-up.enabled:hover {
+  border-bottom-color: white;
+}
+
+.reveal .controls div.navigate-down.enabled:hover {
+  border-top-color: white;
+}
+
+
+/*********************************************
+ * PROGRESS BAR
+ *********************************************/
+
+.reveal .progress {
+  background: rgba(0, 0, 0, 0.2);
+}
+
+.reveal .progress span {
+  background: white;
+  -webkit-transition: width 800ms cubic-bezier(0.26, 0.86, 0.44, 0.985);
+  -moz-transition: width 800ms cubic-bezier(0.26, 0.86, 0.44, 0.985);
+  transition: width 800ms cubic-bezier(0.26, 0.86, 0.44, 0.985);
+}
+
+
+/*********************************************
+ * SLIDE NUMBER
+ *********************************************/
+
+.reveal .slide-number {
+  color: white;
+}
+
+.reveal {
+  font-weight: 200;
+}
+
+.reveal h1,
+.reveal h2,
+.reveal h3,
+.reveal h4 {
+  text-transform: uppercase;
+  font-weight: 500;
+  letter-spacing: 2px;
+}
+
+.reveal p,
+.reveal th,
+.reveal td,
+.reveal ol,
+.reveal ul,
+.reveal li {
+  font-weight: 400
+}
+
+.reveal section img {
+  background: transparent;
+  border: 0;
+  box-shadow: none;
+}
+
+.reveal blockquote {
+  display: block;
+  position: relative;
+  width: 70%;
+  margin: 20px auto;
+  padding: 5px;
+  font-style: italic;
+  background: transparent;
+  box-shadow: none;
+}
+
+.reveal table td,
+.reveal table th {
+  border: 0;
+  background: rgba(0, 0, 0, 0.15);
+}
+
+.reveal table th {
+  text-transform: uppercase;
+  background: rgba(0, 0, 0, 0.4);
+}
+
+.reveal a {
+  color: inherit;
+  text-decoration: underline;
+}
+
+.reveal .dark-shadow {
+  text-shadow: 5px 0 10px black;
+}
+
+.reveal .left {
+  text-align: left;
+}
+
+.reveal .me {
+  margin: 30px 0 0 130px;
+  font-size: 1.2em;
+  line-height: 2em;
+  list-style-type: none;
+}
+
+.reveal .me li {
+  padding: 0 0 0 70px;
+}
+
+.reveal strong {
+  font-weight: 500;
+}
+
+.reveal .native-logos img {
+  width: 100px;
+  margin: 40px 20px 0 20px;
+}
+
+.reveal .stack {
+  width: 330px;
+  margin: 0 350px 0 0;
+  list-style-type: none;
+}
+
+.reveal .stack li {
+  margin: 8px;
+  padding: 5px 6px 7px 12px;
+}
+
+.reveal .ionic-blue,
+.reveal .ionic-blue * {
+  text-shadow: none;
+  color: #313744;
+}
+
+.reveal .col {
+  float: left;
+  width: 50%;
+}
+
+.reveal .col.preview {
+  width: 35%;
+}
+
+.reveal .col.code {
+  width: 65%;
+  text-align: left;
+}
+
+.reveal .col.code > * {
+  margin-left: 40px;
+}
+
+.reveal .demo-frame {
+  background: url("../img/demo-bg.png") no-repeat;
+  background-size: 340px;
+  height: 700px;
+  margin-top: 0;
+  margin-left: -15px;
+  min-width: 345px;
+}
+
+.reveal .demo-frame iframe {
+  position: absolute;
+  left: 7px;
+  top: 98px;
+  width: 296px;
+  height: 527px;
+}
+
+.reveal pre code {
+  background-color: #1B2B34;
+}
+
+.reveal .headshot {
+  border-radius: 50%;
+  border: 5px solid #202532;
+  width: 200px;
+}
+
+.reveal a {
+  color: white;
+  text-decoration: none;
+  transition: color 0.15s ease;
+}
+
+.reveal a:not(.icon)::after {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  height: 1px;
+  background: #fff;
+  content: '';
+  opacity: 0;
+  -webkit-transition: opacity 0.3s, -webkit-transform 0.3s;
+  -moz-transition: opacity 0.3s, -moz-transform 0.3s;
+  transition: opacity 0.3s, transform 0.3s;
+  -webkit-transform: translateY(10px);
+  -moz-transform: translateY(10px);
+  transform: translateY(10px);
+}
+
+.reveal a:not(.icon):hover::after,
+.reveal a:not(.icon):focus::after {
+  opacity: 0.5;
+  -webkit-transform: translateY(0px);
+  -moz-transform: translateY(0px);
+  transform: translateY(0px);
+}
+
+.reveal .icon {
+  -webkit-transition: all 0.5s ease-out !important;
+  -moz-transition: all 0.5s ease-out !important;
+  -ms-transition: all 0.5s ease-out !important;
+  -o-transition: all 0.5s ease-out !important;
+  transition: all 0.5s ease-out !important;
+  opacity: 0.5;
+}
+
+.reveal .icon:hover {
+  opacity: 1;
+}
+
+.reveal .blur {
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+.reveal .blur p {
+  text-shadow: -2px 2px 0 #000;
+  font-weight: bold;
+}
+
+.reveal .demo {
+  margin-left: 15px;
+}
+
+.reveal .demo .demo-buttons {
+  position: absolute;
+  z-index: 124;
+  right: 0;
+}
+
+.reveal .demo .button {
+  background-color: white;
+  border: none;
+}
+
+.reveal .code-left {
+  width: 60%;
+  text-align: left;
+}
+
+.reveal .flex {
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+}
+
+.reveal [flex] {
+  display: flex;
+}
+
+.reveal [col] {
+  flex: 1;
+  text-align: left;
+  padding-right: 40px;
+}
+
+.reveal [center] {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.reveal [col][center] img {
+  max-height: 420px;
+}
+
+.reveal pre[col],
+.reveal pre code {
+  background-color: #22272f;
+  font-size: 20px;
+  line-height: 26px;
+}
+
+.reveal pre[col] {
+  margin: 0;
+  padding: 30px;
+}
+
+.reveal [col][demo] {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.reveal .demo-ios {
+  position: relative;
+  margin-top: -20px;
+  background: url("../../img/devices-sprite-transparent.png") no-repeat;
+  background-size: 455px 1559px;
+  width: 460px;
+  height: 740px;
+}
+
+.reveal .demo-ios iframe {
+  position: absolute;
+  top: 75px;
+  left: 69px;
+  width: 320px;
+  height: 560px;
+}
+
+.reveal .demo-md {
+  position: relative;
+  background: url("../../img/devices-sprite-transparent.png") no-repeat 0px -775px;
+  background-size: 455px 1559px;
+  width: 460px;
+  height: 780px;
+}
+
+.reveal .demo-md iframe {
+  position: absolute;
+  top: 67px;
+  left: 52px;
+  width: 350px;
+  height: 572px;
+}
+
+.reveal iframe {
+  max-width: 100%;
+  max-height: 100%;
+  overflow: hidden;
+}

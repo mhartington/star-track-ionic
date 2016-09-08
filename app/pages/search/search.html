@@ -9,19 +9,18 @@
 
 
 <ion-content light>
-
-  <form [formGroup]="form" #f="ngForm" (ngSubmit)="search()">
+  <form [formGroup]="form" (ngSubmit)="search()">
     <ion-list>
 
       <ion-item>
-        <ion-input type="text" formControlName="term"></ion-input>
         <ion-label>Search</ion-label>
+        <ion-input type="text" formControlName="term"></ion-input>
       </ion-item>
     </ion-list>
 
-    <ion-list radio-group formControlName="filter" >
+    <ion-list radio-group formControlName="filter">
       <ion-list-header>
-        Language
+        Filter
       </ion-list-header>
 
       <ion-item>
@@ -46,7 +45,7 @@
 
     </ion-list>
     <div padding>
-      <button block secondary type="submit" [disabled]="!f.form.valid">Find Tracks</button>
+      <button block secondary type="submit" [disabled]="!form.valid">Find Tracks</button>
     </div>
   </form>
 </ion-content>
