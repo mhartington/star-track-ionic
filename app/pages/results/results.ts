@@ -6,7 +6,7 @@ import { Moment } from '../../pipes/moment';
 @Component({
   templateUrl: 'build/pages/results/results.html',
   providers: [SpotifyService],
-  pipes: [Moment]
+  pipes: [Moment],
 })
 export class ResultsPage {
   query = this.params.get('search');
@@ -27,17 +27,4 @@ export class ResultsPage {
       'track': track
     });
   }
-
-  // doInfinite(infiniteScroll) {
-  //   this.spotify.load(this.query).subscribe(
-  //     (res) => {
-  //       for (let newTracks of res.tracks.items) {
-  //         this.listing.push(newTracks);
-  //       }
-  //     },
-  //     err => console.log(err),
-  //     () => infiniteScroll.complete()
-  //     );
-  //
-  // }
 }

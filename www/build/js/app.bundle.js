@@ -50,12 +50,6 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 };
 var ionic_angular_1 = require('ionic-angular');
 var core_1 = require('@angular/core');
-/*
-  Generated class for the FavoritePage page.
-
-  See http://ionicframework.com/docs/v2/components/#navigation for more info on
-  Ionic pages and navigation.
-*/
 var FavoritePage = (function () {
     function FavoritePage(nav) {
         this.nav = nav;
@@ -146,7 +140,7 @@ var ResultsPage = (function () {
         core_1.Component({
             templateUrl: 'build/pages/results/results.html',
             providers: [spotify_service_1.SpotifyService],
-            pipes: [moment_1.Moment]
+            pipes: [moment_1.Moment],
         }), 
         __metadata('design:paramtypes', [ionic_angular_1.NavParams, spotify_service_1.SpotifyService, ionic_angular_1.NavController])
     ], ResultsPage);

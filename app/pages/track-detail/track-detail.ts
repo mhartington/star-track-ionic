@@ -1,7 +1,7 @@
 import {Component, ViewChild} from '@angular/core';
 import {NavController, NavParams, Events, Storage, LocalStorage} from 'ionic-angular';
-import {Moment} from '../../pipes/moment'
-import {SpotifyService} from '../../providers/spotify-service/spotify-service'
+import {Moment} from '../../pipes/moment';
+import {SpotifyService} from '../../providers/spotify-service/spotify-service';
 @Component({
   templateUrl: 'build/pages/track-detail/track-detail.html',
   pipes: [Moment],
@@ -19,7 +19,7 @@ export class TrackDetailPage {
     private events: Events,
     private spotify: SpotifyService
   ) {
-    console.log(this.track.preview_url)
+    console.log(this.track.preview_url);
   }
   ionViewWillLeave() {
     this.stopSong();

@@ -5,6 +5,8 @@
 // --------------------------------------------------
 // Shared Sass variables go in the app.variables.scss file
 @import 'app.variables';
+$toolbar-wp-background:                   map-get($colors, light) !default;
+$toolbar-wp-button-color:                 map-get($colors, secondary) !default;
 
 
 // App Windows Variables

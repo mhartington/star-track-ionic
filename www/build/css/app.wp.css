@@ -7587,7 +7587,7 @@ tab-highlight {
   right: calc(50% - 50px); }
 
 ion-tabbar {
-  background: #f8f8f8; }
+  background: #f4f4f4; }
 
 .tab-button {
   padding: 12px 10px 5px 10px;
@@ -7994,7 +7994,7 @@ ion-navbar.toolbar {
 
 .toolbar-background {
   border-color: #b2b2b2;
-  background: #f8f8f8; }
+  background: #f4f4f4; }
 
 .toolbar-content {
   -webkit-box-flex: 1;
@@ -8066,23 +8066,23 @@ ion-buttons[right] {
 .bar-button-outline {
   border-width: 1px;
   border-style: solid;
-  border-color: #000;
-  color: #000;
+  border-color: #32db64;
+  color: #32db64;
   background-color: transparent; }
   .bar-button-outline:hover:not(.disable-hover) {
     opacity: .4; }
   .bar-button-outline.activated {
     color: #fff;
-    background-color: #000; }
+    background-color: #32db64; }
 
 .bar-button-solid {
   color: #fff;
-  background-color: #000; }
+  background-color: #32db64; }
   .bar-button-solid:hover:not(.disable-hover) {
     color: #fff; }
   .bar-button-solid.activated {
     color: #fff;
-    background-color: #141414; }
+    background-color: #2ec95c; }
 
 .bar-button-icon-left ion-icon {
   padding-right: .3em;
@@ -8139,10 +8139,10 @@ ion-buttons[right] {
   min-width: 28px; }
 
 .bar-button-default {
-  color: #000;
+  color: #32db64;
   background-color: transparent; }
   .bar-button-default:hover:not(.disable-hover) {
-    color: #000; }
+    color: #32db64; }
 
 .toolbar[primary] .toolbar-background {
   background: #387ef5; }

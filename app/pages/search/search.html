@@ -10,8 +10,8 @@
 
 <ion-content light>
   <form [formGroup]="form" (ngSubmit)="search()">
-    <ion-list>
 
+    <ion-list>
       <ion-item>
         <ion-label>Search</ion-label>
         <ion-input type="text" formControlName="term"></ion-input>
@@ -44,8 +44,11 @@
       </ion-item>
 
     </ion-list>
+
     <div padding>
       <button block secondary type="submit" [disabled]="!form.valid">Find Tracks</button>
     </div>
+
+
   </form>
 </ion-content>

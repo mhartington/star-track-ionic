@@ -15,8 +15,7 @@ export class SearchPage {
   constructor(
     private nav: NavController,
     public formBuilder: FormBuilder
-  ) {
-  }
+  ) {}
   search() {
     this.nav.push(ResultsPage, {
       'search': this.form.value

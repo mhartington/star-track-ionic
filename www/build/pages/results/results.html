@@ -1,12 +1,11 @@
 <ion-header>
-  <ion-navbar [attr.secondary]="isAndroid ? '' : null">
+  <ion-navbar>
     <ion-title>Results</ion-title>
   </ion-navbar>
 </ion-header>
 
-
-
 <ion-content>
+
   <ion-list>
     <a ion-item *ngFor="let track of listing" detail-none (click)="detail(track)">
       <ion-thumbnail item-left>
@@ -20,4 +19,5 @@
       </ion-note>
     </a>
   </ion-list>
+
 </ion-content>
