@@ -2,10 +2,11 @@ import {Component, ViewChild} from '@angular/core';
 import {NavController, NavParams, Events, Storage, LocalStorage} from 'ionic-angular';
 import {Moment} from '../../pipes/moment';
 import {SpotifyService} from '../../providers/spotify-service/spotify-service';
+import {NativeMedia} from '../../providers/native-media/native-media';
 @Component({
   templateUrl: 'build/pages/track-detail/track-detail.html',
   pipes: [Moment],
-  providers: [SpotifyService]
+  providers: [NativeMedia]
 })
 export class TrackDetailPage {
   track = this.params.get('track');
@@ -17,7 +18,7 @@ export class TrackDetailPage {
     private nav: NavController,
     private params: NavParams,
     private events: Events,
-    private spotify: SpotifyService
+    private nativeMedia: NativeMedia
   ) {
     console.log(this.track.preview_url);
   }
@@ -33,6 +34,7 @@ export class TrackDetailPage {
   }
 
   playSong() {
+    this.nativeMedia.createMediaControls(this.track);
     this.ifPlaying = true
     this.audio.nativeElement.play();
   }

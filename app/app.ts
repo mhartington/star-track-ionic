@@ -2,6 +2,8 @@ import { ionicBootstrap, Platform } from 'ionic-angular';
 import { Component } from '@angular/core';
 import { StatusBar, Keyboard, Splashscreen } from 'ionic-native';
 import { MenuPage } from './pages/menu/menu';
+import {AudioProvider} from 'ionic-audio/dist/ionic-audio';
+import {Type, provide} from '@angular/core';
 
 
 @Component({
@@ -16,7 +18,7 @@ class MyApp {
       if (platform.is('ios')) {
         StatusBar.styleDefault();
       } else if (platform.is('android')) {
-        StatusBar.backgroundColorByHexString('#249e48');
+        StatusBar.backgroundColorByHexString('#1d833c');
       }
     });
 

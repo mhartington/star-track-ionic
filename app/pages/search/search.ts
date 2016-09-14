@@ -9,7 +9,7 @@ import { Validators, FormBuilder } from '@angular/forms';
 
 export class SearchPage {
   private form = this.formBuilder.group({
-    'term': ['', Validators.required],
+    'term': ['Senses Fail', Validators.required],
     'filter': ['everything']
   });
   constructor(
