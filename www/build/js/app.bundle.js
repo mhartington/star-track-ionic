@@ -37,7 +37,7 @@ var MyApp = (function () {
 }());
 ionic_angular_1.ionicBootstrap(MyApp);
 
-},{"./pages/menu/menu":3,"@angular/core":157,"ionic-angular":471,"ionic-native":506}],2:[function(require,module,exports){
+},{"./pages/menu/menu":3,"@angular/core":157,"ionic-angular":471,"ionic-native":498}],2:[function(require,module,exports){
 "use strict";
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
@@ -168,7 +168,7 @@ var SearchPage = (function () {
         this.nav = nav;
         this.formBuilder = formBuilder;
         this.form = this.formBuilder.group({
-            'term': ['Senses Fail', forms_1.Validators.required],
+            'term': ['', forms_1.Validators.required],
             'filter': ['everything']
         });
     }
@@ -366,7 +366,7 @@ var NativeMedia = (function () {
 }());
 exports.NativeMedia = NativeMedia;
 
-},{"@angular/core":157,"ionic-angular":471,"rxjs/add/operator/map":631}],9:[function(require,module,exports){
+},{"@angular/core":157,"ionic-angular":471,"rxjs/add/operator/map":623}],9:[function(require,module,exports){
 "use strict";
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
@@ -403,7 +403,7 @@ var SpotifyService = (function () {
 }());
 exports.SpotifyService = SpotifyService;
 
-},{"@angular/core":157,"@angular/http":284,"rxjs/add/operator/map":631}],10:[function(require,module,exports){
+},{"@angular/core":157,"@angular/http":284,"rxjs/add/operator/map":623}],10:[function(require,module,exports){
 /**
  * @license
  * Copyright Google Inc. All Rights Reserved.
@@ -1486,7 +1486,7 @@ var EventEmitter = (function (_super) {
 }(Subject_1.Subject));
 exports.EventEmitter = EventEmitter;
 
-},{"./lang":27,"./promise":28,"rxjs/Observable":568,"rxjs/Subject":574,"rxjs/observable/PromiseObservable":697,"rxjs/operator/toPromise":795}],22:[function(require,module,exports){
+},{"./lang":27,"./promise":28,"rxjs/Observable":560,"rxjs/Subject":566,"rxjs/observable/PromiseObservable":689,"rxjs/operator/toPromise":787}],22:[function(require,module,exports){
 /**
  * @license
  * Copyright Google Inc. All Rights Reserved.
@@ -11032,7 +11032,7 @@ var SimpleExpressionChecker = (function () {
 
 },{"../chars":83,"../facade/collection":95,"../facade/exceptions":97,"../facade/lang":98,"../interpolation_config":112,"./ast":90,"./lexer":91,"@angular/core":157}],93:[function(require,module,exports){
 arguments[4][21][0].apply(exports,arguments)
-},{"./lang":98,"./promise":100,"dup":21,"rxjs/Observable":568,"rxjs/Subject":574,"rxjs/observable/PromiseObservable":697,"rxjs/operator/toPromise":795}],94:[function(require,module,exports){
+},{"./lang":98,"./promise":100,"dup":21,"rxjs/Observable":560,"rxjs/Subject":566,"rxjs/observable/PromiseObservable":689,"rxjs/operator/toPromise":787}],94:[function(require,module,exports){
 arguments[4][22][0].apply(exports,arguments)
 },{"dup":22}],95:[function(require,module,exports){
 arguments[4][23][0].apply(exports,arguments)
@@ -30171,7 +30171,7 @@ function _createDependency(token /** TODO #9100 */, optional /** TODO #9100 */, 
 
 },{"../facade/collection":198,"../facade/lang":201,"../reflection/reflection":233,"./forward_ref":186,"./metadata":188,"./provider":190,"./provider_util":191,"./reflective_exceptions":192,"./reflective_key":194}],196:[function(require,module,exports){
 arguments[4][21][0].apply(exports,arguments)
-},{"./lang":201,"./promise":203,"dup":21,"rxjs/Observable":568,"rxjs/Subject":574,"rxjs/observable/PromiseObservable":697,"rxjs/operator/toPromise":795}],197:[function(require,module,exports){
+},{"./lang":201,"./promise":203,"dup":21,"rxjs/Observable":560,"rxjs/Subject":566,"rxjs/observable/PromiseObservable":689,"rxjs/operator/toPromise":787}],197:[function(require,module,exports){
 arguments[4][22][0].apply(exports,arguments)
 },{"dup":22}],198:[function(require,module,exports){
 arguments[4][23][0].apply(exports,arguments)
@@ -39498,7 +39498,7 @@ exports.PatternValidator = PatternValidator;
 
 },{"../facade/lang":276,"../validators":282,"@angular/core":157}],271:[function(require,module,exports){
 arguments[4][21][0].apply(exports,arguments)
-},{"./lang":276,"./promise":277,"dup":21,"rxjs/Observable":568,"rxjs/Subject":574,"rxjs/observable/PromiseObservable":697,"rxjs/operator/toPromise":795}],272:[function(require,module,exports){
+},{"./lang":276,"./promise":277,"dup":21,"rxjs/Observable":560,"rxjs/Subject":566,"rxjs/observable/PromiseObservable":689,"rxjs/operator/toPromise":787}],272:[function(require,module,exports){
 arguments[4][22][0].apply(exports,arguments)
 },{"dup":22}],273:[function(require,module,exports){
 arguments[4][23][0].apply(exports,arguments)
@@ -41492,7 +41492,7 @@ var JSONPBackend_ = (function (_super) {
 }(JSONPBackend));
 exports.JSONPBackend_ = JSONPBackend_;
 
-},{"../base_response_options":290,"../enums":291,"../facade/exceptions":295,"../facade/lang":296,"../interfaces":300,"../static_response":302,"./browser_jsonp":285,"@angular/core":157,"rxjs/Observable":568}],288:[function(require,module,exports){
+},{"../base_response_options":290,"../enums":291,"../facade/exceptions":295,"../facade/lang":296,"../interfaces":300,"../static_response":302,"./browser_jsonp":285,"@angular/core":157,"rxjs/Observable":560}],288:[function(require,module,exports){
 /**
  * @license
  * Copyright Google Inc. All Rights Reserved.
@@ -41674,7 +41674,7 @@ var XHRBackend = (function () {
 }());
 exports.XHRBackend = XHRBackend;
 
-},{"../base_response_options":290,"../enums":291,"../facade/lang":296,"../headers":297,"../http_utils":299,"../interfaces":300,"../static_response":302,"./browser_xhr":286,"@angular/core":157,"@angular/platform-browser":316,"rxjs/Observable":568}],289:[function(require,module,exports){
+},{"../base_response_options":290,"../enums":291,"../facade/lang":296,"../headers":297,"../http_utils":299,"../interfaces":300,"../static_response":302,"./browser_xhr":286,"@angular/core":157,"@angular/platform-browser":316,"rxjs/Observable":560}],289:[function(require,module,exports){
 /**
  * @license
  * Copyright Google Inc. All Rights Reserved.
@@ -43451,7 +43451,7 @@ exports.bootstrapWorkerApp = bootstrapWorkerApp;
 
 },{"./core_private":304,"./src/facade/async":306,"./src/facade/lang":311,"./src/xhr/xhr_cache":313,"./src/xhr/xhr_impl":314,"@angular/common":10,"@angular/compiler":76,"@angular/core":157,"@angular/platform-browser":316}],306:[function(require,module,exports){
 arguments[4][21][0].apply(exports,arguments)
-},{"./lang":311,"./promise":312,"dup":21,"rxjs/Observable":568,"rxjs/Subject":574,"rxjs/observable/PromiseObservable":697,"rxjs/operator/toPromise":795}],307:[function(require,module,exports){
+},{"./lang":311,"./promise":312,"dup":21,"rxjs/Observable":560,"rxjs/Subject":566,"rxjs/observable/PromiseObservable":689,"rxjs/operator/toPromise":787}],307:[function(require,module,exports){
 arguments[4][22][0].apply(exports,arguments)
 },{"dup":22}],308:[function(require,module,exports){
 arguments[4][23][0].apply(exports,arguments)
@@ -46287,7 +46287,7 @@ exports.WebAnimationsPlayer = WebAnimationsPlayer;
 
 },{"../facade/lang":347}],341:[function(require,module,exports){
 arguments[4][21][0].apply(exports,arguments)
-},{"./lang":347,"./promise":348,"dup":21,"rxjs/Observable":568,"rxjs/Subject":574,"rxjs/observable/PromiseObservable":697,"rxjs/operator/toPromise":795}],342:[function(require,module,exports){
+},{"./lang":347,"./promise":348,"dup":21,"rxjs/Observable":560,"rxjs/Subject":566,"rxjs/observable/PromiseObservable":689,"rxjs/operator/toPromise":787}],342:[function(require,module,exports){
 arguments[4][22][0].apply(exports,arguments)
 },{"dup":22}],343:[function(require,module,exports){
 /**
@@ -82691,1245 +82691,6 @@ exports.reorderArray = reorderArray;
 
 },{}],498:[function(require,module,exports){
 "use strict";
-var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
-    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
-    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
-    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
-    return c > 3 && r && Object.defineProperty(target, key, r), r;
-};
-var __metadata = (this && this.__metadata) || function (k, v) {
-    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
-};
-var core_1 = require('@angular/core');
-/**
- * Cordova Media audio track
- *
- * @export
- * @class CordovaAudioTrack
- * @constructor
- * @implements {IAudioTrack}
- */
-var CordovaAudioTrack = (function () {
-    function CordovaAudioTrack(src) {
-        this.src = src;
-        this.isPlaying = false;
-        this.isFinished = false;
-        this._progress = 0;
-        this._completed = 0;
-        if (window['cordova'] === undefined || window['Media'] === undefined) {
-            console.log('Cordova Media is not available');
-            return;
-        }
-        ;
-        this.createAudio();
-    }
-    CordovaAudioTrack.prototype.createAudio = function () {
-        var _this = this;
-        this.audio = new Media(this.src, function () {
-            console.log('Finished playback');
-            _this.stopTimer();
-            _this.isFinished = true;
-            _this.destroy(); // TODO add parameter to control whether to release audio on stop or finished
-        }, function (err) {
-            console.log("Audio error => track " + _this.src, err);
-        }, function (status) {
-            switch (status) {
-                case Media.MEDIA_STARTING:
-                    console.log("Loaded track " + _this.src);
-                    _this._hasLoaded = true;
-                    break;
-                case Media.MEDIA_RUNNING:
-                    console.log("Playing track " + _this.src);
-                    _this.isPlaying = true;
-                    _this._isLoading = false;
-                    break;
-                case Media.MEDIA_PAUSED:
-                    _this.isPlaying = false;
-                    break;
-                case Media.MEDIA_STOPPED:
-                    _this.isPlaying = false;
-                    break;
-            }
-        });
-    };
-    CordovaAudioTrack.prototype.startTimer = function () {
-        var _this = this;
-        this._timer = setInterval(function () {
-            if (_this._duration === undefined || _this._duration < 0) {
-                _this._duration = Math.round(_this.audio.getDuration() * 100) / 100;
-            }
-            _this.audio.getCurrentPosition(function (position) {
-                if (position > -1) {
-                    _this._progress = Math.round(position * 100) / 100;
-                    _this._completed = _this._duration > 0 ? Math.round(_this._progress / _this._duration * 100) / 100 : 0;
-                }
-            }, function (e) {
-                console.log("Error getting position", e);
-            });
-        }, 1000);
-    };
-    CordovaAudioTrack.prototype.stopTimer = function () {
-        clearInterval(this._timer);
-    };
-    Object.defineProperty(CordovaAudioTrack.prototype, "id", {
-        /** public members */
-        /**
-       * Gets the track id
-       *
-       * @property id
-       * @type {number}
-       */
-        get: function () {
-            return this._id;
-        },
-        /**
-       * Sets the track id
-       *
-       * @property id
-       */
-        set: function (v) {
-            this._id = v;
-        },
-        enumerable: true,
-        configurable: true
-    });
-    Object.defineProperty(CordovaAudioTrack.prototype, "duration", {
-        /**
-       * Gets the track duration, or -1 if it cannot be determined
-       *
-       * @property duration
-       * @readonly
-       * @type {number}
-       */
-        get: function () {
-            return this._duration;
-        },
-        enumerable: true,
-        configurable: true
-    });
-    Object.defineProperty(CordovaAudioTrack.prototype, "progress", {
-        /**
-       * Gets current track time (progress)
-       *
-       * @property progress
-       * @readonly
-       * @type {number}
-       */
-        get: function () {
-            return this._progress;
-        },
-        enumerable: true,
-        configurable: true
-    });
-    Object.defineProperty(CordovaAudioTrack.prototype, "completed", {
-        /**
-       * Gets current track progress as a percentage
-       *
-       * @property completed
-       * @readonly
-       * @type {number}
-       */
-        get: function () {
-            return this._completed;
-        },
-        enumerable: true,
-        configurable: true
-    });
-    Object.defineProperty(CordovaAudioTrack.prototype, "error", {
-        /**
-         * Gets any errors logged by HTML5 audio
-         *
-         * @property error
-         * @readonly
-         * @type {MediaError}
-         */
-        get: function () {
-            return this.audio.error;
-        },
-        enumerable: true,
-        configurable: true
-    });
-    Object.defineProperty(CordovaAudioTrack.prototype, "canPlay", {
-        /**
-       * Gets a boolean value indicating whether the current source can be played
-       *
-       * @property canPlay
-       * @readonly
-       * @type {boolean}
-       */
-        get: function () {
-            return true;
-        },
-        enumerable: true,
-        configurable: true
-    });
-    Object.defineProperty(CordovaAudioTrack.prototype, "isLoading", {
-        /**
-       * Gets a boolean value indicating whether the track is in loading state
-       *
-       * @property isLoading
-       * @readonly
-       * @type {boolean}
-       */
-        get: function () {
-            return this._isLoading;
-        },
-        enumerable: true,
-        configurable: true
-    });
-    Object.defineProperty(CordovaAudioTrack.prototype, "hasLoaded", {
-        /**
-       * Gets a boolean value indicating whether the track has finished loading
-       *
-       * @property hadLoaded
-       * @readonly
-       * @type {boolean}
-       */
-        get: function () {
-            return this._hasLoaded;
-        },
-        enumerable: true,
-        configurable: true
-    });
-    /**
-   * Plays current track
-   *
-   * @method play
-   */
-    CordovaAudioTrack.prototype.play = function () {
-        if (!this.audio) {
-            this.createAudio();
-        }
-        if (!this._hasLoaded) {
-            console.log("Loading track " + this.src);
-            this._isLoading = true;
-        }
-        this.audio.play();
-        this.startTimer();
-    };
-    /**
-   * Pauses current track
-   *
-   * @method pause
-   */
-    CordovaAudioTrack.prototype.pause = function () {
-        if (!this.isPlaying)
-            return;
-        console.log("Pausing track " + this.src);
-        this.audio.pause();
-        this.stopTimer();
-    };
-    /**
-   * Stops current track and releases audio
-   *
-   * @method stop
-   */
-    CordovaAudioTrack.prototype.stop = function () {
-        this.audio.stop(); // calls Media onSuccess callback
-    };
-    /**
-   * Seeks to a new position within the track
-   *
-   * @method seekTo
-   * @param {number} time the new position (milliseconds) to seek to
-   */
-    CordovaAudioTrack.prototype.seekTo = function (time) {
-        // Cordova Media reports duration and progress as seconds, so we need to multiply by 1000
-        this.audio.seekTo(time * 1000);
-    };
-    /**
-     * Releases audio resources
-     *
-     * @method destroy
-     */
-    CordovaAudioTrack.prototype.destroy = function () {
-        this.audio.release();
-        console.log("Released track " + this.src);
-    };
-    CordovaAudioTrack = __decorate([
-        core_1.Injectable(), 
-        __metadata('design:paramtypes', [String])
-    ], CordovaAudioTrack);
-    return CordovaAudioTrack;
-}());
-exports.CordovaAudioTrack = CordovaAudioTrack;
-
-},{"@angular/core":157}],499:[function(require,module,exports){
-"use strict";
-var __extends = (this && this.__extends) || function (d, b) {
-    for (var p in b) if (b.hasOwnProperty(p)) d[p] = b[p];
-    function __() { this.constructor = d; }
-    d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
-};
-var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
-    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
-    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
-    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
-    return c > 3 && r && Object.defineProperty(target, key, r), r;
-};
-var __metadata = (this && this.__metadata) || function (k, v) {
-    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
-};
-var core_1 = require('@angular/core');
-var ionic_audio_web_track_1 = require('./ionic-audio-web-track');
-var ionic_audio_cordova_track_1 = require('./ionic-audio-cordova-track');
-/**
- * Base class for audio providers
- *
- * @export
- * @abstract
- * @class AudioProvider
- * @implements {IAudioProvider}
- */
-var AudioProvider = (function () {
-    function AudioProvider() {
-    }
-    /**
-     * Creates an audio provider based on the environment.
-     * If running from within a browser, then defaults to HTML5 Audio. If running on a device, it will check for Cordova and Media plugins and use
-     * a native audio player, otherwise falls back to HTML5 audio.
-     *
-     * @method factory
-     * @static
-     * @return {IAudioProvider} An IAudioProvider instance
-     */
-    AudioProvider.factory = function () {
-        return window.hasOwnProperty('cordova') && window.hasOwnProperty('Media') ? new CordovaMediaProvider() : new WebAudioProvider();
-    };
-    /**
-     * Creates an IAudioTrack instance from a JSON object.
-     * Not implemented in base class.
-     *
-     * @method create
-     * @param {ITrackConstraint} track A JSON object containing at least a src property
-     * @return null
-     */
-    AudioProvider.prototype.create = function (track) {
-        console.error('Not implemented in base class');
-        return null;
-    };
-    /**
-     * Adds an existing IAudioTrack instance to the array of managed tracks.
-     *
-     * @method add
-     * @param {IAudioTrack} audioTrack An instance of IAudioTrack
-     */
-    AudioProvider.prototype.add = function (audioTrack) {
-        AudioProvider.tracks.push(audioTrack);
-    };
-    ;
-    /**
-     * Plays a given track.
-     *
-     * @method play
-     * @param {number} index The track id
-     */
-    AudioProvider.prototype.play = function (index) {
-        if (index === undefined || index > AudioProvider.tracks.length - 1)
-            return;
-        this._current = index;
-        AudioProvider.tracks[index].play();
-    };
-    ;
-    /**
-     * Pauses a given track.
-     *
-     * @method pause
-     * @param {number} [index] The track id, or if undefined it will pause whichever track currently playing
-     */
-    AudioProvider.prototype.pause = function (index) {
-        if (this._current === undefined || index > AudioProvider.tracks.length - 1)
-            return;
-        index = index || this._current;
-        AudioProvider.tracks[index].pause();
-    };
-    ;
-    /**
-     * Stops a given track.
-     *
-     * @method stop
-     * @param {number} [index] The track id, or if undefined it will stop whichever track currently playing
-     */
-    AudioProvider.prototype.stop = function (index) {
-        if (this._current === undefined || index > AudioProvider.tracks.length - 1)
-            return;
-        index = index || this._current;
-        AudioProvider.tracks[index].stop();
-        this._current = undefined;
-    };
-    ;
-    Object.defineProperty(AudioProvider.prototype, "tracks", {
-        /**
-         * Gets an array of tracks managed by this provider
-         *
-         * @property tracks
-         * @readonly
-         * @type {IAudioTrack[]}
-         */
-        get: function () {
-            return AudioProvider.tracks;
-        },
-        enumerable: true,
-        configurable: true
-    });
-    Object.defineProperty(AudioProvider.prototype, "current", {
-        /**
-         * Gets current track id
-         *
-         * @property current
-         * @type {number}
-         */
-        get: function () {
-            return this._current;
-        },
-        /**
-         * Sets current track id
-         *
-         * @property current
-         */
-        set: function (v) {
-            this._current = v;
-        },
-        enumerable: true,
-        configurable: true
-    });
-    AudioProvider.tracks = [];
-    AudioProvider = __decorate([
-        core_1.Injectable(), 
-        __metadata('design:paramtypes', [])
-    ], AudioProvider);
-    return AudioProvider;
-}());
-exports.AudioProvider = AudioProvider;
-/**
- * Creates an HTML5 audio provider
- *
- * @export
- * @class WebAudioProvider
- * @constructor
- * @extends {AudioProvider}
- */
-var WebAudioProvider = (function (_super) {
-    __extends(WebAudioProvider, _super);
-    function WebAudioProvider() {
-        _super.call(this);
-        console.log('Using Web Audio provider');
-    }
-    WebAudioProvider.prototype.create = function (track) {
-        var audioTrack = new ionic_audio_web_track_1.WebAudioTrack(track.src, track.preload);
-        Object.assign(audioTrack, track);
-        var trackId = WebAudioProvider.tracks.push(audioTrack);
-        audioTrack.id = trackId - 1;
-        return audioTrack;
-    };
-    WebAudioProvider = __decorate([
-        core_1.Injectable(), 
-        __metadata('design:paramtypes', [])
-    ], WebAudioProvider);
-    return WebAudioProvider;
-}(AudioProvider));
-exports.WebAudioProvider = WebAudioProvider;
-/**
- * Creates a Cordova audio provider
- *
- * @export
- * @class CordovaMediaProvider
- * @constructor
- * @extends {AudioProvider}
- */
-var CordovaMediaProvider = (function (_super) {
-    __extends(CordovaMediaProvider, _super);
-    function CordovaMediaProvider() {
-        _super.call(this);
-        console.log('Using Cordova Media provider');
-    }
-    CordovaMediaProvider.prototype.create = function (track) {
-        var audioTrack = new ionic_audio_cordova_track_1.CordovaAudioTrack(track.src);
-        Object.assign(audioTrack, track);
-        var trackId = CordovaMediaProvider.tracks.push(audioTrack);
-        audioTrack.id = trackId - 1;
-        return audioTrack;
-    };
-    CordovaMediaProvider = __decorate([
-        core_1.Injectable(), 
-        __metadata('design:paramtypes', [])
-    ], CordovaMediaProvider);
-    return CordovaMediaProvider;
-}(AudioProvider));
-exports.CordovaMediaProvider = CordovaMediaProvider;
-
-},{"./ionic-audio-cordova-track":498,"./ionic-audio-web-track":504,"@angular/core":157}],500:[function(require,module,exports){
-"use strict";
-var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
-    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
-    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
-    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
-    return c > 3 && r && Object.defineProperty(target, key, r), r;
-};
-var __metadata = (this && this.__metadata) || function (k, v) {
-    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
-};
-var core_1 = require('@angular/core');
-/**
- * A pipe to convert milliseconds to a string representation
- *
- * @export
- * @class AudioTimePipe
- * @implements {PipeTransform}
- */
-var AudioTimePipe = (function () {
-    function AudioTimePipe() {
-    }
-    /**
-     * Transforms milliseconds to hh:mm:ss
-     *
-     * @method transform
-     * @param {number} [value] The milliseconds
-     * @return {string} hh:mm:ss
-     */
-    AudioTimePipe.prototype.transform = function (value) {
-        if (value === undefined || Number.isNaN(value))
-            return '';
-        var s = Math.trunc(value % 60);
-        var m = Math.trunc((value / 60) % 60);
-        var h = Math.trunc(((value / 60) / 60) % 60);
-        return h > 0 ? (h < 10 ? '0' + h : h) + ":" + (m < 10 ? '0' + m : m) + ":" + (s < 10 ? '0' + s : s) : (m < 10 ? '0' + m : m) + ":" + (s < 10 ? '0' + s : s);
-    };
-    AudioTimePipe = __decorate([
-        core_1.Pipe({ name: 'audioTime' }), 
-        __metadata('design:paramtypes', [])
-    ], AudioTimePipe);
-    return AudioTimePipe;
-}());
-exports.AudioTimePipe = AudioTimePipe;
-
-},{"@angular/core":157}],501:[function(require,module,exports){
-"use strict";
-var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
-    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
-    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
-    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
-    return c > 3 && r && Object.defineProperty(target, key, r), r;
-};
-var __metadata = (this && this.__metadata) || function (k, v) {
-    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
-};
-var ionic_audio_providers_1 = require('./ionic-audio-providers');
-var ionic_audio_web_track_1 = require('./ionic-audio-web-track');
-var ionic_audio_cordova_track_1 = require('./ionic-audio-cordova-track');
-var core_1 = require('@angular/core');
-/**
- * # ```<audio-track>```
- *
- * Creates a top level audio-track component
- *
- * ## Usage
- *
- * ````
- *   <audio-track #audio [track]="myTrack" (onFinish)="onTrackFinished($event)">
- *   ...
- *   </audio-track>
- * ````
- * @element audio-track
- * @export
- * @class AudioTrackComponent
- */
-var AudioTrackComponent = (function () {
-    function AudioTrackComponent(_audioProvider) {
-        this._audioProvider = _audioProvider;
-        /**
-         * Output property expects an event handler to be notified whenever playback finishes
-         *
-         * @property onFinish
-         * @type {EventEmitter}
-         */
-        this.onFinish = new core_1.EventEmitter();
-        this._isFinished = false;
-    }
-    AudioTrackComponent.prototype.ngOnInit = function () {
-        if (!(this.track instanceof ionic_audio_web_track_1.WebAudioTrack) && !(this.track instanceof ionic_audio_cordova_track_1.CordovaAudioTrack)) {
-            this._audioTrack = this._audioProvider.create(this.track);
-        }
-        else {
-            Object.assign(this._audioTrack, this.track);
-            this._audioProvider.add(this._audioTrack);
-        }
-        // update input track parameter with track is so we pass it to WebAudioProvider if needed
-        this.track.id = this._audioTrack.id;
-    };
-    AudioTrackComponent.prototype.play = function () {
-        this._audioTrack.play();
-        this._audioProvider.current = this._audioTrack.id;
-    };
-    AudioTrackComponent.prototype.pause = function () {
-        this._audioTrack.pause();
-        this._audioProvider.current = undefined;
-    };
-    AudioTrackComponent.prototype.toggle = function () {
-        if (this._audioTrack.isPlaying) {
-            this.pause();
-        }
-        else {
-            this.play();
-        }
-    };
-    AudioTrackComponent.prototype.seekTo = function (time) {
-        this._audioTrack.seekTo(time);
-    };
-    Object.defineProperty(AudioTrackComponent.prototype, "id", {
-        get: function () {
-            return this._audioTrack.id;
-        },
-        enumerable: true,
-        configurable: true
-    });
-    Object.defineProperty(AudioTrackComponent.prototype, "art", {
-        get: function () {
-            return this.track.art;
-        },
-        enumerable: true,
-        configurable: true
-    });
-    Object.defineProperty(AudioTrackComponent.prototype, "artist", {
-        get: function () {
-            return this.track.artist;
-        },
-        enumerable: true,
-        configurable: true
-    });
-    Object.defineProperty(AudioTrackComponent.prototype, "title", {
-        get: function () {
-            return this.track.title;
-        },
-        enumerable: true,
-        configurable: true
-    });
-    Object.defineProperty(AudioTrackComponent.prototype, "progress", {
-        get: function () {
-            return this._audioTrack.progress;
-        },
-        enumerable: true,
-        configurable: true
-    });
-    Object.defineProperty(AudioTrackComponent.prototype, "isPlaying", {
-        get: function () {
-            return this._audioTrack.isPlaying;
-        },
-        enumerable: true,
-        configurable: true
-    });
-    Object.defineProperty(AudioTrackComponent.prototype, "duration", {
-        get: function () {
-            return this._audioTrack.duration;
-        },
-        enumerable: true,
-        configurable: true
-    });
-    Object.defineProperty(AudioTrackComponent.prototype, "completed", {
-        get: function () {
-            return this._audioTrack.completed;
-        },
-        enumerable: true,
-        configurable: true
-    });
-    Object.defineProperty(AudioTrackComponent.prototype, "canPlay", {
-        get: function () {
-            return this._audioTrack.canPlay;
-        },
-        enumerable: true,
-        configurable: true
-    });
-    Object.defineProperty(AudioTrackComponent.prototype, "error", {
-        get: function () {
-            return this._audioTrack.error;
-        },
-        enumerable: true,
-        configurable: true
-    });
-    Object.defineProperty(AudioTrackComponent.prototype, "isLoading", {
-        get: function () {
-            return this._audioTrack.isLoading;
-        },
-        enumerable: true,
-        configurable: true
-    });
-    Object.defineProperty(AudioTrackComponent.prototype, "hasLoaded", {
-        get: function () {
-            return this.hasLoaded;
-        },
-        enumerable: true,
-        configurable: true
-    });
-    AudioTrackComponent.prototype.ngDoCheck = function () {
-        if (!Object.is(this._audioTrack.isFinished, this._isFinished)) {
-            // some logic here to react to the change
-            this._isFinished = this._audioTrack.isFinished;
-            // track has stopped, trigger finish event
-            if (this._isFinished) {
-                this.onFinish.emit(this.track);
-            }
-        }
-    };
-    __decorate([
-        core_1.Input(), 
-        __metadata('design:type', Object)
-    ], AudioTrackComponent.prototype, "track", void 0);
-    __decorate([
-        core_1.Output(), 
-        __metadata('design:type', Object)
-    ], AudioTrackComponent.prototype, "onFinish", void 0);
-    AudioTrackComponent = __decorate([
-        core_1.Component({
-            selector: 'audio-track',
-            template: '<ng-content></ng-content>',
-            providers: []
-        }), 
-        __metadata('design:paramtypes', [ionic_audio_providers_1.AudioProvider])
-    ], AudioTrackComponent);
-    return AudioTrackComponent;
-}());
-exports.AudioTrackComponent = AudioTrackComponent;
-
-},{"./ionic-audio-cordova-track":498,"./ionic-audio-providers":499,"./ionic-audio-web-track":504,"@angular/core":157}],502:[function(require,module,exports){
-"use strict";
-var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
-    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
-    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
-    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
-    return c > 3 && r && Object.defineProperty(target, key, r), r;
-};
-var __metadata = (this && this.__metadata) || function (k, v) {
-    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
-};
-var core_1 = require('@angular/core');
-/**
- * # ```<audio-track-play>```
- *
- * Renders a play/pause button that optionally displays a loading spinner
- *
- * ## Usage
- * ````
- * <audio-track #audio [track]="myTrack" (onFinish)="onTrackFinished($event)">
- *  <ion-item>
- *    <audio-track-play item-left [audioTrack]="audio"><ion-spinner></ion-spinner></audio-track-play>
- *    <h3>{{audio.title}}</h3>
- *  </ion-item>
- * </audio-track>
- * ````
- * If placed within a ```<ion-thumnbail>``` component it will render as a semi-transparent button layover (see live demo).
- * Passing a ```<ion-spinner>``` as a child element will display a loading spinner while loading.
- *
- * ````
- * <audio-track #audio [track]="track" (onFinish)="onTrackFinished($event)">
- *   <ion-item>
- *       <ion-thumbnail item-left>
- *         <img src="{{audio.art}}">
- *         <audio-track-play dark [audioTrack]="audio"><ion-spinner></ion-spinner></audio-track-play>
- *       </ion-thumbnail>
- *       <p><strong>{{audio.title}}</strong></p>
- *   </ion-item>
- * </audio-track>
- * ````
- *
- * @element audio-track-play
- * @parents audio-track
- * @export
- * @class AudioTrackPlayComponent
- */
-var AudioTrackPlayComponent = (function () {
-    function AudioTrackPlayComponent(el) {
-        this.el = el;
-        this._isPlaying = false;
-        this._isLoading = false;
-    }
-    Object.defineProperty(AudioTrackPlayComponent.prototype, "light", {
-        /**
-         * Renders the component using the light theme
-         *
-         * @property @Input() light
-         * @type {boolean}
-         */
-        set: function (val) {
-            this.el.nativeElement.firstElementChild.classList.add('light');
-        },
-        enumerable: true,
-        configurable: true
-    });
-    Object.defineProperty(AudioTrackPlayComponent.prototype, "dark", {
-        /**
-         * Renders the component using the dark theme
-         *
-         * @property @Input() dark
-         * @type {boolean}
-         */
-        set: function (val) {
-            this.el.nativeElement.firstElementChild.classList.add('dark');
-        },
-        enumerable: true,
-        configurable: true
-    });
-    AudioTrackPlayComponent.prototype.toggle = function () {
-        if (this.audioTrack.isPlaying) {
-            this.audioTrack.pause();
-        }
-        else {
-            this.audioTrack.play();
-        }
-    };
-    __decorate([
-        core_1.Input(), 
-        __metadata('design:type', Object)
-    ], AudioTrackPlayComponent.prototype, "audioTrack", void 0);
-    __decorate([
-        core_1.Input(), 
-        __metadata('design:type', Boolean), 
-        __metadata('design:paramtypes', [Boolean])
-    ], AudioTrackPlayComponent.prototype, "light", null);
-    __decorate([
-        core_1.Input(), 
-        __metadata('design:type', Boolean), 
-        __metadata('design:paramtypes', [Boolean])
-    ], AudioTrackPlayComponent.prototype, "dark", null);
-    AudioTrackPlayComponent = __decorate([
-        core_1.Component({
-            selector: 'audio-track-play',
-            template: "\n    <button clear (click)=\"toggle($event)\" [disabled]=\"audioTrack.error || audioTrack.isLoading\">\n      <ion-icon name=\"pause\" *ngIf=\"audioTrack.isPlaying && !audioTrack.isLoading\"></ion-icon>\n      <ion-icon name=\"play\" *ngIf=\"!audioTrack.isPlaying && !audioTrack.isLoading\"></ion-icon>\n      <ng-content *ngIf=\"audioTrack.isLoading && !audioTrack.error\"></ng-content>\n    </button>\n    "
-        }), 
-        __metadata('design:paramtypes', [core_1.ElementRef])
-    ], AudioTrackPlayComponent);
-    return AudioTrackPlayComponent;
-}());
-exports.AudioTrackPlayComponent = AudioTrackPlayComponent;
-
-},{"@angular/core":157}],503:[function(require,module,exports){
-"use strict";
-var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
-    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
-    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
-    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
-    return c > 3 && r && Object.defineProperty(target, key, r), r;
-};
-var __metadata = (this && this.__metadata) || function (k, v) {
-    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
-};
-var ionic_audio_time_pipe_1 = require('./ionic-audio-time-pipe');
-var core_1 = require('@angular/core');
-var common_1 = require('@angular/common');
-/**
- * # ```<audio-track-progress>```
- *
- * Renders a timer component displaying track progress and duration
- *
- * ## Usage
- * ````
- * <audio-track-progress [audioTrack]="track"></audio-track-progress>
- * ````
- *
- * @element audio-track-progress
- * @parents audio-track
- * @export
- * @class AudioTrackProgressComponent
- */
-var AudioTrackProgressComponent = (function () {
-    function AudioTrackProgressComponent() {
-    }
-    __decorate([
-        core_1.Input(), 
-        __metadata('design:type', Object)
-    ], AudioTrackProgressComponent.prototype, "audioTrack", void 0);
-    AudioTrackProgressComponent = __decorate([
-        core_1.Component({
-            selector: 'audio-track-progress',
-            template: '<em *ngIf="audioTrack.duration > 0">{{audioTrack.progress | audioTime}} / </em><em>{{audioTrack.duration | audioTime}}</em>',
-            pipes: [ionic_audio_time_pipe_1.AudioTimePipe]
-        }), 
-        __metadata('design:paramtypes', [])
-    ], AudioTrackProgressComponent);
-    return AudioTrackProgressComponent;
-}());
-exports.AudioTrackProgressComponent = AudioTrackProgressComponent;
-/**
- * # ```<audio-track-progress-bar>```
- *
- * Renders a progress bar with optional timer, duration and progress indicator
- *
- * ## Usage
- * ````
- *  <audio-track-progress-bar duration progress [audioTrack]="audio"></audio-track-progress-bar>
- * ````
- *
- * @element audio-track-progress-bar
- * @parents audio-track
- * @export
- * @class AudioTrackProgressBarComponent
- */
-var AudioTrackProgressBarComponent = (function () {
-    function AudioTrackProgressBarComponent(el, renderer) {
-        this.el = el;
-        this.renderer = renderer;
-        this._completed = 0;
-        this._range = 0;
-    }
-    Object.defineProperty(AudioTrackProgressBarComponent.prototype, "progress", {
-        /**
-         * Input property indicating whether to display track progress
-         *
-         * @property @Input() progress
-         * @type {boolean}
-         */
-        set: function (v) {
-            this._showProgress = true;
-        },
-        enumerable: true,
-        configurable: true
-    });
-    Object.defineProperty(AudioTrackProgressBarComponent.prototype, "duration", {
-        /**
-         * Input property indicating whether to display track duration
-         *
-         * @property @Input() duration
-         * @type {boolean}
-         */
-        set: function (v) {
-            this._showDuration = true;
-        },
-        enumerable: true,
-        configurable: true
-    });
-    AudioTrackProgressBarComponent.prototype.ngOnInit = function () {
-        this.renderer.setElementStyle(this.el.nativeElement, 'width', '100%');
-    };
-    AudioTrackProgressBarComponent.prototype.ngDoCheck = function () {
-        if (this.audioTrack.completed > 0 && !Object.is(this.audioTrack.completed, this._completed)) {
-            this._completed = this.audioTrack.completed;
-            this._range = Math.round(this._completed * 100 * 100) / 100;
-        }
-    };
-    AudioTrackProgressBarComponent.prototype.seekTo = function () {
-        var seekTo = Math.round(this.audioTrack.duration * this._range) / 100;
-        if (!Number.isNaN(seekTo))
-            this.audioTrack.seekTo(seekTo);
-    };
-    __decorate([
-        core_1.Input(), 
-        __metadata('design:type', Object)
-    ], AudioTrackProgressBarComponent.prototype, "audioTrack", void 0);
-    __decorate([
-        core_1.Input(), 
-        __metadata('design:type', Boolean), 
-        __metadata('design:paramtypes', [Boolean])
-    ], AudioTrackProgressBarComponent.prototype, "progress", null);
-    __decorate([
-        core_1.Input(), 
-        __metadata('design:type', Boolean), 
-        __metadata('design:paramtypes', [Boolean])
-    ], AudioTrackProgressBarComponent.prototype, "duration", null);
-    AudioTrackProgressBarComponent = __decorate([
-        core_1.Component({
-            selector: 'audio-track-progress-bar',
-            template: "\n    <ion-range [(ngModel)]=\"_range\" min=\"0\" max=\"100\" (ionChange)=\"seekTo()\">\n      <time *ngIf=\"_showProgress\" range-left>{{audioTrack.progress | audioTime}}</time>\n      <time *ngIf=\"_showDuration\" range-right>{{audioTrack.duration | audioTime}}</time>\n    </ion-range>\n    ",
-            pipes: [ionic_audio_time_pipe_1.AudioTimePipe],
-            directives: [common_1.NgStyle]
-        }), 
-        __metadata('design:paramtypes', [core_1.ElementRef, core_1.Renderer])
-    ], AudioTrackProgressBarComponent);
-    return AudioTrackProgressBarComponent;
-}());
-exports.AudioTrackProgressBarComponent = AudioTrackProgressBarComponent;
-
-},{"./ionic-audio-time-pipe":500,"@angular/common":10,"@angular/core":157}],504:[function(require,module,exports){
-"use strict";
-var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
-    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
-    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
-    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
-    return c > 3 && r && Object.defineProperty(target, key, r), r;
-};
-var __metadata = (this && this.__metadata) || function (k, v) {
-    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
-};
-var __param = (this && this.__param) || function (paramIndex, decorator) {
-    return function (target, key) { decorator(target, key, paramIndex); }
-};
-var core_1 = require('@angular/core');
-window.AudioContext = window['AudioContext'] || window['webkitAudioContext'];
-/**
- * Creates an HTML5 audio track
- *
- * @export
- * @class WebAudioTrack
- * @constructor
- * @implements {IAudioTrack}
- */
-var WebAudioTrack = (function () {
-    function WebAudioTrack(src, preload, ctx) {
-        // audio context not needed for now
-        // this.ctx = this.ctx || new AudioContext();
-        if (preload === void 0) { preload = 'none'; }
-        if (ctx === void 0) { ctx = undefined; }
-        this.src = src;
-        this.preload = preload;
-        this.ctx = ctx;
-        this.isPlaying = false;
-        this.isFinished = false;
-        this._progress = 0;
-        this._completed = 0;
-        this.createAudio();
-    }
-    WebAudioTrack.prototype.createAudio = function () {
-        var _this = this;
-        this.audio = new Audio();
-        this.audio.src = this.src;
-        this.audio.preload = this.preload;
-        //this.audio.controls = true;
-        //this.audio.autoplay = false;
-        this.audio.addEventListener("timeupdate", function (e) { _this.onTimeUpdate(e); }, false);
-        this.audio.addEventListener("error", function (err) {
-            console.log("Audio error => track " + _this.src, err);
-            _this.isPlaying = false;
-        }, false);
-        this.audio.addEventListener("canplay", function () {
-            console.log("Loaded track " + _this.src);
-            _this._isLoading = false;
-            _this._hasLoaded = true;
-        }, false);
-        this.audio.addEventListener("playing", function () {
-            console.log("Playing track " + _this.src);
-            _this.isFinished = false;
-            _this.isPlaying = true;
-        }, false);
-        this.audio.addEventListener("ended", function () {
-            _this.isPlaying = false;
-            _this.isFinished = true;
-            console.log('Finished playback');
-        }, false);
-        this.audio.addEventListener("durationchange", function (e) {
-            _this._duration = e.target.duration;
-        }, false);
-    };
-    WebAudioTrack.prototype.onTimeUpdate = function (e) {
-        if (this.isPlaying && this.audio.currentTime > 0) {
-            this._progress = this.audio.currentTime;
-            this._completed = this.audio.duration > 0 ? Math.trunc(this.audio.currentTime / this.audio.duration * 100) / 100 : 0;
-        }
-    };
-    WebAudioTrack.formatTime = function (value) {
-        var s = Math.trunc(value % 60);
-        var m = Math.trunc((value / 60) % 60);
-        var h = Math.trunc(((value / 60) / 60) % 60);
-        return h > 0 ? (h < 10 ? '0' + h : h) + ":" + (m < 10 ? '0' + m : m) + ":" + (s < 10 ? '0' + s : s) : (m < 10 ? '0' + m : m) + ":" + (s < 10 ? '0' + s : s);
-    };
-    Object.defineProperty(WebAudioTrack.prototype, "id", {
-        /**
-         * Gets the track id
-         *
-         * @property id
-         * @type {number}
-         */
-        get: function () {
-            return this._id;
-        },
-        /**
-         * Sets the track id
-         *
-         * @property id
-         */
-        set: function (v) {
-            this._id = v;
-        },
-        enumerable: true,
-        configurable: true
-    });
-    Object.defineProperty(WebAudioTrack.prototype, "duration", {
-        /**
-         * Gets the track duration, or -1 if it cannot be determined
-         *
-         * @property duration
-         * @readonly
-         * @type {number}
-         */
-        get: function () {
-            return this._duration;
-        },
-        enumerable: true,
-        configurable: true
-    });
-    Object.defineProperty(WebAudioTrack.prototype, "progress", {
-        /**
-         * Gets current track time (progress)
-         *
-         * @property progress
-         * @readonly
-         * @type {number}
-         */
-        get: function () {
-            return this._progress;
-        },
-        enumerable: true,
-        configurable: true
-    });
-    Object.defineProperty(WebAudioTrack.prototype, "completed", {
-        /**
-         * Gets current track progress as a percentage
-         *
-         * @property completed
-         * @readonly
-         * @type {number}
-         */
-        get: function () {
-            return this._completed;
-        },
-        enumerable: true,
-        configurable: true
-    });
-    Object.defineProperty(WebAudioTrack.prototype, "error", {
-        /**
-         * Gets any errors logged by HTML5 audio
-         *
-         * @property error
-         * @readonly
-         * @type {MediaError}
-         */
-        get: function () {
-            return this.audio.error;
-        },
-        enumerable: true,
-        configurable: true
-    });
-    Object.defineProperty(WebAudioTrack.prototype, "canPlay", {
-        /**
-         * Gets a boolean value indicating whether the current source can be played
-         *
-         * @property canPlay
-         * @readonly
-         * @type {boolean}
-         */
-        get: function () {
-            var format = "audio/" + this.audio.src.substr(this.audio.src.lastIndexOf('.') + 1);
-            return this.audio && this.audio.canPlayType(format) != '';
-        },
-        enumerable: true,
-        configurable: true
-    });
-    Object.defineProperty(WebAudioTrack.prototype, "isLoading", {
-        /**
-         * Gets a boolean value indicating whether the track is in loading state
-         *
-         * @property isLoading
-         * @readonly
-         * @type {boolean}
-         */
-        get: function () {
-            return this._isLoading;
-        },
-        enumerable: true,
-        configurable: true
-    });
-    Object.defineProperty(WebAudioTrack.prototype, "hasLoaded", {
-        /**
-         * Gets a boolean value indicating whether the track has finished loading
-         *
-         * @property hadLoaded
-         * @readonly
-         * @type {boolean}
-         */
-        get: function () {
-            return this._hasLoaded;
-        },
-        enumerable: true,
-        configurable: true
-    });
-    /**
-     * Plays current track
-     *
-     * @method play
-     */
-    WebAudioTrack.prototype.play = function () {
-        if (!this.audio) {
-            this.createAudio();
-        }
-        if (!this._hasLoaded) {
-            console.log("Loading track " + this.src);
-            this._isLoading = true;
-        }
-        //var source = this.ctx.createMediaElementSource(this.audio);  
-        //source.connect(this.ctx.destination);
-        this.audio.play();
-    };
-    /**
-     * Pauses current track
-     *
-     * @method pause
-     */
-    WebAudioTrack.prototype.pause = function () {
-        if (!this.isPlaying)
-            return;
-        console.log("Pausing track " + this.src);
-        this.audio.pause();
-        this.isPlaying = false;
-    };
-    /**
-     * Stops current track and releases audio
-     *
-     * @method stop
-     */
-    WebAudioTrack.prototype.stop = function () {
-        var _this = this;
-        if (!this.audio)
-            return;
-        this.pause();
-        this.audio.removeEventListener("timeupdate", function (e) { _this.onTimeUpdate(e); });
-        this.isFinished = true;
-        this.destroy();
-    };
-    /**
-     * Seeks to a new position within the track
-     *
-     * @method seekTo
-     * @param {number} time the new position to seek to
-     */
-    WebAudioTrack.prototype.seekTo = function (time) {
-        this.audio.currentTime = time;
-    };
-    /**
-     * Releases audio resources
-     *
-     * @method destroy
-     */
-    WebAudioTrack.prototype.destroy = function () {
-        this.audio = undefined;
-        console.log("Released track " + this.src);
-    };
-    WebAudioTrack = __decorate([
-        core_1.Injectable(),
-        __param(1, core_1.Optional()),
-        __param(2, core_1.Optional()), 
-        __metadata('design:paramtypes', [String, String, AudioContext])
-    ], WebAudioTrack);
-    return WebAudioTrack;
-}());
-exports.WebAudioTrack = WebAudioTrack;
-
-},{"@angular/core":157}],505:[function(require,module,exports){
-/**
- * An audio player for Ionic 2 and Angular 2
- *
- * @module ionic-audio
- */
-"use strict";
-function __export(m) {
-    for (var p in m) if (!exports.hasOwnProperty(p)) exports[p] = m[p];
-}
-__export(require('./ionic-audio-providers'));
-__export(require('./ionic-audio-web-track'));
-__export(require('./ionic-audio-cordova-track'));
-__export(require('./ionic-audio-track-component'));
-__export(require('./ionic-audio-track-progress-component'));
-__export(require('./ionic-audio-track-play-component'));
-__export(require('./ionic-audio-time-pipe'));
-
-},{"./ionic-audio-cordova-track":498,"./ionic-audio-providers":499,"./ionic-audio-time-pipe":500,"./ionic-audio-track-component":501,"./ionic-audio-track-play-component":502,"./ionic-audio-track-progress-component":503,"./ionic-audio-web-track":504}],506:[function(require,module,exports){
-"use strict";
 function __export(m) {
     for (var p in m) if (!exports.hasOwnProperty(p)) exports[p] = m[p];
 }
@@ -84119,7 +82880,7 @@ setTimeout(function () {
     }
 }, DEVICE_READY_TIMEOUT);
 
-},{"./ng1":507,"./plugins/actionsheet":508,"./plugins/admob":509,"./plugins/appavailability":510,"./plugins/apprate":511,"./plugins/appversion":512,"./plugins/background-geolocation":513,"./plugins/badge":514,"./plugins/barcodescanner":515,"./plugins/base64togallery":516,"./plugins/batterystatus":517,"./plugins/ble":518,"./plugins/bluetoothserial":519,"./plugins/calendar":520,"./plugins/camera":521,"./plugins/clipboard":522,"./plugins/contacts":523,"./plugins/datepicker":524,"./plugins/dbmeter":525,"./plugins/device":526,"./plugins/deviceaccounts":527,"./plugins/devicemotion":528,"./plugins/deviceorientation":529,"./plugins/diagnostic":530,"./plugins/dialogs":531,"./plugins/emailcomposer":532,"./plugins/facebook":533,"./plugins/file":534,"./plugins/filetransfer":535,"./plugins/flashlight":536,"./plugins/geolocation":537,"./plugins/globalization":538,"./plugins/googleanalytics":539,"./plugins/googlemaps":540,"./plugins/hotspot":541,"./plugins/imagepicker":542,"./plugins/inappbrowser":543,"./plugins/insomnia":544,"./plugins/keyboard":545,"./plugins/launchnavigator":546,"./plugins/localnotifications":547,"./plugins/media":548,"./plugins/network":549,"./plugins/plugin":550,"./plugins/push":551,"./plugins/screenshot":552,"./plugins/sms":553,"./plugins/socialsharing":554,"./plugins/spinnerdialog":555,"./plugins/splashscreen":556,"./plugins/sqlite":557,"./plugins/statusbar":558,"./plugins/toast":559,"./plugins/touchid":560,"./plugins/vibration":561,"./plugins/webintent":562}],507:[function(require,module,exports){
+},{"./ng1":499,"./plugins/actionsheet":500,"./plugins/admob":501,"./plugins/appavailability":502,"./plugins/apprate":503,"./plugins/appversion":504,"./plugins/background-geolocation":505,"./plugins/badge":506,"./plugins/barcodescanner":507,"./plugins/base64togallery":508,"./plugins/batterystatus":509,"./plugins/ble":510,"./plugins/bluetoothserial":511,"./plugins/calendar":512,"./plugins/camera":513,"./plugins/clipboard":514,"./plugins/contacts":515,"./plugins/datepicker":516,"./plugins/dbmeter":517,"./plugins/device":518,"./plugins/deviceaccounts":519,"./plugins/devicemotion":520,"./plugins/deviceorientation":521,"./plugins/diagnostic":522,"./plugins/dialogs":523,"./plugins/emailcomposer":524,"./plugins/facebook":525,"./plugins/file":526,"./plugins/filetransfer":527,"./plugins/flashlight":528,"./plugins/geolocation":529,"./plugins/globalization":530,"./plugins/googleanalytics":531,"./plugins/googlemaps":532,"./plugins/hotspot":533,"./plugins/imagepicker":534,"./plugins/inappbrowser":535,"./plugins/insomnia":536,"./plugins/keyboard":537,"./plugins/launchnavigator":538,"./plugins/localnotifications":539,"./plugins/media":540,"./plugins/network":541,"./plugins/plugin":542,"./plugins/push":543,"./plugins/screenshot":544,"./plugins/sms":545,"./plugins/socialsharing":546,"./plugins/spinnerdialog":547,"./plugins/splashscreen":548,"./plugins/sqlite":549,"./plugins/statusbar":550,"./plugins/toast":551,"./plugins/touchid":552,"./plugins/vibration":553,"./plugins/webintent":554}],499:[function(require,module,exports){
 "use strict";
 /**
  * Initialize the ngCordova Angular module if we're running in ng1
@@ -84145,7 +82906,7 @@ function publishAngular1Service(config, cls) {
 }
 exports.publishAngular1Service = publishAngular1Service;
 
-},{}],508:[function(require,module,exports){
+},{}],500:[function(require,module,exports){
 "use strict";
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
@@ -84221,7 +82982,7 @@ var ActionSheet = (function () {
 }());
 exports.ActionSheet = ActionSheet;
 
-},{"./plugin":550}],509:[function(require,module,exports){
+},{"./plugin":542}],501:[function(require,module,exports){
 "use strict";
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
@@ -84425,7 +83186,7 @@ var AdMob = (function () {
 }());
 exports.AdMob = AdMob;
 
-},{"./plugin":550}],510:[function(require,module,exports){
+},{"./plugin":542}],502:[function(require,module,exports){
 "use strict";
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
@@ -84485,7 +83246,7 @@ var AppAvailability = (function () {
 }());
 exports.AppAvailability = AppAvailability;
 
-},{"./plugin":550}],511:[function(require,module,exports){
+},{"./plugin":542}],503:[function(require,module,exports){
 "use strict";
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
@@ -84566,7 +83327,7 @@ var AppRate = (function () {
 }());
 exports.AppRate = AppRate;
 
-},{"./plugin":550}],512:[function(require,module,exports){
+},{"./plugin":542}],504:[function(require,module,exports){
 "use strict";
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
@@ -84640,7 +83401,7 @@ var AppVersion = (function () {
 }());
 exports.AppVersion = AppVersion;
 
-},{"./plugin":550}],513:[function(require,module,exports){
+},{"./plugin":542}],505:[function(require,module,exports){
 "use strict";
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
@@ -84846,7 +83607,7 @@ var BackgroundGeolocation = (function () {
 }());
 exports.BackgroundGeolocation = BackgroundGeolocation;
 
-},{"./plugin":550}],514:[function(require,module,exports){
+},{"./plugin":542}],506:[function(require,module,exports){
 "use strict";
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
@@ -84944,7 +83705,7 @@ var Badge = (function () {
 }());
 exports.Badge = Badge;
 
-},{"./plugin":550}],515:[function(require,module,exports){
+},{"./plugin":542}],507:[function(require,module,exports){
 "use strict";
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
@@ -84995,7 +83756,7 @@ var BarcodeScanner = (function () {
 }());
 exports.BarcodeScanner = BarcodeScanner;
 
-},{"./plugin":550}],516:[function(require,module,exports){
+},{"./plugin":542}],508:[function(require,module,exports){
 "use strict";
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
@@ -85044,7 +83805,7 @@ var Base64ToGallery = (function () {
 }());
 exports.Base64ToGallery = Base64ToGallery;
 
-},{"./plugin":550}],517:[function(require,module,exports){
+},{"./plugin":542}],509:[function(require,module,exports){
 "use strict";
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
@@ -85123,7 +83884,7 @@ var BatteryStatus = (function () {
 }());
 exports.BatteryStatus = BatteryStatus;
 
-},{"./plugin":550}],518:[function(require,module,exports){
+},{"./plugin":542}],510:[function(require,module,exports){
 "use strict";
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
@@ -85547,7 +84308,7 @@ var BLE = (function () {
 }());
 exports.BLE = BLE;
 
-},{"./plugin":550}],519:[function(require,module,exports){
+},{"./plugin":542}],511:[function(require,module,exports){
 "use strict";
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
@@ -85801,7 +84562,7 @@ var BluetoothSerial = (function () {
 }());
 exports.BluetoothSerial = BluetoothSerial;
 
-},{"./plugin":550}],520:[function(require,module,exports){
+},{"./plugin":542}],512:[function(require,module,exports){
 "use strict";
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
@@ -86129,7 +84890,7 @@ var Calendar = (function () {
 }());
 exports.Calendar = Calendar;
 
-},{"./plugin":550}],521:[function(require,module,exports){
+},{"./plugin":542}],513:[function(require,module,exports){
 "use strict";
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
@@ -86257,7 +85018,7 @@ var Camera = (function () {
 }());
 exports.Camera = Camera;
 
-},{"./plugin":550}],522:[function(require,module,exports){
+},{"./plugin":542}],514:[function(require,module,exports){
 "use strict";
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
@@ -86325,7 +85086,7 @@ var Clipboard = (function () {
 }());
 exports.Clipboard = Clipboard;
 
-},{"./plugin":550}],523:[function(require,module,exports){
+},{"./plugin":542}],515:[function(require,module,exports){
 "use strict";
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
@@ -86417,7 +85178,7 @@ var Contacts = (function () {
 }());
 exports.Contacts = Contacts;
 
-},{"./plugin":550}],524:[function(require,module,exports){
+},{"./plugin":542}],516:[function(require,module,exports){
 "use strict";
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
@@ -86474,7 +85235,7 @@ var DatePicker = (function () {
 }());
 exports.DatePicker = DatePicker;
 
-},{"./plugin":550}],525:[function(require,module,exports){
+},{"./plugin":542}],517:[function(require,module,exports){
 "use strict";
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
@@ -86562,7 +85323,7 @@ var DBMeter = (function () {
 }());
 exports.DBMeter = DBMeter;
 
-},{"./plugin":550}],526:[function(require,module,exports){
+},{"./plugin":542}],518:[function(require,module,exports){
 "use strict";
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
@@ -86612,7 +85373,7 @@ var Device = (function () {
 }());
 exports.Device = Device;
 
-},{"./plugin":550}],527:[function(require,module,exports){
+},{"./plugin":542}],519:[function(require,module,exports){
 "use strict";
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
@@ -86664,7 +85425,7 @@ var DeviceAccounts = (function () {
 }());
 exports.DeviceAccounts = DeviceAccounts;
 
-},{"./plugin":550}],528:[function(require,module,exports){
+},{"./plugin":542}],520:[function(require,module,exports){
 "use strict";
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
@@ -86750,7 +85511,7 @@ var DeviceMotion = (function () {
 }());
 exports.DeviceMotion = DeviceMotion;
 
-},{"./plugin":550}],529:[function(require,module,exports){
+},{"./plugin":542}],521:[function(require,module,exports){
 "use strict";
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
@@ -86822,7 +85583,7 @@ var DeviceOrientation = (function () {
 }());
 exports.DeviceOrientation = DeviceOrientation;
 
-},{"./plugin":550}],530:[function(require,module,exports){
+},{"./plugin":542}],522:[function(require,module,exports){
 "use strict";
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
@@ -87033,7 +85794,7 @@ var Diagnostic = (function () {
 }());
 exports.Diagnostic = Diagnostic;
 
-},{"./plugin":550}],531:[function(require,module,exports){
+},{"./plugin":542}],523:[function(require,module,exports){
 "use strict";
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
@@ -87138,7 +85899,7 @@ var Dialogs = (function () {
 }());
 exports.Dialogs = Dialogs;
 
-},{"./plugin":550}],532:[function(require,module,exports){
+},{"./plugin":542}],524:[function(require,module,exports){
 "use strict";
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
@@ -87243,7 +86004,7 @@ var EmailComposer = (function () {
 }());
 exports.EmailComposer = EmailComposer;
 
-},{"./plugin":550}],533:[function(require,module,exports){
+},{"./plugin":542}],525:[function(require,module,exports){
 "use strict";
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
@@ -87501,7 +86262,7 @@ var Facebook = (function () {
 }());
 exports.Facebook = Facebook;
 
-},{"./plugin":550}],534:[function(require,module,exports){
+},{"./plugin":542}],526:[function(require,module,exports){
 "use strict";
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
@@ -88078,7 +86839,7 @@ var File = (function () {
 }());
 exports.File = File;
 
-},{"./plugin":550}],535:[function(require,module,exports){
+},{"./plugin":542}],527:[function(require,module,exports){
 "use strict";
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
@@ -88176,7 +86937,7 @@ var Transfer = (function () {
 }());
 exports.Transfer = Transfer;
 
-},{"./plugin":550}],536:[function(require,module,exports){
+},{"./plugin":542}],528:[function(require,module,exports){
 "use strict";
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
@@ -88255,7 +87016,7 @@ var Flashlight = (function () {
 }());
 exports.Flashlight = Flashlight;
 
-},{"./plugin":550}],537:[function(require,module,exports){
+},{"./plugin":542}],529:[function(require,module,exports){
 "use strict";
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
@@ -88340,7 +87101,7 @@ var Geolocation = (function () {
 }());
 exports.Geolocation = Geolocation;
 
-},{"./plugin":550}],538:[function(require,module,exports){
+},{"./plugin":542}],530:[function(require,module,exports){
 "use strict";
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
@@ -88491,7 +87252,7 @@ var Globalization = (function () {
 }());
 exports.Globalization = Globalization;
 
-},{"./plugin":550}],539:[function(require,module,exports){
+},{"./plugin":542}],531:[function(require,module,exports){
 "use strict";
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
@@ -88638,7 +87399,7 @@ var GoogleAnalytics = (function () {
 }());
 exports.GoogleAnalytics = GoogleAnalytics;
 
-},{"./plugin":550}],540:[function(require,module,exports){
+},{"./plugin":542}],532:[function(require,module,exports){
 "use strict";
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
@@ -89682,7 +88443,7 @@ var GoogleMapsLatLng = (function () {
 }());
 exports.GoogleMapsLatLng = GoogleMapsLatLng;
 
-},{"./plugin":550,"rxjs/Rx":573}],541:[function(require,module,exports){
+},{"./plugin":542,"rxjs/Rx":565}],533:[function(require,module,exports){
 "use strict";
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
@@ -89940,7 +88701,7 @@ var Hotspot = (function () {
 }());
 exports.Hotspot = Hotspot;
 
-},{"./plugin":550}],542:[function(require,module,exports){
+},{"./plugin":542}],534:[function(require,module,exports){
 "use strict";
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
@@ -89997,7 +88758,7 @@ var ImagePicker = (function () {
 }());
 exports.ImagePicker = ImagePicker;
 
-},{"./plugin":550}],543:[function(require,module,exports){
+},{"./plugin":542}],535:[function(require,module,exports){
 "use strict";
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
@@ -90033,7 +88794,7 @@ var InAppBrowser = (function () {
 }());
 exports.InAppBrowser = InAppBrowser;
 
-},{"./plugin":550}],544:[function(require,module,exports){
+},{"./plugin":542}],536:[function(require,module,exports){
 "use strict";
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
@@ -90096,7 +88857,7 @@ var Insomnia = (function () {
 }());
 exports.Insomnia = Insomnia;
 
-},{"./plugin":550}],545:[function(require,module,exports){
+},{"./plugin":542}],537:[function(require,module,exports){
 "use strict";
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
@@ -90190,7 +88951,7 @@ var Keyboard = (function () {
 }());
 exports.Keyboard = Keyboard;
 
-},{"./plugin":550}],546:[function(require,module,exports){
+},{"./plugin":542}],538:[function(require,module,exports){
 "use strict";
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
@@ -90248,7 +89009,7 @@ var LaunchNavigator = (function () {
 }());
 exports.LaunchNavigator = LaunchNavigator;
 
-},{"./plugin":550}],547:[function(require,module,exports){
+},{"./plugin":542}],539:[function(require,module,exports){
 "use strict";
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
@@ -90472,7 +89233,7 @@ var LocalNotifications = (function () {
 }());
 exports.LocalNotifications = LocalNotifications;
 
-},{"./plugin":550}],548:[function(require,module,exports){
+},{"./plugin":542}],540:[function(require,module,exports){
 "use strict";
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
@@ -90667,7 +89428,7 @@ var MediaError = (function () {
 }());
 exports.MediaError = MediaError;
 
-},{"./plugin":550}],549:[function(require,module,exports){
+},{"./plugin":542}],541:[function(require,module,exports){
 "use strict";
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
@@ -90810,7 +89571,7 @@ var Connection = (function () {
 }());
 exports.Connection = Connection;
 
-},{"./plugin":550}],550:[function(require,module,exports){
+},{"./plugin":542}],542:[function(require,module,exports){
 "use strict";
 var util_1 = require('../util');
 var Rx_1 = require('rxjs/Rx');
@@ -91155,7 +89916,7 @@ function InstanceProperty(target, key, descriptor) {
 }
 exports.InstanceProperty = InstanceProperty;
 
-},{"../util":563,"rxjs/Rx":573}],551:[function(require,module,exports){
+},{"../util":555,"rxjs/Rx":565}],543:[function(require,module,exports){
 "use strict";
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
@@ -91229,7 +89990,7 @@ var Push = (function () {
 }());
 exports.Push = Push;
 
-},{"./plugin":550}],552:[function(require,module,exports){
+},{"./plugin":542}],544:[function(require,module,exports){
 "use strict";
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
@@ -91291,7 +90052,7 @@ var Screenshot = (function () {
 }());
 exports.Screenshot = Screenshot;
 
-},{"./plugin":550}],553:[function(require,module,exports){
+},{"./plugin":542}],545:[function(require,module,exports){
 "use strict";
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
@@ -91343,7 +90104,7 @@ var SMS = (function () {
 }());
 exports.SMS = SMS;
 
-},{"./plugin":550}],554:[function(require,module,exports){
+},{"./plugin":542}],546:[function(require,module,exports){
 "use strict";
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
@@ -91502,7 +90263,7 @@ var SocialSharing = (function () {
 }());
 exports.SocialSharing = SocialSharing;
 
-},{"./plugin":550}],555:[function(require,module,exports){
+},{"./plugin":542}],547:[function(require,module,exports){
 "use strict";
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
@@ -91562,7 +90323,7 @@ var SpinnerDialog = (function () {
 }());
 exports.SpinnerDialog = SpinnerDialog;
 
-},{"./plugin":550}],556:[function(require,module,exports){
+},{"./plugin":542}],548:[function(require,module,exports){
 "use strict";
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
@@ -91617,7 +90378,7 @@ var Splashscreen = (function () {
 }());
 exports.Splashscreen = Splashscreen;
 
-},{"./plugin":550}],557:[function(require,module,exports){
+},{"./plugin":542}],549:[function(require,module,exports){
 "use strict";
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
@@ -91746,7 +90507,7 @@ var SQLite = (function () {
 }());
 exports.SQLite = SQLite;
 
-},{"./plugin":550}],558:[function(require,module,exports){
+},{"./plugin":542}],550:[function(require,module,exports){
 "use strict";
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
@@ -91901,7 +90662,7 @@ var StatusBar = (function () {
 }());
 exports.StatusBar = StatusBar;
 
-},{"./plugin":550}],559:[function(require,module,exports){
+},{"./plugin":542}],551:[function(require,module,exports){
 "use strict";
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
@@ -92051,7 +90812,7 @@ var Toast = (function () {
 }());
 exports.Toast = Toast;
 
-},{"./plugin":550}],560:[function(require,module,exports){
+},{"./plugin":542}],552:[function(require,module,exports){
 "use strict";
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
@@ -92141,7 +90902,7 @@ var TouchID = (function () {
 }());
 exports.TouchID = TouchID;
 
-},{"./plugin":550}],561:[function(require,module,exports){
+},{"./plugin":542}],553:[function(require,module,exports){
 "use strict";
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
@@ -92197,7 +90958,7 @@ var Vibration = (function () {
 }());
 exports.Vibration = Vibration;
 
-},{"./plugin":550}],562:[function(require,module,exports){
+},{"./plugin":542}],554:[function(require,module,exports){
 "use strict";
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
@@ -92266,7 +91027,7 @@ var WebIntent = (function () {
 }());
 exports.WebIntent = WebIntent;
 
-},{"./plugin":550}],563:[function(require,module,exports){
+},{"./plugin":542}],555:[function(require,module,exports){
 "use strict";
 function get(obj, path) {
     for (var i = 0, path = path.split('.'), len = path.length; i < len; i++) {
@@ -92280,7 +91041,7 @@ function get(obj, path) {
 exports.get = get;
 ;
 
-},{}],564:[function(require,module,exports){
+},{}],556:[function(require,module,exports){
 "use strict";
 var __extends = (this && this.__extends) || function (d, b) {
     for (var p in b) if (b.hasOwnProperty(p)) d[p] = b[p];
@@ -92334,7 +91095,7 @@ var AsyncSubject = (function (_super) {
 }(Subject_1.Subject));
 exports.AsyncSubject = AsyncSubject;
 
-},{"./Subject":574}],565:[function(require,module,exports){
+},{"./Subject":566}],557:[function(require,module,exports){
 "use strict";
 var __extends = (this && this.__extends) || function (d, b) {
     for (var p in b) if (b.hasOwnProperty(p)) d[p] = b[p];
@@ -92389,7 +91150,7 @@ var BehaviorSubject = (function (_super) {
 }(Subject_1.Subject));
 exports.BehaviorSubject = BehaviorSubject;
 
-},{"./Subject":574,"./util/ObjectUnsubscribedError":822,"./util/throwError":836}],566:[function(require,module,exports){
+},{"./Subject":566,"./util/ObjectUnsubscribedError":814,"./util/throwError":828}],558:[function(require,module,exports){
 "use strict";
 var __extends = (this && this.__extends) || function (d, b) {
     for (var p in b) if (b.hasOwnProperty(p)) d[p] = b[p];
@@ -92426,7 +91187,7 @@ var InnerSubscriber = (function (_super) {
 }(Subscriber_1.Subscriber));
 exports.InnerSubscriber = InnerSubscriber;
 
-},{"./Subscriber":576}],567:[function(require,module,exports){
+},{"./Subscriber":568}],559:[function(require,module,exports){
 "use strict";
 var Observable_1 = require('./Observable');
 /**
@@ -92553,7 +91314,7 @@ var Notification = (function () {
 }());
 exports.Notification = Notification;
 
-},{"./Observable":568}],568:[function(require,module,exports){
+},{"./Observable":560}],560:[function(require,module,exports){
 "use strict";
 var root_1 = require('./util/root');
 var observable_1 = require('./symbol/observable');
@@ -92689,7 +91450,7 @@ var Observable = (function () {
 }());
 exports.Observable = Observable;
 
-},{"./symbol/observable":814,"./util/root":834,"./util/toSubscriber":837}],569:[function(require,module,exports){
+},{"./symbol/observable":806,"./util/root":826,"./util/toSubscriber":829}],561:[function(require,module,exports){
 "use strict";
 exports.empty = {
     isUnsubscribed: true,
@@ -92698,7 +91459,7 @@ exports.empty = {
     complete: function () { }
 };
 
-},{}],570:[function(require,module,exports){
+},{}],562:[function(require,module,exports){
 "use strict";
 var Subscriber_1 = require('./Subscriber');
 var Operator = (function () {
@@ -92711,7 +91472,7 @@ var Operator = (function () {
 }());
 exports.Operator = Operator;
 
-},{"./Subscriber":576}],571:[function(require,module,exports){
+},{"./Subscriber":568}],563:[function(require,module,exports){
 "use strict";
 var __extends = (this && this.__extends) || function (d, b) {
     for (var p in b) if (b.hasOwnProperty(p)) d[p] = b[p];
@@ -92742,7 +91503,7 @@ var OuterSubscriber = (function (_super) {
 }(Subscriber_1.Subscriber));
 exports.OuterSubscriber = OuterSubscriber;
 
-},{"./Subscriber":576}],572:[function(require,module,exports){
+},{"./Subscriber":568}],564:[function(require,module,exports){
 "use strict";
 var __extends = (this && this.__extends) || function (d, b) {
     for (var p in b) if (b.hasOwnProperty(p)) d[p] = b[p];
@@ -92822,7 +91583,7 @@ var ReplayEvent = (function () {
     return ReplayEvent;
 }());
 
-},{"./Subject":574,"./operator/observeOn":761,"./scheduler/queue":812}],573:[function(require,module,exports){
+},{"./Subject":566,"./operator/observeOn":753,"./scheduler/queue":804}],565:[function(require,module,exports){
 "use strict";
 /* tslint:disable:no-unused-variable */
 // Subject imported before Observable to bypass circular dependency issue since
@@ -93009,7 +91770,7 @@ var Symbol = {
 };
 exports.Symbol = Symbol;
 
-},{"./AsyncSubject":564,"./BehaviorSubject":565,"./Notification":567,"./Observable":568,"./Operator":570,"./ReplaySubject":572,"./Subject":574,"./Subscriber":576,"./Subscription":577,"./add/observable/bindCallback":578,"./add/observable/bindNodeCallback":579,"./add/observable/combineLatest":580,"./add/observable/concat":581,"./add/observable/defer":582,"./add/observable/empty":583,"./add/observable/forkJoin":584,"./add/observable/from":585,"./add/observable/fromEvent":586,"./add/observable/fromEventPattern":587,"./add/observable/fromPromise":588,"./add/observable/interval":589,"./add/observable/merge":590,"./add/observable/never":591,"./add/observable/of":592,"./add/observable/race":593,"./add/observable/range":594,"./add/observable/throw":595,"./add/observable/timer":596,"./add/observable/zip":597,"./add/operator/audit":598,"./add/operator/auditTime":599,"./add/operator/buffer":600,"./add/operator/bufferCount":601,"./add/operator/bufferTime":602,"./add/operator/bufferToggle":603,"./add/operator/bufferWhen":604,"./add/operator/cache":605,"./add/operator/catch":606,"./add/operator/combineAll":607,"./add/operator/combineLatest":608,"./add/operator/concat":609,"./add/operator/concatAll":610,"./add/operator/concatMap":611,"./add/operator/concatMapTo":612,"./add/operator/count":613,"./add/operator/debounce":614,"./add/operator/debounceTime":615,"./add/operator/defaultIfEmpty":616,"./add/operator/delay":617,"./add/operator/delayWhen":618,"./add/operator/dematerialize":619,"./add/operator/distinctUntilChanged":620,"./add/operator/do":621,"./add/operator/every":622,"./add/operator/expand":623,"./add/operator/filter":624,"./add/operator/finally":625,"./add/operator/first":626,"./add/operator/groupBy":627,"./add/operator/ignoreElements":628,"./add/operator/last":629,"./add/operator/let":630,"./add/operator/map":631,"./add/operator/mapTo":632,"./add/operator/materialize":633,"./add/operator/merge":634,"./add/operator/mergeAll":635,"./add/operator/mergeMap":636,"./add/operator/mergeMapTo":637,"./add/operator/multicast":638,"./add/operator/observeOn":639,"./add/operator/partition":640,"./add/operator/pluck":641,"./add/operator/publish":642,"./add/operator/publishBehavior":643,"./add/operator/publishLast":644,"./add/operator/publishReplay":645,"./add/operator/race":646,"./add/operator/reduce":647,"./add/operator/repeat":648,"./add/operator/retry":649,"./add/operator/retryWhen":650,"./add/operator/sample":651,"./add/operator/sampleTime":652,"./add/operator/scan":653,"./add/operator/share":654,"./add/operator/single":655,"./add/operator/skip":656,"./add/operator/skipUntil":657,"./add/operator/skipWhile":658,"./add/operator/startWith":659,"./add/operator/subscribeOn":660,"./add/operator/switch":661,"./add/operator/switchMap":662,"./add/operator/switchMapTo":663,"./add/operator/take":664,"./add/operator/takeLast":665,"./add/operator/takeUntil":666,"./add/operator/takeWhile":667,"./add/operator/throttle":668,"./add/operator/throttleTime":669,"./add/operator/timeout":670,"./add/operator/timeoutWith":671,"./add/operator/toArray":672,"./add/operator/toPromise":673,"./add/operator/window":674,"./add/operator/windowCount":675,"./add/operator/windowTime":676,"./add/operator/windowToggle":677,"./add/operator/windowWhen":678,"./add/operator/withLatestFrom":679,"./add/operator/zip":680,"./add/operator/zipAll":681,"./observable/ConnectableObservable":686,"./scheduler/asap":810,"./scheduler/async":811,"./scheduler/queue":812,"./symbol/iterator":813,"./symbol/observable":814,"./symbol/rxSubscriber":815,"./util/ArgumentOutOfRangeError":816,"./util/EmptyError":817,"./util/ObjectUnsubscribedError":822,"./util/UnsubscriptionError":823}],574:[function(require,module,exports){
+},{"./AsyncSubject":556,"./BehaviorSubject":557,"./Notification":559,"./Observable":560,"./Operator":562,"./ReplaySubject":564,"./Subject":566,"./Subscriber":568,"./Subscription":569,"./add/observable/bindCallback":570,"./add/observable/bindNodeCallback":571,"./add/observable/combineLatest":572,"./add/observable/concat":573,"./add/observable/defer":574,"./add/observable/empty":575,"./add/observable/forkJoin":576,"./add/observable/from":577,"./add/observable/fromEvent":578,"./add/observable/fromEventPattern":579,"./add/observable/fromPromise":580,"./add/observable/interval":581,"./add/observable/merge":582,"./add/observable/never":583,"./add/observable/of":584,"./add/observable/race":585,"./add/observable/range":586,"./add/observable/throw":587,"./add/observable/timer":588,"./add/observable/zip":589,"./add/operator/audit":590,"./add/operator/auditTime":591,"./add/operator/buffer":592,"./add/operator/bufferCount":593,"./add/operator/bufferTime":594,"./add/operator/bufferToggle":595,"./add/operator/bufferWhen":596,"./add/operator/cache":597,"./add/operator/catch":598,"./add/operator/combineAll":599,"./add/operator/combineLatest":600,"./add/operator/concat":601,"./add/operator/concatAll":602,"./add/operator/concatMap":603,"./add/operator/concatMapTo":604,"./add/operator/count":605,"./add/operator/debounce":606,"./add/operator/debounceTime":607,"./add/operator/defaultIfEmpty":608,"./add/operator/delay":609,"./add/operator/delayWhen":610,"./add/operator/dematerialize":611,"./add/operator/distinctUntilChanged":612,"./add/operator/do":613,"./add/operator/every":614,"./add/operator/expand":615,"./add/operator/filter":616,"./add/operator/finally":617,"./add/operator/first":618,"./add/operator/groupBy":619,"./add/operator/ignoreElements":620,"./add/operator/last":621,"./add/operator/let":622,"./add/operator/map":623,"./add/operator/mapTo":624,"./add/operator/materialize":625,"./add/operator/merge":626,"./add/operator/mergeAll":627,"./add/operator/mergeMap":628,"./add/operator/mergeMapTo":629,"./add/operator/multicast":630,"./add/operator/observeOn":631,"./add/operator/partition":632,"./add/operator/pluck":633,"./add/operator/publish":634,"./add/operator/publishBehavior":635,"./add/operator/publishLast":636,"./add/operator/publishReplay":637,"./add/operator/race":638,"./add/operator/reduce":639,"./add/operator/repeat":640,"./add/operator/retry":641,"./add/operator/retryWhen":642,"./add/operator/sample":643,"./add/operator/sampleTime":644,"./add/operator/scan":645,"./add/operator/share":646,"./add/operator/single":647,"./add/operator/skip":648,"./add/operator/skipUntil":649,"./add/operator/skipWhile":650,"./add/operator/startWith":651,"./add/operator/subscribeOn":652,"./add/operator/switch":653,"./add/operator/switchMap":654,"./add/operator/switchMapTo":655,"./add/operator/take":656,"./add/operator/takeLast":657,"./add/operator/takeUntil":658,"./add/operator/takeWhile":659,"./add/operator/throttle":660,"./add/operator/throttleTime":661,"./add/operator/timeout":662,"./add/operator/timeoutWith":663,"./add/operator/toArray":664,"./add/operator/toPromise":665,"./add/operator/window":666,"./add/operator/windowCount":667,"./add/operator/windowTime":668,"./add/operator/windowToggle":669,"./add/operator/windowWhen":670,"./add/operator/withLatestFrom":671,"./add/operator/zip":672,"./add/operator/zipAll":673,"./observable/ConnectableObservable":678,"./scheduler/asap":802,"./scheduler/async":803,"./scheduler/queue":804,"./symbol/iterator":805,"./symbol/observable":806,"./symbol/rxSubscriber":807,"./util/ArgumentOutOfRangeError":808,"./util/EmptyError":809,"./util/ObjectUnsubscribedError":814,"./util/UnsubscriptionError":815}],566:[function(require,module,exports){
 "use strict";
 var __extends = (this && this.__extends) || function (d, b) {
     for (var p in b) if (b.hasOwnProperty(p)) d[p] = b[p];
@@ -93216,7 +91977,7 @@ var SubjectObservable = (function (_super) {
     return SubjectObservable;
 }(Observable_1.Observable));
 
-},{"./Observable":568,"./SubjectSubscription":575,"./Subscriber":576,"./Subscription":577,"./symbol/rxSubscriber":815,"./util/ObjectUnsubscribedError":822,"./util/throwError":836}],575:[function(require,module,exports){
+},{"./Observable":560,"./SubjectSubscription":567,"./Subscriber":568,"./Subscription":569,"./symbol/rxSubscriber":807,"./util/ObjectUnsubscribedError":814,"./util/throwError":828}],567:[function(require,module,exports){
 "use strict";
 var __extends = (this && this.__extends) || function (d, b) {
     for (var p in b) if (b.hasOwnProperty(p)) d[p] = b[p];
@@ -93257,7 +92018,7 @@ var SubjectSubscription = (function (_super) {
 }(Subscription_1.Subscription));
 exports.SubjectSubscription = SubjectSubscription;
 
-},{"./Subscription":577}],576:[function(require,module,exports){
+},{"./Subscription":569}],568:[function(require,module,exports){
 "use strict";
 var __extends = (this && this.__extends) || function (d, b) {
     for (var p in b) if (b.hasOwnProperty(p)) d[p] = b[p];
@@ -93509,7 +92270,7 @@ var SafeSubscriber = (function (_super) {
     return SafeSubscriber;
 }(Subscriber));
 
-},{"./Observer":569,"./Subscription":577,"./symbol/rxSubscriber":815,"./util/isFunction":827}],577:[function(require,module,exports){
+},{"./Observer":561,"./Subscription":569,"./symbol/rxSubscriber":807,"./util/isFunction":819}],569:[function(require,module,exports){
 "use strict";
 var isArray_1 = require('./util/isArray');
 var isObject_1 = require('./util/isObject');
@@ -93660,634 +92421,634 @@ var Subscription = (function () {
 }());
 exports.Subscription = Subscription;
 
-},{"./util/UnsubscriptionError":823,"./util/errorObject":824,"./util/isArray":825,"./util/isFunction":827,"./util/isObject":829,"./util/tryCatch":838}],578:[function(require,module,exports){
+},{"./util/UnsubscriptionError":815,"./util/errorObject":816,"./util/isArray":817,"./util/isFunction":819,"./util/isObject":821,"./util/tryCatch":830}],570:[function(require,module,exports){
 "use strict";
 var Observable_1 = require('../../Observable');
 var bindCallback_1 = require('../../observable/bindCallback');
 Observable_1.Observable.bindCallback = bindCallback_1.bindCallback;
 
-},{"../../Observable":568,"../../observable/bindCallback":702}],579:[function(require,module,exports){
+},{"../../Observable":560,"../../observable/bindCallback":694}],571:[function(require,module,exports){
 "use strict";
 var Observable_1 = require('../../Observable');
 var bindNodeCallback_1 = require('../../observable/bindNodeCallback');
 Observable_1.Observable.bindNodeCallback = bindNodeCallback_1.bindNodeCallback;
 
-},{"../../Observable":568,"../../observable/bindNodeCallback":703}],580:[function(require,module,exports){
+},{"../../Observable":560,"../../observable/bindNodeCallback":695}],572:[function(require,module,exports){
 "use strict";
 var Observable_1 = require('../../Observable');
 var combineLatest_1 = require('../../operator/combineLatest');
 Observable_1.Observable.combineLatest = combineLatest_1.combineLatestStatic;
 
-},{"../../Observable":568,"../../operator/combineLatest":730}],581:[function(require,module,exports){
+},{"../../Observable":560,"../../operator/combineLatest":722}],573:[function(require,module,exports){
 "use strict";
 var Observable_1 = require('../../Observable');
 var concat_1 = require('../../observable/concat');
 Observable_1.Observable.concat = concat_1.concat;
 
-},{"../../Observable":568,"../../observable/concat":704}],582:[function(require,module,exports){
+},{"../../Observable":560,"../../observable/concat":696}],574:[function(require,module,exports){
 "use strict";
 var Observable_1 = require('../../Observable');
 var defer_1 = require('../../observable/defer');
 Observable_1.Observable.defer = defer_1.defer;
 
-},{"../../Observable":568,"../../observable/defer":705}],583:[function(require,module,exports){
+},{"../../Observable":560,"../../observable/defer":697}],575:[function(require,module,exports){
 "use strict";
 var Observable_1 = require('../../Observable');
 var empty_1 = require('../../observable/empty');
 Observable_1.Observable.empty = empty_1.empty;
 
-},{"../../Observable":568,"../../observable/empty":706}],584:[function(require,module,exports){
+},{"../../Observable":560,"../../observable/empty":698}],576:[function(require,module,exports){
 "use strict";
 var Observable_1 = require('../../Observable');
 var forkJoin_1 = require('../../observable/forkJoin');
 Observable_1.Observable.forkJoin = forkJoin_1.forkJoin;
 
-},{"../../Observable":568,"../../observable/forkJoin":707}],585:[function(require,module,exports){
+},{"../../Observable":560,"../../observable/forkJoin":699}],577:[function(require,module,exports){
 "use strict";
 var Observable_1 = require('../../Observable');
 var from_1 = require('../../observable/from');
 Observable_1.Observable.from = from_1.from;
 
-},{"../../Observable":568,"../../observable/from":708}],586:[function(require,module,exports){
+},{"../../Observable":560,"../../observable/from":700}],578:[function(require,module,exports){
 "use strict";
 var Observable_1 = require('../../Observable');
 var fromEvent_1 = require('../../observable/fromEvent');
 Observable_1.Observable.fromEvent = fromEvent_1.fromEvent;
 
-},{"../../Observable":568,"../../observable/fromEvent":709}],587:[function(require,module,exports){
+},{"../../Observable":560,"../../observable/fromEvent":701}],579:[function(require,module,exports){
 "use strict";
 var Observable_1 = require('../../Observable');
 var fromEventPattern_1 = require('../../observable/fromEventPattern');
 Observable_1.Observable.fromEventPattern = fromEventPattern_1.fromEventPattern;
 
-},{"../../Observable":568,"../../observable/fromEventPattern":710}],588:[function(require,module,exports){
+},{"../../Observable":560,"../../observable/fromEventPattern":702}],580:[function(require,module,exports){
 "use strict";
 var Observable_1 = require('../../Observable');
 var fromPromise_1 = require('../../observable/fromPromise');
 Observable_1.Observable.fromPromise = fromPromise_1.fromPromise;
 
-},{"../../Observable":568,"../../observable/fromPromise":711}],589:[function(require,module,exports){
+},{"../../Observable":560,"../../observable/fromPromise":703}],581:[function(require,module,exports){
 "use strict";
 var Observable_1 = require('../../Observable');
 var interval_1 = require('../../observable/interval');
 Observable_1.Observable.interval = interval_1.interval;
 
-},{"../../Observable":568,"../../observable/interval":712}],590:[function(require,module,exports){
+},{"../../Observable":560,"../../observable/interval":704}],582:[function(require,module,exports){
 "use strict";
 var Observable_1 = require('../../Observable');
 var merge_1 = require('../../observable/merge');
 Observable_1.Observable.merge = merge_1.merge;
 
-},{"../../Observable":568,"../../observable/merge":713}],591:[function(require,module,exports){
+},{"../../Observable":560,"../../observable/merge":705}],583:[function(require,module,exports){
 "use strict";
 var Observable_1 = require('../../Observable');
 var never_1 = require('../../observable/never');
 Observable_1.Observable.never = never_1.never;
 
-},{"../../Observable":568,"../../observable/never":714}],592:[function(require,module,exports){
+},{"../../Observable":560,"../../observable/never":706}],584:[function(require,module,exports){
 "use strict";
 var Observable_1 = require('../../Observable');
 var of_1 = require('../../observable/of');
 Observable_1.Observable.of = of_1.of;
 
-},{"../../Observable":568,"../../observable/of":715}],593:[function(require,module,exports){
+},{"../../Observable":560,"../../observable/of":707}],585:[function(require,module,exports){
 "use strict";
 var Observable_1 = require('../../Observable');
 var race_1 = require('../../operator/race');
 Observable_1.Observable.race = race_1.raceStatic;
 
-},{"../../Observable":568,"../../operator/race":768}],594:[function(require,module,exports){
+},{"../../Observable":560,"../../operator/race":760}],586:[function(require,module,exports){
 "use strict";
 var Observable_1 = require('../../Observable');
 var range_1 = require('../../observable/range');
 Observable_1.Observable.range = range_1.range;
 
-},{"../../Observable":568,"../../observable/range":716}],595:[function(require,module,exports){
+},{"../../Observable":560,"../../observable/range":708}],587:[function(require,module,exports){
 "use strict";
 var Observable_1 = require('../../Observable');
 var throw_1 = require('../../observable/throw');
 Observable_1.Observable.throw = throw_1._throw;
 
-},{"../../Observable":568,"../../observable/throw":717}],596:[function(require,module,exports){
+},{"../../Observable":560,"../../observable/throw":709}],588:[function(require,module,exports){
 "use strict";
 var Observable_1 = require('../../Observable');
 var timer_1 = require('../../observable/timer');
 Observable_1.Observable.timer = timer_1.timer;
 
-},{"../../Observable":568,"../../observable/timer":718}],597:[function(require,module,exports){
+},{"../../Observable":560,"../../observable/timer":710}],589:[function(require,module,exports){
 "use strict";
 var Observable_1 = require('../../Observable');
 var zip_1 = require('../../observable/zip');
 Observable_1.Observable.zip = zip_1.zip;
 
-},{"../../Observable":568,"../../observable/zip":719}],598:[function(require,module,exports){
+},{"../../Observable":560,"../../observable/zip":711}],590:[function(require,module,exports){
 "use strict";
 var Observable_1 = require('../../Observable');
 var audit_1 = require('../../operator/audit');
 Observable_1.Observable.prototype.audit = audit_1.audit;
 
-},{"../../Observable":568,"../../operator/audit":720}],599:[function(require,module,exports){
+},{"../../Observable":560,"../../operator/audit":712}],591:[function(require,module,exports){
 "use strict";
 var Observable_1 = require('../../Observable');
 var auditTime_1 = require('../../operator/auditTime');
 Observable_1.Observable.prototype.auditTime = auditTime_1.auditTime;
 
-},{"../../Observable":568,"../../operator/auditTime":721}],600:[function(require,module,exports){
+},{"../../Observable":560,"../../operator/auditTime":713}],592:[function(require,module,exports){
 "use strict";
 var Observable_1 = require('../../Observable');
 var buffer_1 = require('../../operator/buffer');
 Observable_1.Observable.prototype.buffer = buffer_1.buffer;
 
-},{"../../Observable":568,"../../operator/buffer":722}],601:[function(require,module,exports){
+},{"../../Observable":560,"../../operator/buffer":714}],593:[function(require,module,exports){
 "use strict";
 var Observable_1 = require('../../Observable');
 var bufferCount_1 = require('../../operator/bufferCount');
 Observable_1.Observable.prototype.bufferCount = bufferCount_1.bufferCount;
 
-},{"../../Observable":568,"../../operator/bufferCount":723}],602:[function(require,module,exports){
+},{"../../Observable":560,"../../operator/bufferCount":715}],594:[function(require,module,exports){
 "use strict";
 var Observable_1 = require('../../Observable');
 var bufferTime_1 = require('../../operator/bufferTime');
 Observable_1.Observable.prototype.bufferTime = bufferTime_1.bufferTime;
 
-},{"../../Observable":568,"../../operator/bufferTime":724}],603:[function(require,module,exports){
+},{"../../Observable":560,"../../operator/bufferTime":716}],595:[function(require,module,exports){
 "use strict";
 var Observable_1 = require('../../Observable');
 var bufferToggle_1 = require('../../operator/bufferToggle');
 Observable_1.Observable.prototype.bufferToggle = bufferToggle_1.bufferToggle;
 
-},{"../../Observable":568,"../../operator/bufferToggle":725}],604:[function(require,module,exports){
+},{"../../Observable":560,"../../operator/bufferToggle":717}],596:[function(require,module,exports){
 "use strict";
 var Observable_1 = require('../../Observable');
 var bufferWhen_1 = require('../../operator/bufferWhen');
 Observable_1.Observable.prototype.bufferWhen = bufferWhen_1.bufferWhen;
 
-},{"../../Observable":568,"../../operator/bufferWhen":726}],605:[function(require,module,exports){
+},{"../../Observable":560,"../../operator/bufferWhen":718}],597:[function(require,module,exports){
 "use strict";
 var Observable_1 = require('../../Observable');
 var cache_1 = require('../../operator/cache');
 Observable_1.Observable.prototype.cache = cache_1.cache;
 
-},{"../../Observable":568,"../../operator/cache":727}],606:[function(require,module,exports){
+},{"../../Observable":560,"../../operator/cache":719}],598:[function(require,module,exports){
 "use strict";
 var Observable_1 = require('../../Observable');
 var catch_1 = require('../../operator/catch');
 Observable_1.Observable.prototype.catch = catch_1._catch;
 
-},{"../../Observable":568,"../../operator/catch":728}],607:[function(require,module,exports){
+},{"../../Observable":560,"../../operator/catch":720}],599:[function(require,module,exports){
 "use strict";
 var Observable_1 = require('../../Observable');
 var combineAll_1 = require('../../operator/combineAll');
 Observable_1.Observable.prototype.combineAll = combineAll_1.combineAll;
 
-},{"../../Observable":568,"../../operator/combineAll":729}],608:[function(require,module,exports){
+},{"../../Observable":560,"../../operator/combineAll":721}],600:[function(require,module,exports){
 "use strict";
 var Observable_1 = require('../../Observable');
 var combineLatest_1 = require('../../operator/combineLatest');
 Observable_1.Observable.prototype.combineLatest = combineLatest_1.combineLatest;
 
-},{"../../Observable":568,"../../operator/combineLatest":730}],609:[function(require,module,exports){
+},{"../../Observable":560,"../../operator/combineLatest":722}],601:[function(require,module,exports){
 "use strict";
 var Observable_1 = require('../../Observable');
 var concat_1 = require('../../operator/concat');
 Observable_1.Observable.prototype.concat = concat_1.concat;
 
-},{"../../Observable":568,"../../operator/concat":731}],610:[function(require,module,exports){
+},{"../../Observable":560,"../../operator/concat":723}],602:[function(require,module,exports){
 "use strict";
 var Observable_1 = require('../../Observable');
 var concatAll_1 = require('../../operator/concatAll');
 Observable_1.Observable.prototype.concatAll = concatAll_1.concatAll;
 
-},{"../../Observable":568,"../../operator/concatAll":732}],611:[function(require,module,exports){
+},{"../../Observable":560,"../../operator/concatAll":724}],603:[function(require,module,exports){
 "use strict";
 var Observable_1 = require('../../Observable');
 var concatMap_1 = require('../../operator/concatMap');
 Observable_1.Observable.prototype.concatMap = concatMap_1.concatMap;
 
-},{"../../Observable":568,"../../operator/concatMap":733}],612:[function(require,module,exports){
+},{"../../Observable":560,"../../operator/concatMap":725}],604:[function(require,module,exports){
 "use strict";
 var Observable_1 = require('../../Observable');
 var concatMapTo_1 = require('../../operator/concatMapTo');
 Observable_1.Observable.prototype.concatMapTo = concatMapTo_1.concatMapTo;
 
-},{"../../Observable":568,"../../operator/concatMapTo":734}],613:[function(require,module,exports){
+},{"../../Observable":560,"../../operator/concatMapTo":726}],605:[function(require,module,exports){
 "use strict";
 var Observable_1 = require('../../Observable');
 var count_1 = require('../../operator/count');
 Observable_1.Observable.prototype.count = count_1.count;
 
-},{"../../Observable":568,"../../operator/count":735}],614:[function(require,module,exports){
+},{"../../Observable":560,"../../operator/count":727}],606:[function(require,module,exports){
 "use strict";
 var Observable_1 = require('../../Observable');
 var debounce_1 = require('../../operator/debounce');
 Observable_1.Observable.prototype.debounce = debounce_1.debounce;
 
-},{"../../Observable":568,"../../operator/debounce":736}],615:[function(require,module,exports){
+},{"../../Observable":560,"../../operator/debounce":728}],607:[function(require,module,exports){
 "use strict";
 var Observable_1 = require('../../Observable');
 var debounceTime_1 = require('../../operator/debounceTime');
 Observable_1.Observable.prototype.debounceTime = debounceTime_1.debounceTime;
 
-},{"../../Observable":568,"../../operator/debounceTime":737}],616:[function(require,module,exports){
+},{"../../Observable":560,"../../operator/debounceTime":729}],608:[function(require,module,exports){
 "use strict";
 var Observable_1 = require('../../Observable');
 var defaultIfEmpty_1 = require('../../operator/defaultIfEmpty');
 Observable_1.Observable.prototype.defaultIfEmpty = defaultIfEmpty_1.defaultIfEmpty;
 
-},{"../../Observable":568,"../../operator/defaultIfEmpty":738}],617:[function(require,module,exports){
+},{"../../Observable":560,"../../operator/defaultIfEmpty":730}],609:[function(require,module,exports){
 "use strict";
 var Observable_1 = require('../../Observable');
 var delay_1 = require('../../operator/delay');
 Observable_1.Observable.prototype.delay = delay_1.delay;
 
-},{"../../Observable":568,"../../operator/delay":739}],618:[function(require,module,exports){
+},{"../../Observable":560,"../../operator/delay":731}],610:[function(require,module,exports){
 "use strict";
 var Observable_1 = require('../../Observable');
 var delayWhen_1 = require('../../operator/delayWhen');
 Observable_1.Observable.prototype.delayWhen = delayWhen_1.delayWhen;
 
-},{"../../Observable":568,"../../operator/delayWhen":740}],619:[function(require,module,exports){
+},{"../../Observable":560,"../../operator/delayWhen":732}],611:[function(require,module,exports){
 "use strict";
 var Observable_1 = require('../../Observable');
 var dematerialize_1 = require('../../operator/dematerialize');
 Observable_1.Observable.prototype.dematerialize = dematerialize_1.dematerialize;
 
-},{"../../Observable":568,"../../operator/dematerialize":741}],620:[function(require,module,exports){
+},{"../../Observable":560,"../../operator/dematerialize":733}],612:[function(require,module,exports){
 "use strict";
 var Observable_1 = require('../../Observable');
 var distinctUntilChanged_1 = require('../../operator/distinctUntilChanged');
 Observable_1.Observable.prototype.distinctUntilChanged = distinctUntilChanged_1.distinctUntilChanged;
 
-},{"../../Observable":568,"../../operator/distinctUntilChanged":742}],621:[function(require,module,exports){
+},{"../../Observable":560,"../../operator/distinctUntilChanged":734}],613:[function(require,module,exports){
 "use strict";
 var Observable_1 = require('../../Observable');
 var do_1 = require('../../operator/do');
 Observable_1.Observable.prototype.do = do_1._do;
 
-},{"../../Observable":568,"../../operator/do":743}],622:[function(require,module,exports){
+},{"../../Observable":560,"../../operator/do":735}],614:[function(require,module,exports){
 "use strict";
 var Observable_1 = require('../../Observable');
 var every_1 = require('../../operator/every');
 Observable_1.Observable.prototype.every = every_1.every;
 
-},{"../../Observable":568,"../../operator/every":744}],623:[function(require,module,exports){
+},{"../../Observable":560,"../../operator/every":736}],615:[function(require,module,exports){
 "use strict";
 var Observable_1 = require('../../Observable');
 var expand_1 = require('../../operator/expand');
 Observable_1.Observable.prototype.expand = expand_1.expand;
 
-},{"../../Observable":568,"../../operator/expand":745}],624:[function(require,module,exports){
+},{"../../Observable":560,"../../operator/expand":737}],616:[function(require,module,exports){
 "use strict";
 var Observable_1 = require('../../Observable');
 var filter_1 = require('../../operator/filter');
 Observable_1.Observable.prototype.filter = filter_1.filter;
 
-},{"../../Observable":568,"../../operator/filter":746}],625:[function(require,module,exports){
+},{"../../Observable":560,"../../operator/filter":738}],617:[function(require,module,exports){
 "use strict";
 var Observable_1 = require('../../Observable');
 var finally_1 = require('../../operator/finally');
 Observable_1.Observable.prototype.finally = finally_1._finally;
 
-},{"../../Observable":568,"../../operator/finally":747}],626:[function(require,module,exports){
+},{"../../Observable":560,"../../operator/finally":739}],618:[function(require,module,exports){
 "use strict";
 var Observable_1 = require('../../Observable');
 var first_1 = require('../../operator/first');
 Observable_1.Observable.prototype.first = first_1.first;
 
-},{"../../Observable":568,"../../operator/first":748}],627:[function(require,module,exports){
+},{"../../Observable":560,"../../operator/first":740}],619:[function(require,module,exports){
 "use strict";
 var Observable_1 = require('../../Observable');
 var groupBy_1 = require('../../operator/groupBy');
 Observable_1.Observable.prototype.groupBy = groupBy_1.groupBy;
 
-},{"../../Observable":568,"../../operator/groupBy":749}],628:[function(require,module,exports){
+},{"../../Observable":560,"../../operator/groupBy":741}],620:[function(require,module,exports){
 "use strict";
 var Observable_1 = require('../../Observable');
 var ignoreElements_1 = require('../../operator/ignoreElements');
 Observable_1.Observable.prototype.ignoreElements = ignoreElements_1.ignoreElements;
 
-},{"../../Observable":568,"../../operator/ignoreElements":750}],629:[function(require,module,exports){
+},{"../../Observable":560,"../../operator/ignoreElements":742}],621:[function(require,module,exports){
 "use strict";
 var Observable_1 = require('../../Observable');
 var last_1 = require('../../operator/last');
 Observable_1.Observable.prototype.last = last_1.last;
 
-},{"../../Observable":568,"../../operator/last":751}],630:[function(require,module,exports){
+},{"../../Observable":560,"../../operator/last":743}],622:[function(require,module,exports){
 "use strict";
 var Observable_1 = require('../../Observable');
 var let_1 = require('../../operator/let');
 Observable_1.Observable.prototype.let = let_1.letProto;
 Observable_1.Observable.prototype.letBind = let_1.letProto;
 
-},{"../../Observable":568,"../../operator/let":752}],631:[function(require,module,exports){
+},{"../../Observable":560,"../../operator/let":744}],623:[function(require,module,exports){
 "use strict";
 var Observable_1 = require('../../Observable');
 var map_1 = require('../../operator/map');
 Observable_1.Observable.prototype.map = map_1.map;
 
-},{"../../Observable":568,"../../operator/map":753}],632:[function(require,module,exports){
+},{"../../Observable":560,"../../operator/map":745}],624:[function(require,module,exports){
 "use strict";
 var Observable_1 = require('../../Observable');
 var mapTo_1 = require('../../operator/mapTo');
 Observable_1.Observable.prototype.mapTo = mapTo_1.mapTo;
 
-},{"../../Observable":568,"../../operator/mapTo":754}],633:[function(require,module,exports){
+},{"../../Observable":560,"../../operator/mapTo":746}],625:[function(require,module,exports){
 "use strict";
 var Observable_1 = require('../../Observable');
 var materialize_1 = require('../../operator/materialize');
 Observable_1.Observable.prototype.materialize = materialize_1.materialize;
 
-},{"../../Observable":568,"../../operator/materialize":755}],634:[function(require,module,exports){
+},{"../../Observable":560,"../../operator/materialize":747}],626:[function(require,module,exports){
 "use strict";
 var Observable_1 = require('../../Observable');
 var merge_1 = require('../../operator/merge');
 Observable_1.Observable.prototype.merge = merge_1.merge;
 
-},{"../../Observable":568,"../../operator/merge":756}],635:[function(require,module,exports){
+},{"../../Observable":560,"../../operator/merge":748}],627:[function(require,module,exports){
 "use strict";
 var Observable_1 = require('../../Observable');
 var mergeAll_1 = require('../../operator/mergeAll');
 Observable_1.Observable.prototype.mergeAll = mergeAll_1.mergeAll;
 
-},{"../../Observable":568,"../../operator/mergeAll":757}],636:[function(require,module,exports){
+},{"../../Observable":560,"../../operator/mergeAll":749}],628:[function(require,module,exports){
 "use strict";
 var Observable_1 = require('../../Observable');
 var mergeMap_1 = require('../../operator/mergeMap');
 Observable_1.Observable.prototype.mergeMap = mergeMap_1.mergeMap;
 Observable_1.Observable.prototype.flatMap = mergeMap_1.mergeMap;
 
-},{"../../Observable":568,"../../operator/mergeMap":758}],637:[function(require,module,exports){
+},{"../../Observable":560,"../../operator/mergeMap":750}],629:[function(require,module,exports){
 "use strict";
 var Observable_1 = require('../../Observable');
 var mergeMapTo_1 = require('../../operator/mergeMapTo');
 Observable_1.Observable.prototype.flatMapTo = mergeMapTo_1.mergeMapTo;
 Observable_1.Observable.prototype.mergeMapTo = mergeMapTo_1.mergeMapTo;
 
-},{"../../Observable":568,"../../operator/mergeMapTo":759}],638:[function(require,module,exports){
+},{"../../Observable":560,"../../operator/mergeMapTo":751}],630:[function(require,module,exports){
 "use strict";
 var Observable_1 = require('../../Observable');
 var multicast_1 = require('../../operator/multicast');
 Observable_1.Observable.prototype.multicast = multicast_1.multicast;
 
-},{"../../Observable":568,"../../operator/multicast":760}],639:[function(require,module,exports){
+},{"../../Observable":560,"../../operator/multicast":752}],631:[function(require,module,exports){
 "use strict";
 var Observable_1 = require('../../Observable');
 var observeOn_1 = require('../../operator/observeOn');
 Observable_1.Observable.prototype.observeOn = observeOn_1.observeOn;
 
-},{"../../Observable":568,"../../operator/observeOn":761}],640:[function(require,module,exports){
+},{"../../Observable":560,"../../operator/observeOn":753}],632:[function(require,module,exports){
 "use strict";
 var Observable_1 = require('../../Observable');
 var partition_1 = require('../../operator/partition');
 Observable_1.Observable.prototype.partition = partition_1.partition;
 
-},{"../../Observable":568,"../../operator/partition":762}],641:[function(require,module,exports){
+},{"../../Observable":560,"../../operator/partition":754}],633:[function(require,module,exports){
 "use strict";
 var Observable_1 = require('../../Observable');
 var pluck_1 = require('../../operator/pluck');
 Observable_1.Observable.prototype.pluck = pluck_1.pluck;
 
-},{"../../Observable":568,"../../operator/pluck":763}],642:[function(require,module,exports){
+},{"../../Observable":560,"../../operator/pluck":755}],634:[function(require,module,exports){
 "use strict";
 var Observable_1 = require('../../Observable');
 var publish_1 = require('../../operator/publish');
 Observable_1.Observable.prototype.publish = publish_1.publish;
 
-},{"../../Observable":568,"../../operator/publish":764}],643:[function(require,module,exports){
+},{"../../Observable":560,"../../operator/publish":756}],635:[function(require,module,exports){
 "use strict";
 var Observable_1 = require('../../Observable');
 var publishBehavior_1 = require('../../operator/publishBehavior');
 Observable_1.Observable.prototype.publishBehavior = publishBehavior_1.publishBehavior;
 
-},{"../../Observable":568,"../../operator/publishBehavior":765}],644:[function(require,module,exports){
+},{"../../Observable":560,"../../operator/publishBehavior":757}],636:[function(require,module,exports){
 "use strict";
 var Observable_1 = require('../../Observable');
 var publishLast_1 = require('../../operator/publishLast');
 Observable_1.Observable.prototype.publishLast = publishLast_1.publishLast;
 
-},{"../../Observable":568,"../../operator/publishLast":766}],645:[function(require,module,exports){
+},{"../../Observable":560,"../../operator/publishLast":758}],637:[function(require,module,exports){
 "use strict";
 var Observable_1 = require('../../Observable');
 var publishReplay_1 = require('../../operator/publishReplay');
 Observable_1.Observable.prototype.publishReplay = publishReplay_1.publishReplay;
 
-},{"../../Observable":568,"../../operator/publishReplay":767}],646:[function(require,module,exports){
+},{"../../Observable":560,"../../operator/publishReplay":759}],638:[function(require,module,exports){
 "use strict";
 var Observable_1 = require('../../Observable');
 var race_1 = require('../../operator/race');
 Observable_1.Observable.prototype.race = race_1.race;
 
-},{"../../Observable":568,"../../operator/race":768}],647:[function(require,module,exports){
+},{"../../Observable":560,"../../operator/race":760}],639:[function(require,module,exports){
 "use strict";
 var Observable_1 = require('../../Observable');
 var reduce_1 = require('../../operator/reduce');
 Observable_1.Observable.prototype.reduce = reduce_1.reduce;
 
-},{"../../Observable":568,"../../operator/reduce":769}],648:[function(require,module,exports){
+},{"../../Observable":560,"../../operator/reduce":761}],640:[function(require,module,exports){
 "use strict";
 var Observable_1 = require('../../Observable');
 var repeat_1 = require('../../operator/repeat');
 Observable_1.Observable.prototype.repeat = repeat_1.repeat;
 
-},{"../../Observable":568,"../../operator/repeat":770}],649:[function(require,module,exports){
+},{"../../Observable":560,"../../operator/repeat":762}],641:[function(require,module,exports){
 "use strict";
 var Observable_1 = require('../../Observable');
 var retry_1 = require('../../operator/retry');
 Observable_1.Observable.prototype.retry = retry_1.retry;
 
-},{"../../Observable":568,"../../operator/retry":771}],650:[function(require,module,exports){
+},{"../../Observable":560,"../../operator/retry":763}],642:[function(require,module,exports){
 "use strict";
 var Observable_1 = require('../../Observable');
 var retryWhen_1 = require('../../operator/retryWhen');
 Observable_1.Observable.prototype.retryWhen = retryWhen_1.retryWhen;
 
-},{"../../Observable":568,"../../operator/retryWhen":772}],651:[function(require,module,exports){
+},{"../../Observable":560,"../../operator/retryWhen":764}],643:[function(require,module,exports){
 "use strict";
 var Observable_1 = require('../../Observable');
 var sample_1 = require('../../operator/sample');
 Observable_1.Observable.prototype.sample = sample_1.sample;
 
-},{"../../Observable":568,"../../operator/sample":773}],652:[function(require,module,exports){
+},{"../../Observable":560,"../../operator/sample":765}],644:[function(require,module,exports){
 "use strict";
 var Observable_1 = require('../../Observable');
 var sampleTime_1 = require('../../operator/sampleTime');
 Observable_1.Observable.prototype.sampleTime = sampleTime_1.sampleTime;
 
-},{"../../Observable":568,"../../operator/sampleTime":774}],653:[function(require,module,exports){
+},{"../../Observable":560,"../../operator/sampleTime":766}],645:[function(require,module,exports){
 "use strict";
 var Observable_1 = require('../../Observable');
 var scan_1 = require('../../operator/scan');
 Observable_1.Observable.prototype.scan = scan_1.scan;
 
-},{"../../Observable":568,"../../operator/scan":775}],654:[function(require,module,exports){
+},{"../../Observable":560,"../../operator/scan":767}],646:[function(require,module,exports){
 "use strict";
 var Observable_1 = require('../../Observable');
 var share_1 = require('../../operator/share');
 Observable_1.Observable.prototype.share = share_1.share;
 
-},{"../../Observable":568,"../../operator/share":776}],655:[function(require,module,exports){
+},{"../../Observable":560,"../../operator/share":768}],647:[function(require,module,exports){
 "use strict";
 var Observable_1 = require('../../Observable');
 var single_1 = require('../../operator/single');
 Observable_1.Observable.prototype.single = single_1.single;
 
-},{"../../Observable":568,"../../operator/single":777}],656:[function(require,module,exports){
+},{"../../Observable":560,"../../operator/single":769}],648:[function(require,module,exports){
 "use strict";
 var Observable_1 = require('../../Observable');
 var skip_1 = require('../../operator/skip');
 Observable_1.Observable.prototype.skip = skip_1.skip;
 
-},{"../../Observable":568,"../../operator/skip":778}],657:[function(require,module,exports){
+},{"../../Observable":560,"../../operator/skip":770}],649:[function(require,module,exports){
 "use strict";
 var Observable_1 = require('../../Observable');
 var skipUntil_1 = require('../../operator/skipUntil');
 Observable_1.Observable.prototype.skipUntil = skipUntil_1.skipUntil;
 
-},{"../../Observable":568,"../../operator/skipUntil":779}],658:[function(require,module,exports){
+},{"../../Observable":560,"../../operator/skipUntil":771}],650:[function(require,module,exports){
 "use strict";
 var Observable_1 = require('../../Observable');
 var skipWhile_1 = require('../../operator/skipWhile');
 Observable_1.Observable.prototype.skipWhile = skipWhile_1.skipWhile;
 
-},{"../../Observable":568,"../../operator/skipWhile":780}],659:[function(require,module,exports){
+},{"../../Observable":560,"../../operator/skipWhile":772}],651:[function(require,module,exports){
 "use strict";
 var Observable_1 = require('../../Observable');
 var startWith_1 = require('../../operator/startWith');
 Observable_1.Observable.prototype.startWith = startWith_1.startWith;
 
-},{"../../Observable":568,"../../operator/startWith":781}],660:[function(require,module,exports){
+},{"../../Observable":560,"../../operator/startWith":773}],652:[function(require,module,exports){
 "use strict";
 var Observable_1 = require('../../Observable');
 var subscribeOn_1 = require('../../operator/subscribeOn');
 Observable_1.Observable.prototype.subscribeOn = subscribeOn_1.subscribeOn;
 
-},{"../../Observable":568,"../../operator/subscribeOn":782}],661:[function(require,module,exports){
+},{"../../Observable":560,"../../operator/subscribeOn":774}],653:[function(require,module,exports){
 "use strict";
 var Observable_1 = require('../../Observable');
 var switch_1 = require('../../operator/switch');
 Observable_1.Observable.prototype.switch = switch_1._switch;
 
-},{"../../Observable":568,"../../operator/switch":783}],662:[function(require,module,exports){
+},{"../../Observable":560,"../../operator/switch":775}],654:[function(require,module,exports){
 "use strict";
 var Observable_1 = require('../../Observable');
 var switchMap_1 = require('../../operator/switchMap');
 Observable_1.Observable.prototype.switchMap = switchMap_1.switchMap;
 
-},{"../../Observable":568,"../../operator/switchMap":784}],663:[function(require,module,exports){
+},{"../../Observable":560,"../../operator/switchMap":776}],655:[function(require,module,exports){
 "use strict";
 var Observable_1 = require('../../Observable');
 var switchMapTo_1 = require('../../operator/switchMapTo');
 Observable_1.Observable.prototype.switchMapTo = switchMapTo_1.switchMapTo;
 
-},{"../../Observable":568,"../../operator/switchMapTo":785}],664:[function(require,module,exports){
+},{"../../Observable":560,"../../operator/switchMapTo":777}],656:[function(require,module,exports){
 "use strict";
 var Observable_1 = require('../../Observable');
 var take_1 = require('../../operator/take');
 Observable_1.Observable.prototype.take = take_1.take;
 
-},{"../../Observable":568,"../../operator/take":786}],665:[function(require,module,exports){
+},{"../../Observable":560,"../../operator/take":778}],657:[function(require,module,exports){
 "use strict";
 var Observable_1 = require('../../Observable');
 var takeLast_1 = require('../../operator/takeLast');
 Observable_1.Observable.prototype.takeLast = takeLast_1.takeLast;
 
-},{"../../Observable":568,"../../operator/takeLast":787}],666:[function(require,module,exports){
+},{"../../Observable":560,"../../operator/takeLast":779}],658:[function(require,module,exports){
 "use strict";
 var Observable_1 = require('../../Observable');
 var takeUntil_1 = require('../../operator/takeUntil');
 Observable_1.Observable.prototype.takeUntil = takeUntil_1.takeUntil;
 
-},{"../../Observable":568,"../../operator/takeUntil":788}],667:[function(require,module,exports){
+},{"../../Observable":560,"../../operator/takeUntil":780}],659:[function(require,module,exports){
 "use strict";
 var Observable_1 = require('../../Observable');
 var takeWhile_1 = require('../../operator/takeWhile');
 Observable_1.Observable.prototype.takeWhile = takeWhile_1.takeWhile;
 
-},{"../../Observable":568,"../../operator/takeWhile":789}],668:[function(require,module,exports){
+},{"../../Observable":560,"../../operator/takeWhile":781}],660:[function(require,module,exports){
 "use strict";
 var Observable_1 = require('../../Observable');
 var throttle_1 = require('../../operator/throttle');
 Observable_1.Observable.prototype.throttle = throttle_1.throttle;
 
-},{"../../Observable":568,"../../operator/throttle":790}],669:[function(require,module,exports){
+},{"../../Observable":560,"../../operator/throttle":782}],661:[function(require,module,exports){
 "use strict";
 var Observable_1 = require('../../Observable');
 var throttleTime_1 = require('../../operator/throttleTime');
 Observable_1.Observable.prototype.throttleTime = throttleTime_1.throttleTime;
 
-},{"../../Observable":568,"../../operator/throttleTime":791}],670:[function(require,module,exports){
+},{"../../Observable":560,"../../operator/throttleTime":783}],662:[function(require,module,exports){
 "use strict";
 var Observable_1 = require('../../Observable');
 var timeout_1 = require('../../operator/timeout');
 Observable_1.Observable.prototype.timeout = timeout_1.timeout;
 
-},{"../../Observable":568,"../../operator/timeout":792}],671:[function(require,module,exports){
+},{"../../Observable":560,"../../operator/timeout":784}],663:[function(require,module,exports){
 "use strict";
 var Observable_1 = require('../../Observable');
 var timeoutWith_1 = require('../../operator/timeoutWith');
 Observable_1.Observable.prototype.timeoutWith = timeoutWith_1.timeoutWith;
 
-},{"../../Observable":568,"../../operator/timeoutWith":793}],672:[function(require,module,exports){
+},{"../../Observable":560,"../../operator/timeoutWith":785}],664:[function(require,module,exports){
 "use strict";
 var Observable_1 = require('../../Observable');
 var toArray_1 = require('../../operator/toArray');
 Observable_1.Observable.prototype.toArray = toArray_1.toArray;
 
-},{"../../Observable":568,"../../operator/toArray":794}],673:[function(require,module,exports){
+},{"../../Observable":560,"../../operator/toArray":786}],665:[function(require,module,exports){
 "use strict";
 var Observable_1 = require('../../Observable');
 var toPromise_1 = require('../../operator/toPromise');
 Observable_1.Observable.prototype.toPromise = toPromise_1.toPromise;
 
-},{"../../Observable":568,"../../operator/toPromise":795}],674:[function(require,module,exports){
+},{"../../Observable":560,"../../operator/toPromise":787}],666:[function(require,module,exports){
 "use strict";
 var Observable_1 = require('../../Observable');
 var window_1 = require('../../operator/window');
 Observable_1.Observable.prototype.window = window_1.window;
 
-},{"../../Observable":568,"../../operator/window":796}],675:[function(require,module,exports){
+},{"../../Observable":560,"../../operator/window":788}],667:[function(require,module,exports){
 "use strict";
 var Observable_1 = require('../../Observable');
 var windowCount_1 = require('../../operator/windowCount');
 Observable_1.Observable.prototype.windowCount = windowCount_1.windowCount;
 
-},{"../../Observable":568,"../../operator/windowCount":797}],676:[function(require,module,exports){
+},{"../../Observable":560,"../../operator/windowCount":789}],668:[function(require,module,exports){
 "use strict";
 var Observable_1 = require('../../Observable');
 var windowTime_1 = require('../../operator/windowTime');
 Observable_1.Observable.prototype.windowTime = windowTime_1.windowTime;
 
-},{"../../Observable":568,"../../operator/windowTime":798}],677:[function(require,module,exports){
+},{"../../Observable":560,"../../operator/windowTime":790}],669:[function(require,module,exports){
 "use strict";
 var Observable_1 = require('../../Observable');
 var windowToggle_1 = require('../../operator/windowToggle');
 Observable_1.Observable.prototype.windowToggle = windowToggle_1.windowToggle;
 
-},{"../../Observable":568,"../../operator/windowToggle":799}],678:[function(require,module,exports){
+},{"../../Observable":560,"../../operator/windowToggle":791}],670:[function(require,module,exports){
 "use strict";
 var Observable_1 = require('../../Observable');
 var windowWhen_1 = require('../../operator/windowWhen');
 Observable_1.Observable.prototype.windowWhen = windowWhen_1.windowWhen;
 
-},{"../../Observable":568,"../../operator/windowWhen":800}],679:[function(require,module,exports){
+},{"../../Observable":560,"../../operator/windowWhen":792}],671:[function(require,module,exports){
 "use strict";
 var Observable_1 = require('../../Observable');
 var withLatestFrom_1 = require('../../operator/withLatestFrom');
 Observable_1.Observable.prototype.withLatestFrom = withLatestFrom_1.withLatestFrom;
 
-},{"../../Observable":568,"../../operator/withLatestFrom":801}],680:[function(require,module,exports){
+},{"../../Observable":560,"../../operator/withLatestFrom":793}],672:[function(require,module,exports){
 "use strict";
 var Observable_1 = require('../../Observable');
 var zip_1 = require('../../operator/zip');
 Observable_1.Observable.prototype.zip = zip_1.zipProto;
 
-},{"../../Observable":568,"../../operator/zip":802}],681:[function(require,module,exports){
+},{"../../Observable":560,"../../operator/zip":794}],673:[function(require,module,exports){
 "use strict";
 var Observable_1 = require('../../Observable');
 var zipAll_1 = require('../../operator/zipAll');
 Observable_1.Observable.prototype.zipAll = zipAll_1.zipAll;
 
-},{"../../Observable":568,"../../operator/zipAll":803}],682:[function(require,module,exports){
+},{"../../Observable":560,"../../operator/zipAll":795}],674:[function(require,module,exports){
 "use strict";
 var __extends = (this && this.__extends) || function (d, b) {
     for (var p in b) if (b.hasOwnProperty(p)) d[p] = b[p];
@@ -94363,7 +93124,7 @@ var ArrayLikeObservable = (function (_super) {
 }(Observable_1.Observable));
 exports.ArrayLikeObservable = ArrayLikeObservable;
 
-},{"../Observable":568,"./EmptyObservable":688,"./ScalarObservable":699}],683:[function(require,module,exports){
+},{"../Observable":560,"./EmptyObservable":680,"./ScalarObservable":691}],675:[function(require,module,exports){
 "use strict";
 var __extends = (this && this.__extends) || function (d, b) {
     for (var p in b) if (b.hasOwnProperty(p)) d[p] = b[p];
@@ -94486,7 +93247,7 @@ var ArrayObservable = (function (_super) {
 }(Observable_1.Observable));
 exports.ArrayObservable = ArrayObservable;
 
-},{"../Observable":568,"../util/isScheduler":831,"./EmptyObservable":688,"./ScalarObservable":699}],684:[function(require,module,exports){
+},{"../Observable":560,"../util/isScheduler":823,"./EmptyObservable":680,"./ScalarObservable":691}],676:[function(require,module,exports){
 "use strict";
 var __extends = (this && this.__extends) || function (d, b) {
     for (var p in b) if (b.hasOwnProperty(p)) d[p] = b[p];
@@ -94629,7 +93390,7 @@ function dispatchError(arg) {
     subject.error(err);
 }
 
-},{"../AsyncSubject":564,"../Observable":568,"../util/errorObject":824,"../util/tryCatch":838}],685:[function(require,module,exports){
+},{"../AsyncSubject":556,"../Observable":560,"../util/errorObject":816,"../util/tryCatch":830}],677:[function(require,module,exports){
 "use strict";
 var __extends = (this && this.__extends) || function (d, b) {
     for (var p in b) if (b.hasOwnProperty(p)) d[p] = b[p];
@@ -94776,7 +93537,7 @@ function dispatchError(arg) {
     subject.error(err);
 }
 
-},{"../AsyncSubject":564,"../Observable":568,"../util/errorObject":824,"../util/tryCatch":838}],686:[function(require,module,exports){
+},{"../AsyncSubject":556,"../Observable":560,"../util/errorObject":816,"../util/tryCatch":830}],678:[function(require,module,exports){
 "use strict";
 var __extends = (this && this.__extends) || function (d, b) {
     for (var p in b) if (b.hasOwnProperty(p)) d[p] = b[p];
@@ -94925,7 +93686,7 @@ var RefCountSubscriber = (function (_super) {
     return RefCountSubscriber;
 }(Subscriber_1.Subscriber));
 
-},{"../Observable":568,"../Subscriber":576,"../Subscription":577}],687:[function(require,module,exports){
+},{"../Observable":560,"../Subscriber":568,"../Subscription":569}],679:[function(require,module,exports){
 "use strict";
 var __extends = (this && this.__extends) || function (d, b) {
     for (var p in b) if (b.hasOwnProperty(p)) d[p] = b[p];
@@ -95019,7 +93780,7 @@ var DeferSubscriber = (function (_super) {
     return DeferSubscriber;
 }(OuterSubscriber_1.OuterSubscriber));
 
-},{"../Observable":568,"../OuterSubscriber":571,"../util/subscribeToResult":835}],688:[function(require,module,exports){
+},{"../Observable":560,"../OuterSubscriber":563,"../util/subscribeToResult":827}],680:[function(require,module,exports){
 "use strict";
 var __extends = (this && this.__extends) || function (d, b) {
     for (var p in b) if (b.hasOwnProperty(p)) d[p] = b[p];
@@ -95095,7 +93856,7 @@ var EmptyObservable = (function (_super) {
 }(Observable_1.Observable));
 exports.EmptyObservable = EmptyObservable;
 
-},{"../Observable":568}],689:[function(require,module,exports){
+},{"../Observable":560}],681:[function(require,module,exports){
 "use strict";
 var __extends = (this && this.__extends) || function (d, b) {
     for (var p in b) if (b.hasOwnProperty(p)) d[p] = b[p];
@@ -95178,7 +93939,7 @@ var ErrorObservable = (function (_super) {
 }(Observable_1.Observable));
 exports.ErrorObservable = ErrorObservable;
 
-},{"../Observable":568}],690:[function(require,module,exports){
+},{"../Observable":560}],682:[function(require,module,exports){
 "use strict";
 var __extends = (this && this.__extends) || function (d, b) {
     for (var p in b) if (b.hasOwnProperty(p)) d[p] = b[p];
@@ -95290,7 +94051,7 @@ var ForkJoinSubscriber = (function (_super) {
     return ForkJoinSubscriber;
 }(OuterSubscriber_1.OuterSubscriber));
 
-},{"../Observable":568,"../OuterSubscriber":571,"../util/isArray":825,"../util/subscribeToResult":835,"./EmptyObservable":688}],691:[function(require,module,exports){
+},{"../Observable":560,"../OuterSubscriber":563,"../util/isArray":817,"../util/subscribeToResult":827,"./EmptyObservable":680}],683:[function(require,module,exports){
 "use strict";
 var __extends = (this && this.__extends) || function (d, b) {
     for (var p in b) if (b.hasOwnProperty(p)) d[p] = b[p];
@@ -95385,7 +94146,7 @@ var FromEventObservable = (function (_super) {
 }(Observable_1.Observable));
 exports.FromEventObservable = FromEventObservable;
 
-},{"../Observable":568,"../Subscription":577,"../util/errorObject":824,"../util/tryCatch":838}],692:[function(require,module,exports){
+},{"../Observable":560,"../Subscription":569,"../util/errorObject":816,"../util/tryCatch":830}],684:[function(require,module,exports){
 "use strict";
 var __extends = (this && this.__extends) || function (d, b) {
     for (var p in b) if (b.hasOwnProperty(p)) d[p] = b[p];
@@ -95447,7 +94208,7 @@ var FromEventPatternObservable = (function (_super) {
 }(Observable_1.Observable));
 exports.FromEventPatternObservable = FromEventPatternObservable;
 
-},{"../Observable":568,"../Subscription":577,"../util/errorObject":824,"../util/tryCatch":838}],693:[function(require,module,exports){
+},{"../Observable":560,"../Subscription":569,"../util/errorObject":816,"../util/tryCatch":830}],685:[function(require,module,exports){
 "use strict";
 var __extends = (this && this.__extends) || function (d, b) {
     for (var p in b) if (b.hasOwnProperty(p)) d[p] = b[p];
@@ -95525,7 +94286,7 @@ var FromObservable = (function (_super) {
 }(Observable_1.Observable));
 exports.FromObservable = FromObservable;
 
-},{"../Observable":568,"../operator/observeOn":761,"../symbol/iterator":813,"../symbol/observable":814,"../util/isArray":825,"../util/isFunction":827,"../util/isPromise":830,"../util/isScheduler":831,"./ArrayLikeObservable":682,"./ArrayObservable":683,"./IteratorObservable":695,"./PromiseObservable":697}],694:[function(require,module,exports){
+},{"../Observable":560,"../operator/observeOn":753,"../symbol/iterator":805,"../symbol/observable":806,"../util/isArray":817,"../util/isFunction":819,"../util/isPromise":822,"../util/isScheduler":823,"./ArrayLikeObservable":674,"./ArrayObservable":675,"./IteratorObservable":687,"./PromiseObservable":689}],686:[function(require,module,exports){
 "use strict";
 var __extends = (this && this.__extends) || function (d, b) {
     for (var p in b) if (b.hasOwnProperty(p)) d[p] = b[p];
@@ -95614,7 +94375,7 @@ var IntervalObservable = (function (_super) {
 }(Observable_1.Observable));
 exports.IntervalObservable = IntervalObservable;
 
-},{"../Observable":568,"../scheduler/async":811,"../util/isNumeric":828}],695:[function(require,module,exports){
+},{"../Observable":560,"../scheduler/async":803,"../util/isNumeric":820}],687:[function(require,module,exports){
 "use strict";
 var __extends = (this && this.__extends) || function (d, b) {
     for (var p in b) if (b.hasOwnProperty(p)) d[p] = b[p];
@@ -95808,7 +94569,7 @@ function sign(value) {
     return valueAsNumber < 0 ? -1 : 1;
 }
 
-},{"../Observable":568,"../symbol/iterator":813,"../util/errorObject":824,"../util/isFunction":827,"../util/isObject":829,"../util/root":834,"../util/tryCatch":838}],696:[function(require,module,exports){
+},{"../Observable":560,"../symbol/iterator":805,"../util/errorObject":816,"../util/isFunction":819,"../util/isObject":821,"../util/root":826,"../util/tryCatch":830}],688:[function(require,module,exports){
 "use strict";
 var __extends = (this && this.__extends) || function (d, b) {
     for (var p in b) if (b.hasOwnProperty(p)) d[p] = b[p];
@@ -95868,7 +94629,7 @@ var NeverObservable = (function (_super) {
 }(Observable_1.Observable));
 exports.NeverObservable = NeverObservable;
 
-},{"../Observable":568,"../util/noop":832}],697:[function(require,module,exports){
+},{"../Observable":560,"../util/noop":824}],689:[function(require,module,exports){
 "use strict";
 var __extends = (this && this.__extends) || function (d, b) {
     for (var p in b) if (b.hasOwnProperty(p)) d[p] = b[p];
@@ -95974,7 +94735,7 @@ function dispatchError(arg) {
     }
 }
 
-},{"../Observable":568,"../util/root":834}],698:[function(require,module,exports){
+},{"../Observable":560,"../util/root":826}],690:[function(require,module,exports){
 "use strict";
 var __extends = (this && this.__extends) || function (d, b) {
     for (var p in b) if (b.hasOwnProperty(p)) d[p] = b[p];
@@ -96071,7 +94832,7 @@ var RangeObservable = (function (_super) {
 }(Observable_1.Observable));
 exports.RangeObservable = RangeObservable;
 
-},{"../Observable":568}],699:[function(require,module,exports){
+},{"../Observable":560}],691:[function(require,module,exports){
 "use strict";
 var __extends = (this && this.__extends) || function (d, b) {
     for (var p in b) if (b.hasOwnProperty(p)) d[p] = b[p];
@@ -96127,7 +94888,7 @@ var ScalarObservable = (function (_super) {
 }(Observable_1.Observable));
 exports.ScalarObservable = ScalarObservable;
 
-},{"../Observable":568}],700:[function(require,module,exports){
+},{"../Observable":560}],692:[function(require,module,exports){
 "use strict";
 var __extends = (this && this.__extends) || function (d, b) {
     for (var p in b) if (b.hasOwnProperty(p)) d[p] = b[p];
@@ -96179,7 +94940,7 @@ var SubscribeOnObservable = (function (_super) {
 }(Observable_1.Observable));
 exports.SubscribeOnObservable = SubscribeOnObservable;
 
-},{"../Observable":568,"../scheduler/asap":810,"../util/isNumeric":828}],701:[function(require,module,exports){
+},{"../Observable":560,"../scheduler/asap":802,"../util/isNumeric":820}],693:[function(require,module,exports){
 "use strict";
 var __extends = (this && this.__extends) || function (d, b) {
     for (var p in b) if (b.hasOwnProperty(p)) d[p] = b[p];
@@ -96287,97 +95048,97 @@ var TimerObservable = (function (_super) {
 }(Observable_1.Observable));
 exports.TimerObservable = TimerObservable;
 
-},{"../Observable":568,"../scheduler/async":811,"../util/isDate":826,"../util/isNumeric":828,"../util/isScheduler":831}],702:[function(require,module,exports){
+},{"../Observable":560,"../scheduler/async":803,"../util/isDate":818,"../util/isNumeric":820,"../util/isScheduler":823}],694:[function(require,module,exports){
 "use strict";
 var BoundCallbackObservable_1 = require('./BoundCallbackObservable');
 exports.bindCallback = BoundCallbackObservable_1.BoundCallbackObservable.create;
 
-},{"./BoundCallbackObservable":684}],703:[function(require,module,exports){
+},{"./BoundCallbackObservable":676}],695:[function(require,module,exports){
 "use strict";
 var BoundNodeCallbackObservable_1 = require('./BoundNodeCallbackObservable');
 exports.bindNodeCallback = BoundNodeCallbackObservable_1.BoundNodeCallbackObservable.create;
 
-},{"./BoundNodeCallbackObservable":685}],704:[function(require,module,exports){
+},{"./BoundNodeCallbackObservable":677}],696:[function(require,module,exports){
 "use strict";
 var concat_1 = require('../operator/concat');
 exports.concat = concat_1.concatStatic;
 
-},{"../operator/concat":731}],705:[function(require,module,exports){
+},{"../operator/concat":723}],697:[function(require,module,exports){
 "use strict";
 var DeferObservable_1 = require('./DeferObservable');
 exports.defer = DeferObservable_1.DeferObservable.create;
 
-},{"./DeferObservable":687}],706:[function(require,module,exports){
+},{"./DeferObservable":679}],698:[function(require,module,exports){
 "use strict";
 var EmptyObservable_1 = require('./EmptyObservable');
 exports.empty = EmptyObservable_1.EmptyObservable.create;
 
-},{"./EmptyObservable":688}],707:[function(require,module,exports){
+},{"./EmptyObservable":680}],699:[function(require,module,exports){
 "use strict";
 var ForkJoinObservable_1 = require('./ForkJoinObservable');
 exports.forkJoin = ForkJoinObservable_1.ForkJoinObservable.create;
 
-},{"./ForkJoinObservable":690}],708:[function(require,module,exports){
+},{"./ForkJoinObservable":682}],700:[function(require,module,exports){
 "use strict";
 var FromObservable_1 = require('./FromObservable');
 exports.from = FromObservable_1.FromObservable.create;
 
-},{"./FromObservable":693}],709:[function(require,module,exports){
+},{"./FromObservable":685}],701:[function(require,module,exports){
 "use strict";
 var FromEventObservable_1 = require('./FromEventObservable');
 exports.fromEvent = FromEventObservable_1.FromEventObservable.create;
 
-},{"./FromEventObservable":691}],710:[function(require,module,exports){
+},{"./FromEventObservable":683}],702:[function(require,module,exports){
 "use strict";
 var FromEventPatternObservable_1 = require('./FromEventPatternObservable');
 exports.fromEventPattern = FromEventPatternObservable_1.FromEventPatternObservable.create;
 
-},{"./FromEventPatternObservable":692}],711:[function(require,module,exports){
+},{"./FromEventPatternObservable":684}],703:[function(require,module,exports){
 "use strict";
 var PromiseObservable_1 = require('./PromiseObservable');
 exports.fromPromise = PromiseObservable_1.PromiseObservable.create;
 
-},{"./PromiseObservable":697}],712:[function(require,module,exports){
+},{"./PromiseObservable":689}],704:[function(require,module,exports){
 "use strict";
 var IntervalObservable_1 = require('./IntervalObservable');
 exports.interval = IntervalObservable_1.IntervalObservable.create;
 
-},{"./IntervalObservable":694}],713:[function(require,module,exports){
+},{"./IntervalObservable":686}],705:[function(require,module,exports){
 "use strict";
 var merge_1 = require('../operator/merge');
 exports.merge = merge_1.mergeStatic;
 
-},{"../operator/merge":756}],714:[function(require,module,exports){
+},{"../operator/merge":748}],706:[function(require,module,exports){
 "use strict";
 var NeverObservable_1 = require('./NeverObservable');
 exports.never = NeverObservable_1.NeverObservable.create;
 
-},{"./NeverObservable":696}],715:[function(require,module,exports){
+},{"./NeverObservable":688}],707:[function(require,module,exports){
 "use strict";
 var ArrayObservable_1 = require('./ArrayObservable');
 exports.of = ArrayObservable_1.ArrayObservable.of;
 
-},{"./ArrayObservable":683}],716:[function(require,module,exports){
+},{"./ArrayObservable":675}],708:[function(require,module,exports){
 "use strict";
 var RangeObservable_1 = require('./RangeObservable');
 exports.range = RangeObservable_1.RangeObservable.create;
 
-},{"./RangeObservable":698}],717:[function(require,module,exports){
+},{"./RangeObservable":690}],709:[function(require,module,exports){
 "use strict";
 var ErrorObservable_1 = require('./ErrorObservable');
 exports._throw = ErrorObservable_1.ErrorObservable.create;
 
-},{"./ErrorObservable":689}],718:[function(require,module,exports){
+},{"./ErrorObservable":681}],710:[function(require,module,exports){
 "use strict";
 var TimerObservable_1 = require('./TimerObservable');
 exports.timer = TimerObservable_1.TimerObservable.create;
 
-},{"./TimerObservable":701}],719:[function(require,module,exports){
+},{"./TimerObservable":693}],711:[function(require,module,exports){
 "use strict";
 var zip_1 = require('../operator/zip');
 exports.zip = zip_1.zipStatic;
 
-},{"../operator/zip":802}],720:[function(require,module,exports){
+},{"../operator/zip":794}],712:[function(require,module,exports){
 "use strict";
 var __extends = (this && this.__extends) || function (d, b) {
     for (var p in b) if (b.hasOwnProperty(p)) d[p] = b[p];
@@ -96454,7 +95215,7 @@ var AuditSubscriber = (function (_super) {
     return AuditSubscriber;
 }(OuterSubscriber_1.OuterSubscriber));
 
-},{"../OuterSubscriber":571,"../util/errorObject":824,"../util/subscribeToResult":835,"../util/tryCatch":838}],721:[function(require,module,exports){
+},{"../OuterSubscriber":563,"../util/errorObject":816,"../util/subscribeToResult":827,"../util/tryCatch":830}],713:[function(require,module,exports){
 "use strict";
 var __extends = (this && this.__extends) || function (d, b) {
     for (var p in b) if (b.hasOwnProperty(p)) d[p] = b[p];
@@ -96524,7 +95285,7 @@ function dispatchNext(subscriber) {
     subscriber.clearThrottle();
 }
 
-},{"../Subscriber":576,"../scheduler/async":811}],722:[function(require,module,exports){
+},{"../Subscriber":568,"../scheduler/async":803}],714:[function(require,module,exports){
 "use strict";
 var __extends = (this && this.__extends) || function (d, b) {
     for (var p in b) if (b.hasOwnProperty(p)) d[p] = b[p];
@@ -96601,7 +95362,7 @@ var BufferSubscriber = (function (_super) {
     return BufferSubscriber;
 }(OuterSubscriber_1.OuterSubscriber));
 
-},{"../OuterSubscriber":571,"../util/subscribeToResult":835}],723:[function(require,module,exports){
+},{"../OuterSubscriber":563,"../util/subscribeToResult":827}],715:[function(require,module,exports){
 "use strict";
 var __extends = (this && this.__extends) || function (d, b) {
     for (var p in b) if (b.hasOwnProperty(p)) d[p] = b[p];
@@ -96715,7 +95476,7 @@ var BufferCountSubscriber = (function (_super) {
     return BufferCountSubscriber;
 }(Subscriber_1.Subscriber));
 
-},{"../Subscriber":576}],724:[function(require,module,exports){
+},{"../Subscriber":568}],716:[function(require,module,exports){
 "use strict";
 var __extends = (this && this.__extends) || function (d, b) {
     for (var p in b) if (b.hasOwnProperty(p)) d[p] = b[p];
@@ -96864,7 +95625,7 @@ function dispatchBufferClose(arg) {
     subscriber.closeBuffer(buffer);
 }
 
-},{"../Subscriber":576,"../scheduler/async":811}],725:[function(require,module,exports){
+},{"../Subscriber":568,"../scheduler/async":803}],717:[function(require,module,exports){
 "use strict";
 var __extends = (this && this.__extends) || function (d, b) {
     for (var p in b) if (b.hasOwnProperty(p)) d[p] = b[p];
@@ -97017,7 +95778,7 @@ var BufferToggleSubscriber = (function (_super) {
     return BufferToggleSubscriber;
 }(OuterSubscriber_1.OuterSubscriber));
 
-},{"../OuterSubscriber":571,"../Subscription":577,"../util/subscribeToResult":835}],726:[function(require,module,exports){
+},{"../OuterSubscriber":563,"../Subscription":569,"../util/subscribeToResult":827}],718:[function(require,module,exports){
 "use strict";
 var __extends = (this && this.__extends) || function (d, b) {
     for (var p in b) if (b.hasOwnProperty(p)) d[p] = b[p];
@@ -97140,7 +95901,7 @@ var BufferWhenSubscriber = (function (_super) {
     return BufferWhenSubscriber;
 }(OuterSubscriber_1.OuterSubscriber));
 
-},{"../OuterSubscriber":571,"../Subscription":577,"../util/errorObject":824,"../util/subscribeToResult":835,"../util/tryCatch":838}],727:[function(require,module,exports){
+},{"../OuterSubscriber":563,"../Subscription":569,"../util/errorObject":816,"../util/subscribeToResult":827,"../util/tryCatch":830}],719:[function(require,module,exports){
 "use strict";
 var publishReplay_1 = require('./publishReplay');
 /**
@@ -97158,7 +95919,7 @@ function cache(bufferSize, windowTime, scheduler) {
 }
 exports.cache = cache;
 
-},{"./publishReplay":767}],728:[function(require,module,exports){
+},{"./publishReplay":759}],720:[function(require,module,exports){
 "use strict";
 var __extends = (this && this.__extends) || function (d, b) {
     for (var p in b) if (b.hasOwnProperty(p)) d[p] = b[p];
@@ -97226,7 +95987,7 @@ var CatchSubscriber = (function (_super) {
     return CatchSubscriber;
 }(Subscriber_1.Subscriber));
 
-},{"../Subscriber":576}],729:[function(require,module,exports){
+},{"../Subscriber":568}],721:[function(require,module,exports){
 "use strict";
 var combineLatest_1 = require('./combineLatest');
 /**
@@ -97274,7 +96035,7 @@ function combineAll(project) {
 }
 exports.combineAll = combineAll;
 
-},{"./combineLatest":730}],730:[function(require,module,exports){
+},{"./combineLatest":722}],722:[function(require,module,exports){
 "use strict";
 var __extends = (this && this.__extends) || function (d, b) {
     for (var p in b) if (b.hasOwnProperty(p)) d[p] = b[p];
@@ -97460,7 +96221,7 @@ var CombineLatestSubscriber = (function (_super) {
 }(OuterSubscriber_1.OuterSubscriber));
 exports.CombineLatestSubscriber = CombineLatestSubscriber;
 
-},{"../OuterSubscriber":571,"../observable/ArrayObservable":683,"../util/isArray":825,"../util/isScheduler":831,"../util/subscribeToResult":835}],731:[function(require,module,exports){
+},{"../OuterSubscriber":563,"../observable/ArrayObservable":675,"../util/isArray":817,"../util/isScheduler":823,"../util/subscribeToResult":827}],723:[function(require,module,exports){
 "use strict";
 var isScheduler_1 = require('../util/isScheduler');
 var ArrayObservable_1 = require('../observable/ArrayObservable');
@@ -97569,7 +96330,7 @@ function concatStatic() {
 }
 exports.concatStatic = concatStatic;
 
-},{"../observable/ArrayObservable":683,"../util/isScheduler":831,"./mergeAll":757}],732:[function(require,module,exports){
+},{"../observable/ArrayObservable":675,"../util/isScheduler":823,"./mergeAll":749}],724:[function(require,module,exports){
 "use strict";
 var mergeAll_1 = require('./mergeAll');
 /**
@@ -97619,7 +96380,7 @@ function concatAll() {
 }
 exports.concatAll = concatAll;
 
-},{"./mergeAll":757}],733:[function(require,module,exports){
+},{"./mergeAll":749}],725:[function(require,module,exports){
 "use strict";
 var mergeMap_1 = require('./mergeMap');
 /**
@@ -97683,7 +96444,7 @@ function concatMap(project, resultSelector) {
 }
 exports.concatMap = concatMap;
 
-},{"./mergeMap":758}],734:[function(require,module,exports){
+},{"./mergeMap":750}],726:[function(require,module,exports){
 "use strict";
 var mergeMapTo_1 = require('./mergeMapTo');
 /**
@@ -97741,7 +96502,7 @@ function concatMapTo(innerObservable, resultSelector) {
 }
 exports.concatMapTo = concatMapTo;
 
-},{"./mergeMapTo":759}],735:[function(require,module,exports){
+},{"./mergeMapTo":751}],727:[function(require,module,exports){
 "use strict";
 var __extends = (this && this.__extends) || function (d, b) {
     for (var p in b) if (b.hasOwnProperty(p)) d[p] = b[p];
@@ -97850,7 +96611,7 @@ var CountSubscriber = (function (_super) {
     return CountSubscriber;
 }(Subscriber_1.Subscriber));
 
-},{"../Subscriber":576}],736:[function(require,module,exports){
+},{"../Subscriber":568}],728:[function(require,module,exports){
 "use strict";
 var __extends = (this && this.__extends) || function (d, b) {
     for (var p in b) if (b.hasOwnProperty(p)) d[p] = b[p];
@@ -97948,7 +96709,7 @@ var DebounceSubscriber = (function (_super) {
     return DebounceSubscriber;
 }(OuterSubscriber_1.OuterSubscriber));
 
-},{"../OuterSubscriber":571,"../util/subscribeToResult":835}],737:[function(require,module,exports){
+},{"../OuterSubscriber":563,"../util/subscribeToResult":827}],729:[function(require,module,exports){
 "use strict";
 var __extends = (this && this.__extends) || function (d, b) {
     for (var p in b) if (b.hasOwnProperty(p)) d[p] = b[p];
@@ -98033,7 +96794,7 @@ function dispatchNext(subscriber) {
     subscriber.debouncedNext();
 }
 
-},{"../Subscriber":576,"../scheduler/async":811}],738:[function(require,module,exports){
+},{"../Subscriber":568,"../scheduler/async":803}],730:[function(require,module,exports){
 "use strict";
 var __extends = (this && this.__extends) || function (d, b) {
     for (var p in b) if (b.hasOwnProperty(p)) d[p] = b[p];
@@ -98087,7 +96848,7 @@ var DefaultIfEmptySubscriber = (function (_super) {
     return DefaultIfEmptySubscriber;
 }(Subscriber_1.Subscriber));
 
-},{"../Subscriber":576}],739:[function(require,module,exports){
+},{"../Subscriber":568}],731:[function(require,module,exports){
 "use strict";
 var __extends = (this && this.__extends) || function (d, b) {
     for (var p in b) if (b.hasOwnProperty(p)) d[p] = b[p];
@@ -98223,7 +96984,7 @@ var DelayMessage = (function () {
     return DelayMessage;
 }());
 
-},{"../Notification":567,"../Subscriber":576,"../scheduler/async":811,"../util/isDate":826}],740:[function(require,module,exports){
+},{"../Notification":559,"../Subscriber":568,"../scheduler/async":803,"../util/isDate":818}],732:[function(require,module,exports){
 "use strict";
 var __extends = (this && this.__extends) || function (d, b) {
     for (var p in b) if (b.hasOwnProperty(p)) d[p] = b[p];
@@ -98378,7 +97139,7 @@ var SubscriptionDelaySubscriber = (function (_super) {
     return SubscriptionDelaySubscriber;
 }(Subscriber_1.Subscriber));
 
-},{"../Observable":568,"../OuterSubscriber":571,"../Subscriber":576,"../util/subscribeToResult":835}],741:[function(require,module,exports){
+},{"../Observable":560,"../OuterSubscriber":563,"../Subscriber":568,"../util/subscribeToResult":827}],733:[function(require,module,exports){
 "use strict";
 var __extends = (this && this.__extends) || function (d, b) {
     for (var p in b) if (b.hasOwnProperty(p)) d[p] = b[p];
@@ -98423,7 +97184,7 @@ var DeMaterializeSubscriber = (function (_super) {
     return DeMaterializeSubscriber;
 }(Subscriber_1.Subscriber));
 
-},{"../Subscriber":576}],742:[function(require,module,exports){
+},{"../Subscriber":568}],734:[function(require,module,exports){
 "use strict";
 var __extends = (this && this.__extends) || function (d, b) {
     for (var p in b) if (b.hasOwnProperty(p)) d[p] = b[p];
@@ -98501,7 +97262,7 @@ var DistinctUntilChangedSubscriber = (function (_super) {
     return DistinctUntilChangedSubscriber;
 }(Subscriber_1.Subscriber));
 
-},{"../Subscriber":576,"../util/errorObject":824,"../util/tryCatch":838}],743:[function(require,module,exports){
+},{"../Subscriber":568,"../util/errorObject":816,"../util/tryCatch":830}],735:[function(require,module,exports){
 "use strict";
 var __extends = (this && this.__extends) || function (d, b) {
     for (var p in b) if (b.hasOwnProperty(p)) d[p] = b[p];
@@ -98614,7 +97375,7 @@ var DoSubscriber = (function (_super) {
     return DoSubscriber;
 }(Subscriber_1.Subscriber));
 
-},{"../Subscriber":576}],744:[function(require,module,exports){
+},{"../Subscriber":568}],736:[function(require,module,exports){
 "use strict";
 var __extends = (this && this.__extends) || function (d, b) {
     for (var p in b) if (b.hasOwnProperty(p)) d[p] = b[p];
@@ -98684,7 +97445,7 @@ var EverySubscriber = (function (_super) {
     return EverySubscriber;
 }(Subscriber_1.Subscriber));
 
-},{"../Subscriber":576}],745:[function(require,module,exports){
+},{"../Subscriber":568}],737:[function(require,module,exports){
 "use strict";
 var __extends = (this && this.__extends) || function (d, b) {
     for (var p in b) if (b.hasOwnProperty(p)) d[p] = b[p];
@@ -98800,7 +97561,7 @@ var ExpandSubscriber = (function (_super) {
 }(OuterSubscriber_1.OuterSubscriber));
 exports.ExpandSubscriber = ExpandSubscriber;
 
-},{"../OuterSubscriber":571,"../util/errorObject":824,"../util/subscribeToResult":835,"../util/tryCatch":838}],746:[function(require,module,exports){
+},{"../OuterSubscriber":563,"../util/errorObject":816,"../util/subscribeToResult":827,"../util/tryCatch":830}],738:[function(require,module,exports){
 "use strict";
 var __extends = (this && this.__extends) || function (d, b) {
     for (var p in b) if (b.hasOwnProperty(p)) d[p] = b[p];
@@ -98894,7 +97655,7 @@ var FilterSubscriber = (function (_super) {
     return FilterSubscriber;
 }(Subscriber_1.Subscriber));
 
-},{"../Subscriber":576}],747:[function(require,module,exports){
+},{"../Subscriber":568}],739:[function(require,module,exports){
 "use strict";
 var __extends = (this && this.__extends) || function (d, b) {
     for (var p in b) if (b.hasOwnProperty(p)) d[p] = b[p];
@@ -98938,7 +97699,7 @@ var FinallySubscriber = (function (_super) {
     return FinallySubscriber;
 }(Subscriber_1.Subscriber));
 
-},{"../Subscriber":576,"../Subscription":577}],748:[function(require,module,exports){
+},{"../Subscriber":568,"../Subscription":569}],740:[function(require,module,exports){
 "use strict";
 var __extends = (this && this.__extends) || function (d, b) {
     for (var p in b) if (b.hasOwnProperty(p)) d[p] = b[p];
@@ -99087,7 +97848,7 @@ var FirstSubscriber = (function (_super) {
     return FirstSubscriber;
 }(Subscriber_1.Subscriber));
 
-},{"../Subscriber":576,"../util/EmptyError":817}],749:[function(require,module,exports){
+},{"../Subscriber":568,"../util/EmptyError":809}],741:[function(require,module,exports){
 "use strict";
 var __extends = (this && this.__extends) || function (d, b) {
     for (var p in b) if (b.hasOwnProperty(p)) d[p] = b[p];
@@ -99338,7 +98099,7 @@ var InnerRefCountSubscription = (function (_super) {
     return InnerRefCountSubscription;
 }(Subscription_1.Subscription));
 
-},{"../Observable":568,"../Subject":574,"../Subscriber":576,"../Subscription":577,"../util/FastMap":818,"../util/Map":820}],750:[function(require,module,exports){
+},{"../Observable":560,"../Subject":566,"../Subscriber":568,"../Subscription":569,"../util/FastMap":810,"../util/Map":812}],742:[function(require,module,exports){
 "use strict";
 var __extends = (this && this.__extends) || function (d, b) {
     for (var p in b) if (b.hasOwnProperty(p)) d[p] = b[p];
@@ -99386,7 +98147,7 @@ var IgnoreElementsSubscriber = (function (_super) {
     return IgnoreElementsSubscriber;
 }(Subscriber_1.Subscriber));
 
-},{"../Subscriber":576,"../util/noop":832}],751:[function(require,module,exports){
+},{"../Subscriber":568,"../util/noop":824}],743:[function(require,module,exports){
 "use strict";
 var __extends = (this && this.__extends) || function (d, b) {
     for (var p in b) if (b.hasOwnProperty(p)) d[p] = b[p];
@@ -99505,7 +98266,7 @@ var LastSubscriber = (function (_super) {
     return LastSubscriber;
 }(Subscriber_1.Subscriber));
 
-},{"../Subscriber":576,"../util/EmptyError":817}],752:[function(require,module,exports){
+},{"../Subscriber":568,"../util/EmptyError":809}],744:[function(require,module,exports){
 "use strict";
 /**
  * @param func
@@ -99518,7 +98279,7 @@ function letProto(func) {
 }
 exports.letProto = letProto;
 
-},{}],753:[function(require,module,exports){
+},{}],745:[function(require,module,exports){
 "use strict";
 var __extends = (this && this.__extends) || function (d, b) {
     for (var p in b) if (b.hasOwnProperty(p)) d[p] = b[p];
@@ -99605,7 +98366,7 @@ var MapSubscriber = (function (_super) {
     return MapSubscriber;
 }(Subscriber_1.Subscriber));
 
-},{"../Subscriber":576}],754:[function(require,module,exports){
+},{"../Subscriber":568}],746:[function(require,module,exports){
 "use strict";
 var __extends = (this && this.__extends) || function (d, b) {
     for (var p in b) if (b.hasOwnProperty(p)) d[p] = b[p];
@@ -99669,7 +98430,7 @@ var MapToSubscriber = (function (_super) {
     return MapToSubscriber;
 }(Subscriber_1.Subscriber));
 
-},{"../Subscriber":576}],755:[function(require,module,exports){
+},{"../Subscriber":568}],747:[function(require,module,exports){
 "use strict";
 var __extends = (this && this.__extends) || function (d, b) {
     for (var p in b) if (b.hasOwnProperty(p)) d[p] = b[p];
@@ -99731,7 +98492,7 @@ var MaterializeSubscriber = (function (_super) {
     return MaterializeSubscriber;
 }(Subscriber_1.Subscriber));
 
-},{"../Notification":567,"../Subscriber":576}],756:[function(require,module,exports){
+},{"../Notification":559,"../Subscriber":568}],748:[function(require,module,exports){
 "use strict";
 var ArrayObservable_1 = require('../observable/ArrayObservable');
 var mergeAll_1 = require('./mergeAll');
@@ -99862,7 +98623,7 @@ function mergeStatic() {
 }
 exports.mergeStatic = mergeStatic;
 
-},{"../observable/ArrayObservable":683,"../util/isScheduler":831,"./mergeAll":757}],757:[function(require,module,exports){
+},{"../observable/ArrayObservable":675,"../util/isScheduler":823,"./mergeAll":749}],749:[function(require,module,exports){
 "use strict";
 var __extends = (this && this.__extends) || function (d, b) {
     for (var p in b) if (b.hasOwnProperty(p)) d[p] = b[p];
@@ -99974,7 +98735,7 @@ var MergeAllSubscriber = (function (_super) {
 }(OuterSubscriber_1.OuterSubscriber));
 exports.MergeAllSubscriber = MergeAllSubscriber;
 
-},{"../OuterSubscriber":571,"../util/subscribeToResult":835}],758:[function(require,module,exports){
+},{"../OuterSubscriber":563,"../util/subscribeToResult":827}],750:[function(require,module,exports){
 "use strict";
 var __extends = (this && this.__extends) || function (d, b) {
     for (var p in b) if (b.hasOwnProperty(p)) d[p] = b[p];
@@ -100136,7 +98897,7 @@ var MergeMapSubscriber = (function (_super) {
 }(OuterSubscriber_1.OuterSubscriber));
 exports.MergeMapSubscriber = MergeMapSubscriber;
 
-},{"../OuterSubscriber":571,"../util/subscribeToResult":835}],759:[function(require,module,exports){
+},{"../OuterSubscriber":563,"../util/subscribeToResult":827}],751:[function(require,module,exports){
 "use strict";
 var __extends = (this && this.__extends) || function (d, b) {
     for (var p in b) if (b.hasOwnProperty(p)) d[p] = b[p];
@@ -100291,7 +99052,7 @@ var MergeMapToSubscriber = (function (_super) {
 }(OuterSubscriber_1.OuterSubscriber));
 exports.MergeMapToSubscriber = MergeMapToSubscriber;
 
-},{"../OuterSubscriber":571,"../util/subscribeToResult":835}],760:[function(require,module,exports){
+},{"../OuterSubscriber":563,"../util/subscribeToResult":827}],752:[function(require,module,exports){
 "use strict";
 var ConnectableObservable_1 = require('../observable/ConnectableObservable');
 /**
@@ -100324,7 +99085,7 @@ function multicast(subjectOrSubjectFactory) {
 }
 exports.multicast = multicast;
 
-},{"../observable/ConnectableObservable":686}],761:[function(require,module,exports){
+},{"../observable/ConnectableObservable":678}],753:[function(require,module,exports){
 "use strict";
 var __extends = (this && this.__extends) || function (d, b) {
     for (var p in b) if (b.hasOwnProperty(p)) d[p] = b[p];
@@ -100400,7 +99161,7 @@ var ObserveOnMessage = (function () {
 }());
 exports.ObserveOnMessage = ObserveOnMessage;
 
-},{"../Notification":567,"../Subscriber":576}],762:[function(require,module,exports){
+},{"../Notification":559,"../Subscriber":568}],754:[function(require,module,exports){
 "use strict";
 var not_1 = require('../util/not');
 var filter_1 = require('./filter');
@@ -100419,7 +99180,7 @@ function partition(predicate, thisArg) {
 }
 exports.partition = partition;
 
-},{"../util/not":833,"./filter":746}],763:[function(require,module,exports){
+},{"../util/not":825,"./filter":738}],755:[function(require,module,exports){
 "use strict";
 var map_1 = require('./map');
 /**
@@ -100478,7 +99239,7 @@ function plucker(props, length) {
     return mapper;
 }
 
-},{"./map":753}],764:[function(require,module,exports){
+},{"./map":745}],756:[function(require,module,exports){
 "use strict";
 var Subject_1 = require('../Subject');
 var multicast_1 = require('./multicast');
@@ -100497,7 +99258,7 @@ function publish() {
 }
 exports.publish = publish;
 
-},{"../Subject":574,"./multicast":760}],765:[function(require,module,exports){
+},{"../Subject":566,"./multicast":752}],757:[function(require,module,exports){
 "use strict";
 var BehaviorSubject_1 = require('../BehaviorSubject');
 var multicast_1 = require('./multicast');
@@ -100512,7 +99273,7 @@ function publishBehavior(value) {
 }
 exports.publishBehavior = publishBehavior;
 
-},{"../BehaviorSubject":565,"./multicast":760}],766:[function(require,module,exports){
+},{"../BehaviorSubject":557,"./multicast":752}],758:[function(require,module,exports){
 "use strict";
 var AsyncSubject_1 = require('../AsyncSubject');
 var multicast_1 = require('./multicast');
@@ -100526,7 +99287,7 @@ function publishLast() {
 }
 exports.publishLast = publishLast;
 
-},{"../AsyncSubject":564,"./multicast":760}],767:[function(require,module,exports){
+},{"../AsyncSubject":556,"./multicast":752}],759:[function(require,module,exports){
 "use strict";
 var ReplaySubject_1 = require('../ReplaySubject');
 var multicast_1 = require('./multicast');
@@ -100545,7 +99306,7 @@ function publishReplay(bufferSize, windowTime, scheduler) {
 }
 exports.publishReplay = publishReplay;
 
-},{"../ReplaySubject":572,"./multicast":760}],768:[function(require,module,exports){
+},{"../ReplaySubject":564,"./multicast":752}],760:[function(require,module,exports){
 "use strict";
 var __extends = (this && this.__extends) || function (d, b) {
     for (var p in b) if (b.hasOwnProperty(p)) d[p] = b[p];
@@ -100655,7 +99416,7 @@ var RaceSubscriber = (function (_super) {
 }(OuterSubscriber_1.OuterSubscriber));
 exports.RaceSubscriber = RaceSubscriber;
 
-},{"../OuterSubscriber":571,"../observable/ArrayObservable":683,"../util/isArray":825,"../util/subscribeToResult":835}],769:[function(require,module,exports){
+},{"../OuterSubscriber":563,"../observable/ArrayObservable":675,"../util/isArray":817,"../util/subscribeToResult":827}],761:[function(require,module,exports){
 "use strict";
 var __extends = (this && this.__extends) || function (d, b) {
     for (var p in b) if (b.hasOwnProperty(p)) d[p] = b[p];
@@ -100740,7 +99501,7 @@ var ReduceSubscriber = (function (_super) {
 }(Subscriber_1.Subscriber));
 exports.ReduceSubscriber = ReduceSubscriber;
 
-},{"../Subscriber":576}],770:[function(require,module,exports){
+},{"../Subscriber":568}],762:[function(require,module,exports){
 "use strict";
 var __extends = (this && this.__extends) || function (d, b) {
     for (var p in b) if (b.hasOwnProperty(p)) d[p] = b[p];
@@ -100816,7 +99577,7 @@ var RepeatSubscriber = (function (_super) {
     return RepeatSubscriber;
 }(Subscriber_1.Subscriber));
 
-},{"../Subscriber":576,"../observable/EmptyObservable":688}],771:[function(require,module,exports){
+},{"../Subscriber":568,"../observable/EmptyObservable":680}],763:[function(require,module,exports){
 "use strict";
 var __extends = (this && this.__extends) || function (d, b) {
     for (var p in b) if (b.hasOwnProperty(p)) d[p] = b[p];
@@ -100886,7 +99647,7 @@ var RetrySubscriber = (function (_super) {
     return RetrySubscriber;
 }(Subscriber_1.Subscriber));
 
-},{"../Subscriber":576}],772:[function(require,module,exports){
+},{"../Subscriber":568}],764:[function(require,module,exports){
 "use strict";
 var __extends = (this && this.__extends) || function (d, b) {
     for (var p in b) if (b.hasOwnProperty(p)) d[p] = b[p];
@@ -100993,7 +99754,7 @@ var RetryWhenSubscriber = (function (_super) {
     return RetryWhenSubscriber;
 }(OuterSubscriber_1.OuterSubscriber));
 
-},{"../OuterSubscriber":571,"../Subject":574,"../util/errorObject":824,"../util/subscribeToResult":835,"../util/tryCatch":838}],773:[function(require,module,exports){
+},{"../OuterSubscriber":563,"../Subject":566,"../util/errorObject":816,"../util/subscribeToResult":827,"../util/tryCatch":830}],765:[function(require,module,exports){
 "use strict";
 var __extends = (this && this.__extends) || function (d, b) {
     for (var p in b) if (b.hasOwnProperty(p)) d[p] = b[p];
@@ -101059,7 +99820,7 @@ var SampleSubscriber = (function (_super) {
     return SampleSubscriber;
 }(OuterSubscriber_1.OuterSubscriber));
 
-},{"../OuterSubscriber":571,"../util/subscribeToResult":835}],774:[function(require,module,exports){
+},{"../OuterSubscriber":563,"../util/subscribeToResult":827}],766:[function(require,module,exports){
 "use strict";
 var __extends = (this && this.__extends) || function (d, b) {
     for (var p in b) if (b.hasOwnProperty(p)) d[p] = b[p];
@@ -101122,7 +99883,7 @@ function dispatchNotification(state) {
     this.schedule(state, delay);
 }
 
-},{"../Subscriber":576,"../scheduler/async":811}],775:[function(require,module,exports){
+},{"../Subscriber":568,"../scheduler/async":803}],767:[function(require,module,exports){
 "use strict";
 var __extends = (this && this.__extends) || function (d, b) {
     for (var p in b) if (b.hasOwnProperty(p)) d[p] = b[p];
@@ -101230,7 +99991,7 @@ var ScanSubscriber = (function (_super) {
     return ScanSubscriber;
 }(Subscriber_1.Subscriber));
 
-},{"../Subscriber":576}],776:[function(require,module,exports){
+},{"../Subscriber":568}],768:[function(require,module,exports){
 "use strict";
 var multicast_1 = require('./multicast');
 var Subject_1 = require('../Subject');
@@ -101255,7 +100016,7 @@ function share() {
 exports.share = share;
 ;
 
-},{"../Subject":574,"./multicast":760}],777:[function(require,module,exports){
+},{"../Subject":566,"./multicast":752}],769:[function(require,module,exports){
 "use strict";
 var __extends = (this && this.__extends) || function (d, b) {
     for (var p in b) if (b.hasOwnProperty(p)) d[p] = b[p];
@@ -101351,7 +100112,7 @@ var SingleSubscriber = (function (_super) {
     return SingleSubscriber;
 }(Subscriber_1.Subscriber));
 
-},{"../Subscriber":576,"../util/EmptyError":817}],778:[function(require,module,exports){
+},{"../Subscriber":568,"../util/EmptyError":809}],770:[function(require,module,exports){
 "use strict";
 var __extends = (this && this.__extends) || function (d, b) {
     for (var p in b) if (b.hasOwnProperty(p)) d[p] = b[p];
@@ -101403,7 +100164,7 @@ var SkipSubscriber = (function (_super) {
     return SkipSubscriber;
 }(Subscriber_1.Subscriber));
 
-},{"../Subscriber":576}],779:[function(require,module,exports){
+},{"../Subscriber":568}],771:[function(require,module,exports){
 "use strict";
 var __extends = (this && this.__extends) || function (d, b) {
     for (var p in b) if (b.hasOwnProperty(p)) d[p] = b[p];
@@ -101475,7 +100236,7 @@ var SkipUntilSubscriber = (function (_super) {
     return SkipUntilSubscriber;
 }(OuterSubscriber_1.OuterSubscriber));
 
-},{"../OuterSubscriber":571,"../util/subscribeToResult":835}],780:[function(require,module,exports){
+},{"../OuterSubscriber":563,"../util/subscribeToResult":827}],772:[function(require,module,exports){
 "use strict";
 var __extends = (this && this.__extends) || function (d, b) {
     for (var p in b) if (b.hasOwnProperty(p)) d[p] = b[p];
@@ -101542,7 +100303,7 @@ var SkipWhileSubscriber = (function (_super) {
     return SkipWhileSubscriber;
 }(Subscriber_1.Subscriber));
 
-},{"../Subscriber":576}],781:[function(require,module,exports){
+},{"../Subscriber":568}],773:[function(require,module,exports){
 "use strict";
 var ArrayObservable_1 = require('../observable/ArrayObservable');
 var ScalarObservable_1 = require('../observable/ScalarObservable');
@@ -101586,7 +100347,7 @@ function startWith() {
 }
 exports.startWith = startWith;
 
-},{"../observable/ArrayObservable":683,"../observable/EmptyObservable":688,"../observable/ScalarObservable":699,"../util/isScheduler":831,"./concat":731}],782:[function(require,module,exports){
+},{"../observable/ArrayObservable":675,"../observable/EmptyObservable":680,"../observable/ScalarObservable":691,"../util/isScheduler":823,"./concat":723}],774:[function(require,module,exports){
 "use strict";
 var SubscribeOnObservable_1 = require('../observable/SubscribeOnObservable');
 /**
@@ -101606,7 +100367,7 @@ function subscribeOn(scheduler, delay) {
 }
 exports.subscribeOn = subscribeOn;
 
-},{"../observable/SubscribeOnObservable":700}],783:[function(require,module,exports){
+},{"../observable/SubscribeOnObservable":692}],775:[function(require,module,exports){
 "use strict";
 var __extends = (this && this.__extends) || function (d, b) {
     for (var p in b) if (b.hasOwnProperty(p)) d[p] = b[p];
@@ -101715,7 +100476,7 @@ var SwitchSubscriber = (function (_super) {
     return SwitchSubscriber;
 }(OuterSubscriber_1.OuterSubscriber));
 
-},{"../OuterSubscriber":571,"../util/subscribeToResult":835}],784:[function(require,module,exports){
+},{"../OuterSubscriber":563,"../util/subscribeToResult":827}],776:[function(require,module,exports){
 "use strict";
 var __extends = (this && this.__extends) || function (d, b) {
     for (var p in b) if (b.hasOwnProperty(p)) d[p] = b[p];
@@ -101855,7 +100616,7 @@ var SwitchMapSubscriber = (function (_super) {
     return SwitchMapSubscriber;
 }(OuterSubscriber_1.OuterSubscriber));
 
-},{"../OuterSubscriber":571,"../util/subscribeToResult":835}],785:[function(require,module,exports){
+},{"../OuterSubscriber":563,"../util/subscribeToResult":827}],777:[function(require,module,exports){
 "use strict";
 var __extends = (this && this.__extends) || function (d, b) {
     for (var p in b) if (b.hasOwnProperty(p)) d[p] = b[p];
@@ -101982,7 +100743,7 @@ var SwitchMapToSubscriber = (function (_super) {
     return SwitchMapToSubscriber;
 }(OuterSubscriber_1.OuterSubscriber));
 
-},{"../OuterSubscriber":571,"../util/subscribeToResult":835}],786:[function(require,module,exports){
+},{"../OuterSubscriber":563,"../util/subscribeToResult":827}],778:[function(require,module,exports){
 "use strict";
 var __extends = (this && this.__extends) || function (d, b) {
     for (var p in b) if (b.hasOwnProperty(p)) d[p] = b[p];
@@ -102046,7 +100807,7 @@ var TakeSubscriber = (function (_super) {
     return TakeSubscriber;
 }(Subscriber_1.Subscriber));
 
-},{"../Subscriber":576,"../observable/EmptyObservable":688,"../util/ArgumentOutOfRangeError":816}],787:[function(require,module,exports){
+},{"../Subscriber":568,"../observable/EmptyObservable":680,"../util/ArgumentOutOfRangeError":808}],779:[function(require,module,exports){
 "use strict";
 var __extends = (this && this.__extends) || function (d, b) {
     for (var p in b) if (b.hasOwnProperty(p)) d[p] = b[p];
@@ -102126,7 +100887,7 @@ var TakeLastSubscriber = (function (_super) {
     return TakeLastSubscriber;
 }(Subscriber_1.Subscriber));
 
-},{"../Subscriber":576,"../observable/EmptyObservable":688,"../util/ArgumentOutOfRangeError":816}],788:[function(require,module,exports){
+},{"../Subscriber":568,"../observable/EmptyObservable":680,"../util/ArgumentOutOfRangeError":808}],780:[function(require,module,exports){
 "use strict";
 var __extends = (this && this.__extends) || function (d, b) {
     for (var p in b) if (b.hasOwnProperty(p)) d[p] = b[p];
@@ -102175,7 +100936,7 @@ var TakeUntilSubscriber = (function (_super) {
     return TakeUntilSubscriber;
 }(OuterSubscriber_1.OuterSubscriber));
 
-},{"../OuterSubscriber":571,"../util/subscribeToResult":835}],789:[function(require,module,exports){
+},{"../OuterSubscriber":563,"../util/subscribeToResult":827}],781:[function(require,module,exports){
 "use strict";
 var __extends = (this && this.__extends) || function (d, b) {
     for (var p in b) if (b.hasOwnProperty(p)) d[p] = b[p];
@@ -102238,7 +100999,7 @@ var TakeWhileSubscriber = (function (_super) {
     return TakeWhileSubscriber;
 }(Subscriber_1.Subscriber));
 
-},{"../Subscriber":576}],790:[function(require,module,exports){
+},{"../Subscriber":568}],782:[function(require,module,exports){
 "use strict";
 var __extends = (this && this.__extends) || function (d, b) {
     for (var p in b) if (b.hasOwnProperty(p)) d[p] = b[p];
@@ -102315,7 +101076,7 @@ var ThrottleSubscriber = (function (_super) {
     return ThrottleSubscriber;
 }(OuterSubscriber_1.OuterSubscriber));
 
-},{"../OuterSubscriber":571,"../util/subscribeToResult":835}],791:[function(require,module,exports){
+},{"../OuterSubscriber":563,"../util/subscribeToResult":827}],783:[function(require,module,exports){
 "use strict";
 var __extends = (this && this.__extends) || function (d, b) {
     for (var p in b) if (b.hasOwnProperty(p)) d[p] = b[p];
@@ -102379,7 +101140,7 @@ function dispatchNext(arg) {
     subscriber.clearThrottle();
 }
 
-},{"../Subscriber":576,"../scheduler/async":811}],792:[function(require,module,exports){
+},{"../Subscriber":568,"../scheduler/async":803}],784:[function(require,module,exports){
 "use strict";
 var __extends = (this && this.__extends) || function (d, b) {
     for (var p in b) if (b.hasOwnProperty(p)) d[p] = b[p];
@@ -102482,7 +101243,7 @@ var TimeoutSubscriber = (function (_super) {
     return TimeoutSubscriber;
 }(Subscriber_1.Subscriber));
 
-},{"../Subscriber":576,"../scheduler/async":811,"../util/isDate":826}],793:[function(require,module,exports){
+},{"../Subscriber":568,"../scheduler/async":803,"../util/isDate":818}],785:[function(require,module,exports){
 "use strict";
 var __extends = (this && this.__extends) || function (d, b) {
     for (var p in b) if (b.hasOwnProperty(p)) d[p] = b[p];
@@ -102593,7 +101354,7 @@ var TimeoutWithSubscriber = (function (_super) {
     return TimeoutWithSubscriber;
 }(OuterSubscriber_1.OuterSubscriber));
 
-},{"../OuterSubscriber":571,"../scheduler/async":811,"../util/isDate":826,"../util/subscribeToResult":835}],794:[function(require,module,exports){
+},{"../OuterSubscriber":563,"../scheduler/async":803,"../util/isDate":818,"../util/subscribeToResult":827}],786:[function(require,module,exports){
 "use strict";
 var __extends = (this && this.__extends) || function (d, b) {
     for (var p in b) if (b.hasOwnProperty(p)) d[p] = b[p];
@@ -102639,7 +101400,7 @@ var ToArraySubscriber = (function (_super) {
     return ToArraySubscriber;
 }(Subscriber_1.Subscriber));
 
-},{"../Subscriber":576}],795:[function(require,module,exports){
+},{"../Subscriber":568}],787:[function(require,module,exports){
 "use strict";
 var root_1 = require('../util/root');
 /**
@@ -102668,7 +101429,7 @@ function toPromise(PromiseCtor) {
 }
 exports.toPromise = toPromise;
 
-},{"../util/root":834}],796:[function(require,module,exports){
+},{"../util/root":826}],788:[function(require,module,exports){
 "use strict";
 var __extends = (this && this.__extends) || function (d, b) {
     for (var p in b) if (b.hasOwnProperty(p)) d[p] = b[p];
@@ -102774,7 +101535,7 @@ var WindowSubscriber = (function (_super) {
     return WindowSubscriber;
 }(OuterSubscriber_1.OuterSubscriber));
 
-},{"../OuterSubscriber":571,"../Subject":574,"../util/subscribeToResult":835}],797:[function(require,module,exports){
+},{"../OuterSubscriber":563,"../Subject":566,"../util/subscribeToResult":827}],789:[function(require,module,exports){
 "use strict";
 var __extends = (this && this.__extends) || function (d, b) {
     for (var p in b) if (b.hasOwnProperty(p)) d[p] = b[p];
@@ -102901,7 +101662,7 @@ var WindowCountSubscriber = (function (_super) {
     return WindowCountSubscriber;
 }(Subscriber_1.Subscriber));
 
-},{"../Subject":574,"../Subscriber":576}],798:[function(require,module,exports){
+},{"../Subject":566,"../Subscriber":568}],790:[function(require,module,exports){
 "use strict";
 var __extends = (this && this.__extends) || function (d, b) {
     for (var p in b) if (b.hasOwnProperty(p)) d[p] = b[p];
@@ -103072,7 +101833,7 @@ function dispatchWindowClose(arg) {
     subscriber.closeWindow(window);
 }
 
-},{"../Subject":574,"../Subscriber":576,"../scheduler/async":811}],799:[function(require,module,exports){
+},{"../Subject":566,"../Subscriber":568,"../scheduler/async":803}],791:[function(require,module,exports){
 "use strict";
 var __extends = (this && this.__extends) || function (d, b) {
     for (var p in b) if (b.hasOwnProperty(p)) d[p] = b[p];
@@ -103253,7 +102014,7 @@ var WindowToggleSubscriber = (function (_super) {
     return WindowToggleSubscriber;
 }(OuterSubscriber_1.OuterSubscriber));
 
-},{"../OuterSubscriber":571,"../Subject":574,"../Subscription":577,"../util/errorObject":824,"../util/subscribeToResult":835,"../util/tryCatch":838}],800:[function(require,module,exports){
+},{"../OuterSubscriber":563,"../Subject":566,"../Subscription":569,"../util/errorObject":816,"../util/subscribeToResult":827,"../util/tryCatch":830}],792:[function(require,module,exports){
 "use strict";
 var __extends = (this && this.__extends) || function (d, b) {
     for (var p in b) if (b.hasOwnProperty(p)) d[p] = b[p];
@@ -103382,7 +102143,7 @@ var WindowSubscriber = (function (_super) {
     return WindowSubscriber;
 }(OuterSubscriber_1.OuterSubscriber));
 
-},{"../OuterSubscriber":571,"../Subject":574,"../util/errorObject":824,"../util/subscribeToResult":835,"../util/tryCatch":838}],801:[function(require,module,exports){
+},{"../OuterSubscriber":563,"../Subject":566,"../util/errorObject":816,"../util/subscribeToResult":827,"../util/tryCatch":830}],793:[function(require,module,exports){
 "use strict";
 var __extends = (this && this.__extends) || function (d, b) {
     for (var p in b) if (b.hasOwnProperty(p)) d[p] = b[p];
@@ -103513,7 +102274,7 @@ var WithLatestFromSubscriber = (function (_super) {
     return WithLatestFromSubscriber;
 }(OuterSubscriber_1.OuterSubscriber));
 
-},{"../OuterSubscriber":571,"../util/subscribeToResult":835}],802:[function(require,module,exports){
+},{"../OuterSubscriber":563,"../util/subscribeToResult":827}],794:[function(require,module,exports){
 "use strict";
 var __extends = (this && this.__extends) || function (d, b) {
     for (var p in b) if (b.hasOwnProperty(p)) d[p] = b[p];
@@ -103768,7 +102529,7 @@ var ZipBufferIterator = (function (_super) {
     return ZipBufferIterator;
 }(OuterSubscriber_1.OuterSubscriber));
 
-},{"../OuterSubscriber":571,"../Subscriber":576,"../observable/ArrayObservable":683,"../symbol/iterator":813,"../util/isArray":825,"../util/subscribeToResult":835}],803:[function(require,module,exports){
+},{"../OuterSubscriber":563,"../Subscriber":568,"../observable/ArrayObservable":675,"../symbol/iterator":805,"../util/isArray":817,"../util/subscribeToResult":827}],795:[function(require,module,exports){
 "use strict";
 var zip_1 = require('./zip');
 /**
@@ -103782,7 +102543,7 @@ function zipAll(project) {
 }
 exports.zipAll = zipAll;
 
-},{"./zip":802}],804:[function(require,module,exports){
+},{"./zip":794}],796:[function(require,module,exports){
 "use strict";
 var __extends = (this && this.__extends) || function (d, b) {
     for (var p in b) if (b.hasOwnProperty(p)) d[p] = b[p];
@@ -103834,7 +102595,7 @@ var AsapAction = (function (_super) {
 }(FutureAction_1.FutureAction));
 exports.AsapAction = AsapAction;
 
-},{"../util/Immediate":819,"./FutureAction":807}],805:[function(require,module,exports){
+},{"../util/Immediate":811,"./FutureAction":799}],797:[function(require,module,exports){
 "use strict";
 var __extends = (this && this.__extends) || function (d, b) {
     for (var p in b) if (b.hasOwnProperty(p)) d[p] = b[p];
@@ -103855,7 +102616,7 @@ var AsapScheduler = (function (_super) {
 }(QueueScheduler_1.QueueScheduler));
 exports.AsapScheduler = AsapScheduler;
 
-},{"./AsapAction":804,"./QueueScheduler":809}],806:[function(require,module,exports){
+},{"./AsapAction":796,"./QueueScheduler":801}],798:[function(require,module,exports){
 "use strict";
 var __extends = (this && this.__extends) || function (d, b) {
     for (var p in b) if (b.hasOwnProperty(p)) d[p] = b[p];
@@ -103876,7 +102637,7 @@ var AsyncScheduler = (function (_super) {
 }(QueueScheduler_1.QueueScheduler));
 exports.AsyncScheduler = AsyncScheduler;
 
-},{"./FutureAction":807,"./QueueScheduler":809}],807:[function(require,module,exports){
+},{"./FutureAction":799,"./QueueScheduler":801}],799:[function(require,module,exports){
 "use strict";
 var __extends = (this && this.__extends) || function (d, b) {
     for (var p in b) if (b.hasOwnProperty(p)) d[p] = b[p];
@@ -104012,7 +102773,7 @@ var FutureAction = (function (_super) {
 }(Subscription_1.Subscription));
 exports.FutureAction = FutureAction;
 
-},{"../Subscription":577,"../util/root":834}],808:[function(require,module,exports){
+},{"../Subscription":569,"../util/root":826}],800:[function(require,module,exports){
 "use strict";
 var __extends = (this && this.__extends) || function (d, b) {
     for (var p in b) if (b.hasOwnProperty(p)) d[p] = b[p];
@@ -104046,7 +102807,7 @@ var QueueAction = (function (_super) {
 }(FutureAction_1.FutureAction));
 exports.QueueAction = QueueAction;
 
-},{"./FutureAction":807}],809:[function(require,module,exports){
+},{"./FutureAction":799}],801:[function(require,module,exports){
 "use strict";
 var QueueAction_1 = require('./QueueAction');
 var FutureAction_1 = require('./FutureAction');
@@ -104091,22 +102852,22 @@ var QueueScheduler = (function () {
 }());
 exports.QueueScheduler = QueueScheduler;
 
-},{"./FutureAction":807,"./QueueAction":808}],810:[function(require,module,exports){
+},{"./FutureAction":799,"./QueueAction":800}],802:[function(require,module,exports){
 "use strict";
 var AsapScheduler_1 = require('./AsapScheduler');
 exports.asap = new AsapScheduler_1.AsapScheduler();
 
-},{"./AsapScheduler":805}],811:[function(require,module,exports){
+},{"./AsapScheduler":797}],803:[function(require,module,exports){
 "use strict";
 var AsyncScheduler_1 = require('./AsyncScheduler');
 exports.async = new AsyncScheduler_1.AsyncScheduler();
 
-},{"./AsyncScheduler":806}],812:[function(require,module,exports){
+},{"./AsyncScheduler":798}],804:[function(require,module,exports){
 "use strict";
 var QueueScheduler_1 = require('./QueueScheduler');
 exports.queue = new QueueScheduler_1.QueueScheduler();
 
-},{"./QueueScheduler":809}],813:[function(require,module,exports){
+},{"./QueueScheduler":801}],805:[function(require,module,exports){
 "use strict";
 var root_1 = require('../util/root');
 var Symbol = root_1.root.Symbol;
@@ -104139,7 +102900,7 @@ else {
     }
 }
 
-},{"../util/root":834}],814:[function(require,module,exports){
+},{"../util/root":826}],806:[function(require,module,exports){
 "use strict";
 var root_1 = require('../util/root');
 var Symbol = root_1.root.Symbol;
@@ -104161,14 +102922,14 @@ else {
     exports.$$observable = '@@observable';
 }
 
-},{"../util/root":834}],815:[function(require,module,exports){
+},{"../util/root":826}],807:[function(require,module,exports){
 "use strict";
 var root_1 = require('../util/root');
 var Symbol = root_1.root.Symbol;
 exports.$$rxSubscriber = (typeof Symbol === 'function' && typeof Symbol.for === 'function') ?
     Symbol.for('rxSubscriber') : '@@rxSubscriber';
 
-},{"../util/root":834}],816:[function(require,module,exports){
+},{"../util/root":826}],808:[function(require,module,exports){
 "use strict";
 var __extends = (this && this.__extends) || function (d, b) {
     for (var p in b) if (b.hasOwnProperty(p)) d[p] = b[p];
@@ -104195,7 +102956,7 @@ var ArgumentOutOfRangeError = (function (_super) {
 }(Error));
 exports.ArgumentOutOfRangeError = ArgumentOutOfRangeError;
 
-},{}],817:[function(require,module,exports){
+},{}],809:[function(require,module,exports){
 "use strict";
 var __extends = (this && this.__extends) || function (d, b) {
     for (var p in b) if (b.hasOwnProperty(p)) d[p] = b[p];
@@ -104222,7 +102983,7 @@ var EmptyError = (function (_super) {
 }(Error));
 exports.EmptyError = EmptyError;
 
-},{}],818:[function(require,module,exports){
+},{}],810:[function(require,module,exports){
 "use strict";
 var FastMap = (function () {
     function FastMap() {
@@ -104254,7 +103015,7 @@ var FastMap = (function () {
 }());
 exports.FastMap = FastMap;
 
-},{}],819:[function(require,module,exports){
+},{}],811:[function(require,module,exports){
 /**
 Some credit for this helper goes to http://github.com/YuzuJS/setImmediate
 */
@@ -104464,13 +103225,13 @@ var ImmediateDefinition = (function () {
 exports.ImmediateDefinition = ImmediateDefinition;
 exports.Immediate = new ImmediateDefinition(root_1.root);
 
-},{"./root":834}],820:[function(require,module,exports){
+},{"./root":826}],812:[function(require,module,exports){
 "use strict";
 var root_1 = require('./root');
 var MapPolyfill_1 = require('./MapPolyfill');
 exports.Map = root_1.root.Map || (function () { return MapPolyfill_1.MapPolyfill; })();
 
-},{"./MapPolyfill":821,"./root":834}],821:[function(require,module,exports){
+},{"./MapPolyfill":813,"./root":826}],813:[function(require,module,exports){
 "use strict";
 var MapPolyfill = (function () {
     function MapPolyfill() {
@@ -104518,7 +103279,7 @@ var MapPolyfill = (function () {
 }());
 exports.MapPolyfill = MapPolyfill;
 
-},{}],822:[function(require,module,exports){
+},{}],814:[function(require,module,exports){
 "use strict";
 var __extends = (this && this.__extends) || function (d, b) {
     for (var p in b) if (b.hasOwnProperty(p)) d[p] = b[p];
@@ -104544,7 +103305,7 @@ var ObjectUnsubscribedError = (function (_super) {
 }(Error));
 exports.ObjectUnsubscribedError = ObjectUnsubscribedError;
 
-},{}],823:[function(require,module,exports){
+},{}],815:[function(require,module,exports){
 "use strict";
 var __extends = (this && this.__extends) || function (d, b) {
     for (var p in b) if (b.hasOwnProperty(p)) d[p] = b[p];
@@ -104567,30 +103328,30 @@ var UnsubscriptionError = (function (_super) {
 }(Error));
 exports.UnsubscriptionError = UnsubscriptionError;
 
-},{}],824:[function(require,module,exports){
+},{}],816:[function(require,module,exports){
 "use strict";
 // typeof any so that it we don't have to cast when comparing a result to the error object
 exports.errorObject = { e: {} };
 
-},{}],825:[function(require,module,exports){
+},{}],817:[function(require,module,exports){
 "use strict";
 exports.isArray = Array.isArray || (function (x) { return x && typeof x.length === 'number'; });
 
-},{}],826:[function(require,module,exports){
+},{}],818:[function(require,module,exports){
 "use strict";
 function isDate(value) {
     return value instanceof Date && !isNaN(+value);
 }
 exports.isDate = isDate;
 
-},{}],827:[function(require,module,exports){
+},{}],819:[function(require,module,exports){
 "use strict";
 function isFunction(x) {
     return typeof x === 'function';
 }
 exports.isFunction = isFunction;
 
-},{}],828:[function(require,module,exports){
+},{}],820:[function(require,module,exports){
 "use strict";
 var isArray_1 = require('../util/isArray');
 function isNumeric(val) {
@@ -104603,34 +103364,34 @@ function isNumeric(val) {
 exports.isNumeric = isNumeric;
 ;
 
-},{"../util/isArray":825}],829:[function(require,module,exports){
+},{"../util/isArray":817}],821:[function(require,module,exports){
 "use strict";
 function isObject(x) {
     return x != null && typeof x === 'object';
 }
 exports.isObject = isObject;
 
-},{}],830:[function(require,module,exports){
+},{}],822:[function(require,module,exports){
 "use strict";
 function isPromise(value) {
     return value && typeof value.subscribe !== 'function' && typeof value.then === 'function';
 }
 exports.isPromise = isPromise;
 
-},{}],831:[function(require,module,exports){
+},{}],823:[function(require,module,exports){
 "use strict";
 function isScheduler(value) {
     return value && typeof value.schedule === 'function';
 }
 exports.isScheduler = isScheduler;
 
-},{}],832:[function(require,module,exports){
+},{}],824:[function(require,module,exports){
 "use strict";
 /* tslint:disable:no-empty */
 function noop() { }
 exports.noop = noop;
 
-},{}],833:[function(require,module,exports){
+},{}],825:[function(require,module,exports){
 "use strict";
 function not(pred, thisArg) {
     function notPred() {
@@ -104642,7 +103403,7 @@ function not(pred, thisArg) {
 }
 exports.not = not;
 
-},{}],834:[function(require,module,exports){
+},{}],826:[function(require,module,exports){
 (function (global){
 "use strict";
 var objectTypes = {
@@ -104664,7 +103425,7 @@ if (freeGlobal && (freeGlobal.global === freeGlobal || freeGlobal.window === fre
 
 }).call(this,typeof global !== "undefined" ? global : typeof self !== "undefined" ? self : typeof window !== "undefined" ? window : {})
 
-},{}],835:[function(require,module,exports){
+},{}],827:[function(require,module,exports){
 "use strict";
 var root_1 = require('./root');
 var isArray_1 = require('./isArray');
@@ -104736,12 +103497,12 @@ function subscribeToResult(outerSubscriber, result, outerValue, outerIndex) {
 }
 exports.subscribeToResult = subscribeToResult;
 
-},{"../InnerSubscriber":566,"../Observable":568,"../symbol/iterator":813,"../symbol/observable":814,"./isArray":825,"./isPromise":830,"./root":834}],836:[function(require,module,exports){
+},{"../InnerSubscriber":558,"../Observable":560,"../symbol/iterator":805,"../symbol/observable":806,"./isArray":817,"./isPromise":822,"./root":826}],828:[function(require,module,exports){
 "use strict";
 function throwError(e) { throw e; }
 exports.throwError = throwError;
 
-},{}],837:[function(require,module,exports){
+},{}],829:[function(require,module,exports){
 "use strict";
 var Subscriber_1 = require('../Subscriber');
 var rxSubscriber_1 = require('../symbol/rxSubscriber');
@@ -104758,7 +103519,7 @@ function toSubscriber(nextOrObserver, error, complete) {
 }
 exports.toSubscriber = toSubscriber;
 
-},{"../Subscriber":576,"../symbol/rxSubscriber":815}],838:[function(require,module,exports){
+},{"../Subscriber":568,"../symbol/rxSubscriber":807}],830:[function(require,module,exports){
 "use strict";
 var errorObject_1 = require('./errorObject');
 var tryCatchTarget;
@@ -104778,9 +103539,9 @@ function tryCatch(fn) {
 exports.tryCatch = tryCatch;
 ;
 
-},{"./errorObject":824}],839:[function(require,module,exports){
+},{"./errorObject":816}],831:[function(require,module,exports){
 
-},{}]},{},[1,505,839])
+},{}]},{},[1,831])
 
 
 //# sourceMappingURL=app.bundle.js.map

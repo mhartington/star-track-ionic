@@ -2,8 +2,6 @@ import { ionicBootstrap, Platform } from 'ionic-angular';
 import { Component } from '@angular/core';
 import { StatusBar, Keyboard, Splashscreen } from 'ionic-native';
 import { MenuPage } from './pages/menu/menu';
-import {AudioProvider} from 'ionic-audio/dist/ionic-audio';
-import {Type, provide} from '@angular/core';
 
 
 @Component({

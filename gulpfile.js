@@ -47,8 +47,7 @@ gulp.task('watch', ['clean'], function(done) {
         gulp.start('html');
       });
       buildBrowserify({
-        watch: true,
-        src: ['./app/app.ts', './node_modules/ionic-audio/dist/ionic-audio.ts', './typings/main.d.ts']
+        watch: true
       }).on('end', done);
     }
   );
@@ -65,8 +64,7 @@ gulp.task('build', ['clean'], function(done) {
         },
         uglifyOptions: {
           mangle: false
-        },
-        src: ['./app/app.ts', './node_modules/ionic-audio/dist/ionic-audio.ts', './typings/main.d.ts']
+        }
       }).on('end', done);
     }
   );
