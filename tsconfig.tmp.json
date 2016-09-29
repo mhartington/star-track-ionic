@@ -10,7 +10,8 @@
     ],
     "module": "es2015",
     "moduleResolution": "node",
-    "target": "es5"
+    "target": "es5",
+    "outDir": "/Users/mhartington/GitHub/StarTrack-Ionic/.tmp"
   },
   "exclude": [
     "node_modules"
@@ -18,5 +19,9 @@
   "compileOnSave": false,
   "atom": {
     "rewriteTsconfig": false
-  }
+  },
+  "include": [
+    "/Users/mhartington/GitHub/StarTrack-Ionic/src/app/main.dev.ts",
+    "/Users/mhartington/GitHub/StarTrack-Ionic/src/**/*.d.ts"
+  ]
 }

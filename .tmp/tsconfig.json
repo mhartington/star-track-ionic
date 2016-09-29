@@ -18,5 +18,10 @@
   "compileOnSave": false,
   "atom": {
     "rewriteTsconfig": false
-  }
+  },
+  "include": [
+    "./**/*.d.ts",
+    "./app/app.module.ts",
+    "./app/main.prod.ts"
+  ]
 }

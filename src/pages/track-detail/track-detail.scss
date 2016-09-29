@@ -1,0 +1,26 @@
+page-track-detail {
+  .progress {
+    width: 100%;
+    background: white;
+    margin-top: 25px;
+    height: 2px;
+  }
+
+  progress::-webkit-progress-bar {
+    background: #dddddd;
+  }
+
+  progress[value]::-webkit-progress-value {
+    background: color($colors, secondary) !important;
+  }
+
+  button[round]{
+    border-radius: 50%;
+    width:45px;
+    height:45px;
+    ion-icon{
+      line-height: initial;
+    }
+  }
+
+}
