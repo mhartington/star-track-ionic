@@ -1,6 +1,5 @@
 import {Component, ViewChild} from '@angular/core';
 import {NavController, NavParams, Events} from 'ionic-angular';
-import {Moment} from '../../pipes/moment';
 import {NativeMedia} from '../../providers/native-media/native-media';
 @Component({
   selector: 'page-track-detail',
@@ -30,7 +29,7 @@ export class TrackDetailPage {
   }
 
   playSong() {
-    // this.nativeMedia.createMediaControls(this.track);
+    this.nativeMedia.createMediaControls(this.track);
     this.ifPlaying = true;
     this.audio.nativeElement.play();
   }

@@ -2,7 +2,6 @@ import { NavParams, NavController } from 'ionic-angular';
 import { Component } from '@angular/core';
 import { SpotifyService } from '../../providers/spotify-service/spotify-service';
 import { TrackDetailPage } from '../track-detail/track-detail';
-import { Moment } from '../../pipes/moment';
 @Component({
   selector: 'page-results',
   templateUrl: 'results.html',
