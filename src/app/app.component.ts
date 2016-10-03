@@ -1,4 +1,4 @@
-import {Platform } from 'ionic-angular';
+import { Platform } from 'ionic-angular';
 import { Component } from '@angular/core';
 import { StatusBar, Keyboard, Splashscreen } from 'ionic-native';
 import { MenuPage } from '../pages/menu/menu';
@@ -18,6 +18,7 @@ export class MyApp {
       } else if (platform.is('android')) {
         StatusBar.backgroundColorByHexString('#1d833c');
       }
+      Splashscreen.hide();
     });
 
   }

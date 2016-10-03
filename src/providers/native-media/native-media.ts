@@ -49,6 +49,4 @@ export class NativeMedia {
 
   }
 
-
-
 }

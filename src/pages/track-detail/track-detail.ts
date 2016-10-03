@@ -34,6 +34,7 @@ export class TrackDetailPage {
     this.audio.nativeElement.play();
   }
   stopSong() {
+    this.nativeMedia.destroy();
     this.ifPlaying = false;
     this.audio.nativeElement.currentTime = 0;
     this.audio.nativeElement.pause();
@@ -44,6 +45,7 @@ export class TrackDetailPage {
 
   playerEnded() {
     this.ifPlaying = false;
+    this.nativeMedia.destroy();
     this.audio.nativeElement.currentTime = 0;
   }
 

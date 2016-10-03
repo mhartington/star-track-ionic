@@ -8,6 +8,7 @@ import { TrackDetailPage } from '../track-detail/track-detail';
 })
 export class ResultsPage {
   query = this.params.get('search');
+  isError: boolean = false;
   listing = [];
   constructor(
     public params: NavParams,
@@ -16,7 +17,7 @@ export class ResultsPage {
   ) {
     this.spotify.load(this.query).subscribe(
       res => this.listing = res.tracks.items,
-      err => console.log(err)
+      err => this.isError = true
     );
   }
 

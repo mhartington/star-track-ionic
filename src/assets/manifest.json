@@ -1,6 +1,6 @@
 {
-  "name": "Ionic",
-  "short_name": "Ionic",
+  "name": "Star Track",
+  "short_name": "StarTrack",
   "start_url": "index.html",
   "display": "standalone",
   "icons": [{
@@ -8,6 +8,7 @@
     "sizes": "512x512",
     "type": "image/png"
   }],
-  "background_color": "#4e8ef7",
-  "theme_color": "#4e8ef7"
+  "background_color": "#32db64",
+  "theme_color": "#32db64"
 }
+

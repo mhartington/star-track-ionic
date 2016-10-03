@@ -5,7 +5,13 @@
 </ion-header>
 
 <ion-content>
+  <div *ngIf="isError" text-center padding>
+    <ion-icon color="secondary" name="warning" big></ion-icon>
+    <h1>Uh-oh...</h1>
+    <h2>It's not me, it's you!</h2>
+    <h2>It appears there is a connection problem</h2>
 
+  </div>
   <ion-list>
     <a ion-item *ngFor="let track of listing" detail-none (click)="detail(track)">
       <ion-thumbnail item-left>
