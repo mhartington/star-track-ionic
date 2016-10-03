@@ -15,6 +15,9 @@
       <ion-item>
         <ion-label>Search</ion-label>
         <ion-input type="text" formControlName="term"></ion-input>
+        <a ion-button clear color="dark" round icon-only [hidden]="!term.value" (click)="reset()" item-right>
+          <ion-icon name="close"></ion-icon>
+        </a>
       </ion-item>
     </ion-list>
 

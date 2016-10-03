@@ -1,7 +1,7 @@
 import { NavController } from 'ionic-angular';
 import { Component } from '@angular/core';
 import { ResultsPage } from '../results/results';
-import { Validators, FormBuilder, FormGroup } from '@angular/forms';
+import { Validators, FormBuilder, FormGroup, FormControl } from '@angular/forms';
 
 @Component({
   selector: 'page-search',
@@ -9,8 +9,9 @@ import { Validators, FormBuilder, FormGroup } from '@angular/forms';
 })
 
 export class SearchPage {
+  public term: FormControl = this.formBuilder.control('', Validators.required);
   public form: FormGroup = this.formBuilder.group({
-    'term': ['', Validators.required],
+    'term': this.term,
     'filter': ['everything']
   });
   constructor(
@@ -21,5 +22,8 @@ export class SearchPage {
     this.nav.push(ResultsPage, {
       'search': this.form.value
     });
+  }
+  reset() {
+    this.term.reset();
   }
 }

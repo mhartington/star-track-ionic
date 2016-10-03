@@ -45,8 +45,9 @@ export class NativeMedia {
   }
 
   destroy() {
-    MusicControls.destroy(this.onSuccess, this.onError);
-
+    if (this.platform.is('cordova') && this.platform.is('android')) {
+      MusicControls.destroy(this.onSuccess, this.onError);
+    }
   }
 
 }
