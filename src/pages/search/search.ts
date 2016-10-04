@@ -9,7 +9,7 @@ import { Validators, FormBuilder, FormGroup, FormControl } from '@angular/forms'
 })
 
 export class SearchPage {
-  public term: FormControl = this.formBuilder.control('', Validators.required);
+  public term: FormControl = this.formBuilder.control('Matt Ricci and the sometimes y', Validators.required);
   public form: FormGroup = this.formBuilder.group({
     'term': this.term,
     'filter': ['everything']

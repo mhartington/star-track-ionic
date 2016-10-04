@@ -9,10 +9,10 @@ export class SpotifyService {
 
   load(query) {
     if (query.filter === 'everything') {
-      return this.http.get(`https://api.spotify.com/v1/search?q=${encodeURIComponent(query.term)}&limit=25&type=track`)
+      return this.http.get(`https://api.spotify.com/v1/search?q=${encodeURIComponent(query.term)}&limit=50&type=track`)
         .map((res: Response) => res.json());
     } else {
-      return this.http.get(`https://api.spotify.com/v1/search?q=${query.filter}%3A${encodeURIComponent(query.term)}&limit=25&type=track`)
+      return this.http.get(`https://api.spotify.com/v1/search?q=${query.filter}%3A${encodeURIComponent(query.term)}&limit=50&type=track`)
         .map((res: Response) => res.json());
 
     }

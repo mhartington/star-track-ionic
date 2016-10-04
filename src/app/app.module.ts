@@ -21,12 +21,11 @@ import { SpotifyService } from '../providers/spotify-service/spotify-service';
   ],
   imports: [
     IonicModule.forRoot(MyApp, null, {
-     links: [
-        { component: MenuPage, name: '', segment: '' },
-        { component: SearchPage, name: 'Search', segment: 'search' },
-        { component: ResultsPage, name: 'Results', segment: 'results' },
-        { component: TrackDetailPage, name: 'Detail', segment: ':track' },
-      ]
+      // links: [
+      //   { component: SearchPage, name: 'Search', segment: '' },
+      //   { component: ResultsPage, name: 'Results', segment: 'results' },
+      //   { component: TrackDetailPage, name: 'Detail', segment: ':track' },
+      // ]
     })
   ],
   bootstrap: [IonicApp],
