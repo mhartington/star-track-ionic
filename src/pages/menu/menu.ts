@@ -12,7 +12,7 @@ export class MenuPage {
   pages = [
     { title: 'Search', component: SearchPage }
   ];
-    // { title: 'Favorite', component: FavoritePage }
+  // { title: 'Favorite', component: FavoritePage }
   menuRoot = SearchPage;
   constructor(
     public nav: NavController
