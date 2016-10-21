@@ -18,12 +18,7 @@ import { SpotifyService } from '../providers/spotify-service/spotify-service';
     Moment
   ],
   imports: [
-    IonicModule.forRoot(MyApp, null, {
-      links: [
-        { component: SearchPage, name: 'Search', segment: '' },
-        { component: TrackDetailPage, name: 'Detail', segment: ':track' },
-      ]
-    })
+    IonicModule.forRoot(MyApp)
   ],
   bootstrap: [IonicApp],
   entryComponents: [
