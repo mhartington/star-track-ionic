@@ -3,7 +3,6 @@ import { IonicApp, IonicModule } from 'ionic-angular';
 import { MyApp } from './app.component';
 import { FavoritePage } from '../pages/favorite/favorite';
 import { MenuPage } from '../pages/menu/menu';
-import { ResultsPage } from '../pages/results/results';
 import { SearchPage } from '../pages/search/search';
 import { TrackDetailPage } from '../pages/track-detail/track-detail';
 import { Moment } from '../pipes/moment';
@@ -14,7 +13,6 @@ import { SpotifyService } from '../providers/spotify-service/spotify-service';
     MyApp,
     FavoritePage,
     MenuPage,
-    ResultsPage,
     SearchPage,
     TrackDetailPage,
     Moment
@@ -23,7 +21,6 @@ import { SpotifyService } from '../providers/spotify-service/spotify-service';
     IonicModule.forRoot(MyApp, null, {
       links: [
         { component: SearchPage, name: 'Search', segment: '' },
-        { component: ResultsPage, name: 'Results', segment: 'results' },
         { component: TrackDetailPage, name: 'Detail', segment: ':track' },
       ]
     })
@@ -33,7 +30,6 @@ import { SpotifyService } from '../providers/spotify-service/spotify-service';
     MyApp,
     FavoritePage,
     MenuPage,
-    ResultsPage,
     SearchPage,
     TrackDetailPage
   ],

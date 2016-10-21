@@ -1,29 +1,37 @@
 import { NavController } from 'ionic-angular';
 import { Component } from '@angular/core';
-import { ResultsPage } from '../results/results';
-import { Validators, FormBuilder, FormGroup, FormControl } from '@angular/forms';
-
+import { SpotifyService } from '../../providers/spotify-service/spotify-service';
+import { TrackDetailPage } from '../track-detail/track-detail';
 @Component({
   selector: 'page-search',
-  templateUrl: 'search.html'
+  templateUrl: 'search.html',
 })
-
 export class SearchPage {
-  public term: FormControl = this.formBuilder.control('Matt Ricci and the sometimes y', Validators.required);
-  public form: FormGroup = this.formBuilder.group({
-    'term': this.term,
-    'filter': ['everything']
-  });
+  public listing = [];
+  public isError: boolean = false;
   constructor(
     public nav: NavController,
-    public formBuilder: FormBuilder
-  ) { }
-  search() {
-    this.nav.push(ResultsPage, {
-      'search': this.form.value
+    public spotify: SpotifyService,
+  ) {
+  }
+  detail(track) {
+    this.nav.push(TrackDetailPage, {
+      'track': track
     });
   }
-  reset() {
-    this.term.reset();
+
+  doSearch(term) {
+    if (term) {
+      this.spotify.load(term)
+        .subscribe(
+        ( results ) => {
+          this.listing = results.tracks.items;
+          console.log(results);
+        },
+        error => this.isError = true
+        );
+    } else {
+      this.listing = [];
+    }
   }
 }

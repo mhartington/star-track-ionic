@@ -9,7 +9,6 @@ export class TrackDetailPage {
   track = this.params.get('track');
   progress = 0;
   @ViewChild('player') audio;
-
   ifPlaying = false;
   constructor(
     public nav: NavController,
