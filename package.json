@@ -5,7 +5,7 @@
     "build": "ionic-app-scripts build",
     "watch": "ionic-app-scripts watch",
     "serve:before": "watch",
-    "emulate:before": "build",
+    "emulate:before": "build --dev",
     "deploy:before": "build",
     "build:before": "build",
     "run:before": "build",
