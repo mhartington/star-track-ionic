@@ -24,7 +24,7 @@ export class SearchPage {
     if (term) {
       this.spotify.load(term)
         .subscribe(
-        ( results ) => {
+        (results) => {
           this.listing = results.tracks.items;
           console.log(results);
         },
