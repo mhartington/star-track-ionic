@@ -1,4 +1,4 @@
-import {Injectable, Pipe} from '@angular/core';
+import { Injectable, Pipe } from '@angular/core';
 @Pipe({
   name: 'moment'
 })
@@ -12,7 +12,7 @@ export class Moment {
   pad2(num) {
     if (num <= 99) {
       num = ('0' + num).slice(-2);
-     }
+    }
     return num;
   }
 

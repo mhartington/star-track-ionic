@@ -58,8 +58,10 @@
     <splash src="resources/ios/splash/Default-736h.png" width="1242" height="2208"/>
     <splash src="resources/ios/splash/Default-Landscape-736h.png" width="2208" height="1242"/>
     <splash src="resources/ios/splash/Default-Landscape@2x~ipad.png" width="2048" height="1536"/>
+    <splash src="resources/ios/splash/Default-Landscape@~ipadpro.png" width="2732" height="2048"/>
     <splash src="resources/ios/splash/Default-Landscape~ipad.png" width="1024" height="768"/>
     <splash src="resources/ios/splash/Default-Portrait@2x~ipad.png" width="1536" height="2048"/>
+    <splash src="resources/ios/splash/Default-Portrait@~ipadpro.png" width="2048" height="2732"/>
     <splash src="resources/ios/splash/Default-Portrait~ipad.png" width="768" height="1024"/>
     <splash src="resources/ios/splash/Default@2x~iphone.png" width="640" height="960"/>
     <splash src="resources/ios/splash/Default~iphone.png" width="320" height="480"/>
@@ -72,6 +74,8 @@
   <preference name="AutoHideSplashScreen" value="false"/>
   <preference name="SplashMaintainAspectRatio" value="true"/>
   <preference name="FadeSplashScreenDuration" value="300"/>
+  <preference name="SplashScreen" value="screen"/>
+  <preference name="SplashScreenDelay" value="3000"/>
   <feature name="StatusBar">
     <param name="ios-package" onload="true" value="CDVStatusBar"/>
   </feature>
@@ -86,4 +90,5 @@
   <engine name="ios" spec="~4.2.1"/>
   <engine name="android" spec="~5.2.2"/>
   <allow-navigation href="http://172.18.29.52:8100"/>
+  <icon src="resources/android/icon/drawable-xhdpi-icon.png"/>
 </widget>
