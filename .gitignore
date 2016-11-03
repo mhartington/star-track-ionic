@@ -8,3 +8,4 @@ plugins/
 .DS_Store
 Thumbs.db
 .tmp/
+www/

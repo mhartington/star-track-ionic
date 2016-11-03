@@ -1,6 +1,11 @@
 <ion-header>
   <ion-navbar>
     <ion-title>Track Detail</ion-title>
+    <ion-buttons end>
+      <button ion-button icon-only (click)="toggleFavorites()" >
+        <ion-icon [name]="favoriteIcon"></ion-icon>
+      </button>
+    </ion-buttons>
   </ion-navbar>
 </ion-header>
 

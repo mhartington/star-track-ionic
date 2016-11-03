@@ -8,6 +8,7 @@ import { TrackDetailPage } from '../pages/track-detail/track-detail';
 import { Moment } from '../pipes/moment';
 import { NativeMedia } from '../providers/native-media/native-media';
 import { SpotifyService } from '../providers/spotify-service/spotify-service';
+import { Storage } from '@ionic/storage';
 @NgModule({
   declarations: [
     MyApp,
@@ -28,6 +29,6 @@ import { SpotifyService } from '../providers/spotify-service/spotify-service';
     SearchPage,
     TrackDetailPage
   ],
-  providers: [SpotifyService, NativeMedia]
+  providers: [SpotifyService, NativeMedia, Storage]
 })
 export class AppModule { }

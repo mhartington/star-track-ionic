@@ -1,14 +1,19 @@
 <ion-menu [content]="content">
-  <ion-toolbar>
-    <ion-title>Star Track</ion-title>
-  </ion-toolbar>
+  <ion-header>
+    <ion-toolbar>
+      <ion-title>Favorites</ion-title>
+    </ion-toolbar>
+  </ion-header>
   <ion-content>
     <ion-list>
-      <button menuClose ion-item *ngFor="let p of pages" (click)="openPage(p)">
-        {{p.title}}
-      </button>
+      <a ion-item *ngFor="let favorite of favorites" (click)="goToDetail(favorite)" menuClose>
+        {{favorite}}
+        <!-- <h2>{{favorite.name}}</h2> -->
+        <!-- <h3>by {{favorite.artists[0].name}}</h3> -->
+        <!-- <em>{{favorite.album.name}}</em> -->
+      </a>
     </ion-list>
   </ion-content>
 </ion-menu>
 
-<ion-nav [root]="menuRoot" #content></ion-nav>
+<ion-nav [root]="menuRoot" #content persistent="false"></ion-nav>

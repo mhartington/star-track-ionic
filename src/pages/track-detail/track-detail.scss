@@ -1,24 +1,28 @@
+$white: #fff !default;
+$gray:  #ddd !default;
+
 page-track-detail {
   .progress {
-    width: 100%;
-    background: white;
-    margin-top: 25px;
+    background: $white;
     height: 2px;
+    margin-top: 25px;
+    width: 100%;
   }
 
   progress::-webkit-progress-bar {
-    background: #dddddd;
+    background: $gray;
   }
 
   progress[value]::-webkit-progress-value {
-    background: color($colors, secondary) !important;
+    background: color($colors, secondary);
   }
 
-  button[round]{
+  button[round] {
     border-radius: 50%;
-    width:45px;
-    height:45px;
-    ion-icon{
+    height: 45px;
+    width: 45px;
+
+    ion-icon {
       line-height: initial;
     }
   }
