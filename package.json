@@ -2,6 +2,7 @@
   "name": "startrack-ionic",
   "description": "StarTrack-Ionic: An Ionic project",
   "scripts": {
+    "build": "ionic-app-scripts build",
     "ionic:build": "ionic-app-scripts build",
     "ionic:serve": "ionic-app-scripts serve"
   },
