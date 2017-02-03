@@ -1,8 +1,10 @@
-import { NavController } from 'ionic-angular';
+import { NavController, LoadingController } from 'ionic-angular';
 import { Component, trigger, state, style, animate, transition } from '@angular/core';
 import { SpotifyService } from '../../providers/spotify-service/spotify-service';
 import { TrackDetailPage } from '../track-detail/track-detail';
-declare var google: any;
+
+
+import 'rxjs/add/operator/debounceTime';
 @Component({
   selector: 'page-search',
   templateUrl: 'search.html',
@@ -17,9 +19,12 @@ declare var google: any;
 export class SearchPage {
   public listing = [];
   public isError: boolean = false;
+  public showSpinner: boolean = false;
+
   constructor(
     public nav: NavController,
     public spotify: SpotifyService,
+    public loadingCtrl: LoadingController
   ) { }
   detail(track) {
     this.nav.push(TrackDetailPage, {
@@ -27,15 +32,21 @@ export class SearchPage {
     });
   }
 
+
   doSearch(term) {
+    this.showSpinner = true;
     if (term) {
       this.spotify.load(term)
         .subscribe(
         results => this.listing = results.tracks.items,
-        error => this.isError = true
+        error => this.isError = true,
+        () => this.showSpinner = false
         );
+
     } else {
       this.listing = [];
+      this.showSpinner = false;
+
     }
   }
 }

@@ -90,5 +90,6 @@
   <engine name="ios" spec="~4.2.1"/>
   <engine name="android" spec="~5.2.2"/>
   <allow-navigation href="http://172.18.29.52:8100"/>
+  <allow-navigation href="http://10.10.3.14:8100"/>
   <icon src="resources/android/icon/drawable-xhdpi-icon.png"/>
 </widget>
