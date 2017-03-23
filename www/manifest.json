@@ -1,8 +1,9 @@
 {
   "name": "Star Track",
-  "short_name": "StarTrack",
+  "short_name": "Star Track",
   "start_url": "index.html",
   "display": "standalone",
+  "orientation": "portrait-primary",
   "icons": [{
     "src": "assets/imgs/logo.png",
     "sizes": "512x512",
