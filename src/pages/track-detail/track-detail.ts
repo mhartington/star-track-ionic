@@ -1,7 +1,11 @@
 import { Component, ViewChild } from '@angular/core';
-import { NavController, NavParams, Events, ToastController } from 'ionic-angular';
+import { NavController, NavParams, Events, ToastController, IonicPage } from 'ionic-angular';
 import { NativeMedia } from '../../providers/native-media/native-media';
 import { Storage } from '@ionic/storage';
+
+@IonicPage({
+  segment: 'detail/:id'
+})
 @Component({
   selector: 'page-track-detail',
   templateUrl: 'track-detail.html',

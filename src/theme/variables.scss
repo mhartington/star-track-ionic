@@ -35,6 +35,7 @@ $colors: (
 
 $toolbar-wp-background:                   map-get($colors, light) !default;
 $toolbar-wp-button-color:                 map-get($colors, secondary) !default;
+$toolbar-wp-title-text-color:             map-get($colors, secondary) !default;
 
 $toolbar-md-background:                   map-get($colors, secondary) !default;
 $toolbar-md-text-color:                   #fff !default;
@@ -45,6 +46,7 @@ $checkbox-md-icon-checkmark-color:        #fff !default;
 $segment-button-md-text-color-activated:  #fff !default;
 
 $toolbar-ios-background:                   map-get($colors, light) !default;
+$toolbar-ios-title-text-color:             map-get($colors, secondary) !default;
 $toolbar-ios-button-color:                 map-get($colors, secondary) !default;
 // App Theme
 // --------------------------------------------------

@@ -1,34 +1,36 @@
+import { BrowserModule } from '@angular/platform-browser';
+import { HttpModule } from '@angular/http';
 import { NgModule } from '@angular/core';
+
 import { IonicApp, IonicModule } from 'ionic-angular';
+import { IonicStorageModule } from '@ionic/storage';
+
 import { MyApp } from './app.component';
-import { FavoritePage } from '../pages/favorite/favorite';
-import { MenuPage } from '../pages/menu/menu';
-import { SearchPage } from '../pages/search/search';
-import { TrackDetailPage } from '../pages/track-detail/track-detail';
-import { Moment } from '../pipes/moment';
+
 import { NativeMedia } from '../providers/native-media/native-media';
 import { SpotifyService } from '../providers/spotify-service/spotify-service';
-import { Storage } from '@ionic/storage';
+
+import { StatusBar } from '@ionic-native/status-bar';
+import { SplashScreen } from '@ionic-native/splash-screen';
+import { Keyboard } from '@ionic-native/keyboard';
 @NgModule({
-  declarations: [
-    MyApp,
-    FavoritePage,
-    MenuPage,
-    SearchPage,
-    TrackDetailPage,
-    Moment
-  ],
+  declarations: [MyApp],
   imports: [
-    IonicModule.forRoot(MyApp)
+    BrowserModule,
+    IonicModule.forRoot(MyApp, {
+      preloadModules: true
+    }),
+    HttpModule,
+    IonicStorageModule.forRoot()
   ],
   bootstrap: [IonicApp],
-  entryComponents: [
-    MyApp,
-    FavoritePage,
-    MenuPage,
-    SearchPage,
-    TrackDetailPage
-  ],
-  providers: [SpotifyService, NativeMedia, Storage]
+  entryComponents: [MyApp],
+  providers: [
+    SpotifyService,
+    NativeMedia,
+    StatusBar,
+    SplashScreen,
+    Keyboard,
+  ]
 })
 export class AppModule { }
