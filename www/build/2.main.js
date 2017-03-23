@@ -1,2 +1,106 @@
-webpackJsonp([2],{321:function(n,l,e){"use strict";Object.defineProperty(l,"__esModule",{value:!0});var t=e(0),o=e(338),u=e(7),a=e(13),_=e(20),i=e(25),s=e(23),r=e(75),d=e(76),c=e(53),h=e(77),M=e(78),f=e(51),p=e(79),b=e(80),g=e(81),w=e(82),m=e(83),v=e(84),y=e(85),P=e(86),O=e(87),S=e(36),C=e(88),k=e(89),R=e(52),T=e(90),j=e(91),I=e(92),L=e(93),N=e(94),D=e(95),A=e(96),B=e(97),F=e(98),x=e(99),E=e(100),z=e(101),H=e(102),G=e(103),K=e(104),V=e(105),W=e(106),Y=e(107),Z=e(108),J=e(109),U=e(110),q=e(111),Q=e(112),X=e(113),$=e(114),nn=e(115),ln=e(116),en=e(47),tn=e(249),on=e(250),un=e(251),an=e(252),_n=e(253),sn=e(254),rn=e(255),dn=e(256),cn=e(339),hn=e(332),Mn=e(37);e.d(l,"MenuPageModuleNgFactory",function(){return bn});var fn=this&&this.__extends||function(){var n=Object.setPrototypeOf||{__proto__:[]}instanceof Array&&function(n,l){n.__proto__=l}||function(n,l){for(var e in l)l.hasOwnProperty(e)&&(n[e]=l[e])};return function(l,e){function t(){this.constructor=l}n(l,e),l.prototype=null===e?Object.create(e):(t.prototype=e.prototype,new t)}}(),pn=function(n){function l(l){return n.call(this,l,[tn.a,on.a,un.a,an.a,_n.a,sn.a,rn.a,dn.a,cn.a],[])||this}return fn(l,n),Object.defineProperty(l.prototype,"_NgLocalization_56",{get:function(){return null==this.__NgLocalization_56&&(this.__NgLocalization_56=new u.a(this.parent.get(t.c))),this.__NgLocalization_56},enumerable:!0,configurable:!0}),Object.defineProperty(l.prototype,"_ɵi_57",{get:function(){return null==this.__ɵi_57&&(this.__ɵi_57=new a.a),this.__ɵi_57},enumerable:!0,configurable:!0}),Object.defineProperty(l.prototype,"_FormBuilder_58",{get:function(){return null==this.__FormBuilder_58&&(this.__FormBuilder_58=new a.b),this.__FormBuilder_58},enumerable:!0,configurable:!0}),l.prototype.createInternal=function(){return this._CommonModule_0=new u.d,this._ɵba_1=new a.c,this._FormsModule_2=new a.d,this._ReactiveFormsModule_3=new a.e,this._BackdropModule_4=new _.a,this._ButtonModule_5=new i.a,this._IconModule_6=new s.a,this._ActionSheetModule_7=new r.a,this._AlertModule_8=new d.a,this._NavModule_9=new c.a,this._AppModule_10=new h.a,this._AvatarModule_11=new M.a,this._BadgeModule_12=new f.a,this._CardModule_13=new p.a,this._CheckboxModule_14=new b.a,this._ChipModule_15=new g.a,this._ClickBlockModule_16=new w.a,this._ContentModule_17=new m.a,this._DateTimeModule_18=new v.a,this._FabModule_19=new y.a,this._GridModule_20=new P.a,this._ImgModule_21=new O.a,this._SpinnerModule_22=new S.a,this._InfiniteScrollModule_23=new C.a,this._InputModule_24=new k.a,this._LabelModule_25=new R.a,this._ItemModule_26=new T.a,this._ListModule_27=new j.a,this._LoadingModule_28=new I.a,this._MenuModule_29=new L.a,this._ModalModule_30=new N.a,this._NavbarModule_31=new D.a,this._NoteModule_32=new A.a,this._OptionModule_33=new B.a,this._PickerModule_34=new F.a,this._PopoverModule_35=new x.a,this._RadioModule_36=new E.a,this._RangeModule_37=new z.a,this._RefresherModule_38=new H.a,this._ScrollModule_39=new G.a,this._SearchbarModule_40=new K.a,this._SegmentModule_41=new V.a,this._SelectModule_42=new W.a,this._ShowHideWhenModule_43=new Y.a,this._SlidesModule_44=new Z.a,this._SplitPaneModule_45=new J.a,this._TabsModule_46=new U.a,this._ThumbnailModule_47=new q.a,this._ToastModule_48=new Q.a,this._ToggleModule_49=new X.a,this._ToolbarModule_50=new $.a,this._TypographyModule_51=new nn.a,this._VirtualScrollModule_52=new ln.a,this._IonicModule_53=new en.b,this._IonicPageModule_54=new en.c,this._MenuPageModule_55=new o.a,this._LAZY_LOADED_TOKEN_59=hn.a,this._MenuPageModule_55},l.prototype.getInternal=function(n,l){return n===u.d?this._CommonModule_0:n===a.c?this._ɵba_1:n===a.d?this._FormsModule_2:n===a.e?this._ReactiveFormsModule_3:n===_.a?this._BackdropModule_4:n===i.a?this._ButtonModule_5:n===s.a?this._IconModule_6:n===r.a?this._ActionSheetModule_7:n===d.a?this._AlertModule_8:n===c.a?this._NavModule_9:n===h.a?this._AppModule_10:n===M.a?this._AvatarModule_11:n===f.a?this._BadgeModule_12:n===p.a?this._CardModule_13:n===b.a?this._CheckboxModule_14:n===g.a?this._ChipModule_15:n===w.a?this._ClickBlockModule_16:n===m.a?this._ContentModule_17:n===v.a?this._DateTimeModule_18:n===y.a?this._FabModule_19:n===P.a?this._GridModule_20:n===O.a?this._ImgModule_21:n===S.a?this._SpinnerModule_22:n===C.a?this._InfiniteScrollModule_23:n===k.a?this._InputModule_24:n===R.a?this._LabelModule_25:n===T.a?this._ItemModule_26:n===j.a?this._ListModule_27:n===I.a?this._LoadingModule_28:n===L.a?this._MenuModule_29:n===N.a?this._ModalModule_30:n===D.a?this._NavbarModule_31:n===A.a?this._NoteModule_32:n===B.a?this._OptionModule_33:n===F.a?this._PickerModule_34:n===x.a?this._PopoverModule_35:n===E.a?this._RadioModule_36:n===z.a?this._RangeModule_37:n===H.a?this._RefresherModule_38:n===G.a?this._ScrollModule_39:n===K.a?this._SearchbarModule_40:n===V.a?this._SegmentModule_41:n===W.a?this._SelectModule_42:n===Y.a?this._ShowHideWhenModule_43:n===Z.a?this._SlidesModule_44:n===J.a?this._SplitPaneModule_45:n===U.a?this._TabsModule_46:n===q.a?this._ThumbnailModule_47:n===Q.a?this._ToastModule_48:n===X.a?this._ToggleModule_49:n===$.a?this._ToolbarModule_50:n===nn.a?this._TypographyModule_51:n===ln.a?this._VirtualScrollModule_52:n===en.b?this._IonicModule_53:n===en.c?this._IonicPageModule_54:n===o.a?this._MenuPageModule_55:n===u.e?this._NgLocalization_56:n===a.a?this._ɵi_57:n===a.b?this._FormBuilder_58:n===Mn.d?this._LAZY_LOADED_TOKEN_59:l},l.prototype.destroyInternal=function(){},l}(t.x),bn=new t.y(pn,o.a)},324:function(n,l,e){"use strict";function t(n){return u._27(2,[u._32(201326592,1,{_fixedContent:0}),u._32(201326592,2,{_scrollContent:0}),(n()(),u._28(0,[[1,0],["fixedContent",1]],null,1,"div",[["class","fixed-content"]],null,null,null,null,null)),u._38(null,0),(n()(),u._28(0,[[2,0],["scrollContent",1]],null,1,"div",[["class","scroll-content"]],null,null,null,null,null)),u._38(null,1),u._38(null,2)],null,null)}function o(n){return u._27(0,[(n()(),u._28(0,null,null,1,"ion-content",[],[[2,"statusbar-padding",null]],null,null,t,f)),u._29(90112,null,0,a.a,[_.c,i.b,s.a,u.O,u.P,r.a,d.a,u.g,[2,c.a],[2,h.a]],null,null)],null,function(n,l){var e=u._30(l,1).statusbarPadding;n(l,0,0,e)})}var u=e(0),a=e(24),_=e(1),i=e(3),s=e(9),r=e(8),d=e(19),c=e(5),h=e(16);e.d(l,"b",function(){return f}),l.a=t;var M=[],f=u._26({encapsulation:2,styles:M,data:{}});u._37("ion-content",a.a,o,{fullscreen:"fullscreen",scrollDownOnLoad:"scrollDownOnLoad"},{ionScrollStart:"ionScrollStart",ionScroll:"ionScroll",ionScrollEnd:"ionScrollEnd"},["[ion-fixed],ion-fab","*","ion-refresher"])},325:function(n,l,e){"use strict";function t(n){return u._27(2,[(n()(),u._28(0,null,null,2,"div",[["class","toolbar-title"]],null,null,null,null,null)),u._29(139264,null,0,a.l,[u.t,u.u,u.O,u.P],{klass:[0,"klass"],ngClass:[1,"ngClass"]},null),u._38(null,0)],function(n,l){var e=l.component,t="toolbar-title",o="toolbar-title-"+e._mode;n(l,1,0,t,o)},null)}function o(n){return u._27(0,[(n()(),u._28(0,null,null,1,"ion-title",[],null,null,null,t,c)),u._29(24576,null,0,_.a,[i.c,u.O,u.P,[2,s.a],[2,r.a]],null,null)],null,null)}var u=e(0),a=e(7),_=e(166),i=e(1),s=e(49),r=e(41);e.d(l,"b",function(){return c}),l.a=t;var d=[],c=u._26({encapsulation:2,styles:d,data:{}});u._37("ion-title",_.a,o,{},{},["*"])},331:function(n,l,e){"use strict";function t(n){return u._27(2,[(n()(),u._28(0,null,null,1,"div",[["class","toolbar-background"]],null,null,null,null,null)),u._29(139264,null,0,a.l,[u.t,u.u,u.O,u.P],{klass:[0,"klass"],ngClass:[1,"ngClass"]},null),u._38(null,0),u._38(null,1),u._38(null,2),(n()(),u._28(0,null,null,2,"div",[["class","toolbar-content"]],null,null,null,null,null)),u._29(139264,null,0,a.l,[u.t,u.u,u.O,u.P],{klass:[0,"klass"],ngClass:[1,"ngClass"]},null),u._38(null,3)],function(n,l){var e=l.component,t="toolbar-background",o="toolbar-background-"+e._mode;n(l,1,0,t,o);var u="toolbar-content",a="toolbar-content-"+e._mode;n(l,6,0,u,a)},null)}function o(n){return u._27(0,[(n()(),u._28(0,null,null,1,"ion-toolbar",[["class","toolbar"]],[[2,"statusbar-padding",null]],null,null,t,d)),u._29(24576,null,0,_.a,[[2,i.a],s.c,u.O,u.P],null,null)],null,function(n,l){var e=u._30(l,1)._sbPadding;n(l,0,0,e)})}var u=e(0),a=e(7),_=e(49),i=e(5),s=e(1);e.d(l,"b",function(){return d}),l.a=t;var r=[],d=u._26({encapsulation:2,styles:r,data:{}});u._37("ion-toolbar",_.a,o,{color:"color",mode:"mode"},{},["[menuToggle],ion-buttons[left]","ion-buttons[start]","ion-buttons[end],ion-buttons[right]","*"])},332:function(n,l,e){"use strict";var t=e(47),o=e(0),u=e(171);e.d(l,"a",function(){return i});var a=this&&this.__decorate||function(n,l,e,t){var o,u=arguments.length,a=u<3?l:null===t?t=Object.getOwnPropertyDescriptor(l,e):t;if("object"==typeof Reflect&&"function"==typeof Reflect.decorate)a=Reflect.decorate(n,l,e,t);else for(var _=n.length-1;_>=0;_--)(o=n[_])&&(a=(u<3?o(a):u>3?o(l,e,a):o(l,e))||a);return u>3&&a&&Object.defineProperty(l,e,a),a},_=this&&this.__metadata||function(n,l){if("object"==typeof Reflect&&"function"==typeof Reflect.metadata)return Reflect.metadata(n,l)},i=function(){function n(n,l){this.nav=n,this.storage=l,this.menuRoot="SearchPage"}return n.prototype.goToDetail=function(n){this.content.push("TrackDetailPage",{track:n})},n.prototype.openPage=function(n){this.content.setRoot(n.component)},n}();a([e.i(o.C)("content"),_("design:type","function"==typeof(s="undefined"!=typeof t.j&&t.j)&&s||Object)],i.prototype,"content",void 0),i=a([e.i(t.d)({segment:"menu"}),e.i(o.D)({selector:"page-menu",templateUrl:"menu.html"}),_("design:paramtypes",["function"==typeof(r="undefined"!=typeof t.e&&t.e)&&r||Object,"function"==typeof(d="undefined"!=typeof u.b&&u.b)&&d||Object])],i);var s,r,d},336:function(n,l,e){"use strict";function t(n){return u._27(2,[u._32(201326592,1,{backdrop:0}),(n()(),u._28(0,null,null,1,"div",[["class","menu-inner"]],null,null,null,null,null)),u._38(null,0),(n()(),u._28(0,null,null,1,"ion-backdrop",[["disable-activated",""],["role","presentation"],["tappable",""]],null,null,null,null,null)),u._29(8192,[[1,4]],0,a.a,[u.O,u.P],null,null)],null,null)}function o(n){return u._27(0,[(n()(),u._28(0,null,null,4,"ion-menu",[["role","navigation"]],null,null,null,t,b)),u._29(122880,null,2,_.a,[i.a,u.O,s.c,r.b,u.P,d.a,u.g,c.a,h.a,M.a],null,null),u._32(301989888,1,{menuContent:0}),u._32(301989888,2,{menuNav:0}),u._39(3072,null,f.a,null,[_.a])],function(n,l){n(l,1,0)},null)}var u=e(0),a=e(26),_=e(174),i=e(28),s=e(1),r=e(3),d=e(19),c=e(6),h=e(9),M=e(8),f=e(34);e.d(l,"b",function(){return b}),l.a=t;var p=[],b=u._26({encapsulation:2,styles:p,data:{}});u._37("ion-menu",_.a,o,{content:"content",id:"id",side:"side",type:"type",enabled:"enabled",swipeEnabled:"swipeEnabled",persistent:"persistent",maxEdgeStart:"maxEdgeStart"},{ionDrag:"ionDrag",ionOpen:"ionOpen",ionClose:"ionClose"},["*"])},338:function(n,l,e){"use strict";var t=e(0),o=e(332),u=e(47);e.d(l,"a",function(){return _});var a=this&&this.__decorate||function(n,l,e,t){var o,u=arguments.length,a=u<3?l:null===t?t=Object.getOwnPropertyDescriptor(l,e):t;if("object"==typeof Reflect&&"function"==typeof Reflect.decorate)a=Reflect.decorate(n,l,e,t);else for(var _=n.length-1;_>=0;_--)(o=n[_])&&(a=(u<3?o(a):u>3?o(l,e,a):o(l,e))||a);return u>3&&a&&Object.defineProperty(l,e,a),a},_=function(){function n(){}return n}();_=a([e.i(t.I)({declarations:[o.a],imports:[u.c.forChild(o.a)],entryComponents:[o.a]})],_)},339:function(n,l,e){"use strict";function t(n){return u._27(0,[u._32(201326592,1,{content:0}),(n()(),u._28(0,null,null,31,"ion-menu",[["role","navigation"]],null,null,null,a.a,a.b)),u._29(122880,null,2,_.a,[i.a,u.O,s.c,r.b,u.P,d.a,u.g,c.a,h.a,M.a],{content:[0,"content"]},null),u._32(167772160,2,{menuContent:0}),u._32(301989888,3,{menuNav:0}),u._39(3072,null,f.a,null,[_.a]),(n()(),u._33(0,["\n  "])),(n()(),u._28(0,null,0,10,"ion-header",[],null,null,null,null,null)),u._29(8192,null,0,p.a,[s.c,u.O,u.P,[2,b.a]],null,null),(n()(),u._33(null,["\n    "])),(n()(),u._28(0,null,null,6,"ion-toolbar",[["class","toolbar"]],[[2,"statusbar-padding",null]],null,null,g.a,g.b)),u._29(24576,null,0,w.a,[[2,b.a],s.c,u.O,u.P],null,null),(n()(),u._33(3,["\n      "])),(n()(),u._28(0,null,3,2,"ion-title",[],null,null,null,m.a,m.b)),u._29(24576,null,0,v.a,[s.c,u.O,u.P,[2,w.a],[2,y.a]],null,null),(n()(),u._33(0,["Favorites"])),(n()(),u._33(3,["\n    "])),(n()(),u._33(null,["\n  "])),(n()(),u._33(0,["\n  "])),(n()(),u._28(0,null,0,12,"ion-content",[],[[2,"statusbar-padding",null]],null,null,P.a,P.b)),u._29(90112,[[2,4]],0,O.a,[s.c,r.b,h.a,u.O,u.P,M.a,d.a,u.g,[2,b.a],[2,S.a]],null,null),(n()(),u._33(1,["\n    "])),(n()(),u._28(0,null,1,8,"ion-list",[],null,null,null,null,null)),u._29(8192,null,0,C.a,[s.c,u.O,u.P,r.b,c.a,h.a],null,null),(n()(),u._33(null,["\n    "])),(n()(),u._33(null,["\n    "])),(n()(),u._33(null,["\n    "])),(n()(),u._33(null,["\n    "])),(n()(),u._33(null,["\n    "])),(n()(),u._33(null,["\n    "])),(n()(),u._33(null,["\n    "])),(n()(),u._33(1,["\n  "])),(n()(),u._33(0,["\n"])),(n()(),u._33(null,["\n\n"])),(n()(),u._28(0,null,null,2,"ion-nav",[["persistent","false"]],null,null,null,k.a,k.b)),u._29(2187264,[[1,4],["content",4]],0,R.a,[[2,b.a],[2,S.a],M.a,s.c,r.b,d.a,u.O,u.g,u.P,u.H,c.a,T.a,[2,j.b],h.a],{root:[0,"root"]},null),u._39(3072,null,f.a,null,[R.a]),(n()(),u._33(null,["\n"]))],function(n,l){var e=l.component,t=u._30(l,35);n(l,2,0,t);var o=e.menuRoot;n(l,35,0,o)},function(n,l){var e=u._30(l,11)._sbPadding;n(l,10,0,e);var t=u._30(l,20).statusbarPadding;n(l,19,0,t)})}function o(n){return u._27(0,[(n()(),u._28(0,null,null,1,"page-menu",[],null,null,null,t,D)),u._29(24576,null,0,I.a,[S.a,L.c],null,null)],null,null)}var u=e(0),a=e(336),_=e(174),i=e(28),s=e(1),r=e(3),d=e(19),c=e(6),h=e(9),M=e(8),f=e(34),p=e(168),b=e(5),g=e(331),w=e(49),m=e(325),v=e(166),y=e(41),P=e(324),O=e(24),S=e(16),C=e(118),k=e(257),R=e(42),T=e(29),j=e(14),I=e(332),L=e(172);e.d(l,"a",function(){return A});var N=[],D=u._26({encapsulation:2,styles:N,data:{}}),A=u._37("page-menu",I.a,o,{},{},[])}});
-//# sourceMappingURL=main.js.map
+webpackJsonp([2],{
+
+/***/ 309:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__menu__ = __webpack_require__(314);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_ionic_angular__ = __webpack_require__(50);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "MenuPageModule", function() { return MenuPageModule; });
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+
+
+
+var MenuPageModule = (function () {
+    function MenuPageModule() {
+    }
+    return MenuPageModule;
+}());
+MenuPageModule = __decorate([
+    __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["a" /* NgModule */])({
+        declarations: [__WEBPACK_IMPORTED_MODULE_1__menu__["a" /* MenuPage */]],
+        imports: [
+            __WEBPACK_IMPORTED_MODULE_2_ionic_angular__["c" /* IonicPageModule */].forChild(__WEBPACK_IMPORTED_MODULE_1__menu__["a" /* MenuPage */])
+        ],
+        entryComponents: [
+            __WEBPACK_IMPORTED_MODULE_1__menu__["a" /* MenuPage */]
+        ]
+    })
+], MenuPageModule);
+
+//# sourceMappingURL=menu.module.js.map
+
+/***/ }),
+
+/***/ 314:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_ionic_angular__ = __webpack_require__(50);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_core__ = __webpack_require__(0);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__ionic_storage__ = __webpack_require__(244);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return MenuPage; });
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+
+
+var MenuPage = (function () {
+    function MenuPage(nav, storage) {
+        this.nav = nav;
+        this.storage = storage;
+        this.menuRoot = 'SearchPage';
+        // let src = Observable.fromPromise(this.storage.keys());
+        // src.subscribe(
+        //   (res) => {
+        //     this.favorites = res;
+        //   },
+        //   err => console.log(err),
+        //   () => console.log('done')
+        // );
+    }
+    MenuPage.prototype.goToDetail = function (favorite) {
+        this.content.push('TrackDetailPage', {
+            'track': favorite
+        });
+    };
+    MenuPage.prototype.openPage = function (page) {
+        this.content.setRoot(page.component);
+    };
+    return MenuPage;
+}());
+__decorate([
+    __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_1__angular_core__["M" /* ViewChild */])('content'),
+    __metadata("design:type", __WEBPACK_IMPORTED_MODULE_0_ionic_angular__["j" /* Nav */])
+], MenuPage.prototype, "content", void 0);
+MenuPage = __decorate([
+    __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0_ionic_angular__["d" /* IonicPage */])({
+        segment: 'menu'
+    }),
+    __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_1__angular_core__["J" /* Component */])({
+        selector: 'page-menu',template:/*ion-inline-start:"/Users/mhartington/GitHub/StarTrack-Ionic/src/pages/menu/menu.html"*/'<ion-menu [content]="content">\n  <ion-header>\n    <ion-toolbar>\n      <ion-title>Favorites</ion-title>\n    </ion-toolbar>\n  </ion-header>\n  <ion-content>\n    <ion-list>\n    <!--   <a ion&#45;item *ngFor="let favorite of favorites" (click)="goToDetail(favorite)" menuClose> -->\n    <!--     {{favorite}} -->\n    <!--     <!&#45;&#45; <h2>{{favorite.name}}</h2> &#45;&#45;> -->\n    <!--     <!&#45;&#45; <h3>by {{favorite.artists[0].name}}</h3> &#45;&#45;> -->\n    <!--     <!&#45;&#45; <em>{{favorite.album.name}}</em> &#45;&#45;> -->\n    <!--   </a> -->\n    </ion-list>\n  </ion-content>\n</ion-menu>\n\n<ion-nav [root]="menuRoot" #content persistent="false"></ion-nav>\n'/*ion-inline-end:"/Users/mhartington/GitHub/StarTrack-Ionic/src/pages/menu/menu.html"*/,
+    }),
+    __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_0_ionic_angular__["e" /* NavController */],
+        __WEBPACK_IMPORTED_MODULE_2__ionic_storage__["b" /* Storage */]])
+], MenuPage);
+
+//# sourceMappingURL=menu.js.map
+
+/***/ })
+
+});
+//# sourceMappingURL=2.main.js.map
