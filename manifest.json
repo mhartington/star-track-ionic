@@ -5,7 +5,7 @@
   "display": "standalone",
   "orientation": "portrait-primary",
   "icons": [{
-    "src": "assets/imgs/logo.png",
+    "src": "./assets/imgs/logo.png",
     "sizes": "512x512",
     "type": "image/png"
   }],
