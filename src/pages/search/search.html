@@ -4,7 +4,8 @@
   </ion-navbar>
   <ion-toolbar>
     <ion-searchbar
-      showCancelButton="true" (ionInput)="doSearch($event.target.value)">
+      [formControl]="search"
+      showCancelButton="true" >
     </ion-searchbar>
   </ion-toolbar>
 </ion-header>

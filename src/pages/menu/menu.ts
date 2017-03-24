@@ -10,7 +10,6 @@ import { Storage } from '@ionic/storage';
 })
 export class MenuPage {
   @ViewChild('content') content: Nav;
-
   public menuRoot = 'SearchPage';
   public favorites;
   constructor(
@@ -26,13 +25,11 @@ export class MenuPage {
     //   () => console.log('done')
     // );
   }
-
   goToDetail(favorite) {
     this.content.push('TrackDetailPage', {
       'track': favorite
     });
   }
-
   openPage(page) {
     this.content.setRoot(page.component);
   }
