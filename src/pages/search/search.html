@@ -3,7 +3,8 @@
     <ion-title>Search</ion-title>
   </ion-navbar>
   <ion-toolbar>
-    <ion-searchbar showCancelButton="false" (ionInput)="doSearch($event.target.value)">
+    <ion-searchbar
+      showCancelButton="true" (ionInput)="doSearch($event.target.value)">
     </ion-searchbar>
   </ion-toolbar>
 </ion-header>

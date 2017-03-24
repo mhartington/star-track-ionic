@@ -79,17 +79,15 @@
     <feature name="StatusBar">
         <param name="ios-package" onload="true" value="CDVStatusBar" />
     </feature>
-    <plugin name="cordova-plugin-device" spec="latest" />
-    <plugin name="cordova-plugin-console" spec="latest" />
     <plugin name="ionic-plugin-keyboard" spec="~2.2.0" />
     <plugin name="cordova-plugin-music-controls" spec="~1.3" />
     <plugin name="com.rd11.remote-controls" spec="https://github.com/shi11/RemoteControls" />
-    <engine name="ios" spec="latest" />
-    <engine name="android" spec="latest" />
-    <allow-navigation href="http://172.18.29.52:8100" />
-    <allow-navigation href="http://10.10.3.14:8100" />
     <icon src="resources/android/icon/drawable-xhdpi-icon.png" />
     <plugin name="cordova-plugin-splashscreen" spec="~4.0.2" />
     <plugin name="cordova-plugin-statusbar" spec="~2.2.2" />
     <plugin name="cordova-plugin-whitelist" spec="~1.3.2" />
+    <plugin name="cordova-plugin-device" spec="~1.1.5" />
+    <plugin name="cordova-plugin-console" spec="~1.0.6" />
+    <engine name="android" spec="latest" />
+    <engine name="ios" spec="latest" />
 </widget>
