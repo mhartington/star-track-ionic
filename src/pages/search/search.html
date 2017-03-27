@@ -3,9 +3,7 @@
     <ion-title>Search</ion-title>
   </ion-navbar>
   <ion-toolbar>
-    <ion-searchbar
-      [formControl]="search"
-      showCancelButton="true" >
+    <ion-searchbar (ionInput)="doSearch($event.target.value)" debounce="500" showCancelButton="true">
     </ion-searchbar>
   </ion-toolbar>
 </ion-header>

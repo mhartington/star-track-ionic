@@ -1,7 +1,6 @@
 import { IonicPage, NavController, LoadingController } from 'ionic-angular';
 import { Component } from '@angular/core';
 import { SpotifyService } from '../../providers/spotify-service/spotify-service';
-import { FormControl } from '@angular/forms'
 @IonicPage({
   segment: 'search'
 })
@@ -13,7 +12,6 @@ export class SearchPage {
   public listing = [];
   public isError: boolean = false;
   public showSpinner: boolean = false;
-  public search = new FormControl();
   constructor(
     public nav: NavController,
     public spotify: SpotifyService,
@@ -21,11 +19,6 @@ export class SearchPage {
 
   ) {
 
-    this.search.valueChanges
-      .subscribe(
-        res => console.log(res),
-        () => console.log('done')
-      );
   }
   detail(track) {
     this.nav.push('TrackDetailPage', {
@@ -33,18 +26,23 @@ export class SearchPage {
       'track': track
     });
   }
-  // doSearch(term) {
-  //   this.showSpinner = true;
-  //   if (term) {
-  //     this.spotify.load(term)
-  //       .subscribe(
-  //       results => this.listing = results.tracks.items,
-  //       error => this.isError = true,
-  //       () => this.showSpinner = false
-  //       );
-  //   } else {
-  //     this.listing = [];
-  //     this.showSpinner = false;
-  //   }
-  // }
+  doSearch(term) {
+    this.showSpinner = true;
+    this.isError = false;
+    if (term) {
+      this.spotify.load(term)
+        .subscribe(
+        results => this.listing = results.tracks.items,
+        error => {
+          this.isError = true;
+          this.listing = [];
+          this.showSpinner = false;
+        },
+        () => this.showSpinner = false
+        );
+    } else {
+      this.listing = [];
+      this.showSpinner = false;
+    }
+  }
 }
