@@ -1,3 +1,7 @@
 .menu {
 
 }
+
+.split-pane-md.split-pane-visible > .split-pane-side {
+  max-width: 375px;
+}

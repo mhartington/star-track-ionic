@@ -1,6 +1,7 @@
 import { IonicPage, NavController, LoadingController } from 'ionic-angular';
 import { Component } from '@angular/core';
 import { SpotifyService } from '../../providers/spotify-service/spotify-service';
+import { Storage } from '@ionic/storage';
 @IonicPage({
   segment: 'search'
 })
@@ -16,10 +17,8 @@ export class SearchPage {
     public nav: NavController,
     public spotify: SpotifyService,
     public loadingCtrl: LoadingController,
-
-  ) {
-
-  }
+    public storage: Storage
+  ) { }
   detail(track) {
     this.nav.push('TrackDetailPage', {
       'id': track.id,
@@ -44,5 +43,10 @@ export class SearchPage {
       this.listing = [];
       this.showSpinner = false;
     }
+  }
+  logStorage() {
+    this.storage.forEach(item => {
+      console.log(item);
+    });
   }
 }

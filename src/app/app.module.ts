@@ -20,7 +20,9 @@ import { Keyboard } from '@ionic-native/keyboard';
       preloadModules: true
     }),
     HttpModule,
-    IonicStorageModule.forRoot()
+    IonicStorageModule.forRoot({
+      name: '__startTrack'
+    })
   ],
   bootstrap: [IonicApp],
   entryComponents: [MyApp],

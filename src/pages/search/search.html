@@ -1,5 +1,11 @@
 <ion-header>
   <ion-navbar>
+    <ion-buttons left>
+      <button menuToggle ion-button icon-only>
+        <ion-icon name="menu"></ion-icon>
+      </button>
+
+    </ion-buttons>
     <ion-title>Search</ion-title>
   </ion-navbar>
   <ion-toolbar>
@@ -9,24 +15,29 @@
 </ion-header>
 
 <ion-content>
-  <div *ngIf="isError" text-center padding>
-    <ion-icon color="secondary" name="warning" big></ion-icon>
-    <h1>Uh-oh...</h1>
-    <h2>It's not me, it's you!</h2>
-    <h2>It appears there is a connection problem</h2>
-  </div>
-  <div padding text-center class="stauts-spinner" *ngIf="showSpinner">
-    <ion-spinner></ion-spinner>
-  </div>
-  <a ion-item *ngFor="let track of listing" detail-none (click)="detail(track)">
-    <ion-thumbnail item-left>
-      <img [src]="track.album.images[0].url" alt="">
-    </ion-thumbnail>
-    <h2>{{track.name}}</h2>
-    <h3>{{track.artists[0].name}}</h3>
-    <p>{{track.album.name}}</p>
-    <ion-note item-right>
-      {{track.duration_ms | msToMinutes}}
-    </ion-note>
-  </a>
+  <ion-list>
+
+    <div *ngIf="isError" text-center padding>
+      <ion-icon color="secondary" name="warning" big></ion-icon>
+      <h1>Uh-oh...</h1>
+      <h2>It's not me, it's you!</h2>
+      <h2>It appears there is a connection problem</h2>
+    </div>
+    <div padding text-center class="stauts-spinner" *ngIf="showSpinner">
+      <ion-spinner></ion-spinner>
+    </div>
+
+    <a ion-item *ngFor="let track of listing" detail-none (click)="detail(track)">
+      <ion-thumbnail item-left>
+        <img [src]="track.album.images[0].url" alt="">
+      </ion-thumbnail>
+      <h2>{{track.name}}</h2>
+      <h3>{{track.artists[0].name}}</h3>
+      <p>{{track.album.name}}</p>
+      <ion-note item-right>
+        {{track.duration_ms | msToMinutes}}
+      </ion-note>
+    </a>
+  </ion-list>
+
 </ion-content>
