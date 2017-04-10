@@ -38,19 +38,23 @@ export class TrackDetailPage {
   ionViewWillLeave() {
     this.stopSong();
   }
-  toggleSong() {
-    this.ifPlaying ? this.stopSong() : this.playSong;
+  toggleSong(e) {
+  if (this.ifPlaying) {
+      this.stopSong();
+    } else {
+      this.playSong();
+    }
   }
   playSong() {
-    this.nativeMedia.createMediaControls(this.track);
     this.ifPlaying = true;
     this.audio.nativeElement.play();
+    this.nativeMedia.createMediaControls(this.track);
   }
   stopSong() {
-    this.nativeMedia.destroy();
     this.ifPlaying = false;
     this.audio.nativeElement.currentTime = 0;
     this.audio.nativeElement.pause();
+    this.nativeMedia.destroy();
   }
   setProgress() {
     this.progress = Math.round((this.audio.nativeElement.currentTime / this.audio.nativeElement.duration) * 100);

@@ -1,5 +1,5 @@
 $white: #fff !default;
-$gray:  #ddd !default;
+$gray: #ddd !default;
 
 page-track-detail {
   .progress {
@@ -25,5 +25,31 @@ page-track-detail {
     ion-icon {
       line-height: initial;
     }
+  }
+
+  .track-img {
+    transition: transform 250ms ease-in-out;
+    transform: scale3d(0.8, 0.8, 0.8);
+    max-width: 400px;
+    margin: auto;
+
+    &.playing {
+      transform: scale3d(0.9, 0.9, 0.9);
+    }
+
+  }
+
+  .track-img::before {
+    opacity: 0;
+    content: "";
+    height: 100%;
+    position: absolute;
+    width: 100%;
+    transition: opacity 0.3s ease-in-out;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.9);
+  }
+
+  .track-img.playing::before {
+    opacity: 1;
   }
 }
