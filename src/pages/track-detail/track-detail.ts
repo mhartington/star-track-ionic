@@ -39,11 +39,7 @@ export class TrackDetailPage {
     this.stopSong();
   }
   toggleSong() {
-    if (this.ifPlaying) {
-      this.stopSong();
-    } else {
-      this.playSong();
-    }
+    this.ifPlaying ? this.stopSong() : this.playSong;
   }
   playSong() {
     this.nativeMedia.createMediaControls(this.track);
@@ -75,23 +71,20 @@ export class TrackDetailPage {
       duration: 3000,
       position: 'bottom'
     };
-
-    this.storage.get(this.track.id).then((res) => {
-      if (!res) {
-        let toast = this.toastCtrl.create(addedToast);
-        toast.present();
-        this.isFavorite = true;
-        this.favoriteIcon = 'star';
-        this.storage.set(this.track.id, this.track);
-        this.events.publish('songAdded', this.track);
-      } else {
-        let toast = this.toastCtrl.create(removedToast);
-        toast.present();
-        this.storage.remove(this.track.id);
-        this.isFavorite = false;
-        this.favoriteIcon = 'star-outline';
-        this.events.publish('songRemoved', this.track);
-      }
-    });
+    if (!this.isFavorite) {
+      let toast = this.toastCtrl.create(addedToast);
+      toast.present();
+      this.isFavorite = true;
+      this.favoriteIcon = 'star';
+      this.storage.set(this.track.id, this.track);
+      this.events.publish('songAdded', this.track);
+    } else {
+      let toast = this.toastCtrl.create(removedToast);
+      toast.present();
+      this.storage.remove(this.track.id);
+      this.isFavorite = false;
+      this.favoriteIcon = 'star-outline';
+      this.events.publish('songRemoved', this.track);
+    }
   }
 }

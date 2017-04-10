@@ -10,6 +10,7 @@ import { Storage } from '@ionic/storage';
   templateUrl: 'search.html',
 })
 export class SearchPage {
+
   public listing = [];
   public isError: boolean = false;
   public showSpinner: boolean = false;
@@ -19,6 +20,7 @@ export class SearchPage {
     public loadingCtrl: LoadingController,
     public storage: Storage
   ) { }
+  ionViewDidLoad() { }
   detail(track) {
     this.nav.push('TrackDetailPage', {
       'id': track.id,
@@ -43,10 +45,5 @@ export class SearchPage {
       this.listing = [];
       this.showSpinner = false;
     }
-  }
-  logStorage() {
-    this.storage.forEach(item => {
-      console.log(item);
-    });
   }
 }

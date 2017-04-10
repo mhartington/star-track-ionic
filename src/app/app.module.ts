@@ -12,26 +12,19 @@ import { SpotifyService } from '../providers/spotify-service/spotify-service';
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
 import { Keyboard } from '@ionic-native/keyboard';
+
 @NgModule({
   declarations: [MyApp],
   imports: [
     BrowserModule,
-    IonicModule.forRoot(MyApp, {
-      preloadModules: true
-    }),
     HttpModule,
+    IonicModule.forRoot(MyApp),
     IonicStorageModule.forRoot({
       name: '__startTrack'
     })
   ],
   bootstrap: [IonicApp],
   entryComponents: [MyApp],
-  providers: [
-    SpotifyService,
-    NativeMedia,
-    StatusBar,
-    SplashScreen,
-    Keyboard,
-  ]
+  providers: [SpotifyService, NativeMedia, StatusBar, SplashScreen, Keyboard]
 })
 export class AppModule { }

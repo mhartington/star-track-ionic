@@ -4,19 +4,16 @@
       <button menuToggle ion-button icon-only>
         <ion-icon name="menu"></ion-icon>
       </button>
-
     </ion-buttons>
     <ion-title>Search</ion-title>
   </ion-navbar>
   <ion-toolbar>
-    <ion-searchbar (ionInput)="doSearch($event.target.value)" debounce="500" showCancelButton="true">
+    <ion-searchbar (ionInput)="doSearch($event.target.value)" showCancelButton="true" debounce="500">
     </ion-searchbar>
   </ion-toolbar>
 </ion-header>
-
 <ion-content>
   <ion-list>
-
     <div *ngIf="isError" text-center padding>
       <ion-icon color="secondary" name="warning" big></ion-icon>
       <h1>Uh-oh...</h1>
@@ -26,7 +23,6 @@
     <div padding text-center class="stauts-spinner" *ngIf="showSpinner">
       <ion-spinner></ion-spinner>
     </div>
-
     <a ion-item *ngFor="let track of listing" detail-none (click)="detail(track)">
       <ion-thumbnail item-left>
         <img [src]="track.album.images[0].url" alt="">
@@ -39,5 +35,4 @@
       </ion-note>
     </a>
   </ion-list>
-
 </ion-content>
