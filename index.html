@@ -8,13 +8,13 @@
   <meta name="msapplication-tap-highlight" content="no">
   <link rel="manifest" href="manifest.json">
   <meta name="theme-color" content="#32db64">
-  <!-- <script> -->
-  <!--   if ('serviceWorker' in navigator) { -->
-  <!--     navigator.serviceWorker.register('service&#45;worker.js') -->
-  <!--       .then(() => console.log('service worker installed')) -->
-  <!--       .catch(err => console.log('Error', err)); -->
-  <!--   } -->
-  <!-- </script> -->
+  <script>
+    if ('serviceWorker' in navigator) {
+      navigator.serviceWorker.register('service-worker.js')
+        .then(() => console.log('service worker installed'))
+        .catch(err => console.log('Error', err));
+    }
+  </script>
   <link href="build/main.css" rel="stylesheet">
 </head>
 
