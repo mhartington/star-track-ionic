@@ -1,4 +1,4 @@
-page-track-detail {
+ion-music-card {
   button[round] {
     border-radius: 50%;
     height: 45px;
@@ -40,13 +40,13 @@ page-track-detail {
   }
 }
 
-.ios page-track-detail {
+.ios ion-music-card {
   .range-ios .range-knob {
     transform: scale3d(0.5, 0.5, 0.5);
     background: map-get($colors, secondary)
   }
 }
-.md page-track-detail {
+.md ion-music-card {
   .range-md .range-knob-min.range-knob-min .range-knob{
     background: map-get($colors, secondary)
   }

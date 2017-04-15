@@ -1,16 +1,13 @@
 import { NgModule } from '@angular/core';
 import { TrackDetailPage } from './track-detail';
 import { IonicPageModule } from 'ionic-angular';
-import { TimePipeModule } from '../../pipes/time-pipes/time-pipes.module';
+import { IonMusicCardComponentModule } from '../../components/ion-music-card/ion-music-card.module';
 
 @NgModule({
   declarations: [TrackDetailPage],
   imports: [
-    TimePipeModule,
-    IonicPageModule.forChild(TrackDetailPage)
-  ],
-  entryComponents: [
-    TrackDetailPage
-  ]
+    IonMusicCardComponentModule,
+    IonicPageModule.forChild(TrackDetailPage)],
+  entryComponents: [TrackDetailPage]
 })
 export class TrackDetailPageModule { }

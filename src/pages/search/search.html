@@ -23,7 +23,7 @@
     <div padding text-center class="stauts-spinner" *ngIf="showSpinner">
       <ion-spinner></ion-spinner>
     </div>
-    <a ion-item *ngFor="let track of listing" detail-none (click)="detail(track)">
+    <a ion-item *ngFor="let track of listing" detail-none [navPush]="'TrackDetailPage'" [navParams]="{'id': track.id,'track': track}">
       <ion-thumbnail item-left>
         <img [src]="track.album.images[0].url" alt="">
       </ion-thumbnail>

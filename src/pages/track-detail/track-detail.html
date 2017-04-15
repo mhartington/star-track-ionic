@@ -8,49 +8,44 @@
     </ion-buttons>
   </ion-navbar>
 </ion-header>
-
 <ion-content>
   <ion-list>
     <ion-grid>
       <ion-row>
-        <ion-col col-sm-8 offset-sm-2>
-          <ion-card>
-                <div [ngClass]="{'playing': ifPlaying , '': !ifPlaying}" class="track-img">
-                  <img [src]="track.album.images[0].url" alt="">
-                </div>
-
-                <ion-card-content>
-                  <ion-card-title>
-                    <h2>{{track.name}}</h2>
-                  </ion-card-title>
-                  <h3>by {{track.artists[0].name}}</h3>
-                  <em>{{track.album.name}}</em>
-
-                  <ion-grid>
-                    <ion-row>
-                      <ion-col col-3 text-center>
-                        <button color="light" ion-fab (click)="toggleSong($event)">
-              <ion-icon color="secondary" name="play" *ngIf="!ifPlaying"></ion-icon>
-              <ion-icon color="secondary" name="square" *ngIf="ifPlaying"></ion-icon>
-            </button>
-                      </ion-col>
-
-                      <ion-col col-9>
-                        <audio [src]="track.preview_url" (ended)="playerEnded()" (timeupdate)="setProgress()" #player></audio>
-                        <progress [value]="progress" max="100" class="progress"></progress>
-                      </ion-col>
-                    </ion-row>
-                  </ion-grid>
-                </ion-card-content>
-
-
-            <ion-item>
-              <p>Track Duration</p>
-              <ion-note item-right>
-                {{track.duration_ms | msToMinutes}}
-              </ion-note>
-            </ion-item>
-          </ion-card>
+        <ion-col col-sm-10 offset-sm-1>
+          <ion-music-card [track]="track"></ion-music-card>
+          <!-- <ion&#45;card> -->
+          <!--   <div [ngClass]="{'playing': ifPlaying , '': !ifPlaying}" class="track&#45;img"> -->
+          <!--     <img [src]="track.album.images[0].url" alt=""> -->
+          <!--   </div> -->
+          <!--   <ion&#45;card&#45;content> -->
+          <!--     <ion&#45;card&#45;title> -->
+          <!--       <h2>{{track.name}}</h2> -->
+          <!--     </ion&#45;card&#45;title> -->
+          <!--     <h3>by {{track.artists[0].name}}</h3> -->
+          <!--     <em>{{track.album.name}}</em> -->
+          <!--  -->
+          <!--     <ion&#45;grid> -->
+          <!--       <ion&#45;row> -->
+          <!--         <ion&#45;col col&#45;3 text&#45;center> -->
+          <!--           <button color="light" ion&#45;fab (click)="toggleSong()"> -->
+          <!--             <ion&#45;icon color="secondary" name="play" *ngIf="!ifPlaying"></ion&#45;icon> -->
+          <!--             <ion&#45;icon color="secondary" name="square" *ngIf="ifPlaying"></ion&#45;icon> -->
+          <!--           </button> -->
+          <!--         </ion&#45;col> -->
+          <!--         <ion&#45;col col&#45;9> -->
+          <!--           <ion&#45;range [(ngModel)]="progress" max="100" (ionFocus)="handleDrag()" (ionBlur)="seek($event.value)" color="secondary"></ion&#45;range> -->
+          <!--         </ion&#45;col> -->
+          <!--       </ion&#45;row> -->
+          <!--     </ion&#45;grid> -->
+          <!--   </ion&#45;card&#45;content> -->
+          <!--   <ion&#45;item> -->
+          <!--     <p>Track Duration</p> -->
+          <!--     <ion&#45;note item&#45;right> -->
+          <!--       {{track.duration_ms | msToMinutes}} -->
+          <!--     </ion&#45;note> -->
+          <!--   </ion&#45;item> -->
+          <!-- </ion&#45;card> -->
         </ion-col>
       </ion-row>
     </ion-grid>
