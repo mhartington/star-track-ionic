@@ -24,7 +24,7 @@
     "@ionic-native/status-bar": "^3.1.0",
     "@ionic/storage": "2.0.1",
     "howler": "^2.0.3",
-    "ionic-angular": "nightly",
+    "ionic-angular": "^3.0.1-201704261539",
     "ionicons": "3.0.0",
     "rxjs": "5.1.1",
     "sw-toolbox": "3.6.0",

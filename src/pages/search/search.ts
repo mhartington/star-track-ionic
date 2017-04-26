@@ -44,17 +44,11 @@ export class SearchPage {
       })
       .debounceTime(500)
       .switchMap(term => this.spotify.load(term))
+      .do(() => this.showSpinner = false)
       .subscribe(
-        results => this.listing = results.tracks.items,
-        err => console.log(err),
-        () => { this.showSpinner = false })
-      // .subscribe(
-      //   term => this.spotify.load(term).subscribe(
-      //     results => this.listing = results.tracks.items,
-      //     err => console.log(err),
-      //     () => this.showSpinner = false
-      //     )
-      // )
+      results => this.listing = results.tracks.items,
+      err => console.log(err)
+      )
   }
   detail(track) {
     this.nav.push('TrackDetailPage', {

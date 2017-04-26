@@ -7,8 +7,6 @@ import { IonicPageModule } from 'ionic-angular';
   imports: [
     IonicPageModule.forChild(MenuPage)
   ],
-  entryComponents: [
-    MenuPage
-  ]
+  exports: [MenuPage]
 })
 export class MenuPageModule { }

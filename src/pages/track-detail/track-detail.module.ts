@@ -8,6 +8,6 @@ import { IonMusicCardComponentModule } from '../../components/ion-music-card/ion
   imports: [
     IonMusicCardComponentModule,
     IonicPageModule.forChild(TrackDetailPage)],
-  entryComponents: [TrackDetailPage]
+  exports: [TrackDetailPage]
 })
 export class TrackDetailPageModule { }

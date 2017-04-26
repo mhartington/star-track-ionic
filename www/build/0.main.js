@@ -32,9 +32,7 @@ SearchPageModule = __decorate([
             __WEBPACK_IMPORTED_MODULE_3__pipes_time_pipes_time_pipes_module__["a" /* TimePipeModule */],
             __WEBPACK_IMPORTED_MODULE_2_ionic_angular__["d" /* IonicPageModule */].forChild(__WEBPACK_IMPORTED_MODULE_1__search__["a" /* SearchPage */])
         ],
-        entryComponents: [
-            __WEBPACK_IMPORTED_MODULE_1__search__["a" /* SearchPage */]
-        ]
+        exports: [__WEBPACK_IMPORTED_MODULE_1__search__["a" /* SearchPage */]]
     })
 ], SearchPageModule);
 
@@ -129,8 +127,8 @@ TimePipeModule = __decorate([
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_ionic_angular__ = __webpack_require__(48);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__providers_spotify_service_spotify_service__ = __webpack_require__(201);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__ionic_storage__ = __webpack_require__(199);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__providers_spotify_service_spotify_service__ = __webpack_require__(202);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__ionic_storage__ = __webpack_require__(200);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__angular_forms__ = __webpack_require__(13);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5_rxjs_add_operator_debounceTime__ = __webpack_require__(292);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5_rxjs_add_operator_debounceTime___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_5_rxjs_add_operator_debounceTime__);
@@ -140,7 +138,7 @@ TimePipeModule = __decorate([
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_7_rxjs_add_operator_do___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_7_rxjs_add_operator_do__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_8_rxjs_add_operator_filter__ = __webpack_require__(295);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_8_rxjs_add_operator_filter___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_8_rxjs_add_operator_filter__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9_rxjs_add_operator_switchMap__ = __webpack_require__(300);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9_rxjs_add_operator_switchMap__ = __webpack_require__(296);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_9_rxjs_add_operator_switchMap___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_9_rxjs_add_operator_switchMap__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return SearchPage; });
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
@@ -189,14 +187,8 @@ var SearchPage = (function () {
         })
             .debounceTime(500)
             .switchMap(function (term) { return _this.spotify.load(term); })
-            .subscribe(function (results) { return _this.listing = results.tracks.items; }, function (err) { return console.log(err); }, function () { _this.showSpinner = false; });
-        // .subscribe(
-        //   term => this.spotify.load(term).subscribe(
-        //     results => this.listing = results.tracks.items,
-        //     err => console.log(err),
-        //     () => this.showSpinner = false
-        //     )
-        // )
+            .do(function () { return _this.showSpinner = false; })
+            .subscribe(function (results) { return _this.listing = results.tracks.items; }, function (err) { return console.log(err); });
     };
     SearchPage.prototype.detail = function (track) {
         this.nav.push('TrackDetailPage', {
@@ -211,7 +203,7 @@ SearchPage = __decorate([
         segment: 'search'
     }),
     __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_1__angular_core__["_6" /* Component */])({
-        selector: 'page-search',template:/*ion-inline-start:"/Users/mhartington/GitHub/StarTrack-Ionic/src/pages/search/search.html"*/'<ion-header>\n  <ion-navbar>\n    <ion-buttons left>\n      <button menuToggle ion-button icon-only>\n        <ion-icon name="menu"></ion-icon>\n      </button>\n    </ion-buttons>\n    <ion-title>Search</ion-title>\n  </ion-navbar>\n  <ion-toolbar>\n    <!-- <ion&#45;searchbar (ionInput)="doSearch($event.target.value)" showCancelButton="true" debounce="500"> -->\n    <!-- </ion&#45;searchbar> -->\n    <ion-searchbar [formControl]="searchInput" showCancelButton="true" >\n    </ion-searchbar>\n  </ion-toolbar>\n</ion-header>\n<ion-content>\n  <ion-list>\n    <div *ngIf="isError" text-center padding>\n      <ion-icon color="secondary" name="warning" big></ion-icon>\n      <h1>Uh-oh...</h1>\n      <h2>It\'s not me, it\'s you!</h2>\n      <h2>It appears there is a connection problem</h2>\n    </div>\n    <div padding text-center class="stauts-spinner" *ngIf="showSpinner">\n      <ion-spinner></ion-spinner>\n    </div>\n    <a ion-item *ngFor="let track of listing" detail-none [navPush]="\'TrackDetailPage\'" [navParams]="{\'id\': track.id,\'track\': track}">\n      <ion-thumbnail item-left>\n        <img [src]="track.album.images[0].url" alt="">\n      </ion-thumbnail>\n      <h2>{{track.name}}</h2>\n      <h3>{{track.artists[0].name}}</h3>\n      <p>{{track.album.name}}</p>\n      <ion-note item-right>\n        {{track.duration_ms | msToMinutes}}\n      </ion-note>\n    </a>\n  </ion-list>\n</ion-content>\n'/*ion-inline-end:"/Users/mhartington/GitHub/StarTrack-Ionic/src/pages/search/search.html"*/,
+        selector: 'page-search',template:/*ion-inline-start:"/Users/mhartington/GitHub/StarTrack-Ionic/src/pages/search/search.html"*/'<ion-header>\n  <ion-navbar>\n    <ion-buttons left>\n      <button menuToggle ion-button icon-only>\n        <ion-icon name="menu"></ion-icon>\n      </button>\n    </ion-buttons>\n    <ion-title>Search</ion-title>\n  </ion-navbar>\n  <ion-toolbar>\n    <ion-searchbar [formControl]="searchInput" showCancelButton="true"></ion-searchbar>\n  </ion-toolbar>\n</ion-header>\n<ion-content>\n  <ion-list>\n    <div *ngIf="isError" text-center padding>\n      <ion-icon color="secondary" name="warning" big></ion-icon>\n      <h1>Uh-oh...</h1>\n      <h2>It\'s not me, it\'s you!</h2>\n      <h2>It appears there is a connection problem</h2>\n    </div>\n    <div padding text-center class="stauts-spinner" *ngIf="showSpinner">\n      <ion-spinner></ion-spinner>\n    </div>\n    <a ion-item *ngFor="let track of listing" detail-none [navPush]="\'TrackDetailPage\'" [navParams]="{\'id\': track.id,\'track\': track}">\n      <ion-thumbnail item-left>\n        <img [src]="track.album.images[0].url" alt="">\n      </ion-thumbnail>\n      <h2>{{track.name}}</h2>\n      <h3>{{track.artists[0].name}}</h3>\n      <p>{{track.album.name}}</p>\n      <ion-note item-right>\n        {{track.duration_ms | msToMinutes}}\n      </ion-note>\n    </a>\n  </ion-list>\n</ion-content>\n'/*ion-inline-end:"/Users/mhartington/GitHub/StarTrack-Ionic/src/pages/search/search.html"*/,
     }),
     __metadata("design:paramtypes", [typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_0_ionic_angular__["f" /* NavController */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_0_ionic_angular__["f" /* NavController */]) === "function" && _a || Object, typeof (_b = typeof __WEBPACK_IMPORTED_MODULE_2__providers_spotify_service_spotify_service__["a" /* SpotifyService */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_2__providers_spotify_service_spotify_service__["a" /* SpotifyService */]) === "function" && _b || Object, typeof (_c = typeof __WEBPACK_IMPORTED_MODULE_0_ionic_angular__["j" /* LoadingController */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_0_ionic_angular__["j" /* LoadingController */]) === "function" && _c || Object, typeof (_d = typeof __WEBPACK_IMPORTED_MODULE_3__ionic_storage__["b" /* Storage */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_3__ionic_storage__["b" /* Storage */]) === "function" && _d || Object])
 ], SearchPage);
@@ -227,7 +219,7 @@ var _a, _b, _c, _d;
 "use strict";
 
 var Observable_1 = __webpack_require__(7);
-var debounceTime_1 = __webpack_require__(296);
+var debounceTime_1 = __webpack_require__(297);
 Observable_1.Observable.prototype.debounceTime = debounceTime_1.debounceTime;
 //# sourceMappingURL=debounceTime.js.map
 
@@ -239,7 +231,7 @@ Observable_1.Observable.prototype.debounceTime = debounceTime_1.debounceTime;
 "use strict";
 
 var Observable_1 = __webpack_require__(7);
-var distinctUntilChanged_1 = __webpack_require__(297);
+var distinctUntilChanged_1 = __webpack_require__(298);
 Observable_1.Observable.prototype.distinctUntilChanged = distinctUntilChanged_1.distinctUntilChanged;
 //# sourceMappingURL=distinctUntilChanged.js.map
 
@@ -251,7 +243,7 @@ Observable_1.Observable.prototype.distinctUntilChanged = distinctUntilChanged_1.
 "use strict";
 
 var Observable_1 = __webpack_require__(7);
-var do_1 = __webpack_require__(298);
+var do_1 = __webpack_require__(299);
 Observable_1.Observable.prototype.do = do_1._do;
 Observable_1.Observable.prototype._do = do_1._do;
 //# sourceMappingURL=do.js.map
@@ -264,13 +256,25 @@ Observable_1.Observable.prototype._do = do_1._do;
 "use strict";
 
 var Observable_1 = __webpack_require__(7);
-var filter_1 = __webpack_require__(299);
+var filter_1 = __webpack_require__(300);
 Observable_1.Observable.prototype.filter = filter_1.filter;
 //# sourceMappingURL=filter.js.map
 
 /***/ }),
 
 /***/ 296:
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+var Observable_1 = __webpack_require__(7);
+var switchMap_1 = __webpack_require__(301);
+Observable_1.Observable.prototype.switchMap = switchMap_1.switchMap;
+//# sourceMappingURL=switchMap.js.map
+
+/***/ }),
+
+/***/ 297:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -393,7 +397,7 @@ function dispatchNext(subscriber) {
 
 /***/ }),
 
-/***/ 297:
+/***/ 298:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -404,7 +408,7 @@ var __extends = (this && this.__extends) || function (d, b) {
     d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
 };
 var Subscriber_1 = __webpack_require__(20);
-var tryCatch_1 = __webpack_require__(49);
+var tryCatch_1 = __webpack_require__(51);
 var errorObject_1 = __webpack_require__(38);
 /* tslint:disable:max-line-length */
 /**
@@ -508,7 +512,7 @@ var DistinctUntilChangedSubscriber = (function (_super) {
 
 /***/ }),
 
-/***/ 298:
+/***/ 299:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -628,7 +632,7 @@ var DoSubscriber = (function (_super) {
 
 /***/ }),
 
-/***/ 299:
+/***/ 300:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -728,18 +732,6 @@ var FilterSubscriber = (function (_super) {
 
 /***/ }),
 
-/***/ 300:
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-var Observable_1 = __webpack_require__(7);
-var switchMap_1 = __webpack_require__(301);
-Observable_1.Observable.prototype.switchMap = switchMap_1.switchMap;
-//# sourceMappingURL=switchMap.js.map
-
-/***/ }),
-
 /***/ 301:
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -750,8 +742,8 @@ var __extends = (this && this.__extends) || function (d, b) {
     function __() { this.constructor = d; }
     d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
 };
-var OuterSubscriber_1 = __webpack_require__(98);
-var subscribeToResult_1 = __webpack_require__(102);
+var OuterSubscriber_1 = __webpack_require__(49);
+var subscribeToResult_1 = __webpack_require__(50);
 /* tslint:disable:max-line-length */
 /**
  * Projects each source value to an Observable which is merged in the output

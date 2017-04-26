@@ -9,8 +9,6 @@ import { TimePipeModule } from '../../pipes/time-pipes/time-pipes.module';
     TimePipeModule,
     IonicPageModule.forChild(SearchPage)
   ],
-  entryComponents: [
-    SearchPage
-  ]
+  exports: [SearchPage]
 })
 export class SearchPageModule { }

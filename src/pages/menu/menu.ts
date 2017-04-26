@@ -1,4 +1,4 @@
-import { IonicPage, NavController, Nav, Events } from 'ionic-angular';
+import { IonicPage, Menu, NavController, Nav, Events } from 'ionic-angular';
 import { Component, ViewChild } from '@angular/core';
 import { Storage } from '@ionic/storage';
 @IonicPage({
@@ -10,6 +10,7 @@ import { Storage } from '@ionic/storage';
 })
 export class MenuPage {
   @ViewChild('content') content: Nav;
+  @ViewChild(Menu) menu: Menu;
   public menuRoot = 'SearchPage';
   public favorites = [];
   constructor(
@@ -27,10 +28,12 @@ export class MenuPage {
   }
 
   goToDetail(favorite) {
-    this.content.push('TrackDetailPage', {
-      'id': favorite.id,
-      'track': favorite
-    });
+    this.menu.close().then(() => {
+      this.content.push('TrackDetailPage', {
+        'id': favorite.id,
+        'track': favorite
+      });
+    })
   }
   openPage(page) {
     this.content.setRoot(page.component);
