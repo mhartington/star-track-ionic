@@ -1,6 +1,6 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { HttpModule } from '@angular/http';
-import { NgModule } from '@angular/core';
+import { NgModule, CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
 import { IonicApp, IonicModule } from 'ionic-angular';
 import { IonicStorageModule } from '@ionic/storage';
 
@@ -25,6 +25,7 @@ import { Keyboard } from '@ionic-native/keyboard';
   ],
   bootstrap: [IonicApp],
   entryComponents: [MyApp],
-  providers: [SpotifyService, NativeMedia, StatusBar, SplashScreen, Keyboard]
+  providers: [SpotifyService, NativeMedia, StatusBar, SplashScreen, Keyboard],
+  schemas: [CUSTOM_ELEMENTS_SCHEMA]
 })
 export class AppModule { }

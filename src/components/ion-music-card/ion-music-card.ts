@@ -37,9 +37,6 @@ export class IonMusicCardComponent {
       }
     })
   }
-  // ionViewWillLeave() {
-  //   this.stopSong();
-  // }
   toggleSong() {
     if (this.ifPlaying) {
       this.stopSong();

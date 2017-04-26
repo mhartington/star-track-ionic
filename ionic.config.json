@@ -1,6 +1,5 @@
 {
   "name": "StarTrack-Ionic",
   "app_id": "3dbef85e",
-  "v2": true,
-  "typescript": true
+  "type": "ionic-angular"
 }

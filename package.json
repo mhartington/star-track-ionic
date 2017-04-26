@@ -8,15 +8,15 @@
     "ionic:serve": "ionic-app-scripts serve"
   },
   "dependencies": {
-    "@angular/common": "4.0.0",
-    "@angular/compiler": "4.0.0",
-    "@angular/compiler-cli": "4.0.0",
-    "@angular/core": "4.0.0",
-    "@angular/forms": "4.0.0",
-    "@angular/http": "4.0.0",
-    "@angular/platform-browser": "4.0.0",
-    "@angular/platform-browser-dynamic": "4.0.0",
-    "@angular/platform-server": "4.0.0",
+    "@angular/common": "4.0.2",
+    "@angular/compiler": "4.0.2",
+    "@angular/compiler-cli": "4.0.2",
+    "@angular/core": "4.0.2",
+    "@angular/forms": "4.0.2",
+    "@angular/http": "4.0.2",
+    "@angular/platform-browser": "4.0.2",
+    "@angular/platform-browser-dynamic": "4.0.2",
+    "@angular/platform-server": "4.0.2",
     "@ionic-native/camera": "^3.1.0",
     "@ionic-native/core": "^3.1.0",
     "@ionic-native/keyboard": "^3.1.0",
@@ -24,18 +24,18 @@
     "@ionic-native/status-bar": "^3.1.0",
     "@ionic/storage": "2.0.1",
     "howler": "^2.0.3",
-    "ionic-angular": "3.0.0-beta.3",
+    "ionic-angular": "nightly",
     "ionicons": "3.0.0",
     "rxjs": "5.1.1",
     "sw-toolbox": "3.6.0",
-    "zone.js": "0.7.8"
+    "zone.js": "0.8.4"
   },
   "devDependencies": {
-    "@angular/language-service": "^4.0.2",
-    "@ionic/app-scripts": "1.3.0",
-    "@ionic/cli-plugin-cordova": "0.0.12",
-    "@ionic/cli-plugin-ionic-angular": "0.0.6",
+    "@angular/language-service": "4.0.2",
+    "@ionic/app-scripts": "1.3.4-201704181621",
+    "@ionic/cli-plugin-cordova": "0.0.13-alpha.9279cbab",
+    "@ionic/cli-plugin-ionic-angular": "0.0.7-alpha.9279cbab",
     "@types/howler": "^2.0.2",
-    "typescript": "^2.3.0-dev.20170417"
+    "typescript": "2.3.0"
   }
 }
