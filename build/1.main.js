@@ -32,7 +32,7 @@ TrackDetailPageModule = __decorate([
             __WEBPACK_IMPORTED_MODULE_3__components_ion_music_card_ion_music_card_module__["a" /* IonMusicCardComponentModule */],
             __WEBPACK_IMPORTED_MODULE_2_ionic_angular__["d" /* IonicPageModule */].forChild(__WEBPACK_IMPORTED_MODULE_1__track_detail__["a" /* TrackDetailPage */])
         ],
-        entryComponents: [__WEBPACK_IMPORTED_MODULE_1__track_detail__["a" /* TrackDetailPage */]]
+        exports: [__WEBPACK_IMPORTED_MODULE_1__track_detail__["a" /* TrackDetailPage */]]
     })
 ], TrackDetailPageModule);
 
@@ -169,7 +169,7 @@ IonMusicCardComponentModule = __decorate([
 
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__providers_native_media_native_media__ = __webpack_require__(200);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__providers_native_media_native_media__ = __webpack_require__(201);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_howler__ = __webpack_require__(291);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_howler___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2_howler__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return IonMusicCardComponent; });
@@ -279,8 +279,8 @@ IonMusicCardComponent = __decorate([
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(48);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__providers_native_media_native_media__ = __webpack_require__(200);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__ionic_storage__ = __webpack_require__(199);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__providers_native_media_native_media__ = __webpack_require__(201);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__ionic_storage__ = __webpack_require__(200);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return TrackDetailPage; });
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
@@ -3157,7 +3157,7 @@ TrackDetailPage = __decorate([
   };
 })();
 
-/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(50)))
+/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(52)))
 
 /***/ })
 
