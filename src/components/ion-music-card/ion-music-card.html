@@ -1,5 +1,5 @@
 <ion-card>
-  <div [ngClass]="{'playing': ifPlaying , '': !ifPlaying}" class="track-img">
+  <div [ngClass]="{'playing': ifPlaying , '': !ifPlaying, 'is-seeking': isSeeking}" class="track-img">
     <img [src]="track.album.images[0].url" alt="">
   </div>
   <ion-card-content>

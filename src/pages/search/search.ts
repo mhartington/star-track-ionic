@@ -1,8 +1,8 @@
-import { IonicPage, NavController, LoadingController } from 'ionic-angular';
-import { Component } from '@angular/core';
+import { IonicPage, NavController, LoadingController, Platform } from 'ionic-angular';
+import { Component, ViewChild, ElementRef } from '@angular/core';
 import { SpotifyService } from '../../providers/spotify-service/spotify-service';
 import { Storage } from '@ionic/storage';
-
+import { SplashScreen } from '@ionic-native/splash-screen';
 import { FormControl } from '@angular/forms'
 
 import 'rxjs/add/operator/debounceTime';
@@ -20,17 +20,49 @@ import 'rxjs/add/operator/switchMap';
 })
 export class SearchPage {
 
+  @ViewChild('header') header: ElementRef;
+  hasSearch: boolean = false;
   public listing = [];
   public isError: boolean = false;
   public showSpinner: boolean = false;
   public searchInput = new FormControl('')
+  public showOverlay: boolean = false;
   constructor(
     public nav: NavController,
     public spotify: SpotifyService,
     public loadingCtrl: LoadingController,
-    public storage: Storage
+    public storage: Storage,
+    public platform: Platform,
+    public splashscreen: SplashScreen
   ) { }
+  searchFocused(e) {
+    this.hasSearch = true
+    if (!this.searchInput.value) {
+      this.showOverlay = true
+      this.isError = false
+    }
+  }
+  searchCleared(e) {
+    this.hasSearch = false
+    this.isError = false
+  }
+  searchBlured(e) {
+    this.showOverlay = false
+    this.isError = false
+    if (!this.searchInput.value) {
+      this.hasSearch = false
+    }
+  }
+  setSearch(val) {
+    this.isError = false
+    this.hasSearch = true
+    this.searchInput.setValue(val)
+  }
   ionViewDidLoad() {
+    this.platform.ready()
+      .then(() => {
+        this.splashscreen.hide()
+      })
     this.searchInput.valueChanges
       .filter((term) => {
         if (term) {
@@ -44,10 +76,18 @@ export class SearchPage {
       })
       .debounceTime(500)
       .switchMap(term => this.spotify.load(term))
-      .do(() => this.showSpinner = false)
+      .do(() => {
+        this.showOverlay = false
+        this.showSpinner = false
+      })
       .subscribe(
       results => this.listing = results.tracks.items,
-      err => console.log(err)
+      err => {
+        this.showOverlay = false
+        this.showSpinner = false
+        this.isError = true
+        console.log(err)
+      }
       )
   }
   detail(track) {

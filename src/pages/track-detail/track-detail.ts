@@ -70,5 +70,6 @@ export class TrackDetailPage {
 
   ionViewWillLeave() {
     this.musicCard.stopSong()
+    this.nativeMedia.destroy()
   }
 }

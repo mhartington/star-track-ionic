@@ -45,14 +45,13 @@ export class IonMusicCardComponent {
     }
   }
   playSong() {
+    this.nativeMedia.createMediaControls(this._track);
     this.player.play();
     this.ifPlaying = true;
-    this.nativeMedia.createMediaControls(this._track);
   }
   stopSong() {
     this.ifPlaying = false;
     this.player.stop()
-    this.nativeMedia.destroy();
   }
   setProgress() {
     if (!this.isSeeking) {
@@ -72,6 +71,5 @@ export class IonMusicCardComponent {
   }
   playerEnded() {
     this.ifPlaying = false;
-    this.nativeMedia.destroy();
   }
 }

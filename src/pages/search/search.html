@@ -1,4 +1,5 @@
-<ion-header>
+<ion-header [ngClass]="{'has-search': hasSearch}">
+<!-- <ion&#45;header> -->
   <ion-navbar>
     <ion-buttons left>
       <button menuToggle ion-button icon-only>
@@ -7,21 +8,47 @@
     </ion-buttons>
     <ion-title>Search</ion-title>
   </ion-navbar>
+
   <ion-toolbar>
-    <ion-searchbar [formControl]="searchInput" showCancelButton="true"></ion-searchbar>
+    <ion-searchbar
+      placeholder=""
+      [formControl]="searchInput"
+      (ionFocus)="searchFocused($event)"
+      (ionBlur)="searchBlured($event)"
+      (ionCancel)="searchCleared($event)"
+      showCancelButton="true"></ion-searchbar>
+
   </ion-toolbar>
 </ion-header>
-<ion-content>
-  <ion-list>
+
+<ion-backdrop *ngIf="showOverlay" style="opacity: 0.35"></ion-backdrop>
+<ion-content [ngClass]="{'has-search': hasSearch}">
+<!-- <ion&#45;content > -->
+  <ion-grid fixed>
+
+    <!-- No Search term? -->
+    <div *ngIf="!searchInput.value" padding>
+      <h1>Trending Bands</h1>
+      <ion-item *ngFor=" let trending of ['Pink Floyd', 'August Burns Red', 'Alkaline Trio']" (click)="setSearch(trending)">
+        {{trending}}
+      </ion-item>
+    </div>
+
+    <!-- Welp there's an error -->
     <div *ngIf="isError" text-center padding>
       <ion-icon color="secondary" name="warning" big></ion-icon>
       <h1>Uh-oh...</h1>
       <h2>It's not me, it's you!</h2>
       <h2>It appears there is a connection problem</h2>
     </div>
+
+    <!-- Alright, we're searching -->
     <div padding text-center class="stauts-spinner" *ngIf="showSpinner">
       <ion-spinner></ion-spinner>
     </div>
+
+
+    <!-- We got some songs! -->
     <a ion-item *ngFor="let track of listing" detail-none [navPush]="'TrackDetailPage'" [navParams]="{'id': track.id,'track': track}">
       <ion-thumbnail item-left>
         <img [src]="track.album.images[0].url" alt="">
@@ -33,5 +60,6 @@
         {{track.duration_ms | msToMinutes}}
       </ion-note>
     </a>
-  </ion-list>
+
+  </ion-grid>
 </ion-content>
