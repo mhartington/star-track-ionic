@@ -1,4 +1,4 @@
-import { IonicPage, NavController, LoadingController, Platform } from 'ionic-angular';
+import { IonicPage, NavController, Platform } from 'ionic-angular';
 import { Component, ViewChild, ElementRef } from '@angular/core';
 import { SpotifyService } from '../../providers/spotify-service/spotify-service';
 import { Storage } from '@ionic/storage';
@@ -30,10 +30,9 @@ export class SearchPage {
   constructor(
     public nav: NavController,
     public spotify: SpotifyService,
-    public loadingCtrl: LoadingController,
     public storage: Storage,
     public platform: Platform,
-    public splashscreen: SplashScreen
+    public splashscreen: SplashScreen,
   ) { }
   searchFocused(e) {
     this.hasSearch = true
@@ -92,8 +91,7 @@ export class SearchPage {
   }
   detail(track) {
     this.nav.push('TrackDetailPage', {
-      'id': track.id,
-      'track': track
+      'id': track.id
     });
   }
 }

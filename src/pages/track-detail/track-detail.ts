@@ -3,7 +3,7 @@ import { NavController, NavParams, Events, ToastController, IonicPage } from 'io
 import { NativeMedia } from '../../providers/native-media/native-media';
 import { Storage } from '@ionic/storage';
 import { Howl } from 'howler'
-
+import { SpotifyService } from '../../providers/spotify-service/spotify-service'
 @IonicPage({
   defaultHistory: ['SearchPage'],
   segment: 'detail/:id'
@@ -14,7 +14,7 @@ import { Howl } from 'howler'
 })
 export class TrackDetailPage {
   @ViewChild('musicCard') musicCard;
-  track = this.params.get('track');
+  track;
   progress;
   ifPlaying = false;
   isFavorite = false;
@@ -28,8 +28,19 @@ export class TrackDetailPage {
     public events: Events,
     public nativeMedia: NativeMedia,
     public storage: Storage,
-    public toastCtrl: ToastController
-  ) {
+    public toastCtrl: ToastController,
+    public service: SpotifyService
+  ) { }
+  ionViewWillEnter() {
+    let id = this.params.get('id');
+    this.service.loadSong(id).subscribe(
+      res => this.track = res,
+      err => console.log(err),
+      () => this.checkStorage()
+
+    )
+  }
+  checkStorage() {
     this.storage.get(this.track.id).then((res) => {
       if (!res) {
         this.isFavorite = false;
@@ -67,7 +78,6 @@ export class TrackDetailPage {
       this.events.publish('songRemoved', this.track);
     }
   }
-
   ionViewWillLeave() {
     this.musicCard.stopSong()
     this.nativeMedia.destroy()

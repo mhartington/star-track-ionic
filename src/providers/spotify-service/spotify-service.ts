@@ -15,4 +15,11 @@ export class SpotifyService {
       .timeout(5000)
       .map((res: Response) => res.json());
   }
+
+  loadSong(songId){
+    return this.http.get(`https://api.spotify.com/v1/tracks/${songId}`)
+      .retryWhen(error => error.delay(500))
+      .timeout(5000)
+      .map((res: Response) => res.json());
+  }
 }

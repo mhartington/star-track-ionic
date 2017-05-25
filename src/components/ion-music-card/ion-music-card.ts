@@ -7,7 +7,6 @@ import { Howl } from 'howler'
 })
 export class IonMusicCardComponent {
   _track;
-
   @Input()
   get track(){
     return this._track

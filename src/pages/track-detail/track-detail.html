@@ -1,6 +1,6 @@
 <ion-header>
   <ion-navbar>
-    <ion-title>{{track.name}}</ion-title>
+    <ion-title>{{track?.name}}</ion-title>
     <ion-buttons end>
       <button ion-button icon-only (click)="toggleFavorites()">
         <ion-icon [name]="favoriteIcon"></ion-icon>
@@ -13,9 +13,7 @@
     <ion-grid>
       <ion-row>
         <ion-col col-sm-10 offset-sm-1>
-
-          <ion-music-card #musicCard [track]="track"></ion-music-card>
-
+          <ion-music-card #musicCard *ngIf="track" [track]="track"></ion-music-card>
         </ion-col>
       </ion-row>
     </ion-grid>

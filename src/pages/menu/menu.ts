@@ -31,7 +31,6 @@ export class MenuPage {
     this.menu.close().then(() => {
       this.content.push('TrackDetailPage', {
         'id': favorite.id,
-        'track': favorite
       });
     })
   }
