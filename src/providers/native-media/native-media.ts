@@ -12,16 +12,16 @@ export class NativeMedia {
 
     createMediaControls(track) {
         let options: MusicControlsOptions = {
-            track: track.name,
-            artist: track.artists[0].name,
-            cover: track.album.images[0].url,
+            track: track.trackName,
+            artist: track.artistName,
+            cover: track.artworkUrl100,
             isPlaying: true,
             dismissable: false,
             hasPrev: false,
             hasNext: false,
-            ticker: `Now playing: ${track.name}`,
+            ticker: `Now playing: ${track.trackName}`,
             hasClose: true,
-            album: track.album.name,
+            album: track.collectionName,
             duration: 0,
             elapsed: 0
         }

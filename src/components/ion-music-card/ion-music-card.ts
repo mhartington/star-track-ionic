@@ -25,9 +25,7 @@ export class IonMusicCardComponent {
   constructor(public nativeMedia: NativeMedia) {}
   ngOnInit() {
     this.player = new Howl({
-      src: [this._track.preview_url],
-      format: ['mp3'],
-      html5: true,
+      src: [this._track.previewUrl],
       onplay: () => {
         requestAnimationFrame(this.setProgress.bind(this))
       },
@@ -36,6 +34,9 @@ export class IonMusicCardComponent {
       }
     })
   }
+  // ngOnDestroy(){
+  //   this.player.unload()
+  // }
   toggleSong() {
     if (this.ifPlaying) {
       this.stopSong();
@@ -43,8 +44,9 @@ export class IonMusicCardComponent {
       this.playSong();
     }
   }
+
   playSong() {
-    this.nativeMedia.createMediaControls(this._track);
+    // this.nativeMedia.createMediaControls(this._track);
     this.player.play();
     this.ifPlaying = true;
   }

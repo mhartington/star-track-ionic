@@ -1,13 +1,13 @@
 <ion-card>
   <div [ngClass]="{'playing': ifPlaying , '': !ifPlaying, 'is-seeking': isSeeking}" class="track-img">
-    <img [src]="track.album.images[0].url" alt="">
+    <img [src]="track.artworkUrl100" alt="">
   </div>
   <ion-card-content>
     <ion-card-title>
-      <h2>{{track.name}}</h2>
+      <h2>{{track.trackName}}</h2>
     </ion-card-title>
-    <h3>by {{track.artists[0].name}}</h3>
-    <em>{{track.album.name}}</em>
+    <h3>by {{track.artistName}}</h3>
+    <em>{{track.collectionNamee}}</em>
 
     <ion-grid>
       <ion-row>
@@ -26,7 +26,7 @@
   <ion-item>
     <p>Track Duration</p>
       <ion-badge item-right color="light" >
-      {{track.duration_ms | msToMinutes}}
+      {{track.trackTimeMillis | msToMinutes}}
       </ion-badge>
   </ion-item>
 </ion-card>

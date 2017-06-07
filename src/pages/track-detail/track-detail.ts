@@ -3,7 +3,7 @@ import { NavController, NavParams, Events, ToastController, IonicPage } from 'io
 import { NativeMedia } from '../../providers/native-media/native-media';
 import { Storage } from '@ionic/storage';
 import { Howl } from 'howler'
-import { SpotifyService } from '../../providers/spotify-service/spotify-service'
+import { ItunesService } from '../../providers/itunes-service/itunes-service'
 @IonicPage({
   defaultHistory: ['SearchPage'],
   segment: 'detail/:id'
@@ -29,19 +29,19 @@ export class TrackDetailPage {
     public nativeMedia: NativeMedia,
     public storage: Storage,
     public toastCtrl: ToastController,
-    public service: SpotifyService
+    public service: ItunesService
   ) { }
   ionViewWillEnter() {
     let id = this.params.get('id');
     this.service.loadSong(id).subscribe(
-      res => this.track = res,
+      res => this.track = res.results[0],
       err => console.log(err),
       () => this.checkStorage()
 
     )
   }
   checkStorage() {
-    this.storage.get(this.track.id).then((res) => {
+    this.storage.get(this.track.trackId.toString()).then((res) => {
       if (!res) {
         this.isFavorite = false;
         this.favoriteIcon = 'star-outline';
@@ -67,12 +67,12 @@ export class TrackDetailPage {
       toast.present();
       this.isFavorite = true;
       this.favoriteIcon = 'star';
-      this.storage.set(this.track.id, this.track);
+      this.storage.set(this.track.trackId.toString(), this.track);
       this.events.publish('songAdded', this.track);
     } else {
       let toast = this.toastCtrl.create(removedToast);
       toast.present();
-      this.storage.remove(this.track.id);
+      this.storage.remove(this.track.trackId.toString());
       this.isFavorite = false;
       this.favoriteIcon = 'star-outline';
       this.events.publish('songRemoved', this.track);

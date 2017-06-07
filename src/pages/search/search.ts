@@ -1,6 +1,6 @@
 import { IonicPage, NavController, Platform } from 'ionic-angular';
 import { Component, ViewChild, ElementRef } from '@angular/core';
-import { SpotifyService } from '../../providers/spotify-service/spotify-service';
+import { ItunesService } from '../../providers/itunes-service/itunes-service';
 import { Storage } from '@ionic/storage';
 import { SplashScreen } from '@ionic-native/splash-screen';
 import { FormControl } from '@angular/forms'
@@ -29,7 +29,7 @@ export class SearchPage {
   public showOverlay: boolean = false;
   constructor(
     public nav: NavController,
-    public spotify: SpotifyService,
+    public spotify: ItunesService,
     public storage: Storage,
     public platform: Platform,
     public splashscreen: SplashScreen,
@@ -80,7 +80,7 @@ export class SearchPage {
         this.showSpinner = false
       })
       .subscribe(
-      results => this.listing = results.tracks.items,
+      results => this.listing = results.results,
       err => {
         this.showOverlay = false
         this.showSpinner = false
@@ -91,7 +91,7 @@ export class SearchPage {
   }
   detail(track) {
     this.nav.push('TrackDetailPage', {
-      'id': track.id
+      'id': track.trackId
     });
   }
 }

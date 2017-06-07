@@ -7,7 +7,7 @@ import { IonicStorageModule } from '@ionic/storage';
 import { MyApp } from './app.component';
 
 import { NativeMedia } from '../providers/native-media/native-media';
-import { SpotifyService } from '../providers/spotify-service/spotify-service';
+import { ItunesService } from '../providers/itunes-service/itunes-service';
 
 import { StatusBar } from '@ionic-native/status-bar';
 import { MusicControls } from '@ionic-native/music-controls';
@@ -26,6 +26,6 @@ import { Keyboard } from '@ionic-native/keyboard';
   ],
   bootstrap: [IonicApp],
   entryComponents: [MyApp],
-  providers: [SpotifyService, NativeMedia, StatusBar, SplashScreen, Keyboard, MusicControls]
+  providers: [ItunesService, NativeMedia, StatusBar, SplashScreen, Keyboard, MusicControls]
 })
 export class AppModule { }

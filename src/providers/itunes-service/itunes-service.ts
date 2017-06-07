@@ -7,17 +7,23 @@ import 'rxjs/add/operator/delay';
 
 import { Observable } from 'rxjs/Observable';
 @Injectable()
-export class SpotifyService {
-  constructor(public http: Http) { }
+export class ItunesService {
+  constructor(public http: Http) {}
   load(query): Observable<any> {
-    return this.http.get(`https://api.spotify.com/v1/search?q=${encodeURIComponent(query)}&limit=50&type=track`)
+    return this.http
+      .get(
+        `https://itunes.apple.com/search?term=${encodeURIComponent(
+          query
+        )}&media=music`
+      )
       .retryWhen(error => error.delay(500))
       .timeout(5000)
       .map((res: Response) => res.json());
   }
 
-  loadSong(songId){
-    return this.http.get(`https://api.spotify.com/v1/tracks/${songId}`)
+  loadSong(songId) {
+    return this.http
+      .get(`https://itunes.apple.com/lookup?id=${songId}`)
       .retryWhen(error => error.delay(500))
       .timeout(5000)
       .map((res: Response) => res.json());

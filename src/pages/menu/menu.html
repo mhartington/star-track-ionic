@@ -10,8 +10,8 @@
       <ion-list>
         <a ion-item *ngFor="let favorite of favorites" (click)="goToDetail(favorite)">
           <ion-label>
-            <h2>{{favorite.name}}</h2>
-            <h3>by {{favorite.artists[0].name}}</h3>
+            <h2>{{favorite.trackName}}</h2>
+            <h3>by {{favorite.artistName}}</h3>
           </ion-label>
         </a>
       </ion-list>

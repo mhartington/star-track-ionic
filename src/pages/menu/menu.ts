@@ -30,7 +30,7 @@ export class MenuPage {
   goToDetail(favorite) {
     this.menu.close().then(() => {
       this.content.push('TrackDetailPage', {
-        'id': favorite.id,
+        'id': favorite.trackId,
       });
     })
   }
@@ -39,6 +39,7 @@ export class MenuPage {
   }
   getKeys() {
     this.storage.forEach(entry => {
+      console.log(entry)
       this.favorites.push(entry);
     });
   }
