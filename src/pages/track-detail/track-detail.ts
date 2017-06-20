@@ -2,7 +2,6 @@ import { Component, ViewChild } from '@angular/core';
 import { NavController, NavParams, Events, ToastController, IonicPage } from 'ionic-angular';
 import { NativeMedia } from '../../providers/native-media/native-media';
 import { Storage } from '@ionic/storage';
-import { Howl } from 'howler'
 import { ItunesService } from '../../providers/itunes-service/itunes-service'
 @IonicPage({
   defaultHistory: ['SearchPage'],
@@ -15,12 +14,8 @@ import { ItunesService } from '../../providers/itunes-service/itunes-service'
 export class TrackDetailPage {
   @ViewChild('musicCard') musicCard;
   track;
-  progress;
-  ifPlaying = false;
   isFavorite = false;
   favoriteIcon = 'star-outline';
-  player: Howl;
-  isSeeking: boolean = false;
 
   constructor(
     public nav: NavController,

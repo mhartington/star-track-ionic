@@ -15,6 +15,10 @@ export class IonMusicCardComponent {
     this._track = val
   }
 
+  get fullImage(){
+   return this.track.artworkUrl100.replace(/100x100bb/, '500x500bb')
+  }
+
   progress;
   ifPlaying = false;
   isFavorite = false;

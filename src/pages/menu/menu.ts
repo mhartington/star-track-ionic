@@ -39,7 +39,6 @@ export class MenuPage {
   }
   getKeys() {
     this.storage.forEach(entry => {
-      console.log(entry)
       this.favorites.push(entry);
     });
   }
