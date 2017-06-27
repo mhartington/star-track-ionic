@@ -1,0 +1,25 @@
+<!--
+  Generated template for the MenuListPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>MenuList</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content>
+  <ion-list>
+    <a ion-item *ngFor="let favorite of favorites" (click)="goToDetail(favorite)">
+      <ion-label>
+        <h2>{{favorite.trackName}}</h2>
+        <h3>by {{favorite.artistName}}</h3>
+      </ion-label>
+    </a>
+  </ion-list>
+</ion-content>
