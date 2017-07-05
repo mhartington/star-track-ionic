@@ -48,7 +48,7 @@
         "@ionic/cli-plugin-ionic-angular": "latest",
         "@types/howler": "^2.0.2",
         "typescript": "^2.3.4",
-        "workbox-cli": "^1.0.0"
+        "workbox-cli": "^1.0.1"
     },
     "cordova": {
         "platforms": [
