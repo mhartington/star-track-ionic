@@ -1,23 +1,6 @@
 <ion-split-pane>
-
   <ion-menu [content]="content" side="start">
-    <ion-header>
-      <ion-toolbar>
-        <ion-title>Favorites</ion-title>
-      </ion-toolbar>
-    </ion-header>
-    <ion-content>
-      <ion-list>
-        <a ion-item *ngFor="let favorite of favorites" (click)="goToDetail(favorite)">
-          <ion-label>
-            <h2>{{favorite.trackName}}</h2>
-            <h3>by {{favorite.artistName}}</h3>
-          </ion-label>
-        </a>
-      </ion-list>
-    </ion-content>
+    <ion-nav root="MenuListPage"></ion-nav>
   </ion-menu>
-
-  <ion-nav [root]="menuRoot" #content persistent="false" main></ion-nav>
-
+  <ion-nav root="SearchPage" #content persistent="false" main></ion-nav>
 </ion-split-pane>

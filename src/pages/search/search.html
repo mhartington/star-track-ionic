@@ -49,7 +49,7 @@
 
 
     <!-- We got some songs! -->
-    <a ion-item *ngFor="let track of listing" detail-none [navPush]="'TrackDetailPage'" [navParams]="{'id': track.trackId}">
+    <a ion-item *ngFor="let track of listing" detail-none (click)="detail(track)">
       <ion-thumbnail item-left>
         <img [src]="track.artworkUrl100" alt="">
       </ion-thumbnail>

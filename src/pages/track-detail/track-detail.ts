@@ -1,15 +1,21 @@
 import { Component, ViewChild } from '@angular/core';
-import { NavController, NavParams, Events, ToastController, IonicPage } from 'ionic-angular';
+import {
+  NavController,
+  NavParams,
+  Events,
+  ToastController,
+  IonicPage
+} from 'ionic-angular';
 import { NativeMedia } from '../../providers/native-media/native-media';
 import { Storage } from '@ionic/storage';
-import { ItunesService } from '../../providers/itunes-service/itunes-service'
+import { ItunesService } from '../../providers/itunes-service/itunes-service';
 @IonicPage({
   defaultHistory: ['SearchPage'],
   segment: 'detail/:id'
 })
 @Component({
   selector: 'page-track-detail',
-  templateUrl: 'track-detail.html',
+  templateUrl: 'track-detail.html'
 })
 export class TrackDetailPage {
   @ViewChild('musicCard') musicCard;
@@ -25,18 +31,27 @@ export class TrackDetailPage {
     public storage: Storage,
     public toastCtrl: ToastController,
     public service: ItunesService
-  ) { }
+  ) {}
   ionViewWillEnter() {
+    let paramsTrack = this.params.get('track');
+    if (!paramsTrack) {
+      this.loadSong();
+    } else {
+      this.track = paramsTrack;
+    }
+  }
+  loadSong() {
     let id = this.params.get('id');
-    this.service.loadSong(id).subscribe(
-      res => this.track = res.results[0],
-      err => console.log(err),
-      () => this.checkStorage()
-
-    )
+    this.service
+      .loadSong(id)
+      .subscribe(
+        res => (this.track = res.results[0]),
+        err => console.log(err),
+        () => this.checkStorage()
+      );
   }
   checkStorage() {
-    this.storage.get(this.track.trackId.toString()).then((res) => {
+    this.storage.get(this.track.trackId.toString()).then(res => {
       if (!res) {
         this.isFavorite = false;
         this.favoriteIcon = 'star-outline';
@@ -74,7 +89,7 @@ export class TrackDetailPage {
     }
   }
   ionViewWillLeave() {
-    this.musicCard.stopSong()
-    this.nativeMedia.destroy()
+    this.musicCard.stopSong();
+    this.nativeMedia.destroy();
   }
 }

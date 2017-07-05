@@ -1,5 +1,5 @@
-import { IonicPage, Menu, NavController, Nav, Events } from 'ionic-angular';
-import { Component, ViewChild } from '@angular/core';
+import { Component} from '@angular/core';
+import { IonicPage, NavController, NavParams, Events } from 'ionic-angular';
 import { Storage } from '@ionic/storage';
 @IonicPage({
   segment: 'menu'
@@ -9,15 +9,15 @@ import { Storage } from '@ionic/storage';
   templateUrl: 'menu.html',
 })
 export class MenuPage {
-  @ViewChild('content') content: Nav;
-  @ViewChild(Menu) menu: Menu;
-  public menuRoot = 'SearchPage';
   public favorites = [];
   constructor(
-    public nav: NavController,
+    public navCtrl: NavController,
+    public navParams: NavParams,
     public storage: Storage,
-    public event: Events
-  ) {
+    public event: Events) {
+  }
+
+  ionViewDidLoad() {
     this.getKeys();
     this.event.subscribe('songAdded', (e) => {
       this.favorites.push(e);
@@ -27,19 +27,15 @@ export class MenuPage {
     });
   }
 
-  goToDetail(favorite) {
-    this.menu.close().then(() => {
-      this.content.push('TrackDetailPage', {
-        'id': favorite.trackId,
-      });
-    })
-  }
-  openPage(page) {
-    this.content.setRoot(page.component);
-  }
   getKeys() {
     this.storage.forEach(entry => {
       this.favorites.push(entry);
+    });
+  }
+
+  goToDetail(favorite) {
+    this.navCtrl.push('TrackDetailPage', {
+      'id': favorite.trackId,
     });
   }
 }
