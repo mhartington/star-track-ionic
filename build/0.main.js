@@ -1,15 +1,15 @@
 webpackJsonp([0],{
 
-/***/ 284:
+/***/ 286:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__search__ = __webpack_require__(291);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_ionic_angular__ = __webpack_require__(49);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__pipes_time_pipes_time_pipes_module__ = __webpack_require__(287);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "SearchPageModule", function() { return SearchPageModule; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__search__ = __webpack_require__(294);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_ionic_angular__ = __webpack_require__(52);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__pipes_time_pipes_time_pipes_module__ = __webpack_require__(289);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -39,12 +39,12 @@ SearchPageModule = __decorate([
 
 /***/ }),
 
-/***/ 286:
+/***/ 288:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return MsToMinutes; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -89,13 +89,13 @@ MsToMinutes = __decorate([
 
 /***/ }),
 
-/***/ 287:
+/***/ 289:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__ms_to_minutes__ = __webpack_require__(286);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return TimePipeModule; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__ms_to_minutes__ = __webpack_require__(288);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -120,27 +120,27 @@ TimePipeModule = __decorate([
 
 /***/ }),
 
-/***/ 291:
+/***/ 294:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_ionic_angular__ = __webpack_require__(49);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__providers_itunes_service_itunes_service__ = __webpack_require__(201);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__ionic_storage__ = __webpack_require__(200);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__ionic_native_splash_screen__ = __webpack_require__(203);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__angular_forms__ = __webpack_require__(13);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6_rxjs_add_operator_debounceTime__ = __webpack_require__(294);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6_rxjs_add_operator_debounceTime___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_6_rxjs_add_operator_debounceTime__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7_rxjs_add_operator_distinctUntilChanged__ = __webpack_require__(295);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7_rxjs_add_operator_distinctUntilChanged___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_7_rxjs_add_operator_distinctUntilChanged__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8_rxjs_add_operator_do__ = __webpack_require__(296);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8_rxjs_add_operator_do___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_8_rxjs_add_operator_do__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9_rxjs_add_operator_filter__ = __webpack_require__(297);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9_rxjs_add_operator_filter___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_9_rxjs_add_operator_filter__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_10_rxjs_add_operator_switchMap__ = __webpack_require__(298);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_10_rxjs_add_operator_switchMap___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_10_rxjs_add_operator_switchMap__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return SearchPage; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_ionic_angular__ = __webpack_require__(52);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_core__ = __webpack_require__(0);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__providers_itunes_service_itunes_service__ = __webpack_require__(200);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__ionic_storage__ = __webpack_require__(199);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__ionic_native_splash_screen__ = __webpack_require__(202);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__angular_forms__ = __webpack_require__(15);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6_rxjs_add_operator_debounceTime__ = __webpack_require__(297);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6_rxjs_add_operator_debounceTime___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_6_rxjs_add_operator_debounceTime__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7_rxjs_add_operator_distinctUntilChanged__ = __webpack_require__(298);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7_rxjs_add_operator_distinctUntilChanged___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_7_rxjs_add_operator_distinctUntilChanged__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8_rxjs_add_operator_do__ = __webpack_require__(299);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8_rxjs_add_operator_do___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_8_rxjs_add_operator_do__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9_rxjs_add_operator_filter__ = __webpack_require__(300);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9_rxjs_add_operator_filter___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_9_rxjs_add_operator_filter__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_10_rxjs_add_operator_switchMap__ = __webpack_require__(301);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_10_rxjs_add_operator_switchMap___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_10_rxjs_add_operator_switchMap__);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -200,8 +200,7 @@ var SearchPage = (function () {
     };
     SearchPage.prototype.ionViewDidLoad = function () {
         var _this = this;
-        this.platform.ready()
-            .then(function () {
+        this.platform.ready().then(function () {
             _this.splashscreen.hide();
         });
         this.searchInput.valueChanges
@@ -222,7 +221,7 @@ var SearchPage = (function () {
             _this.showOverlay = false;
             _this.showSpinner = false;
         })
-            .subscribe(function (results) { return _this.listing = results.results; }, function (err) {
+            .subscribe(function (results) { return (_this.listing = results.results); }, function (err) {
             _this.showOverlay = false;
             _this.showSpinner = false;
             _this.isError = true;
@@ -231,21 +230,22 @@ var SearchPage = (function () {
     };
     SearchPage.prototype.detail = function (track) {
         this.nav.push('TrackDetailPage', {
-            'id': track.trackId
+            id: track.trackId,
+            track: track
         });
     };
     return SearchPage;
 }());
 __decorate([
-    __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_1__angular_core__["_9" /* ViewChild */])('header'),
+    __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_1__angular_core__["_10" /* ViewChild */])('header'),
     __metadata("design:type", __WEBPACK_IMPORTED_MODULE_1__angular_core__["r" /* ElementRef */])
 ], SearchPage.prototype, "header", void 0);
 SearchPage = __decorate([
     __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0_ionic_angular__["e" /* IonicPage */])({
         segment: 'search'
     }),
-    __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_1__angular_core__["_5" /* Component */])({
-        selector: 'page-search',template:/*ion-inline-start:"/Users/mhartington/GitHub/StarTrack-Ionic/src/pages/search/search.html"*/'<ion-header [ngClass]="{\'has-search\': hasSearch}">\n<!-- <ion&#45;header> -->\n  <ion-navbar>\n    <ion-buttons left>\n      <button menuToggle ion-button icon-only>\n        <ion-icon name="menu"></ion-icon>\n      </button>\n    </ion-buttons>\n    <ion-title>Search</ion-title>\n  </ion-navbar>\n\n  <ion-toolbar>\n    <ion-searchbar\n      placeholder=""\n      [formControl]="searchInput"\n      (ionFocus)="searchFocused($event)"\n      (ionBlur)="searchBlured($event)"\n      (ionCancel)="searchCleared($event)"\n      showCancelButton="true"></ion-searchbar>\n\n  </ion-toolbar>\n</ion-header>\n\n<ion-backdrop *ngIf="showOverlay" style="opacity: 0.35"></ion-backdrop>\n<ion-content [ngClass]="{\'has-search\': hasSearch}">\n<!-- <ion&#45;content > -->\n  <ion-grid fixed>\n\n    <!-- No Search term? -->\n    <div *ngIf="!searchInput.value" padding>\n      <h1>Trending Bands</h1>\n      <ion-item *ngFor=" let trending of [\'Pink Floyd\', \'August Burns Red\', \'Alkaline Trio\']" (click)="setSearch(trending)">\n        {{trending}}\n      </ion-item>\n    </div>\n\n    <!-- Welp there\'s an error -->\n    <div *ngIf="isError" text-center padding>\n      <ion-icon color="secondary" name="warning" big></ion-icon>\n      <h1>Uh-oh...</h1>\n      <h2>It\'s not me, it\'s you!</h2>\n      <h2>It appears there is a connection problem</h2>\n    </div>\n\n    <!-- Alright, we\'re searching -->\n    <div padding text-center class="stauts-spinner" *ngIf="showSpinner">\n      <ion-spinner></ion-spinner>\n    </div>\n\n\n    <!-- We got some songs! -->\n    <a ion-item *ngFor="let track of listing" detail-none [navPush]="\'TrackDetailPage\'" [navParams]="{\'id\': track.trackId}">\n      <ion-thumbnail item-left>\n        <img [src]="track.artworkUrl100" alt="">\n      </ion-thumbnail>\n      <h2>{{track.trackName}}</h2>\n      <h3>{{track.artistName}}</h3>\n      <p>{{track.collectionName}}</p>\n      <ion-note item-right>\n        {{track.trackTimeMillis | msToMinutes}}\n      </ion-note>\n    </a>\n\n  </ion-grid>\n</ion-content>\n'/*ion-inline-end:"/Users/mhartington/GitHub/StarTrack-Ionic/src/pages/search/search.html"*/,
+    __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_1__angular_core__["_6" /* Component */])({
+        selector: 'page-search',template:/*ion-inline-start:"/Users/mhartington/GitHub/StarTrack-Ionic/src/pages/search/search.html"*/'<ion-header [ngClass]="{\'has-search\': hasSearch}">\n<!-- <ion&#45;header> -->\n  <ion-navbar>\n    <ion-buttons left>\n      <button menuToggle ion-button icon-only>\n        <ion-icon name="menu"></ion-icon>\n      </button>\n    </ion-buttons>\n    <ion-title>Search</ion-title>\n  </ion-navbar>\n\n  <ion-toolbar>\n    <ion-searchbar\n      placeholder=""\n      [formControl]="searchInput"\n      (ionFocus)="searchFocused($event)"\n      (ionBlur)="searchBlured($event)"\n      (ionCancel)="searchCleared($event)"\n      showCancelButton="true"></ion-searchbar>\n\n  </ion-toolbar>\n</ion-header>\n\n<ion-backdrop *ngIf="showOverlay" style="opacity: 0.35"></ion-backdrop>\n<ion-content [ngClass]="{\'has-search\': hasSearch}">\n<!-- <ion&#45;content > -->\n  <ion-grid fixed>\n\n    <!-- No Search term? -->\n    <div *ngIf="!searchInput.value" padding>\n      <h1>Trending Bands</h1>\n      <ion-item *ngFor=" let trending of [\'Pink Floyd\', \'August Burns Red\', \'Alkaline Trio\']" (click)="setSearch(trending)">\n        {{trending}}\n      </ion-item>\n    </div>\n\n    <!-- Welp there\'s an error -->\n    <div *ngIf="isError" text-center padding>\n      <ion-icon color="secondary" name="warning" big></ion-icon>\n      <h1>Uh-oh...</h1>\n      <h2>It\'s not me, it\'s you!</h2>\n      <h2>It appears there is a connection problem</h2>\n    </div>\n\n    <!-- Alright, we\'re searching -->\n    <div padding text-center class="stauts-spinner" *ngIf="showSpinner">\n      <ion-spinner></ion-spinner>\n    </div>\n\n\n    <!-- We got some songs! -->\n    <a ion-item *ngFor="let track of listing" detail-none (click)="detail(track)">\n      <ion-thumbnail item-left>\n        <img [src]="track.artworkUrl100" alt="">\n      </ion-thumbnail>\n      <h2>{{track.trackName}}</h2>\n      <h3>{{track.artistName}}</h3>\n      <p>{{track.collectionName}}</p>\n      <ion-note item-right>\n        {{track.trackTimeMillis | msToMinutes}}\n      </ion-note>\n    </a>\n\n  </ion-grid>\n</ion-content>\n'/*ion-inline-end:"/Users/mhartington/GitHub/StarTrack-Ionic/src/pages/search/search.html"*/
     }),
     __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_0_ionic_angular__["f" /* NavController */],
         __WEBPACK_IMPORTED_MODULE_2__providers_itunes_service_itunes_service__["a" /* ItunesService */],
@@ -258,52 +258,15 @@ SearchPage = __decorate([
 
 /***/ }),
 
-/***/ 294:
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-var Observable_1 = __webpack_require__(6);
-var debounceTime_1 = __webpack_require__(299);
-Observable_1.Observable.prototype.debounceTime = debounceTime_1.debounceTime;
-//# sourceMappingURL=debounceTime.js.map
-
-/***/ }),
-
-/***/ 295:
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-var Observable_1 = __webpack_require__(6);
-var distinctUntilChanged_1 = __webpack_require__(300);
-Observable_1.Observable.prototype.distinctUntilChanged = distinctUntilChanged_1.distinctUntilChanged;
-//# sourceMappingURL=distinctUntilChanged.js.map
-
-/***/ }),
-
-/***/ 296:
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-var Observable_1 = __webpack_require__(6);
-var do_1 = __webpack_require__(301);
-Observable_1.Observable.prototype.do = do_1._do;
-Observable_1.Observable.prototype._do = do_1._do;
-//# sourceMappingURL=do.js.map
-
-/***/ }),
-
 /***/ 297:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 
 var Observable_1 = __webpack_require__(6);
-var filter_1 = __webpack_require__(302);
-Observable_1.Observable.prototype.filter = filter_1.filter;
-//# sourceMappingURL=filter.js.map
+var debounceTime_1 = __webpack_require__(302);
+Observable_1.Observable.prototype.debounceTime = debounceTime_1.debounceTime;
+//# sourceMappingURL=debounceTime.js.map
 
 /***/ }),
 
@@ -313,13 +276,50 @@ Observable_1.Observable.prototype.filter = filter_1.filter;
 "use strict";
 
 var Observable_1 = __webpack_require__(6);
-var switchMap_1 = __webpack_require__(303);
+var distinctUntilChanged_1 = __webpack_require__(303);
+Observable_1.Observable.prototype.distinctUntilChanged = distinctUntilChanged_1.distinctUntilChanged;
+//# sourceMappingURL=distinctUntilChanged.js.map
+
+/***/ }),
+
+/***/ 299:
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+var Observable_1 = __webpack_require__(6);
+var do_1 = __webpack_require__(304);
+Observable_1.Observable.prototype.do = do_1._do;
+Observable_1.Observable.prototype._do = do_1._do;
+//# sourceMappingURL=do.js.map
+
+/***/ }),
+
+/***/ 300:
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+var Observable_1 = __webpack_require__(6);
+var filter_1 = __webpack_require__(305);
+Observable_1.Observable.prototype.filter = filter_1.filter;
+//# sourceMappingURL=filter.js.map
+
+/***/ }),
+
+/***/ 301:
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+var Observable_1 = __webpack_require__(6);
+var switchMap_1 = __webpack_require__(306);
 Observable_1.Observable.prototype.switchMap = switchMap_1.switchMap;
 //# sourceMappingURL=switchMap.js.map
 
 /***/ }),
 
-/***/ 299:
+/***/ 302:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -330,7 +330,7 @@ var __extends = (this && this.__extends) || function (d, b) {
     d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
 };
 var Subscriber_1 = __webpack_require__(20);
-var async_1 = __webpack_require__(103);
+var async_1 = __webpack_require__(101);
 /**
  * Emits a value from the source Observable only after a particular time span
  * has passed without another source emission.
@@ -442,7 +442,7 @@ function dispatchNext(subscriber) {
 
 /***/ }),
 
-/***/ 300:
+/***/ 303:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -453,9 +453,9 @@ var __extends = (this && this.__extends) || function (d, b) {
     d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
 };
 var Subscriber_1 = __webpack_require__(20);
-var tryCatch_1 = __webpack_require__(52);
-var errorObject_1 = __webpack_require__(38);
-/* tslint:disable:max-line-length */
+var tryCatch_1 = __webpack_require__(53);
+var errorObject_1 = __webpack_require__(40);
+/* tslint:enable:max-line-length */
 /**
  * Returns an Observable that emits all items emitted by the source Observable that are distinct by comparison from the previous item.
  *
@@ -490,8 +490,8 @@ var errorObject_1 = __webpack_require__(38);
  * @see {@link distinct}
  * @see {@link distinctUntilKeyChanged}
  *
- * @param {function} [compare] optional comparison function called to test if an item is distinct from the previous item in the source.
- * @return {Observable} an Observable that emits items from the source Observable with distinct values.
+ * @param {function} [compare] Optional comparison function called to test if an item is distinct from the previous item in the source.
+ * @return {Observable} An Observable that emits items from the source Observable with distinct values.
  * @method distinctUntilChanged
  * @owner Observable
  */
@@ -557,7 +557,7 @@ var DistinctUntilChangedSubscriber = (function (_super) {
 
 /***/ }),
 
-/***/ 301:
+/***/ 304:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -568,13 +568,13 @@ var __extends = (this && this.__extends) || function (d, b) {
     d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
 };
 var Subscriber_1 = __webpack_require__(20);
-/* tslint:disable:max-line-length */
+/* tslint:enable:max-line-length */
 /**
  * Perform a side effect for every emission on the source Observable, but return
  * an Observable that is identical to the source.
  *
  * <span class="informal">Intercepts each emission on the source and runs a
- * function, but returns an output which is identical to the source.</span>
+ * function, but returns an output which is identical to the source as long as errors don't occur.</span>
  *
  * <img src="./img/do.png" width="100%">
  *
@@ -677,7 +677,7 @@ var DoSubscriber = (function (_super) {
 
 /***/ }),
 
-/***/ 302:
+/***/ 305:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -688,7 +688,7 @@ var __extends = (this && this.__extends) || function (d, b) {
     d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
 };
 var Subscriber_1 = __webpack_require__(20);
-/* tslint:disable:max-line-length */
+/* tslint:enable:max-line-length */
 /**
  * Filter items emitted by the source Observable by only emitting those that
  * satisfy a specified predicate.
@@ -777,7 +777,7 @@ var FilterSubscriber = (function (_super) {
 
 /***/ }),
 
-/***/ 303:
+/***/ 306:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -787,9 +787,9 @@ var __extends = (this && this.__extends) || function (d, b) {
     function __() { this.constructor = d; }
     d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
 };
-var OuterSubscriber_1 = __webpack_require__(50);
-var subscribeToResult_1 = __webpack_require__(51);
-/* tslint:disable:max-line-length */
+var OuterSubscriber_1 = __webpack_require__(39);
+var subscribeToResult_1 = __webpack_require__(41);
+/* tslint:enable:max-line-length */
 /**
  * Projects each source value to an Observable which is merged in the output
  * Observable, emitting values only from the most recently projected Observable.
@@ -819,7 +819,7 @@ var subscribeToResult_1 = __webpack_require__(51);
  * @see {@link switch}
  * @see {@link switchMapTo}
  *
- * @param {function(value: T, ?index: number): Observable} project A function
+ * @param {function(value: T, ?index: number): ObservableInput} project A function
  * that, when applied to an item emitted by the source Observable, returns an
  * Observable.
  * @param {function(outerValue: T, innerValue: I, outerIndex: number, innerIndex: number): any} [resultSelector]
