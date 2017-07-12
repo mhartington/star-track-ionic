@@ -89,8 +89,8 @@ export class SearchPage {
   }
   detail(track) {
     this.nav.push('TrackDetailPage', {
-      'id': track.trackId,
-      'track': track
+      id: track.trackId,
+      track: track
     });
   }
 }

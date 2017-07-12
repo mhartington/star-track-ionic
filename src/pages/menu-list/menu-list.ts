@@ -12,7 +12,7 @@ export class MenuListPage {
     public navCtrl: NavController,
     public storage: Storage,
     public event: Events
-  ) {}
+  ) { }
 
   ionViewDidLoad() {
     this.getKeys();

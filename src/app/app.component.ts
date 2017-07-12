@@ -8,18 +8,16 @@ import { Keyboard } from '@ionic-native/keyboard';
 })
 export class MyApp {
   constructor(
-    public platform: Platform,
+    public plt: Platform,
     public keyboard: Keyboard,
     public statusbar: StatusBar
   ) {
-    this.platform.ready().then(() => {
+    this.plt.ready().then(() => {
       this.keyboard.disableScroll(true);
       this.keyboard.hideKeyboardAccessoryBar(true);
-      if (platform.is('ios')) {
-        this.statusbar.styleDefault();
-      } else if (platform.is('android')) {
-        this.statusbar.backgroundColorByHexString('#1d833c');
-      }
+      this.plt.is('ios')
+        ? this.statusbar.styleDefault()
+        : this.statusbar.backgroundColorByHexString('#1d833c');
     });
   }
 }

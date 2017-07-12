@@ -8,15 +8,15 @@ import { Howl } from 'howler'
 export class IonMusicCardComponent {
   _track;
   @Input()
-  get track(){
+  get track() {
     return this._track
   }
-  set track(val: any){
+  set track(val: any) {
     this._track = val
   }
 
-  get fullImage(){
-   return this.track.artworkUrl100.replace(/100x100bb/, '500x500bb')
+  get fullImage(): string {
+    return this.track.artworkUrl100.replace(/100x100bb/, '500x500bb')
   }
 
   progress;
@@ -26,7 +26,7 @@ export class IonMusicCardComponent {
   player: Howl;
   isSeeking: boolean = false;
 
-  constructor(public nativeMedia: NativeMedia) {}
+  constructor(public nativeMedia: NativeMedia) { }
   ngOnInit() {
     this.player = new Howl({
       src: [this._track.previewUrl],
