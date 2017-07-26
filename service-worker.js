@@ -123,44 +123,28 @@ const fileManifest = [
     "revision": "aa054eb23bcba11636d7be097640897a"
   },
   {
-    "url": "build/0.deptree.js",
-    "revision": "2d0f95a92a552023df1eb7eeb46b6743"
-  },
-  {
     "url": "build/0.js",
     "revision": "b78871298e05c1001faa6a1e6f758a24"
   },
   {
-    "url": "build/1.deptree.js",
-    "revision": "cf55e0a0aacbe0b330c9d6db0de86949"
-  },
-  {
     "url": "build/1.js",
-    "revision": "3faddeb1255e6ee0a9ecc519d8f10cea"
-  },
-  {
-    "url": "build/2.deptree.js",
-    "revision": "6831c5e5a7cc1d65f330f46d02155d45"
+    "revision": "31f6739480a2d92d77834ddf3a52248f"
   },
   {
     "url": "build/2.js",
-    "revision": "414271b47220443ad6bcd02737c70a20"
-  },
-  {
-    "url": "build/3.deptree.js",
-    "revision": "0b8be4a28032f77140b8dc07440506f1"
+    "revision": "93e7b4f59756c570a7f12aabc5b6846d"
   },
   {
     "url": "build/3.js",
-    "revision": "5694a0ba67eb3669e0b5ef1b193ee85d"
+    "revision": "df801ec18231dfb669784331ec5ddbb4"
   },
   {
     "url": "build/main.css",
-    "revision": "35446c4a5b2d455a19e40373e7d75bb6"
+    "revision": "eefe790a84062c2a847fd605c05cad85"
   },
   {
     "url": "build/main.js",
-    "revision": "0fe2fe189825eff193610e65e54d95ef"
+    "revision": "5757932dbcf6ae29db2e016fbe95c3f1"
   },
   {
     "url": "build/polyfills.js",
@@ -172,11 +156,11 @@ const fileManifest = [
   },
   {
     "url": "build/vendor.js",
-    "revision": "675d5e7894d9ab32e4e1ed20af8e800d"
+    "revision": "b586debf4aeddca89484b1dfe5a002b6"
   },
   {
     "url": "index.html",
-    "revision": "48c49161883cac105b9e656108640f73"
+    "revision": "b48dbeb7b42f48b3d06cfde7208ceab1"
   },
   {
     "url": "manifest.json",
