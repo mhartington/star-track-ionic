@@ -15,11 +15,11 @@ page-search {
     transition: transform ease-in-out 250ms;
   }
 
-  ion-header.header-ios.has-search{
+  ion-header.header-ios.has-search {
     transform: translate3d(0, -50px, 0);
   }
   ion-header.header-md.has-search {
-    transform: translate3d(0, -56px, 0);
+    transform: translate3d(0, -60px, 0);
   }
 
   ion-content.content-md.has-search div.fixed-content,

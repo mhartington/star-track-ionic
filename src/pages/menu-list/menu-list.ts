@@ -31,7 +31,8 @@ export class MenuListPage {
   }
 
   goToDetail(favorite) {
-    this.navCtrl.parent._child.push('TrackDetailPage', {
+    let mainNav = this.navCtrl.parent._children.find(e => e.name === 'main')
+    mainNav.push('TrackDetailPage', {
       id: favorite.trackId,
       track: favorite
     });

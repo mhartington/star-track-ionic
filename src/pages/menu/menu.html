@@ -1,6 +1,6 @@
 <ion-split-pane>
   <ion-menu [content]="content" side="start">
-    <ion-nav root="MenuListPage"></ion-nav>
+    <ion-nav name="list" root="MenuListPage"></ion-nav>
   </ion-menu>
-  <ion-nav root="SearchPage" #content persistent="false" main></ion-nav>
+  <ion-nav name="main" root="SearchPage" #content persistent="false" main></ion-nav>
 </ion-split-pane>
