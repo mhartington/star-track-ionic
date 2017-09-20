@@ -144,7 +144,7 @@ const fileManifest = [
   },
   {
     "url": "build/main.js",
-    "revision": "5757932dbcf6ae29db2e016fbe95c3f1"
+    "revision": "effd52b7f80c6fc4d7a8c83177b4ef28"
   },
   {
     "url": "build/polyfills.js",
@@ -156,7 +156,7 @@ const fileManifest = [
   },
   {
     "url": "build/vendor.js",
-    "revision": "b586debf4aeddca89484b1dfe5a002b6"
+    "revision": "7c866d61c65a0309710a3d2eb7e7e3a6"
   },
   {
     "url": "index.html",
