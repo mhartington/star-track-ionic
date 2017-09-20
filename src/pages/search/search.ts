@@ -52,6 +52,7 @@ export class SearchPage {
     }
   }
   setSearch(val) {
+
     this.isError = false;
     this.hasSearch = true;
     this.searchInput.setValue(val);
