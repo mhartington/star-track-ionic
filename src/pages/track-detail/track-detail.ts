@@ -38,6 +38,7 @@ export class TrackDetailPage {
       this.loadSong();
     } else {
       this.track = paramsTrack;
+      this.checkStorage()
     }
   }
   loadSong() {
@@ -51,7 +52,7 @@ export class TrackDetailPage {
       );
   }
   checkStorage() {
-    this.storage.get(this.track.trackId.toString()).then(res => {
+    this.storage.get(this.track.trackId).then(res => {
       if (!res) {
         this.isFavorite = false;
         this.favoriteIcon = 'star-outline';
@@ -77,12 +78,12 @@ export class TrackDetailPage {
       toast.present();
       this.isFavorite = true;
       this.favoriteIcon = 'star';
-      this.storage.set(this.track.trackId.toString(), this.track);
+      this.storage.set(this.track.trackId, this.track);
       this.events.publish('songAdded', this.track);
     } else {
       let toast = this.toastCtrl.create(removedToast);
       toast.present();
-      this.storage.remove(this.track.trackId.toString());
+      this.storage.remove(this.track.trackId);
       this.isFavorite = false;
       this.favoriteIcon = 'star-outline';
       this.events.publish('songRemoved', this.track);

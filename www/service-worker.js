@@ -1,4 +1,4 @@
-importScripts('workbox-sw.prod.v1.1.0.js');
+importScripts('workbox-sw.prod.v1.3.0.js');
 
 /**
  * DO NOT EDIT THE FILE MANIFEST ENTRY
@@ -124,31 +124,31 @@ const fileManifest = [
   },
   {
     "url": "build/0.js",
-    "revision": "b78871298e05c1001faa6a1e6f758a24"
+    "revision": "f80439b33ff17bc462b65974c0cfa840"
   },
   {
     "url": "build/1.js",
-    "revision": "31f6739480a2d92d77834ddf3a52248f"
+    "revision": "41565e878efee57fb4cb9ea0e1e370b5"
   },
   {
     "url": "build/2.js",
-    "revision": "93e7b4f59756c570a7f12aabc5b6846d"
+    "revision": "0706324276aa8b642972bd2512b6cc97"
   },
   {
     "url": "build/3.js",
-    "revision": "df801ec18231dfb669784331ec5ddbb4"
+    "revision": "a1910dd55b6f7f108661824708db163a"
   },
   {
     "url": "build/main.css",
-    "revision": "eefe790a84062c2a847fd605c05cad85"
+    "revision": "d1be4c80d49a2a135a8703b9ad891050"
   },
   {
     "url": "build/main.js",
-    "revision": "effd52b7f80c6fc4d7a8c83177b4ef28"
+    "revision": "d5f61f27e0a329b8c7ad0b222e04b15a"
   },
   {
     "url": "build/polyfills.js",
-    "revision": "cdb289d3a60d7aa4b10424dbe2cd76c4"
+    "revision": "33028cc3cfc6b786ce18ef5f7690aec2"
   },
   {
     "url": "build/sw-toolbox.js",
@@ -156,15 +156,19 @@ const fileManifest = [
   },
   {
     "url": "build/vendor.js",
-    "revision": "7c866d61c65a0309710a3d2eb7e7e3a6"
+    "revision": "1209e7fadac410baf8ea0dbbf0c17c63"
   },
   {
     "url": "index.html",
-    "revision": "b48dbeb7b42f48b3d06cfde7208ceab1"
+    "revision": "1ecfb129c17e45c7416d4dcd708d601a"
   },
   {
     "url": "manifest.json",
     "revision": "dd36c727b4a31c2805677452207cfb95"
+  },
+  {
+    "url": "workbox-sw.prod.v1.1.0.js",
+    "revision": "df86dfc69c6d017722ecb8a16d34c849"
   }
 ];
 

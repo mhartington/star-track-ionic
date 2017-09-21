@@ -20,6 +20,7 @@ export class MenuListPage {
       this.favorites.push(e);
     });
     this.event.subscribe('songRemoved', e => {
+      console.log(e)
       this.favorites.splice(this.favorites.indexOf(e), 1);
     });
   }
