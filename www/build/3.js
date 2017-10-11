@@ -1,1 +1,111 @@
-webpackJsonp([3],{228:function(n,l,a){"use strict";function u(n){return t._31(2,[t._27(402653184,1,{backdrop:0}),(n()(),t._7(0,null,null,1,"div",[["class","menu-inner"]],null,null,null,null,null)),t._20(null,0),(n()(),t._7(0,null,null,1,"ion-backdrop",[["disable-activated",""],["role","presentation"],["tappable",""]],null,null,null,null,null)),t._5(16384,[[1,4]],0,O.a,[t.k,t.F],null,null)],null,null)}function e(n){return t._31(0,[(n()(),t._7(0,null,null,19,"ion-split-pane",[],null,null,null,null,null)),t._5(4341760,null,1,v.b,[t.y,j.a,y.a,t.k,t.F],null,null),t._27(603979776,1,{_setchildren:1}),t._26(2048,[[1,4]],v.a,null,[v.b]),(n()(),t._29(null,["\n  "])),(n()(),t._7(0,null,null,9,"ion-menu",[["role","navigation"],["side","start"]],null,null,null,u,S)),t._5(245760,null,2,F.a,[P.a,t.k,y.a,j.a,t.F,h.a,C.l,M.a,w.a],{content:[0,"content"],side:[1,"side"]},null),t._27(335544320,2,{menuContent:0}),t._27(335544320,3,{menuNav:0}),t._26(2048,[[1,4]],v.a,null,[F.a]),(n()(),t._29(0,["\n    "])),(n()(),t._7(0,null,0,2,"ion-nav",[["name","list"],["root","MenuListPage"]],null,null,null,x.b,x.a)),t._26(6144,null,v.a,null,[N.a]),t._5(4374528,[[3,4]],0,N.a,[[2,D.a],[2,L.a],w.a,y.a,j.a,t.k,t.y,t.F,t.j,C.l,J.a,[2,U.a],M.a,t.l],{root:[0,"root"],name:[1,"name"]},null),(n()(),t._29(0,["\n  "])),(n()(),t._29(null,["\n  "])),(n()(),t._7(0,null,null,2,"ion-nav",[["main",""],["name","main"],["persistent","false"],["root","SearchPage"]],null,null,null,x.b,x.a)),t._5(4374528,[["content",4]],0,N.a,[[2,D.a],[2,L.a],w.a,y.a,j.a,t.k,t.y,t.F,t.j,C.l,J.a,[2,U.a],M.a,t.l],{root:[0,"root"],name:[1,"name"]},null),t._26(2048,[[1,4]],v.a,null,[N.a]),(n()(),t._29(null,["\n"])),(n()(),t._29(null,["\n"]))],function(n,l){n(l,6,0,t._21(l,17),"start");n(l,13,0,"MenuListPage","list");n(l,17,0,"SearchPage","main")},null)}Object.defineProperty(l,"__esModule",{value:!0});var t=a(0),o=a(5),i=function(){function n(){}return n=Object(o.__decorate)([Object(t.i)({selector:"page-menu",templateUrl:"menu.html"}),Object(o.__metadata)("design:paramtypes",[])],n)}(),_=a(111),r=function(){function n(){}return n=Object(o.__decorate)([Object(t.v)({declarations:[i],imports:[_.d.forChild(i)],exports:[i]})],n)}(),s=a(185),c=a(186),d=a(187),m=a(188),p=a(189),b=a(190),f=a(191),g=a(192),k=a(193),v=a(31),j=a(3),y=a(1),O=a(22),F=a(121),P=a(24),h=a(34),C=a(7),M=a(9),w=a(8),E=[],S=t._4({encapsulation:2,styles:E,data:{}}),x=(t._2("ion-menu",F.a,function(n){return t._31(0,[(n()(),t._7(0,null,null,4,"ion-menu",[["role","navigation"]],null,null,null,u,S)),t._26(6144,null,v.a,null,[F.a]),t._5(245760,null,2,F.a,[P.a,t.k,y.a,j.a,t.F,h.a,C.l,M.a,w.a],null,null),t._27(335544320,1,{menuContent:0}),t._27(335544320,2,{menuNav:0})],function(n,l){n(l,2,0)},null)},{content:"content",id:"id",type:"type",enabled:"enabled",side:"side",swipeEnabled:"swipeEnabled",persistent:"persistent",maxEdgeStart:"maxEdgeStart"},{ionDrag:"ionDrag",ionOpen:"ionOpen",ionClose:"ionClose"},["*"]),a(197)),N=a(45),D=a(4),L=a(20),J=a(26),U=a(13),Z=[],q=t._4({encapsulation:2,styles:Z,data:{}}),z=t._2("page-menu",i,function(n){return t._31(0,[(n()(),t._7(0,null,null,1,"page-menu",[],null,null,null,e,q)),t._5(49152,null,0,i,[],null,null)],null,null)},{},{},[]),A=a(16),B=a(17),G=a(113),H=a(35);a.d(l,"MenuPageModuleNgFactory",function(){return I});var I=t._3(r,[],function(n){return t._18([t._19(512,t.j,t.Z,[[8,[s.a,c.a,d.a,m.a,p.a,b.a,f.a,g.a,k.a,z]],[3,t.j],t.w]),t._19(4608,A.k,A.j,[t.u]),t._19(4608,B.m,B.m,[]),t._19(4608,B.c,B.c,[]),t._19(512,A.b,A.b,[]),t._19(512,B.l,B.l,[]),t._19(512,B.f,B.f,[]),t._19(512,B.k,B.k,[]),t._19(512,G.a,G.a,[]),t._19(512,G.b,G.b,[]),t._19(512,r,r,[]),t._19(256,H.a,i,[])])})}});
+webpackJsonp([3],{
+
+/***/ 267:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "MenuListPageModule", function() { return MenuListPageModule; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(100);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__menu_list__ = __webpack_require__(291);
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+
+
+
+var MenuListPageModule = (function () {
+    function MenuListPageModule() {
+    }
+    return MenuListPageModule;
+}());
+MenuListPageModule = __decorate([
+    Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["L" /* NgModule */])({
+        declarations: [
+            __WEBPACK_IMPORTED_MODULE_2__menu_list__["a" /* MenuListPage */],
+        ],
+        imports: [
+            __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["d" /* IonicPageModule */].forChild(__WEBPACK_IMPORTED_MODULE_2__menu_list__["a" /* MenuListPage */]),
+        ],
+        exports: [
+            __WEBPACK_IMPORTED_MODULE_2__menu_list__["a" /* MenuListPage */]
+        ]
+    })
+], MenuListPageModule);
+
+//# sourceMappingURL=menu-list.module.js.map
+
+/***/ }),
+
+/***/ 291:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return MenuListPage; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(100);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__ionic_storage__ = __webpack_require__(192);
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+
+
+var MenuListPage = (function () {
+    function MenuListPage(navCtrl, storage, event) {
+        this.navCtrl = navCtrl;
+        this.storage = storage;
+        this.event = event;
+        this.favorites = [];
+    }
+    MenuListPage.prototype.ionViewDidLoad = function () {
+        var _this = this;
+        this.getKeys();
+        this.event.subscribe('songAdded', function (e) {
+            _this.favorites.push(e);
+        });
+        this.event.subscribe('songRemoved', function (e) {
+            console.log(e);
+            _this.favorites.splice(_this.favorites.indexOf(e), 1);
+        });
+    };
+    MenuListPage.prototype.getKeys = function () {
+        var _this = this;
+        this.storage.forEach(function (entry) {
+            _this.favorites.push(entry);
+        });
+    };
+    MenuListPage.prototype.goToDetail = function (favorite) {
+        var mainNav = this.navCtrl.parent._children.find(function (e) { return e.name === 'main'; });
+        mainNav.push('TrackDetailPage', {
+            id: favorite.trackId,
+            track: favorite
+        });
+    };
+    return MenuListPage;
+}());
+MenuListPage = __decorate([
+    Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["n" /* Component */])({
+        selector: 'page-menu-list',template:/*ion-inline-start:"/Users/mhartington/GitHub/StarTrack-Ionic/src/pages/menu-list/menu-list.html"*/'<ion-header>\n  <ion-navbar>\n    <ion-title>Favorites</ion-title>\n  </ion-navbar>\n</ion-header>\n\n\n<ion-content>\n  <ion-list>\n    <a ion-item *ngFor="let favorite of favorites" (click)="goToDetail(favorite)" menuClose>\n      <ion-label>\n        <h2>{{favorite.trackName}}</h2>\n        <h3>by {{favorite.artistName}}</h3>\n      </ion-label>\n    </a>\n  </ion-list>\n</ion-content>\n'/*ion-inline-end:"/Users/mhartington/GitHub/StarTrack-Ionic/src/pages/menu-list/menu-list.html"*/
+    }),
+    __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["e" /* NavController */],
+        __WEBPACK_IMPORTED_MODULE_2__ionic_storage__["b" /* Storage */],
+        __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["a" /* Events */]])
+], MenuListPage);
+
+//# sourceMappingURL=menu-list.js.map
+
+/***/ })
+
+});
+//# sourceMappingURL=3.js.map
