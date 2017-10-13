@@ -124,31 +124,31 @@ const fileManifest = [
   },
   {
     "url": "build/0.js",
-    "revision": "f80439b33ff17bc462b65974c0cfa840"
+    "revision": "eb2c02ba3be20073df2132dcc161642d"
   },
   {
     "url": "build/1.js",
-    "revision": "41565e878efee57fb4cb9ea0e1e370b5"
+    "revision": "ee5d67cc1e8a4994148d3d2026843bf2"
   },
   {
     "url": "build/2.js",
-    "revision": "0706324276aa8b642972bd2512b6cc97"
+    "revision": "4649f4f0c70b4a94c1b7088cbfdd490b"
   },
   {
     "url": "build/3.js",
-    "revision": "a1910dd55b6f7f108661824708db163a"
+    "revision": "6c87bc865b9cf06dd77f068dfc258352"
   },
   {
     "url": "build/main.css",
-    "revision": "d1be4c80d49a2a135a8703b9ad891050"
+    "revision": "462acd627eef3a817fac7b2cdf83ad50"
   },
   {
     "url": "build/main.js",
-    "revision": "d5f61f27e0a329b8c7ad0b222e04b15a"
+    "revision": "20d8cd9d32f3013274a8f8feab9fb1f9"
   },
   {
     "url": "build/polyfills.js",
-    "revision": "33028cc3cfc6b786ce18ef5f7690aec2"
+    "revision": "a0f85bbdf3767a0ba06226c4ba43053f"
   },
   {
     "url": "build/sw-toolbox.js",
@@ -156,11 +156,11 @@ const fileManifest = [
   },
   {
     "url": "build/vendor.js",
-    "revision": "1209e7fadac410baf8ea0dbbf0c17c63"
+    "revision": "cd7c8d4e27ebcd9dd647cdb9b00b450c"
   },
   {
     "url": "index.html",
-    "revision": "1ecfb129c17e45c7416d4dcd708d601a"
+    "revision": "3398a21eb1958d96914db3fb2f0ca88c"
   },
   {
     "url": "manifest.json",
