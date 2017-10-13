@@ -18,6 +18,7 @@
     "@angular/platform-browser-dynamic": "4.4.4",
     "@ionic-native/camera": "^3.1.0",
     "@ionic-native/core": "^3.1.0",
+    "@ionic-native/deeplinks": "^4.3.1",
     "@ionic-native/keyboard": "^3.1.0",
     "@ionic-native/music-controls": "^3.7.0",
     "@ionic-native/splash-screen": "^3.1.0",
@@ -44,7 +45,7 @@
     "@angular/language-service": "4.1.2",
     "@ionic/app-scripts": "nightly",
     "@types/howler": "^2.0.2",
-    "typescript": "2.3.4",
+    "typescript": "^2.6.0-rc",
     "workbox-cli": "1.1.0"
   },
   "cordova": {

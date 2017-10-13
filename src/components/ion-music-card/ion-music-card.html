@@ -1,6 +1,7 @@
 <ion-card>
   <div [ngClass]="{'playing': ifPlaying , '': !ifPlaying, 'is-seeking': isSeeking}" class="track-img">
-    <img [src]="fullImage" alt="">
+    <img [src]="fullImage" alt="" #image>
+    <div [colorFromImage]="image" class="background-shadow"></div>
   </div>
   <ion-card-content>
     <ion-card-title>
@@ -13,9 +14,9 @@
       <ion-row>
         <ion-col col-3 text-center>
           <button color="light" ion-fab (click)="toggleSong()">
-                      <ion-icon color="secondary" name="play" *ngIf="!ifPlaying"></ion-icon>
-                      <ion-icon color="secondary" name="square" *ngIf="ifPlaying"></ion-icon>
-                    </button>
+            <ion-icon color="secondary" name="play" *ngIf="!ifPlaying"></ion-icon>
+            <ion-icon color="secondary" name="square" *ngIf="ifPlaying"></ion-icon>
+          </button>
         </ion-col>
         <ion-col col-9>
           <ion-range [(ngModel)]="progress" max="100" (ionFocus)="handleDrag()" (ionBlur)="seek($event.value)" color="secondary"></ion-range>
@@ -25,8 +26,8 @@
   </ion-card-content>
   <ion-item>
     <p>Track Duration</p>
-      <ion-badge item-right color="light" >
+    <ion-badge item-right color="light">
       {{track.trackTimeMillis | msToMinutes}}
-      </ion-badge>
+    </ion-badge>
   </ion-item>
 </ion-card>

@@ -7,6 +7,7 @@ import { StatusBar } from '@ionic-native/status-bar';
 import { MusicControls } from '@ionic-native/music-controls';
 import { SplashScreen } from '@ionic-native/splash-screen';
 import { Keyboard } from '@ionic-native/keyboard';
+import { ColorThiefProvider } from '../providers/color-thief/color-thief';
 
 @NgModule({
   declarations: [MyApp],
@@ -19,6 +20,7 @@ import { Keyboard } from '@ionic-native/keyboard';
   ],
   bootstrap: [IonicApp],
   entryComponents: [MyApp],
-  providers: [ StatusBar, SplashScreen, Keyboard, MusicControls]
+  providers: [ StatusBar, SplashScreen, Keyboard, MusicControls,
+    ColorThiefProvider]
 })
 export class AppModule { }
