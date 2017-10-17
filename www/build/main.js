@@ -1,1 +1,758 @@
-webpackJsonp([4],{128:function(t,e,o){"use strict";o.d(e,"a",function(){return r});var n=o(4),a=o(0),r=function(){function t(){}return t.prototype.getPalette=function(t,e,o){(void 0===e||e<2||e>256)&&(e=10),(void 0===o||o<1)&&(o=10);for(var n,a,r,i,c=new s(t),l=c.getImageData().data,h=c.getPixelCount(),f=[],p=0;p<h;p+=o)a=l[(n=4*p)+0],r=l[n+1],i=l[n+2],l[n+3]>=125&&(a>250&&r>250&&i>250||f.push([a,r,i]));var d=u.quantize(f,e),g=d?d.palette():null;return c.removeCanvas(),g},t.prototype.getColor=function(t,e){return void 0===e&&(e=10),this.getPalette(t,5,e)[0]},t.prototype.getColorFromUrl=function(t,e){var o=this;return void 0===e&&(e=10),new Promise(function(n,a){var r=new Image;r.crossOrigin="Anonymous";var i,u;r.addEventListener("load",function(){u=o.getPalette(r,5,e),n({dominantColor:i=u[0],imageUrl:t})}),r.src=t,r.addEventListener("error",a.bind(o))})},t=Object(n.__decorate)([Object(a.p)(),Object(n.__metadata)("design:paramtypes",[])],t)}(),i={map:function(t,e){var o={};return e?t.map(function(t,n){return o.index=n,e.call(o,t)}):t.slice()},naturalOrder:function(t,e){return t<e?-1:t>e?1:0},sum:function(t,e){var o={};return t.reduce(e?function(t,n,a){return o.index=a,t+e.call(o,n)}:function(t,e){return t+e},0)},max:function(t,e){return Math.max.apply(null,e?i.map(t,e):t)}},u=function(){function t(t,e,o){return(t<<2*a)+(e<<a)+o}function e(e){var o,n,i,u,s=1<<3*a,c=new Array(s);return e.forEach(function(e){o=t(n=e[0]>>r,i=e[1]>>r,u=e[2]>>r),c[o]=(c[o]||0)+1}),c}function o(t,e){var o,n,a,i=1e6,u=0,s=1e6,c=0,h=1e6,f=0;return t.forEach(function(t){o=t[0]>>r,n=t[1]>>r,a=t[2]>>r,o<i?i=o:o>u&&(u=o),n<s?s=n:n>c&&(c=n),a<h?h=a:a>f&&(f=a)}),new l(i,u,s,c,h,f,e)}function n(e,o){function n(t){var e,n,a,r,i,u=t+"1",s=t+"2",l=0;for(c=o[u];c<=o[s];c++)if(d[c]>p/2){for(a=o.copy(),r=o.copy(),i=(e=c-o[u])<=(n=o[s]-c)?Math.min(o[s]-1,~~(c+n/2)):Math.max(o[u],~~(c-1-e/2));!d[i];)i++;for(l=g[i];!l&&d[i-1];)l=g[--i];return a[s]=i,r[u]=a[s]+1,[a,r]}}if(o.count()){var a=o.r2-o.r1+1,r=o.g2-o.g1+1,u=o.b2-o.b1+1,s=i.max([a,r,u]);if(1==o.count())return[o.copy()];var c,l,h,f,p=0,d=[],g=[];if(s==a)for(c=o.r1;c<=o.r2;c++){for(f=0,l=o.g1;l<=o.g2;l++)for(h=o.b1;h<=o.b2;h++)f+=e[t(c,l,h)]||0;p+=f,d[c]=p}else if(s==r)for(c=o.g1;c<=o.g2;c++){for(f=0,l=o.r1;l<=o.r2;l++)for(h=o.b1;h<=o.b2;h++)f+=e[t(l,c,h)]||0;p+=f,d[c]=p}else for(c=o.b1;c<=o.b2;c++){for(f=0,l=o.r1;l<=o.r2;l++)for(h=o.g1;h<=o.g2;h++)f+=e[t(l,h,c)]||0;p+=f,d[c]=p}return d.forEach(function(t,e){g[e]=p-t}),n(s==a?"r":s==r?"g":"b")}}var a=5,r=8-a,u=1e3,s=.75,c=function(){function t(t){this.comparator=t,this.contents=[],this.sorted=!1}return t.prototype.sort=function(){this.contents.sort(this.comparator),this.sorted=!0},t.prototype.push=function(t){this.contents.push(t),this.sorted=!1},t.prototype.peek=function(t){return this.sorted||this.sort(),void 0===t&&(t=this.contents.length-1),this.contents[t]},t.prototype.pop=function(){return this.sorted||this.sort(),this.contents.pop()},t.prototype.size=function(){return this.contents.length},t.prototype.map=function(t){return this.contents.map(t)},t.prototype.debug=function(){return this.sorted||this.sort(),this.contents},t}(),l=function(){function e(t,e,o,n,a,r,i){this.r1=t,this.r2=e,this.g1=o,this.g2=n,this.b1=a,this.b2=r,this.histo=i}return e.prototype.volume=function(t){return this._volume&&!t||(this._volume=(this.r2-this.r1+1)*(this.g2-this.g1+1)*(this.b2-this.b1+1)),this._volume},e.prototype.count=function(e){if(!this._count_set||e){var o=0,n=void 0,a=void 0,r=void 0;for(n=this.r1;n<=this.r2;n++)for(a=this.g1;a<=this.g2;a++)for(r=this.b1;r<=this.b2;r++){var i=t(n,a,r);o+=this.histo[i]||0}this._count=o,this._count_set=!0}return this._count},e.prototype.copy=function(){return new e(this.r1,this.r2,this.g1,this.g2,this.b1,this.b2,this.histo)},e.prototype.avg=function(e){if(!this._avg||e){var o=0,n=1<<8-a,r=0,i=0,u=0,s=void 0,c=void 0,l=void 0,h=void 0,f=void 0;for(c=this.r1;c<=this.r2;c++)for(l=this.g1;l<=this.g2;l++)for(h=this.b1;h<=this.b2;h++)f=t(c,l,h),o+=s=this.histo[f]||0,r+=s*(c+.5)*n,i+=s*(l+.5)*n,u+=s*(h+.5)*n;o?this._avg=[~~(r/o),~~(i/o),~~(u/o)]:(console.log("empty box"),this._avg=[~~(n*(this.r1+this.r2+1)/2),~~(n*(this.g1+this.g2+1)/2),~~(n*(this.b1+this.b2+1)/2)])}return this._avg},e.prototype.contains=function(t){var e=t[0]>>r,o=t[1]>>r,n=t[2]>>r;return e>=this.r1&&e<=this.r2&&o>=this.g1&&e<=this.g2&&n>=this.b1&&e<=this.b2},e}(),h=function(){function t(){this.vboxes=new c(function(t,e){return i.naturalOrder(t.vbox.count()*t.vbox.volume(),e.vbox.count()*e.vbox.volume())})}return t.prototype.push=function(t){this.vboxes.push({vbox:t,color:t.avg()})},t.prototype.palette=function(){return this.vboxes.map(function(t){return t.color})},t.prototype.size=function(){return this.vboxes.size()},t.prototype.map=function(t){for(var e=this.vboxes,o=0;o<e.size();o++)if(e.peek(o).vbox.contains(t))return e.peek(o).color;return this.nearest(t)},t.prototype.nearest=function(t){for(var e,o,n,a=this.vboxes,r=0;r<a.size();r++)((o=Math.sqrt(Math.pow(t[0]-a.peek(r).color[0],2)+Math.pow(t[1]-a.peek(r).color[1],2)+Math.pow(t[1]-a.peek(r).color[1],2)))<e||void 0===e)&&(e=o,n=a.peek(r).color);return n},t.prototype.forcebw=function(){var t=this.vboxes;t.sort(function(t,e){return i.naturalOrder(i.sum(t.color),i.sum(e.color))});var e=t[0].color;e[0]<5&&e[1]<5&&e[2]<5&&(t[0].color=[0,0,0]);var o=t.length-1,n=t[o].color;n[0]>251&&n[1]>251&&n[2]>251&&(t[o].color=[255,255,255])},t}();return{quantize:function(t,a){function r(t,e){for(var o,a=1,r=0;r<u;)if((o=t.pop()).count()){var i=n(l,o),s=i[0],c=i[1];if(!s)return void console.log("vbox1 not defined; shouldn't happen!");if(t.push(s),c&&(t.push(c),a++),a>=e)return;if(r++>u)return void console.log("infinite loop; perhaps too few pixels!")}else t.push(o),r++}if(!t.length||a<2||a>256)return console.log("wrong number of maxcolors"),!1;var l=e(t),f=0;l.forEach(function(){f++});var p=o(t,l),d=new c(function(t,e){return i.naturalOrder(t.count(),e.count())});d.push(p),r(d,s*a);for(var g=new c(function(t,e){return i.naturalOrder(t.count()*t.volume(),e.count()*e.volume())});d.size();)g.push(d.pop());r(g,a-g.size());for(var _=new h;g.size();)_.push(g.pop());return _}}}(),s=function(){function t(t){this.canvas=document.createElement("canvas"),this.context=this.canvas.getContext("2d"),document.body.appendChild(this.canvas),this.width=this.canvas.width=t.width,this.height=this.canvas.height=t.height,this.context.drawImage(t,0,0,this.width,this.height)}return t.prototype.clear=function(){this.context.clearRect(0,0,this.width,this.height)},t.prototype.update=function(t){this.context.putImageData(t,0,0)},t.prototype.getPixelCount=function(){return this.width*this.height},t.prototype.getImageData=function(){return this.context.getImageData(0,0,this.width,this.height)},t.prototype.removeCanvas=function(){this.canvas.parentNode.removeChild(this.canvas)},t}()},143:function(t,e){function o(t){return Promise.resolve().then(function(){throw new Error("Cannot find module '"+t+"'.")})}o.keys=function(){return[]},o.resolve=o,t.exports=o,o.id=143},167:function(t,e,o){function n(t){var e=a[t];return e?o.e(e[1]).then(function(){return o(e[0])}):Promise.reject(new Error("Cannot find module '"+t+"'."))}var a={"../pages/menu-list/menu-list.module.ngfactory":[228,2],"../pages/menu/menu.module.ngfactory":[229,3],"../pages/search/search.module.ngfactory":[230,0],"../pages/track-detail/track-detail.module.ngfactory":[231,1]};n.keys=function(){return Object.keys(a)},n.id=167,t.exports=n},199:function(t,e,o){"use strict";function n(t){return r._32(0,[(t()(),r._8(0,null,null,2,"ion-nav",[["root","MenuPage"]],null,null,null,j.b,j.a)),r._27(6144,null,C.a,null,[O.a]),r._6(4374528,null,0,O.a,[[2,z.a],[2,N.a],F.a,D.a,E.a,r.l,r.z,r.G,r.j,H.l,S.a,[2,I.a],L.a,r.m],{root:[0,"root"]},null)],function(t,e){t(e,2,0,"MenuPage")},null)}Object.defineProperty(e,"__esModule",{value:!0});var a=o(30),r=o(0),i=o(4),u=o(111),s=o(116),c=o(69),l=o(70),h=function(){function t(t,e,o){var n=this;this.plt=t,this.keyboard=e,this.statusbar=o,this.plt.ready().then(function(){n.keyboard.disableScroll(!0),n.keyboard.hideKeyboardAccessoryBar(!0),n.plt.is("ios")?n.statusbar.styleDefault():n.statusbar.backgroundColorByHexString("#1d833c")})}return t=Object(i.__decorate)([Object(r.i)({template:'<ion-nav root="MenuPage"></ion-nav>'}),Object(i.__metadata)("design:paramtypes",["function"==typeof(e=void 0!==u.g&&u.g)&&e||Object,"function"==typeof(o=void 0!==l.a&&l.a)&&o||Object,"function"==typeof(n=void 0!==c.a&&c.a)&&n||Object])],t);var e,o,n}(),f=o(127),p=o(126),d=o(128),g=function(){function t(){}return t=Object(i.__decorate)([Object(r.w)({declarations:[h],imports:[a.a,u.c.forRoot(h,{},{links:[{loadChildren:"../pages/menu-list/menu-list.module.ngfactory#MenuListPageModuleNgFactory",name:"MenuListPage",segment:"menu-list",priority:"low",defaultHistory:[]},{loadChildren:"../pages/menu/menu.module.ngfactory#MenuPageModuleNgFactory",name:"MenuPage",segment:"menu",priority:"low",defaultHistory:[]},{loadChildren:"../pages/search/search.module.ngfactory#SearchPageModuleNgFactory",name:"SearchPage",segment:"search",priority:"low",defaultHistory:[]},{loadChildren:"../pages/track-detail/track-detail.module.ngfactory#TrackDetailPageModuleNgFactory",name:"TrackDetailPage",segment:"detail/:id",priority:"low",defaultHistory:["SearchPage"]}]}),s.a.forRoot({name:"__startTrack"})],bootstrap:[u.b],entryComponents:[h],providers:[c.a,p.a,l.a,f.a,d.a]})],t)}(),_=o(46),m=o(186),v=o(187),y=o(188),b=o(189),w=o(190),x=o(191),k=o(192),P=o(193),M=o(194),j=o(198),C=o(31),O=o(45),z=o(5),N=o(20),F=o(8),D=o(1),E=o(3),H=o(7),S=o(27),I=o(13),L=o(9),T=[],q=r._5({encapsulation:2,styles:T,data:{}}),A=r._3("ng-component",h,function(t){return r._32(0,[(t()(),r._8(0,null,null,1,"ng-component",[],null,null,null,n,q)),r._6(49152,null,0,h,[E.a,l.a,c.a],null,null)],null,null)},{},{},[]),R=o(16),U=o(92),B=o(17),K=o(83),G=o(85),J=o(75),Q=o(14),V=o(26),W=o(34),X=o(90),Y=o(113),Z=o(48),$=o(35),tt=o(96),et=o(59),ot=o(100),nt=o(94),at=o(77),rt=o(117),it=o(93),ut=o(25),st=o(91),ct=o(95),lt=r._4(g,[_.b],function(t){return r._19([r._20(512,r.j,r._0,[[8,[m.a,v.a,y.a,b.a,w.a,x.a,k.a,P.a,M.a,A]],[3,r.j],r.x]),r._20(5120,r.v,r._18,[[3,r.v]]),r._20(4608,R.k,R.j,[r.v]),r._20(5120,r.b,r._9,[]),r._20(5120,r.t,r._15,[]),r._20(5120,r.u,r._16,[]),r._20(4608,a.c,a.t,[R.c]),r._20(6144,r.K,null,[a.c]),r._20(4608,a.f,U.a,[]),r._20(5120,a.d,function(t,e,o,n){return[new a.l(t),new a.p(e),new a.o(o,n)]},[R.c,R.c,R.c,a.f]),r._20(4608,a.e,a.e,[a.d,r.z]),r._20(135680,a.n,a.n,[R.c]),r._20(4608,a.m,a.m,[a.e,a.n]),r._20(6144,r.I,null,[a.m]),r._20(6144,a.q,null,[a.n]),r._20(4608,r.N,r.N,[r.z]),r._20(4608,a.h,a.h,[R.c]),r._20(4608,a.j,a.j,[R.c]),r._20(4608,B.m,B.m,[]),r._20(4608,B.c,B.c,[]),r._20(4608,K.a,K.a,[F.a,D.a]),r._20(4608,G.a,G.a,[F.a,D.a]),r._20(4608,J.a,J.a,[]),r._20(4608,Q.a,Q.a,[]),r._20(4608,V.a,V.a,[E.a]),r._20(4608,W.a,W.a,[D.a,E.a,r.z,L.a]),r._20(4608,X.a,X.a,[F.a,D.a]),r._20(5120,R.f,Y.c,[R.q,[2,R.a],D.a]),r._20(4608,R.e,R.e,[R.f]),r._20(5120,Z.b,Z.d,[F.a,Z.a]),r._20(5120,I.a,I.b,[F.a,Z.b,R.e,$.b,r.j]),r._20(4608,tt.a,tt.a,[F.a,D.a,I.a]),r._20(4608,et.a,et.a,[F.a,D.a]),r._20(4608,ot.a,ot.a,[F.a,D.a,I.a]),r._20(4608,nt.a,nt.a,[D.a,E.a,L.a,F.a,H.l]),r._20(4608,at.a,at.a,[F.a,D.a]),r._20(4608,S.a,S.a,[E.a,D.a]),r._20(5120,rt.a,rt.c,[rt.b]),r._20(4608,c.a,c.a,[]),r._20(4608,p.a,p.a,[]),r._20(4608,l.a,l.a,[]),r._20(4608,f.a,f.a,[]),r._20(4608,d.a,d.a,[]),r._20(512,R.b,R.b,[]),r._20(1024,r.m,a.r,[]),r._20(256,D.b,{},[]),r._20(1024,it.a,it.b,[]),r._20(1024,E.a,E.b,[a.b,it.a,r.z]),r._20(1024,D.a,D.c,[D.b,E.a]),r._20(512,L.a,L.a,[E.a]),r._20(512,ut.a,ut.a,[]),r._20(512,F.a,F.a,[D.a,E.a,[2,ut.a]]),r._20(512,H.l,H.l,[F.a]),r._20(256,Z.a,{links:[{loadChildren:"../pages/menu-list/menu-list.module.ngfactory#MenuListPageModuleNgFactory",name:"MenuListPage",segment:"menu-list",priority:"low",defaultHistory:[]},{loadChildren:"../pages/menu/menu.module.ngfactory#MenuPageModuleNgFactory",name:"MenuPage",segment:"menu",priority:"low",defaultHistory:[]},{loadChildren:"../pages/search/search.module.ngfactory#SearchPageModuleNgFactory",name:"SearchPage",segment:"search",priority:"low",defaultHistory:[]},{loadChildren:"../pages/track-detail/track-detail.module.ngfactory#TrackDetailPageModuleNgFactory",name:"TrackDetailPage",segment:"detail/:id",priority:"low",defaultHistory:["SearchPage"]}]},[]),r._20(512,r.h,r.h,[]),r._20(512,st.a,st.a,[r.h]),r._20(1024,$.b,$.c,[st.a,r.r]),r._20(1024,r.c,function(t,e,o,n,r,i,u,s,c,l,h,f,p,d){return[a.s(t,e),ct.a(o),J.b(n,r),nt.b(i,u,s,c,l),$.d(h,f,p,d)]},[[2,a.i],[2,r.y],D.a,E.a,L.a,D.a,E.a,L.a,F.a,H.l,D.a,Z.a,$.b,r.z]),r._20(512,r.d,r.d,[[2,r.c]]),r._20(131584,r._7,r._7,[r.z,r._1,r.r,r.m,r.j,r.d]),r._20(2048,r.f,null,[r._7]),r._20(512,r.e,r.e,[r.f]),r._20(512,a.a,a.a,[[3,a.a]]),r._20(512,B.l,B.l,[]),r._20(512,B.f,B.f,[]),r._20(512,B.k,B.k,[]),r._20(512,Y.a,Y.a,[]),r._20(512,s.a,s.a,[]),r._20(512,g,g,[]),r._20(256,_.a,h,[]),r._20(256,R.a,"/",[]),r._20(256,rt.b,{name:"__startTrack"},[])])});Object(r.U)(),Object(a.k)().bootstrapModuleFactory(lt)}},[199]);
+webpackJsonp([4],{
+
+/***/ 108:
+/***/ (function(module, exports) {
+
+function webpackEmptyAsyncContext(req) {
+	// Here Promise.resolve().then() is used instead of new Promise() to prevent
+	// uncatched exception popping up in devtools
+	return Promise.resolve().then(function() {
+		throw new Error("Cannot find module '" + req + "'.");
+	});
+}
+webpackEmptyAsyncContext.keys = function() { return []; };
+webpackEmptyAsyncContext.resolve = webpackEmptyAsyncContext;
+module.exports = webpackEmptyAsyncContext;
+webpackEmptyAsyncContext.id = 108;
+
+/***/ }),
+
+/***/ 149:
+/***/ (function(module, exports, __webpack_require__) {
+
+var map = {
+	"../pages/menu-list/menu-list.module": [
+		268,
+		3
+	],
+	"../pages/menu/menu.module": [
+		271,
+		2
+	],
+	"../pages/search/search.module": [
+		269,
+		0
+	],
+	"../pages/track-detail/track-detail.module": [
+		270,
+		1
+	]
+};
+function webpackAsyncContext(req) {
+	var ids = map[req];
+	if(!ids)
+		return Promise.reject(new Error("Cannot find module '" + req + "'."));
+	return __webpack_require__.e(ids[1]).then(function() {
+		return __webpack_require__(ids[0]);
+	});
+};
+webpackAsyncContext.keys = function webpackAsyncContextKeys() {
+	return Object.keys(map);
+};
+webpackAsyncContext.id = 149;
+module.exports = webpackAsyncContext;
+
+/***/ }),
+
+/***/ 196:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return ColorThiefProvider; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+var ColorThiefProvider = /** @class */ (function () {
+    function ColorThiefProvider() {
+    }
+    // Adaptation of ColorThef : http://lokeshdhakar.com/projects/color-thief/
+    ColorThiefProvider.prototype.getPalette = function (sourceImage, colorCount, quality) {
+        if (typeof colorCount === 'undefined' ||
+            colorCount < 2 ||
+            colorCount > 256) {
+            colorCount = 10;
+        }
+        if (typeof quality === 'undefined' || quality < 1) {
+            quality = 10;
+        }
+        // Create custom CanvasImage object
+        var image = new CanvasImage(sourceImage);
+        var imageData = image.getImageData();
+        var pixels = imageData.data;
+        var pixelCount = image.getPixelCount();
+        // Store the RGB values in an array format suitable for quantize function
+        var pixelArray = [];
+        for (var i = 0, offset, r, g, b, a; i < pixelCount; i = i + quality) {
+            offset = i * 4;
+            r = pixels[offset + 0];
+            g = pixels[offset + 1];
+            b = pixels[offset + 2];
+            a = pixels[offset + 3];
+            // If pixel is mostly opaque and not white
+            if (a >= 125) {
+                if (!(r > 250 && g > 250 && b > 250)) {
+                    pixelArray.push([r, g, b]);
+                }
+            }
+        }
+        // Send array to quantize function which clusters values
+        // using median cut algorithm
+        var cmap = MMCQ.quantize(pixelArray, colorCount);
+        var palette = cmap ? cmap.palette() : null;
+        // Clean up
+        image.removeCanvas();
+        return palette;
+    };
+    ColorThiefProvider.prototype.getColor = function (sourceImage, quality) {
+        if (quality === void 0) { quality = 10; }
+        var palette = this.getPalette(sourceImage, 5, quality);
+        var dominantColor = palette[0];
+        return dominantColor;
+    };
+    ColorThiefProvider.prototype.getColorFromUrl = function (imageUrl, quality) {
+        var _this = this;
+        if (quality === void 0) { quality = 10; }
+        return new Promise(function (resolve, reject) {
+            var sourceImage = new Image();
+            sourceImage.crossOrigin = "Anonymous";
+            var dominantColor, palette;
+            sourceImage.addEventListener('load', function () {
+                palette = _this.getPalette(sourceImage, 5, quality);
+                dominantColor = palette[0];
+                resolve({ dominantColor: dominantColor, imageUrl: imageUrl });
+            });
+            sourceImage.src = imageUrl;
+            sourceImage.addEventListener('error', reject.bind(_this));
+        });
+    };
+    ;
+    ColorThiefProvider = __decorate([
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["B" /* Injectable */])(),
+        __metadata("design:paramtypes", [])
+    ], ColorThiefProvider);
+    return ColorThiefProvider;
+}());
+
+var pv = {
+    map: function (array, f) {
+        var o = {};
+        return f
+            ? array.map(function (d, i) {
+                o['index'] = i;
+                return f.call(o, d);
+            })
+            : array.slice();
+    },
+    naturalOrder: function (a, b) {
+        return a < b ? -1 : a > b ? 1 : 0;
+    },
+    sum: function (array, f) {
+        var o = {};
+        return array.reduce(f
+            ? function (p, d, i) {
+                o['index'] = i;
+                return p + f.call(o, d);
+            }
+            : function (p, d) { return p + d; }, 0);
+    },
+    max: function (array, f) {
+        return Math.max.apply(null, f ? pv.map(array, f) : array);
+    }
+};
+var MMCQ = (function () {
+    // private constants
+    var sigbits = 5;
+    var rshift = 8 - sigbits;
+    var maxIterations = 1000;
+    var fractByPopulations = 0.75;
+    // get reduced-space color index for a pixel
+    function getColorIndex(r, g, b) {
+        return (r << (2 * sigbits)) + (g << sigbits) + b;
+    }
+    // Simple priority queue
+    var PQueue = /** @class */ (function () {
+        function PQueue(comparator) {
+            this.comparator = comparator;
+            this.contents = [];
+            this.sorted = false;
+        }
+        PQueue.prototype.sort = function () {
+            this.contents.sort(this.comparator);
+            this.sorted = true;
+        };
+        PQueue.prototype.push = function (o) {
+            this.contents.push(o);
+            this.sorted = false;
+        };
+        PQueue.prototype.peek = function (index) {
+            if (!this.sorted)
+                this.sort();
+            if (index === undefined)
+                index = this.contents.length - 1;
+            return this.contents[index];
+        };
+        PQueue.prototype.pop = function () {
+            if (!this.sorted)
+                this.sort();
+            return this.contents.pop();
+        };
+        PQueue.prototype.size = function () {
+            return this.contents.length;
+        };
+        PQueue.prototype.map = function (f) {
+            return this.contents.map(f);
+        };
+        PQueue.prototype.debug = function () {
+            if (!this.sorted)
+                this.sort();
+            return this.contents;
+        };
+        return PQueue;
+    }());
+    // 3d color space box
+    var VBox = /** @class */ (function () {
+        function VBox(r1, r2, g1, g2, b1, b2, histo) {
+            this.r1 = r1;
+            this.r2 = r2;
+            this.g1 = g1;
+            this.g2 = g2;
+            this.b1 = b1;
+            this.b2 = b2;
+            this.histo = histo;
+        }
+        VBox.prototype.volume = function (force) {
+            if (!this._volume || force) {
+                this._volume =
+                    (this.r2 - this.r1 + 1) *
+                        (this.g2 - this.g1 + 1) *
+                        (this.b2 - this.b1 + 1);
+            }
+            return this._volume;
+        };
+        VBox.prototype.count = function (force) {
+            if (!this._count_set || force) {
+                var npix = 0;
+                var i = void 0;
+                var j = void 0;
+                var k = void 0;
+                for (i = this.r1; i <= this.r2; i++) {
+                    for (j = this.g1; j <= this.g2; j++) {
+                        for (k = this.b1; k <= this.b2; k++) {
+                            var index = getColorIndex(i, j, k);
+                            npix += this.histo[index] || 0;
+                        }
+                    }
+                }
+                this._count = npix;
+                this._count_set = true;
+            }
+            return this._count;
+        };
+        VBox.prototype.copy = function () {
+            return new VBox(this.r1, this.r2, this.g1, this.g2, this.b1, this.b2, this.histo);
+        };
+        VBox.prototype.avg = function (force) {
+            if (!this._avg || force) {
+                var ntot = 0;
+                var mult = 1 << (8 - sigbits);
+                var rsum = 0;
+                var gsum = 0;
+                var bsum = 0;
+                var hval = void 0;
+                var i = void 0;
+                var j = void 0;
+                var k = void 0;
+                var histoindex = void 0;
+                for (i = this.r1; i <= this.r2; i++) {
+                    for (j = this.g1; j <= this.g2; j++) {
+                        for (k = this.b1; k <= this.b2; k++) {
+                            histoindex = getColorIndex(i, j, k);
+                            hval = this.histo[histoindex] || 0;
+                            ntot += hval;
+                            rsum += hval * (i + 0.5) * mult;
+                            gsum += hval * (j + 0.5) * mult;
+                            bsum += hval * (k + 0.5) * mult;
+                        }
+                    }
+                }
+                if (ntot) {
+                    this._avg = [~~(rsum / ntot), ~~(gsum / ntot), ~~(bsum / ntot)];
+                }
+                else {
+                    console.log('empty box');
+                    this._avg = [
+                        ~~(mult * (this.r1 + this.r2 + 1) / 2),
+                        ~~(mult * (this.g1 + this.g2 + 1) / 2),
+                        ~~(mult * (this.b1 + this.b2 + 1) / 2)
+                    ];
+                }
+            }
+            return this._avg;
+        };
+        VBox.prototype.contains = function (pixel) {
+            var rval = pixel[0] >> rshift;
+            var gval = pixel[1] >> rshift;
+            var bval = pixel[2] >> rshift;
+            return (rval >= this.r1 &&
+                rval <= this.r2 &&
+                gval >= this.g1 &&
+                rval <= this.g2 &&
+                bval >= this.b1 &&
+                rval <= this.b2);
+        };
+        return VBox;
+    }());
+    // Color map
+    var CMap = /** @class */ (function () {
+        function CMap() {
+            this.vboxes = new PQueue(function (a, b) {
+                return pv.naturalOrder(a.vbox.count() * a.vbox.volume(), b.vbox.count() * b.vbox.volume());
+            });
+        }
+        CMap.prototype.push = function (vbox) {
+            this.vboxes.push({
+                vbox: vbox,
+                color: vbox.avg()
+            });
+        };
+        CMap.prototype.palette = function () {
+            return this.vboxes.map(function (vb) { return vb.color; });
+        };
+        CMap.prototype.size = function () {
+            return this.vboxes.size();
+        };
+        CMap.prototype.map = function (color) {
+            var vboxes = this.vboxes;
+            for (var i = 0; i < vboxes.size(); i++) {
+                if (vboxes.peek(i).vbox.contains(color)) {
+                    return vboxes.peek(i).color;
+                }
+            }
+            return this.nearest(color);
+        };
+        CMap.prototype.nearest = function (color) {
+            var vboxes = this.vboxes;
+            var d1;
+            var d2;
+            var pColor;
+            for (var i = 0; i < vboxes.size(); i++) {
+                d2 = Math.sqrt(Math.pow((color[0] - vboxes.peek(i).color[0]), 2) +
+                    Math.pow((color[1] - vboxes.peek(i).color[1]), 2) +
+                    Math.pow((color[1] - vboxes.peek(i).color[1]), 2));
+                if (d2 < d1 || d1 === undefined) {
+                    d1 = d2;
+                    pColor = vboxes.peek(i).color;
+                }
+            }
+            return pColor;
+        };
+        CMap.prototype.forcebw = function () {
+            // XXX: won't  work yet
+            var vboxes = this.vboxes;
+            vboxes.sort(function (a, b) { return pv.naturalOrder(pv.sum(a.color), pv.sum(b.color)); });
+            // force darkest color to black if everything < 5
+            var lowest = vboxes[0].color;
+            if (lowest[0] < 5 && lowest[1] < 5 && lowest[2] < 5)
+                vboxes[0].color = [0, 0, 0];
+            // force lightest color to white if everything > 251
+            var idx = vboxes.length - 1;
+            var highest = vboxes[idx].color;
+            if (highest[0] > 251 && highest[1] > 251 && highest[2] > 251)
+                vboxes[idx].color = [255, 255, 255];
+        };
+        return CMap;
+    }());
+    // histo (1-d array, giving the number of pixels in
+    // each quantized region of color space), or null on error
+    function getHisto(pixels) {
+        var histosize = 1 << (3 * sigbits);
+        var histo = new Array(histosize);
+        var index;
+        var rval;
+        var gval;
+        var bval;
+        pixels.forEach(function (pixel) {
+            rval = pixel[0] >> rshift;
+            gval = pixel[1] >> rshift;
+            bval = pixel[2] >> rshift;
+            index = getColorIndex(rval, gval, bval);
+            histo[index] = (histo[index] || 0) + 1;
+        });
+        return histo;
+    }
+    function vboxFromPixels(pixels, histo) {
+        var rmin = 1000000;
+        var rmax = 0;
+        var gmin = 1000000;
+        var gmax = 0;
+        var bmin = 1000000;
+        var bmax = 0;
+        var rval;
+        var gval;
+        var bval;
+        // find min/max
+        pixels.forEach(function (pixel) {
+            rval = pixel[0] >> rshift;
+            gval = pixel[1] >> rshift;
+            bval = pixel[2] >> rshift;
+            if (rval < rmin)
+                rmin = rval;
+            else if (rval > rmax)
+                rmax = rval;
+            if (gval < gmin)
+                gmin = gval;
+            else if (gval > gmax)
+                gmax = gval;
+            if (bval < bmin)
+                bmin = bval;
+            else if (bval > bmax)
+                bmax = bval;
+        });
+        return new VBox(rmin, rmax, gmin, gmax, bmin, bmax, histo);
+    }
+    function medianCutApply(histo, vbox) {
+        if (!vbox.count())
+            return;
+        var rw = vbox.r2 - vbox.r1 + 1;
+        var gw = vbox.g2 - vbox.g1 + 1;
+        var bw = vbox.b2 - vbox.b1 + 1;
+        var maxw = pv.max([rw, gw, bw]);
+        // only one pixel, no split
+        if (vbox.count() == 1) {
+            return [vbox.copy()];
+        }
+        /* Find the partial sum arrays along the selected axis. */
+        var total = 0;
+        var partialsum = [];
+        var lookaheadsum = [];
+        var i;
+        var j;
+        var k;
+        var sum;
+        var index;
+        if (maxw == rw) {
+            for (i = vbox.r1; i <= vbox.r2; i++) {
+                sum = 0;
+                for (j = vbox.g1; j <= vbox.g2; j++) {
+                    for (k = vbox.b1; k <= vbox.b2; k++) {
+                        index = getColorIndex(i, j, k);
+                        sum += histo[index] || 0;
+                    }
+                }
+                total += sum;
+                partialsum[i] = total;
+            }
+        }
+        else if (maxw == gw) {
+            for (i = vbox.g1; i <= vbox.g2; i++) {
+                sum = 0;
+                for (j = vbox.r1; j <= vbox.r2; j++) {
+                    for (k = vbox.b1; k <= vbox.b2; k++) {
+                        index = getColorIndex(j, i, k);
+                        sum += histo[index] || 0;
+                    }
+                }
+                total += sum;
+                partialsum[i] = total;
+            }
+        }
+        else {
+            /* maxw == bw */
+            for (i = vbox.b1; i <= vbox.b2; i++) {
+                sum = 0;
+                for (j = vbox.r1; j <= vbox.r2; j++) {
+                    for (k = vbox.g1; k <= vbox.g2; k++) {
+                        index = getColorIndex(j, k, i);
+                        sum += histo[index] || 0;
+                    }
+                }
+                total += sum;
+                partialsum[i] = total;
+            }
+        }
+        partialsum.forEach(function (d, i) {
+            lookaheadsum[i] = total - d;
+        });
+        function doCut(color) {
+            var dim1 = color + "1";
+            var dim2 = color + "2";
+            var left;
+            var right;
+            var vbox1;
+            var vbox2;
+            var d2;
+            var count2 = 0;
+            for (i = vbox[dim1]; i <= vbox[dim2]; i++) {
+                if (partialsum[i] > total / 2) {
+                    vbox1 = vbox.copy();
+                    vbox2 = vbox.copy();
+                    left = i - vbox[dim1];
+                    right = vbox[dim2] - i;
+                    if (left <= right)
+                        d2 = Math.min(vbox[dim2] - 1, ~~(i + right / 2));
+                    else
+                        d2 = Math.max(vbox[dim1], ~~(i - 1 - left / 2));
+                    // avoid 0-count boxes
+                    while (!partialsum[d2])
+                        d2++;
+                    count2 = lookaheadsum[d2];
+                    while (!count2 && partialsum[d2 - 1])
+                        count2 = lookaheadsum[--d2];
+                    // set dimensions
+                    vbox1[dim2] = d2;
+                    vbox2[dim1] = vbox1[dim2] + 1;
+                    return [vbox1, vbox2];
+                }
+            }
+        }
+        // determine the cut planes
+        return maxw == rw ? doCut('r') : maxw == gw ? doCut('g') : doCut('b');
+    }
+    function quantize(pixels, maxcolors) {
+        // short-circuit
+        if (!pixels.length || maxcolors < 2 || maxcolors > 256) {
+            console.log('wrong number of maxcolors');
+            return false;
+        }
+        // XXX: check color content and convert to grayscale if insufficient
+        var histo = getHisto(pixels);
+        // const histosize = 1 << (3 * sigbits);
+        // check that we aren't below maxcolors already
+        var nColors = 0;
+        histo.forEach(function () {
+            nColors++;
+        });
+        if (nColors <= maxcolors) {
+            // XXX: generate the new colors from the histo and return
+        }
+        // get the beginning vbox from the colors
+        var vbox = vboxFromPixels(pixels, histo);
+        var pq = new PQueue(function (a, b) { return pv.naturalOrder(a.count(), b.count()); });
+        pq.push(vbox);
+        // inner function to do the iteration
+        function iter(lh, target) {
+            var ncolors = 1;
+            var niters = 0;
+            var vbox;
+            while (niters < maxIterations) {
+                vbox = lh.pop();
+                if (!vbox.count()) {
+                    /* just put it back */
+                    lh.push(vbox);
+                    niters++;
+                    continue;
+                }
+                // do the cut
+                var vboxes = medianCutApply(histo, vbox);
+                var vbox1 = vboxes[0];
+                var vbox2 = vboxes[1];
+                if (!vbox1) {
+                    console.log("vbox1 not defined; shouldn't happen!");
+                    return;
+                }
+                lh.push(vbox1);
+                if (vbox2) {
+                    /* vbox2 can be null */
+                    lh.push(vbox2);
+                    ncolors++;
+                }
+                if (ncolors >= target)
+                    return;
+                if (niters++ > maxIterations) {
+                    console.log('infinite loop; perhaps too few pixels!');
+                    return;
+                }
+            }
+        }
+        // first set of colors, sorted by population
+        iter(pq, fractByPopulations * maxcolors);
+        // console.log(pq.size(), pq.debug().length, pq.debug().slice());
+        // Re-sort by the product of pixel occupancy times the size in color space.
+        var pq2 = new PQueue(function (a, b) {
+            return pv.naturalOrder(a.count() * a.volume(), b.count() * b.volume());
+        });
+        while (pq.size()) {
+            pq2.push(pq.pop());
+        }
+        // next set - generate the median cuts using the (npix * vol) sorting.
+        iter(pq2, maxcolors - pq2.size());
+        // calculate the actual colors
+        var cmap = new CMap();
+        while (pq2.size()) {
+            cmap.push(pq2.pop());
+        }
+        return cmap;
+    }
+    return {
+        quantize: quantize
+    };
+})();
+var CanvasImage = /** @class */ (function () {
+    function CanvasImage(image) {
+        this.canvas = document.createElement('canvas');
+        this.context = this.canvas.getContext('2d');
+        document.body.appendChild(this.canvas);
+        this.width = this.canvas.width = image.width;
+        this.height = this.canvas.height = image.height;
+        this.context.drawImage(image, 0, 0, this.width, this.height);
+    }
+    CanvasImage.prototype.clear = function () {
+        this.context.clearRect(0, 0, this.width, this.height);
+    };
+    CanvasImage.prototype.update = function (imageData) {
+        this.context.putImageData(imageData, 0, 0);
+    };
+    CanvasImage.prototype.getPixelCount = function () {
+        return this.width * this.height;
+    };
+    CanvasImage.prototype.getImageData = function () {
+        return this.context.getImageData(0, 0, this.width, this.height);
+    };
+    CanvasImage.prototype.removeCanvas = function () {
+        this.canvas.parentNode.removeChild(this.canvas);
+    };
+    return CanvasImage;
+}());
+//# sourceMappingURL=color-thief.js.map
+
+/***/ }),
+
+/***/ 197:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_platform_browser_dynamic__ = __webpack_require__(198);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__app_module__ = __webpack_require__(216);
+
+
+Object(__WEBPACK_IMPORTED_MODULE_0__angular_platform_browser_dynamic__["a" /* platformBrowserDynamic */])().bootstrapModule(__WEBPACK_IMPORTED_MODULE_1__app_module__["a" /* AppModule */]);
+//# sourceMappingURL=main.js.map
+
+/***/ }),
+
+/***/ 216:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return AppModule; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_platform_browser__ = __webpack_require__(29);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_core__ = __webpack_require__(0);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_ionic_angular__ = __webpack_require__(100);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__ionic_storage__ = __webpack_require__(192);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__app_component__ = __webpack_require__(267);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__ionic_native_status_bar__ = __webpack_require__(190);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__ionic_native_music_controls__ = __webpack_require__(195);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__ionic_native_splash_screen__ = __webpack_require__(194);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__ionic_native_keyboard__ = __webpack_require__(191);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__providers_color_thief_color_thief__ = __webpack_require__(196);
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+
+
+
+
+
+
+
+
+
+
+var AppModule = /** @class */ (function () {
+    function AppModule() {
+    }
+    AppModule = __decorate([
+        Object(__WEBPACK_IMPORTED_MODULE_1__angular_core__["L" /* NgModule */])({
+            declarations: [__WEBPACK_IMPORTED_MODULE_4__app_component__["a" /* MyApp */]],
+            imports: [
+                __WEBPACK_IMPORTED_MODULE_0__angular_platform_browser__["a" /* BrowserModule */],
+                __WEBPACK_IMPORTED_MODULE_2_ionic_angular__["c" /* IonicModule */].forRoot(__WEBPACK_IMPORTED_MODULE_4__app_component__["a" /* MyApp */], {}, {
+                    links: [
+                        { loadChildren: '../pages/menu-list/menu-list.module#MenuListPageModule', name: 'MenuListPage', segment: 'menu-list', priority: 'low', defaultHistory: [] },
+                        { loadChildren: '../pages/search/search.module#SearchPageModule', name: 'SearchPage', segment: 'search', priority: 'low', defaultHistory: [] },
+                        { loadChildren: '../pages/track-detail/track-detail.module#TrackDetailPageModule', name: 'TrackDetailPage', segment: 'detail/:id', priority: 'low', defaultHistory: ['SearchPage'] },
+                        { loadChildren: '../pages/menu/menu.module#MenuPageModule', name: 'MenuPage', segment: 'menu', priority: 'low', defaultHistory: [] }
+                    ]
+                }),
+                __WEBPACK_IMPORTED_MODULE_3__ionic_storage__["a" /* IonicStorageModule */].forRoot({
+                    name: '__startTrack'
+                })
+            ],
+            bootstrap: [__WEBPACK_IMPORTED_MODULE_2_ionic_angular__["b" /* IonicApp */]],
+            entryComponents: [__WEBPACK_IMPORTED_MODULE_4__app_component__["a" /* MyApp */]],
+            providers: [__WEBPACK_IMPORTED_MODULE_5__ionic_native_status_bar__["a" /* StatusBar */], __WEBPACK_IMPORTED_MODULE_7__ionic_native_splash_screen__["a" /* SplashScreen */], __WEBPACK_IMPORTED_MODULE_8__ionic_native_keyboard__["a" /* Keyboard */], __WEBPACK_IMPORTED_MODULE_6__ionic_native_music_controls__["a" /* MusicControls */],
+                __WEBPACK_IMPORTED_MODULE_9__providers_color_thief_color_thief__["a" /* ColorThiefProvider */]]
+        })
+    ], AppModule);
+    return AppModule;
+}());
+
+//# sourceMappingURL=app.module.js.map
+
+/***/ }),
+
+/***/ 267:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return MyApp; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_ionic_angular__ = __webpack_require__(100);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_core__ = __webpack_require__(0);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__ionic_native_status_bar__ = __webpack_require__(190);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__ionic_native_keyboard__ = __webpack_require__(191);
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+
+
+
+var MyApp = /** @class */ (function () {
+    function MyApp(plt, keyboard, statusbar) {
+        var _this = this;
+        this.plt = plt;
+        this.keyboard = keyboard;
+        this.statusbar = statusbar;
+        this.plt.ready().then(function () {
+            _this.keyboard.disableScroll(true);
+            _this.keyboard.hideKeyboardAccessoryBar(true);
+            _this.plt.is('ios')
+                ? _this.statusbar.styleDefault()
+                : _this.statusbar.backgroundColorByHexString('#1d833c');
+        });
+    }
+    MyApp = __decorate([
+        Object(__WEBPACK_IMPORTED_MODULE_1__angular_core__["n" /* Component */])({
+            template: "<ion-nav root=\"MenuPage\"></ion-nav>"
+        }),
+        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_0_ionic_angular__["g" /* Platform */],
+            __WEBPACK_IMPORTED_MODULE_3__ionic_native_keyboard__["a" /* Keyboard */],
+            __WEBPACK_IMPORTED_MODULE_2__ionic_native_status_bar__["a" /* StatusBar */]])
+    ], MyApp);
+    return MyApp;
+}());
+
+//# sourceMappingURL=app.component.js.map
+
+/***/ })
+
+},[197]);
+//# sourceMappingURL=main.js.map
