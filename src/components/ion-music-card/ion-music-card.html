@@ -10,10 +10,10 @@
       <ion-col>
   <ion-card-content>
     <ion-card-title>
-      <h2>{{track.trackName}}</h2>
+      <h2 [innerHtml]="track.trackName"></h2>
     </ion-card-title>
-    <h3>by {{track.artistName}}</h3>
-    <em>{{track.collectionName}}</em>
+    <h3 [innerHtml]="'by ' + track.artistName"></h3>
+    <em [innerHtml]="track.collectionName"></em>
 
     <ion-grid>
       <ion-row>
