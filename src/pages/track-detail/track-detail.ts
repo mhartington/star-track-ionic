@@ -23,7 +23,8 @@ export class TrackDetailPage {
     trackName: '',
     artistName: '',
     collectionName: '',
-    artworkUrl100: ''
+    artworkUrl100: '',
+    trackId: null
   }
   isFavorite = false;
   favoriteIcon = 'star-outline';
