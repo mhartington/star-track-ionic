@@ -20,10 +20,7 @@ import { ItunesService } from '../../providers/itunes-service/itunes-service';
 export class TrackDetailPage {
   @ViewChild('musicCard') musicCard;
   track = {
-    trackName: '',
-    artistName: '',
-    collectionName: '',
-    artworkUrl100: '',
+    artworkUrl100: 'data:image/gif;base64,R0lGODlhAQABAIAAAMLCwgAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==',
     trackId: null
   }
   isFavorite = false;
