@@ -16,7 +16,7 @@
     "@angular/http": "4.4.4",
     "@angular/platform-browser": "4.4.4",
     "@angular/platform-browser-dynamic": "4.4.4",
-    "@ionic-native/camera": "^3.1.0",
+    "@ionic-native/camera": "^3.14.0",
     "@ionic-native/core": "^3.1.0",
     "@ionic-native/deeplinks": "^4.3.1",
     "@ionic-native/keyboard": "^3.1.0",
@@ -26,8 +26,11 @@
     "@ionic/storage": "2.0.1",
     "cordova-android": "6.2.3",
     "cordova-ios": "^4.5.1",
-    "cordova-plugin-console": "^1.1.0",
+    "cordova-plugin-add-swift-support": "^1.7.0",
+    "cordova-plugin-camera": "^2.4.1",
+    "cordova-plugin-compat": "^1.2.0",
     "cordova-plugin-device": "^1.1.6",
+    "cordova-plugin-ionic": "^2.0.1",
     "cordova-plugin-ionic-webview": "^1.1.15",
     "cordova-plugin-music-controls": "^1.4.1",
     "cordova-plugin-splashscreen": "^4.0.3",
@@ -50,21 +53,31 @@
   },
   "cordova": {
     "platforms": [
-      "android",
-      "ios"
+      "ios",
+      "android"
     ],
     "config": {
       "ionic_copy": "./config/copy.js"
     },
     "plugins": {
-      "cordova-plugin-console": {},
       "cordova-plugin-device": {},
       "cordova-plugin-music-controls": {},
       "cordova-plugin-splashscreen": {},
       "cordova-plugin-statusbar": {},
       "cordova-plugin-whitelist": {},
       "ionic-plugin-keyboard": {},
-      "cordova-plugin-ionic-webview": {}
+      "cordova-plugin-ionic-webview": {},
+      "cordova-plugin-ionic": {
+        "APP_ID": "f1c962d9",
+        "CHANNEL_NAME": "Master",
+        "UPDATE_METHOD": "background",
+        "UPDATE_API": "https://api.ionicjs.com",
+        "MAX_STORE": "2"
+      },
+      "cordova-plugin-camera": {
+        "CAMERA_USAGE_DESCRIPTION": " ",
+        "PHOTOLIBRARY_USAGE_DESCRIPTION": " "
+      }
     }
   }
 }

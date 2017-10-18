@@ -1,5 +1,4 @@
-<ion-header [ngClass]="{'has-search': hasSearch}">
-<!-- <ion&#45;header> -->
+<ion-header>
   <ion-navbar>
     <ion-buttons left>
       <button menuToggle ion-button icon-only>
@@ -22,10 +21,8 @@
 </ion-header>
 
 <ion-backdrop *ngIf="showOverlay" style="opacity: 0.35"></ion-backdrop>
-<ion-content [ngClass]="{'has-search': hasSearch}">
-<!-- <ion&#45;content > -->
-  <ion-grid fixed>
-
+<ion-content >
+  <ion-grid fixed no-padding>
     <!-- No Search term? -->
     <div *ngIf="!searchInput.value" padding>
       <h1>Trending Bands</h1>

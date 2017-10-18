@@ -1,7 +1,14 @@
 .menu {
-
 }
-
+.platform-cordova.md {
+  .shadow {
+    width: 100%;
+    height: 24px;
+    background-color: rgba(0, 0, 0, 0.3);
+    position: absolute;
+    z-index: 101;
+  }
+}
 .split-pane-md.split-pane-visible > .split-pane-side {
   max-width: 375px;
 }

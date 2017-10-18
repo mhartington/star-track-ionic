@@ -19,7 +19,7 @@ import { ItunesService } from '../../providers/itunes-service/itunes-service';
 })
 export class TrackDetailPage {
   @ViewChild('musicCard') musicCard;
-  track;
+  track; 
   isFavorite = false;
   favoriteIcon = 'star-outline';
 

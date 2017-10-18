@@ -1,0 +1,15 @@
+.platform-cordova.md {
+  ion-nav > .ion-page,
+  ion-nav > .ion-page > ion-header,
+  ion-tab > .ion-page,
+  ion-tab > .ion-page > ion-header,
+  ion-tabs > .ion-page.tab-subpage > ion-header,
+  ion-menu > .menu-inner,
+  ion-menu > .menu-inner > ion-header {
+    > .toolbar.toolbar-md:first-child {
+      padding-top: 24px;
+
+      min-height: 80px;
+    }
+  }
+}

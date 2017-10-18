@@ -1,8 +1,13 @@
 <ion-card>
-  <div [ngClass]="{'playing': ifPlaying , '': !ifPlaying, 'is-seeking': isSeeking}" class="track-img">
-    <img [src]="fullImage" alt="" #image>
-    <div [colorFromImage]="image" class="background-shadow"></div>
-  </div>
+  <ion-grid no-padding>
+    <ion-row align-items-center>
+      <ion-col col-12 col-md-5>
+        <div [ngClass]="{'playing': ifPlaying , '': !ifPlaying, 'is-seeking': isSeeking}" class="track-img">
+          <img [src]="fullImage" alt="" #image>
+          <div [colorFromImage]="image" class="background-shadow"></div>
+        </div>
+      </ion-col>
+      <ion-col>
   <ion-card-content>
     <ion-card-title>
       <h2>{{track.trackName}}</h2>
@@ -30,4 +35,8 @@
       {{track.trackTimeMillis | msToMinutes}}
     </ion-badge>
   </ion-item>
+
+      </ion-col>
+    </ion-row>
+  </ion-grid>
 </ion-card>

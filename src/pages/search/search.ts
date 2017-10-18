@@ -26,12 +26,14 @@ export class SearchPage {
   public showSpinner: boolean = false;
   public searchInput = new FormControl('');
   public showOverlay: boolean = false;
+
+  public img;
   constructor(
     public nav: NavController,
     public spotify: ItunesService,
     public storage: Storage,
     public platform: Platform,
-    public splashscreen: SplashScreen
+    public splashscreen: SplashScreen,
   ) {}
   searchFocused(e) {
     this.hasSearch = true;

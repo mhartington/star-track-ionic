@@ -1,13 +1,7 @@
 import { Directive, Input, ElementRef } from '@angular/core';
 import { ColorThiefProvider } from '../../providers/color-thief/color-thief';
-/**
- * Generated class for the ColorFromImageDirective directive.
- *
- * See https://angular.io/api/core/Directive for more info on Angular
- * Directives.
- */
 @Directive({
-  selector: '[colorFromImage]' // Attribute selector
+  selector: '[colorFromImage]', // Attribute selector
 })
 export class ColorFromImageDirective {
   @Input() colorFromImage;

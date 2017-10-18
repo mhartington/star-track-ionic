@@ -15,9 +15,10 @@ export class MyApp {
     this.plt.ready().then(() => {
       this.keyboard.disableScroll(true);
       this.keyboard.hideKeyboardAccessoryBar(true);
+      this.statusbar.overlaysWebView(true);
       this.plt.is('ios')
         ? this.statusbar.styleDefault()
-        : this.statusbar.backgroundColorByHexString('#1d833c');
+        : this.statusbar.styleLightContent();
     });
   }
 }

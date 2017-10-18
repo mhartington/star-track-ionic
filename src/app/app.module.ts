@@ -8,10 +8,12 @@ import { MusicControls } from '@ionic-native/music-controls';
 import { SplashScreen } from '@ionic-native/splash-screen';
 import { Keyboard } from '@ionic-native/keyboard';
 import { ColorThiefProvider } from '../providers/color-thief/color-thief';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [MyApp],
   imports: [
+    HttpClientModule,
     BrowserModule,
     IonicModule.forRoot(MyApp),
     IonicStorageModule.forRoot({
@@ -20,7 +22,12 @@ import { ColorThiefProvider } from '../providers/color-thief/color-thief';
   ],
   bootstrap: [IonicApp],
   entryComponents: [MyApp],
-  providers: [ StatusBar, SplashScreen, Keyboard, MusicControls,
-    ColorThiefProvider]
+  providers: [
+    StatusBar,
+    SplashScreen,
+    Keyboard,
+    MusicControls,
+    ColorThiefProvider
+  ]
 })
-export class AppModule { }
+export class AppModule {}
