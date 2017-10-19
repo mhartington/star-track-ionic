@@ -124,15 +124,15 @@ const fileManifest = [
   },
   {
     "url": "build/0.js",
-    "revision": "36b38dfb0a1914d603c848bdd0fb0575"
+    "revision": "54f365e025666fe656ccc01defccb70d"
   },
   {
     "url": "build/1.js",
-    "revision": "7444f7d61e04617b62b24614c02eb9c5"
+    "revision": "d530e20b053fd19ce0b54861c8df763f"
   },
   {
     "url": "build/2.js",
-    "revision": "1ee08b7ed3fdba108b192926f66d8085"
+    "revision": "dfb5d6e8dcef0b0a0cc63842eb537488"
   },
   {
     "url": "build/3.js",
@@ -156,7 +156,7 @@ const fileManifest = [
   },
   {
     "url": "build/vendor.js",
-    "revision": "d4eb351415ba7fb77b3205d9bb26f479"
+    "revision": "38e08f84091becf2769dbf8eb3ea615b"
   },
   {
     "url": "index.html",
