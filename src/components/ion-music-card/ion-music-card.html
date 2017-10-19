@@ -2,9 +2,13 @@
   <ion-grid no-padding>
     <ion-row align-items-center>
       <ion-col col-12 col-md-5>
-        <div [ngClass]="{'playing': ifPlaying , '': !ifPlaying, 'is-seeking': isSeeking}" class="track-img">
+        <div [ngClass]="{
+            '': !ifPlaying,
+            'playing': ifPlaying ,
+            'is-seeking': isSeeking
+          }" class="track-img">
           <img [src]="fullImage" alt="" #image>
-          <div [colorFromImage]="image" class="background-shadow"></div>
+          <div class="background-shadow"></div>
         </div>
       </ion-col>
       <ion-col>

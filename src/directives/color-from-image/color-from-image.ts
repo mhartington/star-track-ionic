@@ -1,12 +1,12 @@
-import { Directive, Input, ElementRef } from '@angular/core';
+import { Directive, Input, ElementRef, OnChanges } from '@angular/core';
 import { ColorThiefProvider } from '../../providers/color-thief/color-thief';
 @Directive({
   selector: '[colorFromImage]', // Attribute selector
 })
-export class ColorFromImageDirective {
+export class ColorFromImageDirective implements OnChanges {
   @Input() colorFromImage;
   constructor(public colorThief: ColorThiefProvider, public el: ElementRef) { }
-  ngAfterViewInit() {
+  ngOnChanges() {
     this.colorThief.getColorFromUrl(this.colorFromImage.src)
       .then((res: {dominantColor: number[], imageUrl: string}) => {
         let colorMap = res.dominantColor;

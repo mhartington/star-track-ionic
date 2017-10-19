@@ -1,6 +1,6 @@
 import { Component, Input } from '@angular/core';
 import { NativeMedia } from '../../providers/native-media/native-media';
-import { Howl } from 'howler'
+import { Howl } from 'howler';
 @Component({
   selector: 'ion-music-card',
   templateUrl: 'ion-music-card.html'
@@ -9,14 +9,13 @@ export class IonMusicCardComponent {
   _track;
   @Input()
   get track() {
-    return this._track
+    return this._track;
   }
   set track(val: any) {
-    this._track = val
+    this._track = val;
   }
-
   get fullImage(): string {
-    return this.track.artworkUrl100.replace(/100x100bb/, '500x500bb')
+    return this.track.artworkUrl100.replace(/100x100bb/, '400x400bb');
   }
 
   progress;
@@ -26,17 +25,18 @@ export class IonMusicCardComponent {
   player: Howl;
   isSeeking: boolean = false;
 
-  constructor(public nativeMedia: NativeMedia) { }
-  ngOnInit() {
+  constructor(public nativeMedia: NativeMedia) {}
+
+  ngOnChanges() {
     this.player = new Howl({
       src: [this._track.previewUrl],
       onplay: () => {
-        requestAnimationFrame(this.setProgress.bind(this))
+        requestAnimationFrame(this.setProgress.bind(this));
       },
       onend: () => {
         this.playerEnded();
       }
-    })
+    });
   }
   // ngOnDestroy(){
   //   this.player.unload()
@@ -56,12 +56,12 @@ export class IonMusicCardComponent {
   }
   stopSong() {
     this.ifPlaying = false;
-    this.player.stop()
+    this.player.stop();
   }
   setProgress() {
     if (!this.isSeeking) {
       let seek: any = this.player.seek();
-      this.progress = (((seek / this.player.duration()) * 100) || 0);
+      this.progress = seek / this.player.duration() * 100 || 0;
       requestAnimationFrame(this.setProgress.bind(this));
     }
   }
