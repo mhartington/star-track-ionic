@@ -38,15 +38,15 @@
     "cordova-plugin-statusbar": "git+https://github.com/apache/cordova-plugin-statusbar.git",
     "cordova-plugin-whitelist": "^1.3.2",
     "howler": "^2.0.3",
-    "ionic-angular": "nightly",
+    "ionic-angular": "^3.7.1-201710241735",
     "ionicons": "3.0.0",
-    "rxjs": "5.4.3",
+    "rxjs": "5.5.0",
     "sw-toolbox": "3.6.0",
     "zone.js": "0.8.12"
   },
   "devDependencies": {
-    "@angular/language-service": "4.1.2",
-    "@ionic/app-scripts": "nightly",
+    "@angular/language-service": "4.4.4",
+    "@ionic/app-scripts": "3.0.1",
     "@types/howler": "^2.0.2",
     "typescript": "^2.6.0-rc",
     "workbox-cli": "1.1.0"
@@ -63,7 +63,6 @@
       "cordova-plugin-device": {},
       "cordova-plugin-music-controls": {},
       "cordova-plugin-splashscreen": {},
-      "cordova-plugin-statusbar": {},
       "cordova-plugin-whitelist": {},
       "cordova-plugin-ionic-webview": {},
       "cordova-plugin-ionic": {
@@ -77,7 +76,8 @@
         "CAMERA_USAGE_DESCRIPTION": " ",
         "PHOTOLIBRARY_USAGE_DESCRIPTION": " "
       },
-      "cordova-plugin-ionic-keyboard": {}
+      "cordova-plugin-ionic-keyboard": {},
+      "cordova-plugin-statusbar": {}
     }
   }
 }

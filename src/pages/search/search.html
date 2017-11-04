@@ -5,9 +5,8 @@
         <ion-icon name="menu"></ion-icon>
       </button>
     </ion-buttons>
-    <ion-title>Search</ion-title>
+    <ion-title>Search Itunes</ion-title>
   </ion-navbar>
-
   <ion-toolbar>
     <ion-searchbar
       placeholder=""
@@ -16,11 +15,8 @@
       (ionBlur)="searchBlured($event)"
       (ionCancel)="searchCleared($event)"
       showCancelButton="true"></ion-searchbar>
-
   </ion-toolbar>
 </ion-header>
-
-<ion-backdrop *ngIf="showOverlay" style="opacity: 0.35"></ion-backdrop>
 <ion-content >
   <ion-grid fixed no-padding>
     <!-- No Search term? -->
@@ -30,7 +26,6 @@
         {{trending}}
       </ion-item>
     </div>
-
     <!-- Welp there's an error -->
     <div *ngIf="isError" text-center padding>
       <ion-icon color="secondary" name="warning" big></ion-icon>
@@ -38,13 +33,10 @@
       <h2>It's not me, it's you!</h2>
       <h2>It appears there is a connection problem</h2>
     </div>
-
     <!-- Alright, we're searching -->
     <div padding text-center class="stauts-spinner" *ngIf="showSpinner">
       <ion-spinner></ion-spinner>
     </div>
-
-
     <!-- We got some songs! -->
     <a ion-item *ngFor="let track of listing" detail-none (click)="detail(track)">
       <ion-thumbnail item-left>
@@ -57,6 +49,5 @@
         {{track.trackTimeMillis | msToMinutes}}
       </ion-note>
     </a>
-
   </ion-grid>
 </ion-content>

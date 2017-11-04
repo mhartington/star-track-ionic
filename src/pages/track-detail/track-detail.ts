@@ -19,15 +19,7 @@ import { ItunesService } from '../../providers/itunes-service/itunes-service';
 })
 export class TrackDetailPage {
   @ViewChild('musicCard') musicCard;
-  track = {
-    trackId: null,
-    artworkUrl100:
-      'data:image/gif;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mO8Ww8AAj8BXkQ+xPEAAAAASUVORK5CYII=',
-    trackName: '&nbsp;',
-    artistName: '&nbsp;',
-    collectionName: '&nbsp;',
-    trackTimeMillis: 0
-  };
+  track;
   isFavorite = false;
   favoriteIcon = 'star-outline';
 
@@ -40,7 +32,7 @@ export class TrackDetailPage {
     public toastCtrl: ToastController,
     public service: ItunesService
   ) {}
-  ionViewDidEnter() {
+  ionViewWillEnter() {
     let paramsTrack = this.params.get('track');
     if (!paramsTrack) {
       this.loadSong();

@@ -1,34 +1,14 @@
 .md page-search {
-  .stauts-spinner {
-    ion-spinner {
-      width: 50px;
-      height: 50px;
-    }
+  .stauts-spinner ion-spinner {
+    width: 50px;
+    height: 50px;
   }
 }
 
 page-search {
-  ion-header.header-md {
-    transition: transform ease-in-out 100ms;
-  }
-  ion-header.header-ios {
-    transition: transform ease-in-out 250ms;
-  }
-
-  ion-header.header-ios.has-search {
-    transform: translate3d(0, -50px, 0);
-  }
-  ion-header.header-md.has-search {
-    transform: translate3d(0, -56px, 0);
-  }
-
-  ion-content.content-md.has-search div.fixed-content,
-  ion-content.content-md.has-search div.scroll-content {
-    margin-top: 56px !important;
-  }
-  ion-content.content-ios.has-search div.fixed-content,
-  ion-content.content-ios.has-search div.scroll-content {
-    margin-top: 65px !important;
+  ion-content .scroll-content {
+    padding-bottom: constant(safe-area-inset-bottom);
+    padding-bottom: env(safe-area-inset-bottom);
   }
 }
 

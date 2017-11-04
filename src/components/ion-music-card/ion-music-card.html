@@ -7,38 +7,38 @@
             'playing': ifPlaying ,
             'is-seeking': isSeeking
           }" class="track-img">
-          <img [src]="fullImage" alt="" #image>
-          <div class="background-shadow"></div>
+          <img [src]="fullImage" #img alt="">
+          <div class="background-shadow" [colorFromImage]="img"></div>
         </div>
       </ion-col>
       <ion-col>
-  <ion-card-content>
-    <ion-card-title>
-      <h2 [innerHtml]="track.trackName"></h2>
-    </ion-card-title>
-    <h3 [innerHtml]="'by ' + track.artistName"></h3>
-    <em [innerHtml]="track.collectionName"></em>
+      <ion-card-content>
+        <ion-card-title>
+          <h2 [innerHtml]="track.trackName"></h2>
+        </ion-card-title>
+        <h3 [innerHtml]="'by ' + track.artistName"></h3>
+        <em [innerHtml]="track.collectionName"></em>
 
-    <ion-grid>
-      <ion-row>
-        <ion-col col-3 text-center>
-          <button color="light" ion-fab (click)="toggleSong()">
-            <ion-icon color="secondary" name="play" *ngIf="!ifPlaying"></ion-icon>
-            <ion-icon color="secondary" name="square" *ngIf="ifPlaying"></ion-icon>
-          </button>
-        </ion-col>
-        <ion-col col-9>
-          <ion-range [(ngModel)]="progress" max="100" (ionFocus)="handleDrag()" (ionBlur)="seek($event.value)" color="secondary"></ion-range>
-        </ion-col>
-      </ion-row>
-    </ion-grid>
-  </ion-card-content>
-  <ion-item>
-    <p>Track Duration</p>
-    <ion-badge item-right color="light">
-      {{track.trackTimeMillis | msToMinutes}}
-    </ion-badge>
-  </ion-item>
+        <ion-grid>
+          <ion-row>
+            <ion-col col-3 text-center>
+              <button color="light" ion-fab (click)="toggleSong()">
+                <ion-icon color="secondary" name="play" *ngIf="!ifPlaying"></ion-icon>
+                <ion-icon color="secondary" name="square" *ngIf="ifPlaying"></ion-icon>
+              </button>
+            </ion-col>
+            <ion-col col-9>
+              <ion-range [(ngModel)]="progress" max="100" (ionFocus)="handleDrag()" (ionBlur)="seek($event.value)" color="secondary"></ion-range>
+            </ion-col>
+          </ion-row>
+        </ion-grid>
+      </ion-card-content>
+      <ion-item>
+        <p>Track Duration</p>
+        <ion-badge item-right color="light">
+          {{track.trackTimeMillis | msToMinutes}}
+        </ion-badge>
+      </ion-item>
 
       </ion-col>
     </ion-row>

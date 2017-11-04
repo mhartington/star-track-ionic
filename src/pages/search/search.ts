@@ -33,12 +33,11 @@ export class SearchPage {
     public spotify: ItunesService,
     public storage: Storage,
     public platform: Platform,
-    public splashscreen: SplashScreen,
+    public splashscreen: SplashScreen
   ) {}
   searchFocused(e) {
     this.hasSearch = true;
     if (!this.searchInput.value) {
-      this.showOverlay = true;
       this.isError = false;
     }
   }
@@ -47,14 +46,9 @@ export class SearchPage {
     this.isError = false;
   }
   searchBlured(e) {
-    this.showOverlay = false;
     this.isError = false;
-    if (!this.searchInput.value) {
-      this.hasSearch = false;
-    }
   }
   setSearch(val) {
-
     this.isError = false;
     this.hasSearch = true;
     this.searchInput.setValue(val);

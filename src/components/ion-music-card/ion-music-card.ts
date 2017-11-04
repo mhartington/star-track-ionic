@@ -14,20 +14,17 @@ export class IonMusicCardComponent {
   set track(val: any) {
     this._track = val;
   }
-  get fullImage(): string {
+  get fullImage(){
     return this.track.artworkUrl100.replace(/100x100bb/, '400x400bb');
   }
-
   progress;
   ifPlaying = false;
   isFavorite = false;
   favoriteIcon = 'star-outline';
   player: Howl;
   isSeeking: boolean = false;
-
   constructor(public nativeMedia: NativeMedia) {}
-
-  ngOnChanges() {
+  ngAfterViewInit() {
     this.player = new Howl({
       src: [this._track.previewUrl],
       onplay: () => {
@@ -38,9 +35,6 @@ export class IonMusicCardComponent {
       }
     });
   }
-  // ngOnDestroy(){
-  //   this.player.unload()
-  // }
   toggleSong() {
     if (this.ifPlaying) {
       this.stopSong();
@@ -48,7 +42,6 @@ export class IonMusicCardComponent {
       this.playSong();
     }
   }
-
   playSong() {
     // this.nativeMedia.createMediaControls(this._track);
     this.player.play();
