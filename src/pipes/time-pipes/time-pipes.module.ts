@@ -5,4 +5,4 @@ import { MsToMinutes } from './ms-to-minutes';
   declarations: [MsToMinutes],
   exports: [MsToMinutes]
 })
-export class TimePipeModule { }
+export class TimePipeModule {}

@@ -3,7 +3,7 @@ import { Injectable } from '@angular/core';
 export class ColorThiefProvider {
   constructor() { }
 
-  // Adaptation of ColorThef : http://lokeshdhakar.com/projects/color-thief/
+  // Adaptation of ColorThief : http://lokeshdhakar.com/projects/color-thief/
   getPalette(sourceImage, colorCount?: number, quality?: number) {
     if (
       typeof colorCount === 'undefined' ||
@@ -69,9 +69,7 @@ export class ColorThiefProvider {
   };
 }
 
-
-
-var pv = {
+const pv = {
   map(array, f?) {
     const o = {};
     return f
@@ -100,8 +98,6 @@ var pv = {
     return Math.max.apply(null, f ? pv.map(array, f) : array);
   }
 };
-
-
 const MMCQ = (() => {
   // private constants
   const sigbits = 5;

@@ -4,7 +4,10 @@ import { ItunesService } from '../../providers/itunes-service/itunes-service';
 import { Storage } from '@ionic/storage';
 import { SplashScreen } from '@ionic-native/splash-screen';
 import { FormControl } from '@angular/forms';
-import { debounceTime, tap, switchMap, filter } from 'rxjs/operators';
+import { debounceTime } from 'rxjs/operators/debounceTime';
+import {  tap } from 'rxjs/operators/tap';
+import { switchMap  } from 'rxjs/operators/switchMap';
+import {  filter } from 'rxjs/operators/filter';
 
 @IonicPage({
   segment: 'search'
