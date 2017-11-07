@@ -124,27 +124,27 @@ const fileManifest = [
   },
   {
     "url": "build/0.js",
-    "revision": "74a681e55fe70b82ea6900618a2642d5"
+    "revision": "21559200a6f8c8893d298919a2bc6a71"
   },
   {
     "url": "build/1.js",
-    "revision": "eec5bdcbaefd94a804f58b3412f00024"
+    "revision": "d4ae27cd5726470c240ccef7f3e83776"
   },
   {
     "url": "build/2.js",
-    "revision": "321ae063fbc199ee993fa1cd864248c9"
+    "revision": "b71beeb572d5fd9f79c45774e6e8ef0b"
   },
   {
     "url": "build/3.js",
-    "revision": "6aae6b2b1788699776ba7c60916abe10"
+    "revision": "f7408da3d46145c98556c4465850d224"
   },
   {
     "url": "build/main.css",
-    "revision": "08e4443e3ea56f12a998475be9583dbf"
+    "revision": "ddaad9b8f27d7441e23be23f078fd830"
   },
   {
     "url": "build/main.js",
-    "revision": "c3a101495a054b47226ee797c568616a"
+    "revision": "9748942b494502ce9f2ac34a9d174ca9"
   },
   {
     "url": "build/polyfills.js",
@@ -156,7 +156,7 @@ const fileManifest = [
   },
   {
     "url": "build/vendor.js",
-    "revision": "2ba6ae81d3319dab10b7fdf274e80770"
+    "revision": "b03aefd36db4710d60bd807c1b076f6e"
   },
   {
     "url": "index.html",
