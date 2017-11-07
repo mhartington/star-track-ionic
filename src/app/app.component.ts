@@ -4,7 +4,8 @@ import { StatusBar } from '@ionic-native/status-bar';
 import { Keyboard } from '@ionic-native/keyboard';
 
 @Component({
-  template: `<ion-nav root="MenuPage"></ion-nav>`
+  template: `<ion-nav root="MenuPage"></ion-nav>`,
+  preserveWhitespaces: false
 })
 export class MyApp {
   constructor(

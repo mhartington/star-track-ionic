@@ -6,6 +6,7 @@ import { IonicPage} from 'ionic-angular';
 @Component({
   selector: 'page-menu',
   templateUrl: 'menu.html',
+  preserveWhitespaces: false
 })
 export class MenuPage {
   constructor() {}

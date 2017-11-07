@@ -1,13 +1,17 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+
 import { IonicApp, IonicModule } from 'ionic-angular';
 import { IonicStorageModule } from '@ionic/storage';
+
 import { MyApp } from './app.component';
+
 import { StatusBar } from '@ionic-native/status-bar';
 import { MusicControls } from '@ionic-native/music-controls';
 import { SplashScreen } from '@ionic-native/splash-screen';
 import { Keyboard } from '@ionic-native/keyboard';
-import { ColorThiefProvider } from '../providers/color-thief/color-thief';
+
+
 import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
@@ -26,8 +30,7 @@ import { HttpClientModule } from '@angular/common/http';
     StatusBar,
     SplashScreen,
     Keyboard,
-    MusicControls,
-    ColorThiefProvider
+    MusicControls
   ]
 })
 export class AppModule {}

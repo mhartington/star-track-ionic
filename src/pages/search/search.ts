@@ -4,19 +4,15 @@ import { ItunesService } from '../../providers/itunes-service/itunes-service';
 import { Storage } from '@ionic/storage';
 import { SplashScreen } from '@ionic-native/splash-screen';
 import { FormControl } from '@angular/forms';
-
-import 'rxjs/add/operator/debounceTime';
-import 'rxjs/add/operator/distinctUntilChanged';
-import 'rxjs/add/operator/do';
-import 'rxjs/add/operator/filter';
-import 'rxjs/add/operator/switchMap';
+import { debounceTime, tap, switchMap, filter } from 'rxjs/operators';
 
 @IonicPage({
   segment: 'search'
 })
 @Component({
   selector: 'page-search',
-  templateUrl: 'search.html'
+  templateUrl: 'search.html',
+  preserveWhitespaces: false
 })
 export class SearchPage {
   @ViewChild('header') header: ElementRef;
@@ -53,27 +49,31 @@ export class SearchPage {
     this.hasSearch = true;
     this.searchInput.setValue(val);
   }
+
   ionViewDidLoad() {
     this.platform.ready().then(() => {
       this.splashscreen.hide();
     });
+
     this.searchInput.valueChanges
-      .filter(term => {
-        if (term) {
-          this.showSpinner = true;
-          this.isError = false;
-          return term;
-        } else {
-          this.listing = [];
+      .pipe(
+        filter(term => {
+          if (term) {
+            this.showSpinner = true;
+            this.isError = false;
+            return term;
+          } else {
+            this.listing = [];
+            this.showSpinner = false;
+          }
+        }),
+        debounceTime(500),
+        switchMap(term => this.spotify.load(term)),
+        tap(() => {
+          this.showOverlay = false;
           this.showSpinner = false;
-        }
-      })
-      .debounceTime(500)
-      .switchMap(term => this.spotify.load(term))
-      .do(() => {
-        this.showOverlay = false;
-        this.showSpinner = false;
-      })
+        })
+      )
       .subscribe(
         results => (this.listing = results.results),
         err => {

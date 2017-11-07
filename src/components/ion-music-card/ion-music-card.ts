@@ -3,7 +3,8 @@ import { NativeMedia } from '../../providers/native-media/native-media';
 import { Howl } from 'howler';
 @Component({
   selector: 'ion-music-card',
-  templateUrl: 'ion-music-card.html'
+  templateUrl: 'ion-music-card.html',
+  preserveWhitespaces: false
 })
 export class IonMusicCardComponent {
   _track;

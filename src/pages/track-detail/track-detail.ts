@@ -15,7 +15,8 @@ import { ItunesService } from '../../providers/itunes-service/itunes-service';
 })
 @Component({
   selector: 'page-track-detail',
-  templateUrl: 'track-detail.html'
+  templateUrl: 'track-detail.html',
+  preserveWhitespaces: false
 })
 export class TrackDetailPage {
   @ViewChild('musicCard') musicCard;

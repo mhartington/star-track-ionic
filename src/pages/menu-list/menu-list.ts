@@ -4,7 +4,8 @@ import { Storage } from '@ionic/storage';
 @IonicPage()
 @Component({
   selector: 'page-menu-list',
-  templateUrl: 'menu-list.html'
+  templateUrl: 'menu-list.html',
+  preserveWhitespaces: false
 })
 export class MenuListPage {
   public favorites = [];
