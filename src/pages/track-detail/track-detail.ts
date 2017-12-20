@@ -9,6 +9,7 @@ import {
 import { NativeMedia } from '../../providers/native-media/native-media';
 import { Storage } from '@ionic/storage';
 import { ItunesService } from '../../providers/itunes-service/itunes-service';
+
 @IonicPage({
   defaultHistory: ['SearchPage'],
   segment: 'detail/:id'

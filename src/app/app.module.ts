@@ -8,7 +8,6 @@ import { HttpClientModule } from '@angular/common/http';
 import { MyApp } from './app.component';
 
 import { StatusBar } from '@ionic-native/status-bar';
-
 @NgModule({
   declarations: [MyApp],
   imports: [

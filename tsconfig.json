@@ -12,7 +12,11 @@
     "moduleResolution": "node",
     "sourceMap": true,
     "target": "es5",
-     "plugins": []
+     "plugins": [
+      {
+        "name": "@angular/language-service"
+      }
+     ]
   },
   "include": [
     "src/**/*.ts"
