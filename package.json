@@ -44,7 +44,7 @@
   },
   "devDependencies": {
     "@angular/language-service": "^5.0.0",
-    "@ionic/app-scripts": "3.0.1",
+    "@ionic/app-scripts": "^3.1.6",
     "@types/howler": "^2.0.2",
     "typescript": "2.4.2",
     "workbox-cli": "1.1.0"
