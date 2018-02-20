@@ -42,7 +42,7 @@ export class TrackDetailPage {
         text: `Checkout ${track.trackName} by ${
           track.artistName
         }. Via Star Track`,
-        url: `https://mhartington.io/#/menu/nav/list/menu-list/nav/main/detail/${
+        url: `https://mhartington.io/star-track-ionic/#/menu/nav/list/menu-list/nav/main/detail/${
           track.trackId
         }`
       })
