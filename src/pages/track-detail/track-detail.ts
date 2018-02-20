@@ -39,9 +39,9 @@ export class TrackDetailPage {
     if ('share' in navigator) {
       navigator['share']({
         title: 'Star Track',
-        text: `Checkout ${track.trackName} by ${
+        text: `Check out "${track.trackName}" by ${
           track.artistName
-        }. Via Star Track`,
+        }. Via Star Track.`,
         url: `https://mhartington.io/star-track-ionic/#/menu/nav/list/menu-list/nav/main/detail/${
           track.trackId
         }`

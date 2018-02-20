@@ -128,7 +128,7 @@ const fileManifest = [
   },
   {
     "url": "build/1.js",
-    "revision": "2ed4071345fc9c91e7e4b49bafe6e172"
+    "revision": "55b4da9dc30f00cd65abfc937a73d267"
   },
   {
     "url": "build/2.js",
