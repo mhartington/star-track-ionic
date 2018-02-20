@@ -41,6 +41,7 @@ export class SearchPage {
     }
   }
   searchCleared(e) {
+
     this.hasSearch = false;
     this.isError = false;
   }
@@ -65,7 +66,8 @@ export class SearchPage {
             this.showSpinner = true;
             this.isError = false;
             return term;
-          } else {
+          }
+          else {
             this.listing = [];
             this.showSpinner = false;
           }

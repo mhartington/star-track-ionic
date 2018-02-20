@@ -34,6 +34,22 @@ export class TrackDetailPage {
     public toastCtrl: ToastController,
     public service: ItunesService
   ) {}
+  share(track) {
+    console.log('calling share');
+    if ('share' in navigator) {
+      navigator['share']({
+        title: 'Star Track',
+        text: `Checkout ${track.trackName} by ${
+          track.artistName
+        }. Via Star Track`,
+        url: `https://mhartington.io/#/menu/nav/list/menu-list/nav/main/detail/${
+          track.trackId
+        }`
+      })
+        .then(() => console.log('Successful share'))
+        .catch(error => console.log('Error sharing', error));
+    }
+  }
   ionViewWillEnter() {
     let paramsTrack = this.params.get('track');
     if (!paramsTrack) {
