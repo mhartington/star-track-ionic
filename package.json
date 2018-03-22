@@ -3,8 +3,8 @@
   "description": "StarTrack-Ionic: An Ionic project",
   "scripts": {
     "clean": "ionic-app-scripts clean",
-    "build": "ionic-app-scripts build &&  workbox-cli generate:sw",
-    "ionic:build": "ionic-app-scripts build &&  workbox-cli generate:sw",
+    "build": "ionic-app-scripts build &&  workbox generateSW workbox-config.js",
+    "ionic:build": "ionic-app-scripts build &&  workbox generateSW workbox-config.js",
     "ionic:serve": "ionic-app-scripts serve"
   },
   "dependencies": {
@@ -46,7 +46,7 @@
     "@angular/language-service": "^5.0.0",
     "@types/howler": "^2.0.2",
     "typescript": "2.4.2",
-    "workbox-cli": "1.1.0"
+    "workbox-cli": "^1.1.0"
   },
   "config": {
     "ionic_generate_source_map": true,
