@@ -202,4 +202,3 @@ const fileManifest = [
 
 const workboxSW = new self.WorkboxSW();
 workboxSW.precache(fileManifest);
-workboxSW.router.registerRoute('/*', workboxSW.strategies.staleWhileRevalidate({}), 'GET');
