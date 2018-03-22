@@ -1,6 +1,6 @@
 module.exports = {
   modifyUrlPrefix: {
-    '/': ''
+    '': '/'
   },
   maximumFileSizeToCacheInBytes: 5000000,
   globDirectory: 'www/',
