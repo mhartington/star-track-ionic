@@ -10,7 +10,7 @@ module.exports = {
   globIgnores: ['../workbox-cli-config.js', 'workbox-v3.0.0/**/*'],
   runtimeCaching: [
     {
-      urlPattern: '*',
+      urlPattern: '/*',
       handler: 'staleWhileRevalidate'
     }
   ]
