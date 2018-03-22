@@ -119,6 +119,38 @@ const fileManifest = [
     "revision": "37096b1d5ca5b77ba1f4d5b8fd4016e7"
   },
   {
+    "url": "assets/images/icons/icon-128x128.png",
+    "revision": "9535e4682569733c1bd6d99fc513e6fb"
+  },
+  {
+    "url": "assets/images/icons/icon-144x144.png",
+    "revision": "471ef498d1df12533ef4db02e30397c5"
+  },
+  {
+    "url": "assets/images/icons/icon-152x152.png",
+    "revision": "92afb9b3978b3af7f0eabdd4b7907c7a"
+  },
+  {
+    "url": "assets/images/icons/icon-192x192.png",
+    "revision": "314a3004ed85f48440e76de5bc360647"
+  },
+  {
+    "url": "assets/images/icons/icon-384x384.png",
+    "revision": "4961a34eae42eeb138368698ef9996ae"
+  },
+  {
+    "url": "assets/images/icons/icon-512x512.png",
+    "revision": "392998449f8ff1c6b2a7be2eaf5b57d8"
+  },
+  {
+    "url": "assets/images/icons/icon-72x72.png",
+    "revision": "e2a57782534c17f0c154ad1f449599a9"
+  },
+  {
+    "url": "assets/images/icons/icon-96x96.png",
+    "revision": "25ffdb7ca905819bcce8914d6689068e"
+  },
+  {
     "url": "assets/imgs/logo.png",
     "revision": "aa054eb23bcba11636d7be097640897a"
   },
@@ -164,9 +196,10 @@ const fileManifest = [
   },
   {
     "url": "manifest.json",
-    "revision": "dd36c727b4a31c2805677452207cfb95"
+    "revision": "9b5557dfe94af55a2a264dc4e0313c22"
   }
 ];
 
 const workboxSW = new self.WorkboxSW();
 workboxSW.precache(fileManifest);
+workboxSW.router.registerRoute('*', workboxSW.strategies.staleWhileRevalidate({}), 'GET');
