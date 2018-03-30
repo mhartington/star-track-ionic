@@ -159,8 +159,12 @@ self.__precacheManifest = [
     "revision": "aa054eb23bcba11636d7be097640897a"
   },
   {
+    "url": "/assets/ios/icon.png",
+    "revision": "251839ec0ac7e5047b3fdcad6307f3a8"
+  },
+  {
     "url": "/build/0.js",
-    "revision": "c54a723b6af400a52ea7f7fc3eb06cdf"
+    "revision": "3f782e906d742afcaa2087095b1385a7"
   },
   {
     "url": "/build/1.js",
@@ -172,7 +176,7 @@ self.__precacheManifest = [
   },
   {
     "url": "/build/3.js",
-    "revision": "8b2ee3b87f35794fe796d7d8e7a0ac2c"
+    "revision": "076bb0a4c28a231a7b37215d2d7633c4"
   },
   {
     "url": "/build/main.css",
@@ -180,7 +184,7 @@ self.__precacheManifest = [
   },
   {
     "url": "/build/main.js",
-    "revision": "04829c02461d895ae618e76a3202781b"
+    "revision": "bf353ad265170a9606c1c03c7d05f8b8"
   },
   {
     "url": "/build/polyfills.js",
@@ -192,11 +196,11 @@ self.__precacheManifest = [
   },
   {
     "url": "/build/vendor.js",
-    "revision": "978367fac784a0bf9760e9407172f366"
+    "revision": "41373ee2579f3395847aa97253b7a821"
   },
   {
     "url": "/index.html",
-    "revision": "bb11dbf91e1a9594b2704ba910080c04"
+    "revision": "decc5941c98826837b0622a7a797fd43"
   },
   {
     "url": "/manifest.json",
